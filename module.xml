@@ -1,0 +1,13 @@
+<module>
+	<rawname>manager</rawname>
+	<name>Asterisk API</name>
+	<version>1.0</version>
+	<type>tool</type>
+	<category>Basic</category>
+	<menuitems>
+		<manager>Asterisk API</manager>
+	</menuitems>
+	<location>release/manager-1.0.tgz</location>
+	<info>http://aussievoip.com.au/wiki/freePBX-ManagerAPI</info>
+	<md5sum>asd</md5sum>
+</module>
