@@ -49,9 +49,63 @@ function manager_get($p_name) {
 	return $res;
 }
 
+// Used to set the correct values for the html checkboxes
+function manager_format_out($p_tab) {
+	$res['name'] = $p_tab['name'];
+	$res['secret'] = $p_tab['secret'];
+	$res['deny'] = $p_tab['deny'];
+	$res['permit'] = $p_tab['permit'];
+
+	$tmp = explode(',', $p_tab['read']);
+	foreach($tmp as $item) {
+		$res['r'.$item] = true;
+	}
+
+	$tmp = explode(',', $p_tab['write']);
+	foreach($tmp as $item) {
+		$res['w'.$item] = true;
+	}
+
+	return $res;
+}
+
 // Delete a manager
 function manager_del($p_name) {
 	$results = sql("DELETE FROM manager WHERE name = \"$p_name\"","query");
+}
+
+function manager_format_in($p_tab) {
+	if (isset($p_tab['rsystem']))
+		$res['read'] .= "system,";
+	if (isset($p_tab['rcall']))
+		$res['read'] .= "call,";
+	if (isset($p_tab['rlog']))
+		$res['read'] .= "log,";
+	if (isset($p_tab['rverbose']))
+		$res['read'] .= "verbose,";
+	if (isset($p_tab['rcommand']))
+		$res['read'] .= "command,";
+	if (isset($p_tab['ragent']))
+		$res['read'] .= "agent,";
+	if (isset($p_tab['ruser']))
+		$res['read'] .= "user";
+
+	if (isset($p_tab['wsystem']))
+		$res['write'] .= "system,";
+	if (isset($p_tab['wcall']))
+		$res['write'] .= "call,";
+	if (isset($p_tab['wlog']))
+		$res['write'] .= "log,";
+	if (isset($p_tab['wverbose']))
+		$res['write'] .= "verbose,";
+	if (isset($p_tab['wcommand']))
+		$res['write'] .= "command,";
+	if (isset($p_tab['wagent']))
+		$res['write'] .= "agent,";
+	if (isset($p_tab['wuser']))
+		$res['write'] .= "user";
+	
+	return $res;
 }
 
 // Add a manager

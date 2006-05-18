@@ -20,7 +20,8 @@ $dispnum = "manager"; //used for switch on config.php
 //if submitting form, update database
 switch ($action) {
 	case "add":
-		manager_add($_REQUEST['name'],$_REQUEST['secret'],$_REQUEST['deny'],$_REQUEST['permit'],$_REQUEST['read'],$_REQUEST['write']);
+		$rights = manager_format_in($_REQUEST);
+		manager_add($_REQUEST['name'],$_REQUEST['secret'],$_REQUEST['deny'],$_REQUEST['permit'],$rights['read'],$rights['write']);
 		manager_gen_conf();
 		needreload();
 	break;
@@ -31,7 +32,8 @@ switch ($action) {
 	break;
 	case "edit":  //just delete and re-add
 		manager_del($_REQUEST['name']);
-		manager_add($_REQUEST['name'],$_REQUEST['secret'],$_REQUEST['deny'],$_REQUEST['permit'],$_REQUEST['read'],$_REQUEST['write']);
+		$rights = manager_format_in($_REQUEST);
+		manager_add($_REQUEST['name'],$_REQUEST['secret'],$_REQUEST['deny'],$_REQUEST['permit'],$rights['read'],$rights['write']);
 		manager_gen_conf();
 		needreload();
 	break;
@@ -64,7 +66,7 @@ if ($action == 'delete') {
 		//get details for this manager
 		$thisManager = manager_get($managerdisplay);
 		//create variables
-		extract($thisManager);
+		extract(manager_format_out($thisManager));
 	}
 
 	$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
@@ -100,13 +102,54 @@ if ($action == 'delete') {
 		<td><input size="36" type="text" name="permit" value="<?php echo (isset($permit) ? $permit : ''); ?>"></td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("read:")?><span><?php echo _("Can be one or all of these separated with a comma:<br/><b>system,call,log,verbose,command,agent,user</b>.")?></span></a></td>
-		<td><input size="36" type="text" name="read" value="<?php echo (isset($read) ? $read : ''); ?>"></td>
+		<td colspan="2"><h5><?php echo _("Rights")?><hr></h5></td>
 	</tr>
-
 	<tr>
-		<td><a href="#" class="info"><?php echo _("write:")?><span><?php echo _("Can be one or all of these separated with a comma:<br/><b>system,call,log,verbose,command,agent,user</b>.")?></span></a></td>
-		<td><input size="36" type="text" name="write" value="<?php echo (isset($write) ? $write : ''); ?>"></td>
+		<td colspan="2">
+		<table>
+			<tr><th></th><th><?php echo _("Read")?></th><th><?php echo _("Write")?></th></tr>
+			<tr>
+				<td><a href="#" class="info">system<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
+				<td><input type="checkbox" name="rsystem" <?php echo (isset($rsystem)?"checked":'');?>></input></td>
+				<td><input type="checkbox" name="wsystem" <?php echo (isset($wsystem)?"checked":'');?>></input></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="info">call<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
+				<td><input type="checkbox" name="rcall" <?php echo (isset($rcall)?"checked":'');?>></input></td>
+				<td><input type="checkbox" name="wcall" <?php echo (isset($wcall)?"checked":'');?>></input></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="info">log<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
+				<td><input type="checkbox" name="rlog" <?php echo (isset($rlog)?"checked":'');?>></input></td>
+				<td><input type="checkbox" name="wlog" <?php echo (isset($wlog)?"checked":'');?>></input></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="info">verbose<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
+				<td><input type="checkbox" name="rverbose" <?php echo (isset($rverbose)?"checked":'');?>></input></td>
+				<td><input type="checkbox" name="wverbose" <?php echo (isset($wverbose)?"checked":'');?>></input></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="info">command<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
+				<td><input type="checkbox" name="rcommand" <?php echo (isset($rcommand)?"checked":'');?>></input></td>
+				<td><input type="checkbox" name="wcommand" <?php echo (isset($wcommand)?"checked":'');?>></input></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="info">agent<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
+				<td><input type="checkbox" name="ragent" <?php echo (isset($ragent)?"checked":'');?>></input></td>
+				<td><input type="checkbox" name="wagent" <?php echo (isset($wagent)?"checked":'');?>></input></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="info">user<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
+				<td><input type="checkbox" name="ruser" <?php echo (isset($ruser)?"checked":'');?>></input></td>
+				<td><input type="checkbox" name="wuser" <?php echo (isset($wuser)?"checked":'');?>></input></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="info">ALL<span><?php echo _("Check All/None.")?></span></a></td>
+				<td><input type="checkbox" name="rallnone" onclick="readCheck();"></input></td>
+				<td><input type="checkbox" name="wallnone" onclick="writeCheck();"></input></td>
+			</tr>
+		</table>
+		</td>
 	</tr>
 						   
 	<tr>
@@ -119,6 +162,46 @@ if ($action == 'delete') {
 var theForm = document.editMan;
 
 theForm.name.focus();
+
+function writeCheck() {
+	if (theForm.wallnone.checked) {
+		theForm.wsystem.checked = true;
+		theForm.wcall.checked = true;
+		theForm.wlog.checked = true;
+		theForm.wverbose.checked = true;
+		theForm.wcommand.checked = true;
+		theForm.wagent.checked = true;
+		theForm.wuser.checked = true;
+	} else {
+		theForm.wsystem.checked = false;
+		theForm.wcall.checked = false;
+		theForm.wlog.checked = false;
+		theForm.wverbose.checked = false;
+		theForm.wcommand.checked = false;
+		theForm.wagent.checked = false;
+		theForm.wuser.checked = false;
+	}
+}
+
+function readCheck() {
+	if (theForm.rallnone.checked) {
+		theForm.rsystem.checked = true;
+		theForm.rcall.checked = true;
+		theForm.rlog.checked = true;
+		theForm.rverbose.checked = true;
+		theForm.rcommand.checked = true;
+		theForm.ragent.checked = true;
+		theForm.ruser.checked = true;
+	} else {
+		theForm.rsystem.checked = false;
+		theForm.rcall.checked = false;
+		theForm.rlog.checked = false;
+		theForm.rverbose.checked = false;
+		theForm.rcommand.checked = false;
+		theForm.ragent.checked = false;
+		theForm.ruser.checked = false;
+	}
+}
 
 function checkConf()
 {
@@ -142,11 +225,6 @@ function checkConf()
 		return warnInvalid(theForm.name, errDeny);
 	if (theForm.permit.value.search(/\b(?:\d{1,3}\.){3}\d{1,3}\b\/\b(?:\d{1,3}\.){3}\d{1,3}\b(&\b(?:\d{1,3}\.){3}\d{1,3}\b\/\b(?:\d{1,3}\.){3}\d{1,3}\b)*$/))
 		return warnInvalid(theForm.name, errPermit);
-	if (theForm.read.value.search(/\b(system|call|log|verbose|command|agent|user)\b(,\b(system|call|log|verbose|command|agent|user)\b)*$/))
-		return warnInvalid(theForm.name, errRead);
-	if (theForm.write.value.search(/\b(system|call|log|verbose|command|agent|user)\b(,\b(system|call|log|verbose|command|agent|user)\b)*$/))
-		return warnInvalid(theForm.name, errWrite);
-		
 	return true;
 }
 
