@@ -7,7 +7,7 @@
 	<menuitems>
 		<manager>Asterisk API</manager>
 	</menuitems>
-	<location>xx</location>
+	<location>release/manager-1.0.2.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-ManagerAPI</info>
-	<md5sum>xx</md5sum>
+	<md5sum>329adfc7595494f53409149695123690</md5sum>
 </module>
