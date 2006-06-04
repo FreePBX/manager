@@ -33,7 +33,7 @@ function manager_gen_conf() {
 // Get the manager list
 function manager_list() {
 	global $db;
-	$sql = "SELECT name FROM manager ORDER BY name";
+	$sql = "SELECT name, secret FROM manager ORDER BY name";
 	$res = $db->getAll($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($res)) {
 		return null;
@@ -121,4 +121,35 @@ function manager_add($p_name, $p_secret, $p_deny, $p_permit, $p_read, $p_write) 
 	}
 	$results = sql("INSERT INTO manager set name='$p_name' , secret='$p_secret' , deny='$p_deny' , permit='$p_permit' , `read`='$p_read' , `write`='$p_write'");
 }
+
+
+// Asterisk API Module hooking
+// Input:
+//   $p_manager = default selected user
+//   $dummy = unused
+// $viewing_itemid, $target_menuid
+function manager_hook_phpagiconf($viewing_itemid, $target_menuid) {
+        global $db;
+
+	switch($target_menuid) {
+		case 'phpagiconf':
+			$sql = "SELECT asman_user FROM phpagiconf";
+			$res = $db->getRow($sql, DB_FETCHMODE_ASSOC);
+			if(DB::IsError($res)) {
+				return null;
+			}
+			$selectedmanager = $res['asman_user'];
+		break;
+	}
+	$output = "<tr><td><a href=\"#\" class=\"info\">"._("Choose Manager:")."<span>"._("Choose the user that PHPAGI will use to connect the Asterisk API.")."</span></a></td><td><select name=\"asmanager\">";
+	$selected = "";
+	$managers = manager_list();
+	foreach ($managers as $manager) {
+		($manager['name'] === $selectedmanager) ? $selected="selected=\"selected\"" : $selected="";
+		$output .= "<option value=\"".$manager['name']."/".$manager['secret']."\" $selected>".$manager['name'];
+	}
+	$output .="</select></td></tr>";
+	return $output;
+}
+
 ?>

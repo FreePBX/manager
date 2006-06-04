@@ -95,11 +95,11 @@ if ($action == 'delete') {
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("deny:")?><span><?php echo _("If you want to deny many hosts or networks, use & char as separator.<br/><br/>Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0")?></span></a></td>
-		<td><input size="36" type="text" name="deny" value="<?php echo (isset($deny) ? $deny : ''); ?>"></td>
+		<td><input size="56" type="text" name="deny" value="<?php echo (isset($deny) ? $deny : ''); ?>"></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("permit:")?><span><?php echo _("If you want to permit many hosts or networks, use & char as separator. Look at deny example.")?></span></a></td>
-		<td><input size="36" type="text" name="permit" value="<?php echo (isset($permit) ? $permit : ''); ?>"></td>
+		<td><input size="56" type="text" name="permit" value="<?php echo (isset($permit) ? $permit : ''); ?>"></td>
 	</tr>
 	<tr>
 		<td colspan="2"><h5><?php echo _("Rights")?><hr></h5></td>
