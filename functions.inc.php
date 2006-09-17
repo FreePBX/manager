@@ -75,6 +75,12 @@ function manager_del($p_name) {
 }
 
 function manager_format_in($p_tab) {
+	if (!isset($res['read'])) {
+		$res['read'] = "";
+	}
+	if (!isset($res['write'])) {
+		$res['write'] = "";
+	}
 	if (isset($p_tab['rsystem']))
 		$res['read'] .= "system,";
 	if (isset($p_tab['rcall']))
