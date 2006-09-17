@@ -1,13 +1,13 @@
 <module>
 	<rawname>manager</rawname>
 	<name>Asterisk API</name>
-	<version>1.0.4</version>
+	<version>1.0.5</version>
 	<type>tool</type>
 	<category>Basic</category>
 	<menuitems>
 		<manager>Asterisk API</manager>
 	</menuitems>
-	<location>release//2.2/manager-1.0.4.tgz</location>
+	<location>release/2.2/manager-1.0.5.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-ManagerAPI</info>
-	<md5sum>89ba165a3e74d2acfe07f9d649cf09b2</md5sum>
+	<md5sum>96914dbaeae91bbed7ca4cb9c0c1efa4</md5sum>
 </module>
