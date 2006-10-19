@@ -10,7 +10,7 @@
 	<changelog>
 	*1.1* First 2.2 release. Added he_IL support, fixed some warnings.
 	</changelog>
-	<location>release/2.2/manager-1.0.5.tgz</location>
+	<location>release/2.2/manager-1.1.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-ManagerAPI</info>
-	<md5sum>96914dbaeae91bbed7ca4cb9c0c1efa4</md5sum>
+	<md5sum>10c988b1df0744df34060711e2cdaf7c</md5sum>
 </module>
