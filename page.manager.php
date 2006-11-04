@@ -12,16 +12,20 @@
 //GNU General Public License for more details.
 
 
-isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
+$action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
 //the extension we are currently displaying
-isset($_REQUEST['managerdisplay'])?$managerdisplay=$_REQUEST['managerdisplay']:$managerdisplay='';
+$managerdisplay = isset($_REQUEST['managerdisplay'])?$_REQUEST['managerdisplay']:'';
+$name = isset($_REQUEST['name'])?$_REQUEST['name']:'';
+$secret = isset($_REQUEST['secret'])?$_REQUEST['secret']:'';
+$deny = isset($_REQUEST['deny'])?$_REQUEST['deny']:'';
+$permit = isset($_REQUEST['permit'])?$_REQUEST['permit']:'';
 $dispnum = "manager"; //used for switch on config.php
 
 //if submitting form, update database
 switch ($action) {
 	case "add":
 		$rights = manager_format_in($_REQUEST);
-		manager_add($_REQUEST['name'],$_REQUEST['secret'],$_REQUEST['deny'],$_REQUEST['permit'],$rights['read'],$rights['write']);
+		manager_add($name,$secret,$deny,$permit,$rights['read'],$rights['write']);
 		manager_gen_conf();
 		needreload();
 	break;
@@ -31,9 +35,9 @@ switch ($action) {
 		needreload();
 	break;
 	case "edit":  //just delete and re-add
-		manager_del($_REQUEST['name']);
+		manager_del($name);
 		$rights = manager_format_in($_REQUEST);
-		manager_add($_REQUEST['name'],$_REQUEST['secret'],$_REQUEST['deny'],$_REQUEST['permit'],$rights['read'],$rights['write']);
+		manager_add($name,$secret,$deny,$permit,$rights['read'],$rights['write']);
 		manager_gen_conf();
 		needreload();
 	break;
@@ -45,7 +49,7 @@ $managers = manager_list();
 </div>
 
 <!-- right side menu -->
-<div class="rnav">
+<div class="rnav"><ul>
     <li><a id="<?php echo ($managerdisplay=='' ? 'current':'') ?>" href="config.php?type=tool&amp;display=<?php echo urlencode($dispnum)?>"><?php echo _("Add Manager")?></a></li>
 <?php
 if (isset($managers)) {
@@ -54,7 +58,7 @@ if (isset($managers)) {
 	}
 }
 ?>
-</div>
+<ul></div>
 
 
 <div class="content">
@@ -78,7 +82,7 @@ if ($action == 'delete') {
 	<p><a href="<?php echo $delURL ?>"><?php echo _("Delete Manager")?> <?php echo $managerdisplay; ?></a></p>
 <?php		} else { ?>
 	<h2><?php echo _("Add Manager"); ?></h2>
-<?php		}
+<?php		} print_r($name);
 ?>
 	<form autocomplete="off" name="editMan" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkConf();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
@@ -86,19 +90,19 @@ if ($action == 'delete') {
 	<table>
 	<tr><td colspan="2"><h5><?php echo ($managerdisplay ? _("Edit Manager") : _("Add Manager")) ?><hr></h5></td></tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("manager name:")?><span><?php echo _("Name of the manager without space.")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Manager name:")?><span><?php echo _("Name of the manager without space.")?></span></a></td>
 		<td><input type="text" name="name" value="<?php echo (isset($name) ? $name : ''); ?>"></td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("manager secret:")?><span><?php echo _("Password for the manager.")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Manager secret:")?><span><?php echo _("Password for the manager.")?></span></a></td>
 		<td><input type="text" name="secret" value="<?php echo (isset($secret) ? $secret : ''); ?>"></td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("deny:")?><span><?php echo _("If you want to deny many hosts or networks, use & char as separator.<br/><br/>Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Deny:")?><span><?php echo _("If you want to deny many hosts or networks, use & char as separator.<br/><br/>Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0")?></span></a></td>
 		<td><input size="56" type="text" name="deny" value="<?php echo (isset($deny) ? $deny : ''); ?>"></td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("permit:")?><span><?php echo _("If you want to permit many hosts or networks, use & char as separator. Look at deny example.")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Permit:")?><span><?php echo _("If you want to permit many hosts or networks, use & char as separator. Look at deny example.")?></span></a></td>
 		<td><input size="56" type="text" name="permit" value="<?php echo (isset($permit) ? $permit : ''); ?>"></td>
 	</tr>
 	<tr>
