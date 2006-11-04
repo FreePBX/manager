@@ -82,7 +82,7 @@ if ($action == 'delete') {
 	<p><a href="<?php echo $delURL ?>"><?php echo _("Delete Manager")?> <?php echo $managerdisplay; ?></a></p>
 <?php		} else { ?>
 	<h2><?php echo _("Add Manager"); ?></h2>
-<?php		} print_r($name);
+<?php		} 
 ?>
 	<form autocomplete="off" name="editMan" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkConf();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
