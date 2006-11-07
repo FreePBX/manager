@@ -1,16 +1,17 @@
 <module>
 	<rawname>manager</rawname>
 	<name>Asterisk API</name>
-	<version>1.1</version>
+	<version>1.2</version>
 	<type>tool</type>
 	<category>System Administration</category>
 	<menuitems>
 		<manager>Asterisk API</manager>
 	</menuitems>
 	<changelog>
+	*1.2* Fix UI issues, and 'Array' message.
 	*1.1* First 2.2 release. Added he_IL support, fixed some warnings.
 	</changelog>
-	<location>release/2.2/manager-1.1.tgz</location>
+	<location>release/2.2/manager-1.2.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-ManagerAPI</info>
-	<md5sum>10c988b1df0744df34060711e2cdaf7c</md5sum>
+	<md5sum>b0197805e6b63146c0b005da69637341</md5sum>
 </module>
