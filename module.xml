@@ -12,7 +12,7 @@
 	*1.2* Fix UI issues, and 'Array' message.
 	*1.1* First 2.2 release. Added he_IL support, fixed some warnings.
 	</changelog>
-	<location>release/2.2/manager-1.2.tgz</location>
+	<location>release/2.3/manager-1.3.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-ManagerAPI</info>
-	<md5sum>b0197805e6b63146c0b005da69637341</md5sum>
+	<md5sum>f6f2e9b7aaad3dd4e730a3893b8429c2</md5sum>
 </module>
