@@ -17,7 +17,7 @@ $sql = "CREATE TABLE IF NOT EXISTS manager (
 
 $check = $db->query($sql);
 if (DB::IsError($check)) {
-	die("Can not create `manager` table" .  $check->getMessage() .  "\n");
+	die_freepbx("Can not create `manager` table" .  $check->getMessage() .  "\n");
 }
 
 ?>
