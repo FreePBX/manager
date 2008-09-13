@@ -83,6 +83,7 @@ if ($action == 'delete') {
 <?php		} else { ?>
 	<h2><?php echo _("Add Manager"); ?></h2>
 <?php		} 
+			$tabindex = 0;
 ?>
 	<form autocomplete="off" name="editMan" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkConf();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
