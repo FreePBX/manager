@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-27 15:38+0200\n"
-"PO-Revision-Date: 2008-11-02 15:04+0200\n"
+"PO-Revision-Date: 2008-11-08 23:19+0200\n"
 "Last-Translator: \n"
 "Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
 "MIME-Version: 1.0\n"
@@ -149,4 +149,8 @@ msgstr "Полетата за четене на manager не са добре ф�
 #: page.manager.php:219
 msgid "The manager write field is not well formated."
 msgstr "Полетата за запис на manager не са добре форматирани."
+
+#: module.xml
+msgid "Asterisk API"
+msgstr "Астериск Manager"
 
