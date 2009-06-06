@@ -1,7 +1,9 @@
 <?php
 
 function manager_gen_conf() {
-	$file = "/tmp/manager_additional_".rand().".conf";
+	global $amp_conf;
+
+	$file = tempnam("/tmp", "manager_additional_");
 	$content = "";
 	$managers = manager_list();
 	if (is_array($managers)) {
@@ -25,7 +27,7 @@ function manager_gen_conf() {
 	$fd = fopen($file, "w");
 	fwrite($fd, $content);
 	fclose($fd);
-	if (!rename($file, "/etc/asterisk/manager_additional.conf")) {
+	if (!rename($file, $amp_conf['ASTETCDIR']."/manager_additional.conf")) {
 		echo "<script>javascript:alert('"._("Error writing the manager additional file.")."');</script>";
 	}
 }
