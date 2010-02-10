@@ -96,7 +96,21 @@ function manager_format_in($p_tab) {
 	if (isset($p_tab['ragent']))
 		$res['read'] .= "agent,";
 	if (isset($p_tab['ruser']))
-		$res['read'] .= "user";
+		$res['read'] .= "user,";
+
+  // Added for 1.6+
+	if (isset($p_tab['rconfig']))
+		$res['read'] .= "config,";
+	if (isset($p_tab['rdtmf']))
+		$res['read'] .= "dtmf,";
+	if (isset($p_tab['rreporting']))
+		$res['read'] .= "reporting,";
+	if (isset($p_tab['rcdr']))
+		$res['read'] .= "cdr,";
+	if (isset($p_tab['rdialplan']))
+		$res['read'] .= "dialplan,";
+	if (isset($p_tab['roriginate']))
+		$res['read'] .= "originate,";
 
 	if (isset($p_tab['wsystem']))
 		$res['write'] .= "system,";
@@ -111,8 +125,24 @@ function manager_format_in($p_tab) {
 	if (isset($p_tab['wagent']))
 		$res['write'] .= "agent,";
 	if (isset($p_tab['wuser']))
-		$res['write'] .= "user";
-	
+		$res['write'] .= "user,";
+
+  // Added for 1.6+
+	if (isset($p_tab['wconfig']))
+		$res['write'] .= "config,";
+	if (isset($p_tab['wdtmf']))
+		$res['write'] .= "dtmf,";
+	if (isset($p_tab['wreporting']))
+		$res['write'] .= "reporting,";
+	if (isset($p_tab['wcdr']))
+		$res['write'] .= "cdr,";
+	if (isset($p_tab['wdialplan']))
+		$res['write'] .= "dialplan,";
+	if (isset($p_tab['woriginate']))
+		$res['write'] .= "originate,";
+
+  $res['read'] = rtrim($res['read'],',');
+  $res['write'] = rtrim($res['write'],',');
 	return $res;
 }
 

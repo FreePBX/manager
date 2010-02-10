@@ -21,6 +21,10 @@ $deny = isset($_REQUEST['deny'])?$_REQUEST['deny']:'';
 $permit = isset($_REQUEST['permit'])?$_REQUEST['permit']:'';
 $dispnum = "manager"; //used for switch on config.php
 
+$engineinfo = engine_getinfo();
+$astver =  $engineinfo['version'];
+$ast_ge_16 = version_compare($astver, '1.6', 'ge');
+
 //if submitting form, update database
 switch ($action) {
 	case "add":
@@ -148,6 +152,43 @@ if ($action == 'delete') {
 				<td><input type="checkbox" name="ruser" <?php echo (isset($ruser)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
 				<td><input type="checkbox" name="wuser" <?php echo (isset($wuser)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
 			</tr>
+<?php
+  if ($ast_ge_16) {
+?>
+			<tr>
+				<td><a href="#" class="info">config<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
+				<td><input type="checkbox" name="rconfig" <?php echo (isset($rconfig)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="wconfig" <?php echo (isset($wconfig)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="info">dtmf<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
+				<td><input type="checkbox" name="rdtmf" <?php echo (isset($rdtmf)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="wdtmf" <?php echo (isset($wdtmf)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="info">reporting<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
+				<td><input type="checkbox" name="rreporting" <?php echo (isset($rreporting)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="wreporting" <?php echo (isset($wreporting)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="info">cdr<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
+				<td><input type="checkbox" name="rcdr" <?php echo (isset($rcdr)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="wcdr" <?php echo (isset($wcdr)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="info">dialplan<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
+				<td><input type="checkbox" name="rdialplan" <?php echo (isset($rdialplan)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="wdialplan" <?php echo (isset($wdialplan)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+			</tr>
+			<tr>
+				<td><a href="#" class="info">originate<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
+				<td><input type="checkbox" name="roriginate" <?php echo (isset($roriginate)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="woriginate" <?php echo (isset($woriginate)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+			</tr>
+
+<?php // if 1.6 add these
+  }
+?>
 			<tr>
 				<td><a href="#" class="info">ALL<span><?php echo _("Check All/None.")?></span></a></td>
 				<td><input type="checkbox" name="rallnone" onclick="readCheck();"></input></td>
@@ -177,6 +218,18 @@ function writeCheck() {
 		theForm.wcommand.checked = true;
 		theForm.wagent.checked = true;
 		theForm.wuser.checked = true;
+<?php
+  if ($ast_ge_16) {
+?>
+		theForm.wconfig.checked = true;
+		theForm.wdtmf.checked = true;
+		theForm.wreporting.checked = true;
+		theForm.wcdr.checked = true;
+		theForm.wdialplan.checked = true;
+		theForm.woriginate.checked = true;
+<?php
+  }
+?>
 	} else {
 		theForm.wsystem.checked = false;
 		theForm.wcall.checked = false;
@@ -185,6 +238,19 @@ function writeCheck() {
 		theForm.wcommand.checked = false;
 		theForm.wagent.checked = false;
 		theForm.wuser.checked = false;
+
+<?php
+  if ($ast_ge_16) {
+?>
+		theForm.wconfig.checked = false;
+		theForm.wdtmf.checked = false;
+		theForm.wreporting.checked = false;
+		theForm.wcdr.checked = false;
+		theForm.wdialplan.checked = false;
+		theForm.woriginate.checked = false;
+<?php
+  }
+?>
 	}
 }
 
@@ -197,6 +263,18 @@ function readCheck() {
 		theForm.rcommand.checked = true;
 		theForm.ragent.checked = true;
 		theForm.ruser.checked = true;
+<?php
+  if ($ast_ge_16) {
+?>
+		theForm.rconfig.checked = true;
+		theForm.rdtmf.checked = true;
+		theForm.rreporting.checked = true;
+		theForm.rcdr.checked = true;
+		theForm.rdialplan.checked = true;
+		theForm.roriginate.checked = true;
+<?php
+  }
+?>
 	} else {
 		theForm.rsystem.checked = false;
 		theForm.rcall.checked = false;
@@ -205,6 +283,18 @@ function readCheck() {
 		theForm.rcommand.checked = false;
 		theForm.ragent.checked = false;
 		theForm.ruser.checked = false;
+<?php
+  if ($ast_ge_16) {
+?>
+		theForm.rconfig.checked = false;
+		theForm.rdtmf.checked = false;
+		theForm.rreporting.checked = false;
+		theForm.rcdr.checked = false;
+		theForm.rdialplan.checked = false;
+		theForm.roriginate.checked = false;
+<?php
+  }
+?>
 	}
 }
 
