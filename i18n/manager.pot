@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 13:45+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,161 +28,117 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: manager/functions.inc.php:31
 msgid "Error writing the manager additional file."
 msgstr ""
 
-#: manager/functions.inc.php:155
 msgid "This manager already exists"
 msgstr ""
 
-#: manager/functions.inc.php:182
 msgid "Choose Manager:"
 msgstr ""
 
-#: manager/functions.inc.php:182
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 
-#: manager/install.php:36
 msgid "Increasing read field size if needed.."
 msgstr ""
 
-#: manager/install.php:40 manager/install.php:49
 msgid "error encountered, not altered"
 msgstr ""
 
-#: manager/install.php:42 manager/install.php:51
 msgid "ok"
 msgstr ""
 
-#: manager/install.php:45
 msgid "Increasing write field size if needed.."
 msgstr ""
 
-#: manager/manager.i18n.php:5 manager/manager.i18n.php:9
 msgid "Asterisk API"
 msgstr ""
 
-#: manager/manager.i18n.php:7
 msgid "System Administration"
 msgstr ""
 
-#: manager/page.manager.php:57 manager/page.manager.php:88
-#: manager/page.manager.php:96
 msgid "Add Manager"
 msgstr ""
 
-#: manager/page.manager.php:71
 msgid "Manager"
 msgstr ""
 
-#: manager/page.manager.php:71
 msgid "deleted"
 msgstr ""
 
-#: manager/page.manager.php:85
 msgid "Manager:"
 msgstr ""
 
-#: manager/page.manager.php:86
 msgid "Delete Manager"
 msgstr ""
 
-#: manager/page.manager.php:96
 msgid "Edit Manager"
 msgstr ""
 
-#: manager/page.manager.php:98
 msgid "Manager name:"
 msgstr ""
 
-#: manager/page.manager.php:98
 msgid "Name of the manager without space."
 msgstr ""
 
-#: manager/page.manager.php:102
 msgid "Manager secret:"
 msgstr ""
 
-#: manager/page.manager.php:102
 msgid "Password for the manager."
 msgstr ""
 
-#: manager/page.manager.php:106
 msgid "Deny:"
 msgstr ""
 
-#: manager/page.manager.php:106
 msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 msgstr ""
 
-#: manager/page.manager.php:110
 msgid "Permit:"
 msgstr ""
 
-#: manager/page.manager.php:110
 msgid ""
 "If you want to permit many hosts or networks, use & char as separator. Look "
 "at deny example."
 msgstr ""
 
-#: manager/page.manager.php:114
 msgid "Rights"
 msgstr ""
 
-#: manager/page.manager.php:119
 msgid "Read"
 msgstr ""
 
-#: manager/page.manager.php:119
 msgid "Write"
 msgstr ""
 
-#: manager/page.manager.php:121 manager/page.manager.php:126
-#: manager/page.manager.php:131 manager/page.manager.php:136
-#: manager/page.manager.php:141 manager/page.manager.php:146
-#: manager/page.manager.php:151 manager/page.manager.php:159
-#: manager/page.manager.php:164 manager/page.manager.php:169
-#: manager/page.manager.php:174 manager/page.manager.php:179
-#: manager/page.manager.php:184
 msgid "Check Asterisk documentation."
 msgstr ""
 
-#: manager/page.manager.php:193
 msgid "Check All/None."
 msgstr ""
 
-#: manager/page.manager.php:202
 msgid "Submit Changes"
 msgstr ""
 
-#: manager/page.manager.php:303
 msgid "The manager name cannot be empty or may not have any space in it."
 msgstr ""
 
-#: manager/page.manager.php:304
 msgid "The manager secret cannot be empty."
 msgstr ""
 
-#: manager/page.manager.php:305
 msgid "The manager read and write properties cannot be empty."
 msgstr ""
 
-#: manager/page.manager.php:306
 msgid "The manager deny is not well formated."
 msgstr ""
 
-#: manager/page.manager.php:307
 msgid "The manager permit is not well formated."
 msgstr ""
 
-#: manager/page.manager.php:308
 msgid "The manager read field is not well formated."
 msgstr ""
 
-#: manager/page.manager.php:309
 msgid "The manager write field is not well formated."
 msgstr ""
