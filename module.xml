@@ -1,7 +1,7 @@
 <module>
 	<rawname>manager</rawname>
 	<name>Asterisk API</name>
-	<version>2.7.0.0</version>
+	<version>2.7.0.1</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<type>tool</type>
@@ -10,6 +10,7 @@
 		<manager>Asterisk API</manager>
 	</menuitems>
 	<changelog>
+		*2.7.0.1* localizations
 		*2.7.0.0* #3884
 		*2.6.0.0* localizations, misc
 		*2.5.0.1* #3191 unitialized vars
@@ -20,6 +21,6 @@
 		*1.2* Fix UI issues, and 'Array' message.
 		*1.1* First 2.2 release. Added he_IL support, fixed some warnings.
 	</changelog>
-	<location>release/2.7/manager-2.7.0.0.tgz</location>
-	<md5sum>7331093fde67294648d45adbec8861d7</md5sum>
+	<location>release/2.7/manager-2.7.0.1.tgz</location>
+	<md5sum>b6100959db196c3868ecb15680e13342</md5sum>
 </module>
