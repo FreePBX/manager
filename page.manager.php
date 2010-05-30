@@ -119,71 +119,71 @@ if ($action == 'delete') {
 			<tr><th></th><th><?php echo _("Read")?></th><th><?php echo _("Write")?></th></tr>
 			<tr>
 				<td><a href="#" class="info">system<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
-				<td><input type="checkbox" name="rsystem" <?php echo (isset($rsystem)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
-				<td><input type="checkbox" name="wsystem" <?php echo (isset($wsystem)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="rsystem" <?php echo (isset($rsystem)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
+				<td><input type="checkbox" name="wsystem" <?php echo (isset($wsystem)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 			<tr>
 				<td><a href="#" class="info">call<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
-				<td><input type="checkbox" name="rcall" <?php echo (isset($rcall)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
-				<td><input type="checkbox" name="wcall" <?php echo (isset($wcall)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="rcall" <?php echo (isset($rcall)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
+				<td><input type="checkbox" name="wcall" <?php echo (isset($wcall)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 			<tr>
 				<td><a href="#" class="info">log<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
-				<td><input type="checkbox" name="rlog" <?php echo (isset($rlog)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
-				<td><input type="checkbox" name="wlog" <?php echo (isset($wlog)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="rlog" <?php echo (isset($rlog)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
+				<td><input type="checkbox" name="wlog" <?php echo (isset($wlog)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 			<tr>
 				<td><a href="#" class="info">verbose<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
-				<td><input type="checkbox" name="rverbose" <?php echo (isset($rverbose)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
-				<td><input type="checkbox" name="wverbose" <?php echo (isset($wverbose)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="rverbose" <?php echo (isset($rverbose)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
+				<td><input type="checkbox" name="wverbose" <?php echo (isset($wverbose)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 			<tr>
 				<td><a href="#" class="info">command<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
-				<td><input type="checkbox" name="rcommand" <?php echo (isset($rcommand)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
-				<td><input type="checkbox" name="wcommand" <?php echo (isset($wcommand)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="rcommand" <?php echo (isset($rcommand)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
+				<td><input type="checkbox" name="wcommand" <?php echo (isset($wcommand)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 			<tr>
 				<td><a href="#" class="info">agent<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
-				<td><input type="checkbox" name="ragent" <?php echo (isset($ragent)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
-				<td><input type="checkbox" name="wagent" <?php echo (isset($wagent)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="ragent" <?php echo (isset($ragent)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
+				<td><input type="checkbox" name="wagent" <?php echo (isset($wagent)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 			<tr>
 				<td><a href="#" class="info">user<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
-				<td><input type="checkbox" name="ruser" <?php echo (isset($ruser)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
-				<td><input type="checkbox" name="wuser" <?php echo (isset($wuser)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="ruser" <?php echo (isset($ruser)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
+				<td><input type="checkbox" name="wuser" <?php echo (isset($wuser)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 <?php
   if ($ast_ge_16) {
 ?>
 			<tr>
 				<td><a href="#" class="info">config<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
-				<td><input type="checkbox" name="rconfig" <?php echo (isset($rconfig)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
-				<td><input type="checkbox" name="wconfig" <?php echo (isset($wconfig)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="rconfig" <?php echo (isset($rconfig)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
+				<td><input type="checkbox" name="wconfig" <?php echo (isset($wconfig)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 			<tr>
 				<td><a href="#" class="info">dtmf<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
-				<td><input type="checkbox" name="rdtmf" <?php echo (isset($rdtmf)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
-				<td><input type="checkbox" name="wdtmf" <?php echo (isset($wdtmf)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="rdtmf" <?php echo (isset($rdtmf)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
+				<td><input type="checkbox" name="wdtmf" <?php echo (isset($wdtmf)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 			<tr>
 				<td><a href="#" class="info">reporting<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
-				<td><input type="checkbox" name="rreporting" <?php echo (isset($rreporting)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
-				<td><input type="checkbox" name="wreporting" <?php echo (isset($wreporting)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="rreporting" <?php echo (isset($rreporting)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
+				<td><input type="checkbox" name="wreporting" <?php echo (isset($wreporting)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 			<tr>
 				<td><a href="#" class="info">cdr<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
-				<td><input type="checkbox" name="rcdr" <?php echo (isset($rcdr)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
-				<td><input type="checkbox" name="wcdr" <?php echo (isset($wcdr)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="rcdr" <?php echo (isset($rcdr)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
+				<td><input type="checkbox" name="wcdr" <?php echo (isset($wcdr)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 			<tr>
 				<td><a href="#" class="info">dialplan<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
-				<td><input type="checkbox" name="rdialplan" <?php echo (isset($rdialplan)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
-				<td><input type="checkbox" name="wdialplan" <?php echo (isset($wdialplan)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="rdialplan" <?php echo (isset($rdialplan)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
+				<td><input type="checkbox" name="wdialplan" <?php echo (isset($wdialplan)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 			<tr>
 				<td><a href="#" class="info">originate<span><?php echo _("Check Asterisk documentation.")?></span></a></td>
-				<td><input type="checkbox" name="roriginate" <?php echo (isset($roriginate)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
-				<td><input type="checkbox" name="woriginate" <?php echo (isset($woriginate)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></input></td>
+				<td><input type="checkbox" name="roriginate" <?php echo (isset($roriginate)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
+				<td><input type="checkbox" name="woriginate" <?php echo (isset($woriginate)?"checked":'');?> tabindex="<?php echo ++$tabindex;?>"></td>
 			</tr>
 
 <?php // if 1.6 add these
@@ -191,8 +191,8 @@ if ($action == 'delete') {
 ?>
 			<tr>
 				<td><a href="#" class="info">ALL<span><?php echo _("Check All/None.")?></span></a></td>
-				<td><input type="checkbox" name="rallnone" onclick="readCheck();"></input></td>
-				<td><input type="checkbox" name="wallnone" onclick="writeCheck();"></input></td>
+				<td><input type="checkbox" name="rallnone" onclick="readCheck();"></td>
+				<td><input type="checkbox" name="wallnone" onclick="writeCheck();"></td>
 			</tr>
 		</table>
 		</td>
