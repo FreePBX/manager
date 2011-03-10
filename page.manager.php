@@ -303,10 +303,10 @@ function checkConf()
 	var errName = "<?php echo _('The manager name cannot be empty or may not have any space in it.'); ?>";
 	var errSecret = "<?php echo _('The manager secret cannot be empty.'); ?>";
 	var errReadWrite = "<?php echo _('The manager read and write properties cannot be empty.'); ?>";
-	var errDeny = "<?php echo _('The manager deny is not well formated.'); ?>";
-	var errPermit = "<?php echo _('The manager permit is not well formated.'); ?>";
-	var errRead = "<?php echo _('The manager read field is not well formated.'); ?>";
-	var errWrite = "<?php echo _('The manager write field is not well formated.'); ?>";
+	var errDeny = "<?php echo _('The manager deny is not well formatted.'); ?>";
+	var errPermit = "<?php echo _('The manager permit is not well formatted.'); ?>";
+	var errRead = "<?php echo _('The manager read field is not well formatted.'); ?>";
+	var errWrite = "<?php echo _('The manager write field is not well formatted.'); ?>";
 
 	defaultEmptyOK = false;
 	if ((theForm.name.value.search(/\s/) >= 0) || (theForm.name.value.length == 0))
