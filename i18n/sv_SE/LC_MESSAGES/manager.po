@@ -1,151 +1,153 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language for announcement
+# Copyright (C) 2011 Mikael Carlsson
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-27 15:38+0200\n"
-"PO-Revision-Date: 2008-09-28 00:22+0100\n"
+"POT-Creation-Date: 2011-03-18 08:25+0100\n"
+"PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: functions.inc.php:29
 msgid "Error writing the manager additional file."
 msgstr "Fel vid skrivning till manager_additional.conf"
 
-#: functions.inc.php:123
 msgid "This manager already exists"
 msgstr "Denna hanterare finns redan"
 
-#: functions.inc.php:150
 msgid "Choose Manager:"
 msgstr "Välj hanterare:"
 
-#: functions.inc.php:150
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
-msgstr "Välj den användare PHPAGI ska använda när den ansluter till Asterisk API."
+msgstr ""
+"Välj den användare PHPAGI ska använda när den ansluter till Asterisk API."
 
-#: page.manager.php:53
-#: page.manager.php:84
-#: page.manager.php:92
+msgid "Increasing read field size if needed.."
+msgstr "Utökar fältet read om detta behövs.."
+
+msgid "error encountered, not altered"
+msgstr "fel uppstod, ingen ändring utförd"
+
+msgid "ok"
+msgstr "ok"
+
+msgid "Increasing write field size if needed.."
+msgstr "Utökar fältet write om detta behövs.."
+
+msgid "Asterisk API"
+msgstr "Asterisk API"
+
+msgid "System Administration"
+msgstr "Systemadministration"
+
 msgid "Add Manager"
 msgstr "Lägg till hanterare"
 
-#: page.manager.php:67
 msgid "Manager"
 msgstr "Hanterare"
 
-#: page.manager.php:67
 msgid "deleted"
 msgstr "borttagen"
 
-#: page.manager.php:81
 msgid "Manager:"
 msgstr "Hanterare:"
 
-#: page.manager.php:82
 msgid "Delete Manager"
 msgstr "Ta bort hanterare"
 
-#: page.manager.php:92
 msgid "Edit Manager"
 msgstr "Redigera hanterare"
 
-#: page.manager.php:94
 msgid "Manager name:"
 msgstr "Namn på hanterare:"
 
-#: page.manager.php:94
 msgid "Name of the manager without space."
 msgstr "Skriv in ett namn på en hanterare, använd inga mellanslag"
 
-#: page.manager.php:98
 msgid "Manager secret:"
 msgstr "Lösenord för hanteraren:"
 
-#: page.manager.php:98
 msgid "Password for the manager."
 msgstr "Skriv in ett lösenord hanteraren ska använda."
 
-#: page.manager.php:102
 msgid "Deny:"
 msgstr "Förbjud (deny):"
 
-#: page.manager.php:102
-msgid "If you want to deny many hosts or networks, use & char as separator.<br/><br/>Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
-msgstr "Om du vill förbjuda många datorer eller nätverk, använd & som separationstecken.<br><br>Exempel: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
+msgid ""
+"If you want to deny many hosts or networks, use & char as separator.<br/><br/"
+">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
+msgstr ""
+"Om du vill förbjuda många datorer eller nätverk, använd & som "
+"separationstecken.<br><br>Exempel: "
+"192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
-#: page.manager.php:106
 msgid "Permit:"
 msgstr "Tillåt (permit):"
 
-#: page.manager.php:106
-msgid "If you want to permit many hosts or networks, use & char as separator. Look at deny example."
-msgstr "Om du vill tillåta många datorer eller nätverk, använd & som separationstecken. Exempel: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
+msgid ""
+"If you want to permit many hosts or networks, use & char as separator. Look "
+"at deny example."
+msgstr ""
+"Om du vill tillåta många datorer eller nätverk, använd & som "
+"separationstecken. Exempel: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
-#: page.manager.php:110
 msgid "Rights"
 msgstr "Rättigheter"
 
-#: page.manager.php:115
 msgid "Read"
 msgstr "Läs"
 
-#: page.manager.php:115
 msgid "Write"
 msgstr "Skriv"
 
-#: page.manager.php:117
-#: page.manager.php:122
-#: page.manager.php:127
-#: page.manager.php:132
-#: page.manager.php:137
-#: page.manager.php:142
-#: page.manager.php:147
 msgid "Check Asterisk documentation."
 msgstr "Läs i dokumentationen för Asterisk"
 
-#: page.manager.php:152
 msgid "Check All/None."
 msgstr "Markera alla/inga."
 
-#: page.manager.php:161
 msgid "Submit Changes"
 msgstr "Spara ändringar"
 
-#: page.manager.php:213
 msgid "The manager name cannot be empty or may not have any space in it."
 msgstr "Namnet på hanteraren kan inte vara tomt eller ha mellanslag."
 
-#: page.manager.php:214
 msgid "The manager secret cannot be empty."
 msgstr "Lösenordet för hanteraren kan inte vara tomt."
 
-#: page.manager.php:215
 msgid "The manager read and write properties cannot be empty."
 msgstr "Hanterarens rättigheter för läs och skriv kan inte vara tomma."
 
-#: page.manager.php:216
-msgid "The manager deny is not well formated."
+msgid "The manager deny is not well formatted."
 msgstr "Formateringen för förbjud (deny) är inte korrekt formaterat."
 
-#: page.manager.php:217
-msgid "The manager permit is not well formated."
+msgid "The manager permit is not well formatted."
 msgstr "Formateringen för tillåt (permit) är inte korrekt formaterat."
 
-#: page.manager.php:218
-msgid "The manager read field is not well formated."
+msgid "The manager read field is not well formatted."
 msgstr "Hanterarens läsfält är inte korrekt formaterat."
 
-#: page.manager.php:219
-msgid "The manager write field is not well formated."
+msgid "The manager write field is not well formatted."
 msgstr "Hanterarens skrivfält är inte korrekt formaterat."
 
