@@ -27,6 +27,6 @@
 		*1.2* Fix UI issues, and 'Array' message.
 		*1.1* First 2.2 release. Added he_IL support, fixed some warnings.
 	</changelog>
-	<location>release/2.9/manager-2.9.0.2.tgz</location>
-	<md5sum>1ca1d7e9bc6196c9c5aaf2f7f53a9769</md5sum>
+	<location>release/2.9/manager-2.9.0.3.tgz</location>
+	<md5sum>253ae97a2339ba6d1630c8874eff815d</md5sum>
 </module>
