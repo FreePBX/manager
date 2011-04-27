@@ -13,11 +13,15 @@ function manager_gen_conf() {
 			$content .= "secret = ".$res['secret']."\n";
 			$tmp = explode("&", $res['deny']);
 			foreach ($tmp as $item) {
-				$content .= "deny=$item\n";
+        if ($item != '') {
+				  $content .= "deny=$item\n";
+        }
 			}
 			$tmp = explode("&", $res['permit']);
 			foreach ($tmp as $item) {
-				$content .= "permit=$item\n";
+        if ($item != '') {
+				  $content .= "permit=$item\n";
+        }
 			}
 			$content .= "read = ".$res['read']."\n";
 			$content .= "write = ".$res['write']."\n";

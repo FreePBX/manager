@@ -302,7 +302,6 @@ function checkConf()
 {
 	var errName = "<?php echo _('The manager name cannot be empty or may not have any space in it.'); ?>";
 	var errSecret = "<?php echo _('The manager secret cannot be empty.'); ?>";
-	var errReadWrite = "<?php echo _('The manager read and write properties cannot be empty.'); ?>";
 	var errDeny = "<?php echo _('The manager deny is not well formatted.'); ?>";
 	var errPermit = "<?php echo _('The manager permit is not well formatted.'); ?>";
 	var errRead = "<?php echo _('The manager read field is not well formatted.'); ?>";
@@ -313,8 +312,6 @@ function checkConf()
 		return warnInvalid(theForm.name, errName);
 	if (theForm.secret.value.length == 0)
 		return warnInvalid(theForm.name, errSecret);
-	if ((theForm.read.value.length == 0) || (theForm.write.value.length == 0))
-		return warnInvalid(theForm.name, errReadWrite);
 	// Only IP/MASK format are checked
 	if (theForm.deny.value.search(/\b(?:\d{1,3}\.){3}\d{1,3}\b\/\b(?:\d{1,3}\.){3}\d{1,3}\b(&\b(?:\d{1,3}\.){3}\d{1,3}\b\/\b(?:\d{1,3}\.){3}\d{1,3}\b)*$/))
 		return warnInvalid(theForm.name, errDeny);
