@@ -49,10 +49,6 @@ switch ($action) {
 
 $managers = manager_list();
 ?>
-
-</div>
-
-<!-- right side menu -->
 <div class="rnav"><ul>
     <li><a id="<?php echo ($managerdisplay=='' ? 'current':'') ?>" href="config.php?type=tool&amp;display=<?php echo urlencode($dispnum)?>"><?php echo _("Add Manager")?></a></li>
 <?php
@@ -63,9 +59,6 @@ if (isset($managers)) {
 }
 ?>
 <ul></div>
-
-
-<div class="content">
 <?php
 if ($action == 'delete') {
 	echo '<br><h3>'._("Manager").' '.$managerdisplay.' '._("deleted").'!</h3><br><br><br><br><br><br><br><br>';
