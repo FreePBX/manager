@@ -2,7 +2,7 @@
 	<rawname>manager</rawname>
 	<repo>extended</repo>
 	<name>Asterisk API</name>
-	<version>2.9.0.3</version>
+	<version>2.10.0.0</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<category>Settings</category>
@@ -10,11 +10,12 @@
 		<manager>Asterisk API</manager>
 	</menuitems>
 	<changelog>
+		*2.10.0.0* new version changes
 		*2.9.0.3* #5097
 		*2.9.0.2* spelling, localizations
 		*2.9.0.1* removed duplicate functions, set repository
 		*2.9.0.0* 2.9 Update
 	</changelog>
-	<location>release/2.9/manager-2.9.0.3.tgz</location>
-	<md5sum>253ae97a2339ba6d1630c8874eff815d</md5sum>
+	<location>release/2.10/manager-2.10.0.0.tgz</location>
+	<md5sum>d62f2d02c25df0ed30e4bdc24ce119f6</md5sum>
 </module>
