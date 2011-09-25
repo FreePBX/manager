@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-18 08:25+0100\n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
 "PO-Revision-Date: 2011-04-07 19:30+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
@@ -62,8 +62,8 @@ msgstr "Увеличить размер поля записи если необ�
 msgid "Asterisk API"
 msgstr "Asterisk API"
 
-msgid "System Administration"
-msgstr "Администрирование системы"
+msgid "Settings"
+msgstr ""
 
 msgid "Add Manager"
 msgstr "Добавить менеджера"
@@ -141,9 +141,6 @@ msgstr "Имя менеджера не должно быть пустым и н�
 msgid "The manager secret cannot be empty."
 msgstr "Пароль менеджера не может быть пустым."
 
-msgid "The manager read and write properties cannot be empty."
-msgstr "Поля для прав на чтение и запись не могут быть пустыми."
-
 msgid "The manager deny is not well formatted."
 msgstr "Поле Запрещено неправильно заполнено."
 
@@ -156,3 +153,8 @@ msgstr "Поле Чтение неправильно заполнено."
 msgid "The manager write field is not well formatted."
 msgstr "Поле Запись неправильно заполнено."
 
+#~ msgid "System Administration"
+#~ msgstr "Администрирование системы"
+
+#~ msgid "The manager read and write properties cannot be empty."
+#~ msgstr "Поля для прав на чтение и запись не могут быть пустыми."

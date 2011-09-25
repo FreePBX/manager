@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-18 08:25+0100\n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
 "PO-Revision-Date: 2009-01-16 19:54+0200\n"
 "Last-Translator: \n"
 "Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
@@ -46,7 +46,7 @@ msgstr ""
 msgid "Asterisk API"
 msgstr "Астериск Manager"
 
-msgid "System Administration"
+msgid "Settings"
 msgstr ""
 
 msgid "Add Manager"
@@ -124,9 +124,6 @@ msgstr ""
 msgid "The manager secret cannot be empty."
 msgstr "Паролата на manager не може да е празна."
 
-msgid "The manager read and write properties cannot be empty."
-msgstr "Настройките за четене и запис на manager не може да са празни."
-
 msgid "The manager deny is not well formatted."
 msgstr "Забраните на manager не са добре форматирани."
 
@@ -138,3 +135,6 @@ msgstr "Полетата за четене на manager не са добре ф�
 
 msgid "The manager write field is not well formatted."
 msgstr "Полетата за запис на manager не са добре форматирани."
+
+#~ msgid "The manager read and write properties cannot be empty."
+#~ msgstr "Настройките за четене и запис на manager не може да са празни."
