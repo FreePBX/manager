@@ -1,39 +1,63 @@
 <?php
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
-function manager_gen_conf() {
-	global $amp_conf;
+class manager_conf {
 
-	$file = tempnam("/tmp", "manager_additional_");
-	$content = "";
-	$managers = manager_list();
-	if (is_array($managers)) {
-		foreach ($managers as $manager) {
-			$res = manager_get($manager['name']);
-			$content .= "[".$res['name']."]\n";
-			$content .= "secret = ".$res['secret']."\n";
-			$tmp = explode("&", $res['deny']);
-			foreach ($tmp as $item) {
-        if ($item != '') {
-				  $content .= "deny=$item\n";
-        }
-			}
-			$tmp = explode("&", $res['permit']);
-			foreach ($tmp as $item) {
-        if ($item != '') {
-				  $content .= "permit=$item\n";
-        }
-			}
-			$content .= "read = ".$res['read']."\n";
-			$content .= "write = ".$res['write']."\n";
-			$content .= "\n";
-		}
+	var $_managers = array();
+
+	// return the filename to write
+	function get_filename() {
+		return "manager_additional.conf";
 	}
-	$fd = fopen($file, "w");
-	fwrite($fd, $content);
-	fclose($fd);
-	if (!rename($file, $amp_conf['ASTETCDIR']."/manager_additional.conf")) {
-		echo "<script>javascript:alert('"._("Error writing the manager additional file.")."');</script>";
+	function addManager($name, $secret, $deny, $permit, $read, $write) {
+		$this->_managers[$name]['secret'] = $secret;
+		$this->_managers[$name]['deny'] = $deny;
+		$this->_managers[$name]['permit'] = $permit;
+		$this->_managers[$name]['read'] = $read;
+		$this->_managers[$name]['write'] = $write;
+	}
+	// return the output that goes in the file
+	function generateConf() {
+		$output = "";
+		foreach ($this->_managers as $name => $settings) {
+			$output .= "[".$name."]\n";
+			foreach ($settings as $key => $value) {
+				switch ($key) {
+				case 'secret':
+				case 'read':
+				case 'write':
+					$output .= $key . " = " . $value . "\n";
+					break;
+				case 'permit':
+				case 'deny':
+					$tmp = explode("&", $value);
+					foreach ($tmp as $addr) {
+						if ($addr != '') {
+							$output .= $key . "=" . $addr . "\n";
+						}
+					}
+					break;
+				}
+			}
+		}
+		$output .= "\n";
+		return $output;
+	}
+}
+
+function manager_get_config($engine) {
+	global $manager_conf;
+	
+	switch($engine) {
+		case "asterisk":
+			$managers = manager_list();
+			if (is_array($managers)) {
+				foreach ($managers as $manager) {
+					$m = manager_get($manager['name']);
+					$manager_conf->addManager($m['name'], $m['secret'], $m['deny'], $m['permit'], $m['read'], $m['write']);
+				}
+			}
+			break;
 	}
 }
 

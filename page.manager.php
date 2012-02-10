@@ -31,19 +31,16 @@ switch ($action) {
 	case "add":
 		$rights = manager_format_in($_REQUEST);
 		manager_add($name,$secret,$deny,$permit,$rights['read'],$rights['write']);
-		manager_gen_conf();
 		needreload();
 	break;
 	case "delete":
 		manager_del($managerdisplay);
-		manager_gen_conf();
 		needreload();
 	break;
 	case "edit":  //just delete and re-add
 		manager_del($name);
 		$rights = manager_format_in($_REQUEST);
 		manager_add($name,$secret,$deny,$permit,$rights['read'],$rights['write']);
-		manager_gen_conf();
 		needreload();
 	break;
 }
