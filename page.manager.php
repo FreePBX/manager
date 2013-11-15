@@ -18,8 +18,8 @@ $action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
 $managerdisplay = isset($_REQUEST['managerdisplay'])?$_REQUEST['managerdisplay']:'';
 $name = isset($_REQUEST['name'])?$_REQUEST['name']:'';
 $secret = isset($_REQUEST['secret'])?$_REQUEST['secret']:'';
-$deny = isset($_REQUEST['deny'])?$_REQUEST['deny']:'';
-$permit = isset($_REQUEST['permit'])?$_REQUEST['permit']:'';
+$deny = isset($_REQUEST['deny'])?$_REQUEST['deny']:'0.0.0.0/0.0.0.0';
+$permit = isset($_REQUEST['permit'])?$_REQUEST['permit']:'127.0.0.1/255.255.255.0';
 $dispnum = "manager"; //used for switch on config.php
 
 $engineinfo = engine_getinfo();
