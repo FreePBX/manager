@@ -20,6 +20,6 @@
 		*2.9.0.1* removed duplicate functions, set repository
 		*2.9.0.0* 2.9 Update
 	</changelog>
-	<location>release/2.11/manager-2.11.0.0.tgz</location>
-	<md5sum>e46b6512cd7c3912d44eae9d5c670931</md5sum>
+	<location>release/2.11/manager-2.11.0.1.tgz</location>
+	<md5sum>f78eed1f4b614c9f198864ec4b414997</md5sum>
 </module>
