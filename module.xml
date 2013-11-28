@@ -20,4 +20,4 @@
 	</changelog>
 	<location>release/2.10/manager-2.10.0.2.tgz</location>
 	<md5sum>890692aec0df7413ac31e6ad0fc607c7</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
