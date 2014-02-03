@@ -1,15 +1,15 @@
 <module>
-	<rawname>manager</rawname>
-	<repo>extended</repo>
-	<name>Asterisk API</name>
-	<version>2.11.0.1</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
-	<category>Settings</category>
-	<menuitems>
-		<manager>Asterisk API</manager>
-	</menuitems>
-	<changelog>
+  <rawname>manager</rawname>
+  <repo>extended</repo>
+  <name>Asterisk API</name>
+  <version>2.11.0.1</version>
+  <publisher>FreePBX</publisher>
+  <license>GPLv2+</license>
+  <category>Settings</category>
+  <menuitems>
+    <manager>Asterisk API</manager>
+  </menuitems>
+  <changelog>
 		*2.11.0.1* #6429
 		*2.11.0.0* bump version
 		*2.10.0.2* #5565 properly generate manager_additional.conf with manager_conf class
@@ -20,6 +20,9 @@
 		*2.9.0.1* removed duplicate functions, set repository
 		*2.9.0.0* 2.9 Update
 	</changelog>
-	<location>release/2.11/manager-2.11.0.1.tgz</location>
-	<md5sum>f78eed1f4b614c9f198864ec4b414997</md5sum>
+  <location>release/2.11/manager-2.11.0.1.tgz</location>
+  <md5sum>f78eed1f4b614c9f198864ec4b414997</md5sum>
+  <supported>
+    <version>2.10</version>
+  </supported>
 </module>
