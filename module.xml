@@ -2,7 +2,7 @@
 	<rawname>manager</rawname>
 	<repo>extended</repo>
 	<name>Asterisk API</name>
-	<version>12.0.1</version>
+	<version>12.0.2</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<category>Settings</category>
@@ -10,7 +10,7 @@
 		<manager>Asterisk Manager Users</manager>
 	</menuitems>
 	<changelog>
-		*12.0.1* Minor update for BMO and FreePBX 12.
+		*12.0.2* Minor update for BMO and FreePBX 12.
 		*2.11.0.2* #6088, don't allow duplicate FreePBX managers and rename
 		*2.11.0.1* #6429
 		*2.11.0.0* bump version

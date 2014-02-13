@@ -28,7 +28,6 @@ class manager_conf {
 	// return the output that goes in the file
 	function generateConf() {
 		$output = "";
-		print_r($this->_managers); exit;
 		foreach ($this->_managers as $name => $settings) {
 			$output .= "[".$name."]\n";
 			foreach ($settings as $key => $value) {
