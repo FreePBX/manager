@@ -3,7 +3,16 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
 class manager_conf {
 
+	private static $obj;
+
 	var $_managers = array();
+
+	// FreePBX magic ::create() call
+	public static function create() {
+		if (!isset(self::$obj))
+			self::$obj = new manager_conf();
+		return self::$obj;
+	}
 
 	// return the filename to write
 	function get_filename() {
@@ -19,6 +28,7 @@ class manager_conf {
 	// return the output that goes in the file
 	function generateConf() {
 		$output = "";
+		print_r($this->_managers); exit;
 		foreach ($this->_managers as $name => $settings) {
 			$output .= "[".$name."]\n";
 			foreach ($settings as $key => $value) {
@@ -46,18 +56,18 @@ class manager_conf {
 }
 
 function manager_get_config($engine) {
-	global $manager_conf;
-	
+	$mc = manager_conf::create();
+
 	switch($engine) {
-		case "asterisk":
-			$managers = manager_list();
-			if (is_array($managers)) {
-				foreach ($managers as $manager) {
-					$m = manager_get($manager['name']);
-					$manager_conf->addManager($m['name'], $m['secret'], $m['deny'], $m['permit'], $m['read'], $m['write']);
-				}
+	case "asterisk":
+		$managers = manager_list();
+		if (is_array($managers)) {
+			foreach ($managers as $manager) {
+				$m = manager_get($manager['name']);
+				$mc->addManager($m['name'], $m['secret'], $m['deny'], $m['permit'], $m['read'], $m['write']);
 			}
-			break;
+		}
+		break;
 	}
 }
 
