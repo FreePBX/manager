@@ -7,10 +7,11 @@
 	<license>GPLv2+</license>
 	<category>Settings</category>
 	<menuitems>
-		<manager>Asterisk API</manager>
+		<manager>Asterisk Manager Users</manager>
 	</menuitems>
 	<changelog>
 		*12.0.1* Minor update for BMO and FreePBX 12.
+		*2.11.0.2* #6088, don't allow duplicate FreePBX managers and rename
 		*2.11.0.1* #6429
 		*2.11.0.0* bump version
 		*2.10.0.2* #5565 properly generate manager_additional.conf with manager_conf class

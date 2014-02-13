@@ -27,6 +27,13 @@ $astver =  $engineinfo['version'];
 $ast_ge_16 = version_compare($astver, '1.6', 'ge');
 
 //if submitting form, update database
+global $amp_conf;
+if($action == 'add' || $action == 'delete') {
+	$ampuser = $amp_conf['AMPMGRUSER'];
+	if($ampuser == $name) {
+		$action = 'conflict';
+	}
+}
 switch ($action) {
 	case "add":
 		$rights = manager_format_in($_REQUEST);
@@ -42,6 +49,9 @@ switch ($action) {
 		$rights = manager_format_in($_REQUEST);
 		manager_add($name,$secret,$deny,$permit,$rights['read'],$rights['write']);
 		needreload();
+	break;
+	case "conflict":
+		//do nothing we are conflicting with the FreePBX Asterisk Manager User
 	break;
 }
 
@@ -60,6 +70,8 @@ if (isset($managers)) {
 <?php
 if ($action == 'delete') {
 	echo '<br><h3>'._("Manager").' '.$managerdisplay.' '._("deleted").'!</h3><br><br><br><br><br><br><br><br>';
+} elseif($action == 'conflict') {
+	echo '<br><h3>'.sprintf(_("Conflicting FreePBX Manager of %s has not been added"),$name).'!</h3><br><br><br><br><br><br><br><br>';
 } else {
 	if ($managerdisplay){ 
 		//get details for this manager
