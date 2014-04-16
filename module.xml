@@ -2,14 +2,16 @@
 	<rawname>manager</rawname>
 	<repo>extended</repo>
 	<name>Asterisk Manager Users</name>
-	<version>2.11.0.2</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
+	<version>2.11.0.3</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Settings</category>
 	<menuitems>
 		<manager>Asterisk Manager Users</manager>
 	</menuitems>
 	<changelog>
+		*2.11.0.3* Add license file
 		*2.11.0.2* #6088, don't allow duplicate FreePBX managers and rename
 		*2.11.0.1* #6429
 		*2.11.0.0* bump version
