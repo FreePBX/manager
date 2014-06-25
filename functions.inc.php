@@ -49,7 +49,7 @@ class manager_conf {
 
 function manager_get_config($engine) {
 	global $manager_conf;
-	
+
 	switch($engine) {
 		case "asterisk":
 			$managers = manager_list();
@@ -143,6 +143,9 @@ function manager_format_in($p_tab) {
 	if (isset($p_tab['roriginate']))
 		$res['read'] .= "originate,";
 
+	if (isset($p_tab['rmessage']))
+		$res['read'] .= "message,";
+
 	if (isset($p_tab['wsystem']))
 		$res['write'] .= "system,";
 	if (isset($p_tab['wcall']))
@@ -171,6 +174,9 @@ function manager_format_in($p_tab) {
 		$res['write'] .= "dialplan,";
 	if (isset($p_tab['woriginate']))
 		$res['write'] .= "originate,";
+
+	if (isset($p_tab['wmessage']))
+		$res['write'] .= "message,";
 
   $res['read'] = rtrim($res['read'],',');
   $res['write'] = rtrim($res['write'],',');
