@@ -69,7 +69,7 @@ if ($action == 'delete') {
 		extract(manager_format_out($thisManager));
 	}
 
-	$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
+	$delURL = '?'.$_SERVER['QUERY_STRING'].'&action=delete';
 ?>
 
 
@@ -81,7 +81,7 @@ if ($action == 'delete') {
 <?php		}
 			$tabindex = 0;
 ?>
-	<form autocomplete="off" name="editMan" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkConf();">
+	<form autocomplete="off" name="editMan" action="" method="post" onsubmit="return checkConf();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
 	<input type="hidden" name="action" value="<?php echo ($managerdisplay ? 'edit' : 'add') ?>">
 	<table>
