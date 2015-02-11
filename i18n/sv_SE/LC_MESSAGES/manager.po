@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 18:00-0500\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,70 +30,59 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-msgid "Error writing the manager additional file."
-msgstr "Fel vid skrivning till manager_additional.conf"
+#: /usr/src/freepbx/manager/page.manager.php:61
+#: /usr/src/freepbx/manager/page.manager.php:91
+#: /usr/src/freepbx/manager/page.manager.php:99
+msgid "Add Manager"
+msgstr "Lägg till hanterare"
 
-msgid "This manager already exists"
-msgstr "Denna hanterare finns redan"
+#: /usr/src/freepbx/manager/page.manager.php:196
+msgid "Check All/None."
+msgstr "Markera alla/inga."
 
+#: /usr/src/freepbx/manager/page.manager.php:124
+#: /usr/src/freepbx/manager/page.manager.php:129
+#: /usr/src/freepbx/manager/page.manager.php:134
+#: /usr/src/freepbx/manager/page.manager.php:139
+#: /usr/src/freepbx/manager/page.manager.php:144
+#: /usr/src/freepbx/manager/page.manager.php:149
+#: /usr/src/freepbx/manager/page.manager.php:154
+#: /usr/src/freepbx/manager/page.manager.php:162
+#: /usr/src/freepbx/manager/page.manager.php:167
+#: /usr/src/freepbx/manager/page.manager.php:172
+#: /usr/src/freepbx/manager/page.manager.php:177
+#: /usr/src/freepbx/manager/page.manager.php:182
+#: /usr/src/freepbx/manager/page.manager.php:187
+msgid "Check Asterisk documentation."
+msgstr "Läs i dokumentationen för Asterisk"
+
+#: /usr/src/freepbx/manager/functions.inc.php:226
 msgid "Choose Manager:"
 msgstr "Välj hanterare:"
 
+#: /usr/src/freepbx/manager/functions.inc.php:226
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "Välj den användare PHPAGI ska använda när den ansluter till Asterisk API."
 
-msgid "Increasing read field size if needed.."
-msgstr "Utökar fältet read om detta behövs.."
-
-msgid "error encountered, not altered"
-msgstr "fel uppstod, ingen ändring utförd"
-
-msgid "ok"
-msgstr "ok"
-
-msgid "Increasing write field size if needed.."
-msgstr "Utökar fältet write om detta behövs.."
-
-msgid "Asterisk API"
-msgstr "Asterisk API"
-
-msgid "Settings"
+#: /usr/src/freepbx/manager/page.manager.php:74
+#, php-format
+msgid "Conflicting FreePBX Manager of %s has not been added"
 msgstr ""
 
-msgid "Add Manager"
-msgstr "Lägg till hanterare"
-
-msgid "Manager"
-msgstr "Hanterare"
-
-msgid "deleted"
-msgstr "borttagen"
-
-msgid "Manager:"
-msgstr "Hanterare:"
-
+#: /usr/src/freepbx/manager/page.manager.php:89
 msgid "Delete Manager"
 msgstr "Ta bort hanterare"
 
-msgid "Edit Manager"
-msgstr "Redigera hanterare"
-
-msgid "Manager name:"
-msgstr "Namn på hanterare:"
-
-msgid "Name of the manager without space."
-msgstr "Skriv in ett namn på en hanterare, använd inga mellanslag"
-
-msgid "Manager secret:"
-msgstr "Lösenord för hanteraren:"
-
-msgid "Password for the manager."
-msgstr "Skriv in ett lösenord hanteraren ska använda."
-
+#: /usr/src/freepbx/manager/page.manager.php:109
 msgid "Deny:"
 msgstr "Förbjud (deny):"
 
+#: /usr/src/freepbx/manager/page.manager.php:99
+msgid "Edit Manager"
+msgstr "Redigera hanterare"
+
+#: /usr/src/freepbx/manager/page.manager.php:109
 msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
@@ -102,9 +91,7 @@ msgstr ""
 "separationstecken.<br><br>Exempel: "
 "192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
-msgid "Permit:"
-msgstr "Tillåt (permit):"
-
+#: /usr/src/freepbx/manager/page.manager.php:113
 msgid ""
 "If you want to permit many hosts or networks, use & char as separator. Look "
 "at deny example."
@@ -112,41 +99,106 @@ msgstr ""
 "Om du vill tillåta många datorer eller nätverk, använd & som "
 "separationstecken. Exempel: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
-msgid "Rights"
-msgstr "Rättigheter"
+#: /usr/src/freepbx/manager/install.php:23
+msgid "Increasing read field size if needed.."
+msgstr "Utökar fältet read om detta behövs.."
 
+#: /usr/src/freepbx/manager/install.php:32
+msgid "Increasing write field size if needed.."
+msgstr "Utökar fältet write om detta behövs.."
+
+#: /usr/src/freepbx/manager/page.manager.php:72
+msgid "Manager"
+msgstr "Hanterare"
+
+#: /usr/src/freepbx/manager/page.manager.php:101
+msgid "Manager name:"
+msgstr "Namn på hanterare:"
+
+#: /usr/src/freepbx/manager/page.manager.php:105
+msgid "Manager secret:"
+msgstr "Lösenord för hanteraren:"
+
+#: /usr/src/freepbx/manager/page.manager.php:88
+msgid "Manager:"
+msgstr "Hanterare:"
+
+#: /usr/src/freepbx/manager/page.manager.php:101
+msgid "Name of the manager without space."
+msgstr "Skriv in ett namn på en hanterare, använd inga mellanslag"
+
+#: /usr/src/freepbx/manager/page.manager.php:105
+msgid "Password for the manager."
+msgstr "Skriv in ett lösenord hanteraren ska använda."
+
+#: /usr/src/freepbx/manager/page.manager.php:113
+msgid "Permit:"
+msgstr "Tillåt (permit):"
+
+#: /usr/src/freepbx/manager/page.manager.php:122
 msgid "Read"
 msgstr "Läs"
 
-msgid "Write"
-msgstr "Skriv"
+#: /usr/src/freepbx/manager/page.manager.php:117
+msgid "Rights"
+msgstr "Rättigheter"
 
-msgid "Check Asterisk documentation."
-msgstr "Läs i dokumentationen för Asterisk"
-
-msgid "Check All/None."
-msgstr "Markera alla/inga."
-
+#: /usr/src/freepbx/manager/page.manager.php:205
 msgid "Submit Changes"
 msgstr "Spara ändringar"
 
-msgid "The manager name cannot be empty or may not have any space in it."
-msgstr "Namnet på hanteraren kan inte vara tomt eller ha mellanslag."
-
-msgid "The manager secret cannot be empty."
-msgstr "Lösenordet för hanteraren kan inte vara tomt."
-
+#: /usr/src/freepbx/manager/page.manager.php:308
 msgid "The manager deny is not well formatted."
 msgstr "Formateringen för förbjud (deny) är inte korrekt formaterat."
 
+#: /usr/src/freepbx/manager/page.manager.php:306
+msgid "The manager name cannot be empty or may not have any space in it."
+msgstr "Namnet på hanteraren kan inte vara tomt eller ha mellanslag."
+
+#: /usr/src/freepbx/manager/page.manager.php:309
 msgid "The manager permit is not well formatted."
 msgstr "Formateringen för tillåt (permit) är inte korrekt formaterat."
 
+#: /usr/src/freepbx/manager/page.manager.php:310
 msgid "The manager read field is not well formatted."
 msgstr "Hanterarens läsfält är inte korrekt formaterat."
 
+#: /usr/src/freepbx/manager/page.manager.php:307
+msgid "The manager secret cannot be empty."
+msgstr "Lösenordet för hanteraren kan inte vara tomt."
+
+#: /usr/src/freepbx/manager/page.manager.php:311
 msgid "The manager write field is not well formatted."
 msgstr "Hanterarens skrivfält är inte korrekt formaterat."
+
+#: /usr/src/freepbx/manager/functions.inc.php:193
+#: /usr/src/freepbx/manager/functions.inc.php:199
+msgid "This manager already exists"
+msgstr "Denna hanterare finns redan"
+
+#: /usr/src/freepbx/manager/page.manager.php:122
+msgid "Write"
+msgstr "Skriv"
+
+#: /usr/src/freepbx/manager/page.manager.php:72
+msgid "deleted"
+msgstr "borttagen"
+
+#: /usr/src/freepbx/manager/install.php:27
+#: /usr/src/freepbx/manager/install.php:36
+msgid "error encountered, not altered"
+msgstr "fel uppstod, ingen ändring utförd"
+
+#: /usr/src/freepbx/manager/install.php:29
+#: /usr/src/freepbx/manager/install.php:38
+msgid "ok"
+msgstr "ok"
+
+#~ msgid "Error writing the manager additional file."
+#~ msgstr "Fel vid skrivning till manager_additional.conf"
+
+#~ msgid "Asterisk API"
+#~ msgstr "Asterisk API"
 
 #~ msgid "System Administration"
 #~ msgstr "Systemadministration"

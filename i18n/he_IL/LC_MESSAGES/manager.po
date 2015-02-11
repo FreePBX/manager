@@ -8,76 +8,65 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 18:00-0500\n"
 "PO-Revision-Date: 2006-09-28 17:30+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Error writing the manager additional file."
-msgstr "שגיאה בכתיבת הקובץ הנוסף של המנהלים"
-
-msgid "This manager already exists"
-msgstr "המנהל כבר קיים"
-
-msgid "Choose Manager:"
-msgstr "בחר מנהל:"
-
-msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
-msgstr "בחר את המשתמש ש PHPAGI ישתמש בו כדי להתחבר ל API של אסטריסק"
-
-msgid "Increasing read field size if needed.."
-msgstr ""
-
-msgid "error encountered, not altered"
-msgstr ""
-
-msgid "ok"
-msgstr ""
-
-msgid "Increasing write field size if needed.."
-msgstr ""
-
-msgid "Asterisk API"
-msgstr ""
-
-msgid "Settings"
-msgstr ""
-
+#: /usr/src/freepbx/manager/page.manager.php:61
+#: /usr/src/freepbx/manager/page.manager.php:91
+#: /usr/src/freepbx/manager/page.manager.php:99
 msgid "Add Manager"
 msgstr "הוסף מנהל"
 
-msgid "Manager"
-msgstr "מנהל"
+#: /usr/src/freepbx/manager/page.manager.php:196
+msgid "Check All/None."
+msgstr "סמן הכל/כלום"
 
-msgid "deleted"
-msgstr "נמחק"
+#: /usr/src/freepbx/manager/page.manager.php:124
+#: /usr/src/freepbx/manager/page.manager.php:129
+#: /usr/src/freepbx/manager/page.manager.php:134
+#: /usr/src/freepbx/manager/page.manager.php:139
+#: /usr/src/freepbx/manager/page.manager.php:144
+#: /usr/src/freepbx/manager/page.manager.php:149
+#: /usr/src/freepbx/manager/page.manager.php:154
+#: /usr/src/freepbx/manager/page.manager.php:162
+#: /usr/src/freepbx/manager/page.manager.php:167
+#: /usr/src/freepbx/manager/page.manager.php:172
+#: /usr/src/freepbx/manager/page.manager.php:177
+#: /usr/src/freepbx/manager/page.manager.php:182
+#: /usr/src/freepbx/manager/page.manager.php:187
+msgid "Check Asterisk documentation."
+msgstr "בדוק את התיעוד של אסטריסק"
 
-msgid "Manager:"
-msgstr "מנהל:"
+#: /usr/src/freepbx/manager/functions.inc.php:226
+msgid "Choose Manager:"
+msgstr "בחר מנהל:"
 
+#: /usr/src/freepbx/manager/functions.inc.php:226
+msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
+msgstr "בחר את המשתמש ש PHPAGI ישתמש בו כדי להתחבר ל API של אסטריסק"
+
+#: /usr/src/freepbx/manager/page.manager.php:74
+#, php-format
+msgid "Conflicting FreePBX Manager of %s has not been added"
+msgstr ""
+
+#: /usr/src/freepbx/manager/page.manager.php:89
 msgid "Delete Manager"
 msgstr "מחק מנהל"
 
-msgid "Edit Manager"
-msgstr "ערוך מנהל"
-
-msgid "Manager name:"
-msgstr "שם המנהל:"
-
-msgid "Name of the manager without space."
-msgstr "שם המנהל ללא רווחים."
-
-msgid "Manager secret:"
-msgstr "סיסמת מנהל:"
-
-msgid "Password for the manager."
-msgstr "סיסמא עבור המנהל"
-
+#: /usr/src/freepbx/manager/page.manager.php:109
 msgid "Deny:"
 msgstr "חסום:"
 
+#: /usr/src/freepbx/manager/page.manager.php:99
+msgid "Edit Manager"
+msgstr "ערוך מנהל"
+
+#: /usr/src/freepbx/manager/page.manager.php:109
 msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
@@ -85,9 +74,7 @@ msgstr ""
 "אם אתה רוצה לחסום הרבה מחשבים או רשתות, השתמש בתו & בתור מפריד.<br /><br /"
 ">לדוגמא: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
-msgid "Permit:"
-msgstr "הרשה:"
-
+#: /usr/src/freepbx/manager/page.manager.php:113
 msgid ""
 "If you want to permit many hosts or networks, use & char as separator. Look "
 "at deny example."
@@ -95,38 +82,100 @@ msgstr ""
 "אם אתה רוצה להרשות הרבה מחשבים או רשתות, השתמש ב & בתור מפריד. הסתכל בדוגמת "
 "החסימה."
 
-msgid "Rights"
-msgstr "הרשאות"
+#: /usr/src/freepbx/manager/install.php:23
+msgid "Increasing read field size if needed.."
+msgstr ""
 
+#: /usr/src/freepbx/manager/install.php:32
+msgid "Increasing write field size if needed.."
+msgstr ""
+
+#: /usr/src/freepbx/manager/page.manager.php:72
+msgid "Manager"
+msgstr "מנהל"
+
+#: /usr/src/freepbx/manager/page.manager.php:101
+msgid "Manager name:"
+msgstr "שם המנהל:"
+
+#: /usr/src/freepbx/manager/page.manager.php:105
+msgid "Manager secret:"
+msgstr "סיסמת מנהל:"
+
+#: /usr/src/freepbx/manager/page.manager.php:88
+msgid "Manager:"
+msgstr "מנהל:"
+
+#: /usr/src/freepbx/manager/page.manager.php:101
+msgid "Name of the manager without space."
+msgstr "שם המנהל ללא רווחים."
+
+#: /usr/src/freepbx/manager/page.manager.php:105
+msgid "Password for the manager."
+msgstr "סיסמא עבור המנהל"
+
+#: /usr/src/freepbx/manager/page.manager.php:113
+msgid "Permit:"
+msgstr "הרשה:"
+
+#: /usr/src/freepbx/manager/page.manager.php:122
 msgid "Read"
 msgstr "קריאה"
 
-msgid "Write"
-msgstr "כתיבה"
+#: /usr/src/freepbx/manager/page.manager.php:117
+msgid "Rights"
+msgstr "הרשאות"
 
-msgid "Check Asterisk documentation."
-msgstr "בדוק את התיעוד של אסטריסק"
-
-msgid "Check All/None."
-msgstr "סמן הכל/כלום"
-
+#: /usr/src/freepbx/manager/page.manager.php:205
 msgid "Submit Changes"
 msgstr ""
 
-msgid "The manager name cannot be empty or may not have any space in it."
-msgstr ""
-
-msgid "The manager secret cannot be empty."
-msgstr ""
-
+#: /usr/src/freepbx/manager/page.manager.php:308
 msgid "The manager deny is not well formatted."
 msgstr ""
 
+#: /usr/src/freepbx/manager/page.manager.php:306
+msgid "The manager name cannot be empty or may not have any space in it."
+msgstr ""
+
+#: /usr/src/freepbx/manager/page.manager.php:309
 msgid "The manager permit is not well formatted."
 msgstr ""
 
+#: /usr/src/freepbx/manager/page.manager.php:310
 msgid "The manager read field is not well formatted."
 msgstr ""
 
+#: /usr/src/freepbx/manager/page.manager.php:307
+msgid "The manager secret cannot be empty."
+msgstr ""
+
+#: /usr/src/freepbx/manager/page.manager.php:311
 msgid "The manager write field is not well formatted."
 msgstr ""
+
+#: /usr/src/freepbx/manager/functions.inc.php:193
+#: /usr/src/freepbx/manager/functions.inc.php:199
+msgid "This manager already exists"
+msgstr "המנהל כבר קיים"
+
+#: /usr/src/freepbx/manager/page.manager.php:122
+msgid "Write"
+msgstr "כתיבה"
+
+#: /usr/src/freepbx/manager/page.manager.php:72
+msgid "deleted"
+msgstr "נמחק"
+
+#: /usr/src/freepbx/manager/install.php:27
+#: /usr/src/freepbx/manager/install.php:36
+msgid "error encountered, not altered"
+msgstr ""
+
+#: /usr/src/freepbx/manager/install.php:29
+#: /usr/src/freepbx/manager/install.php:38
+msgid "ok"
+msgstr ""
+
+#~ msgid "Error writing the manager additional file."
+#~ msgstr "שגיאה בכתיבת הקובץ הנוסף של המנהלים"
