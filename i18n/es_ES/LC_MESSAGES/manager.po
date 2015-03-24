@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo manager module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:40-0500\n"
-"PO-Revision-Date: 2015-03-23 21:42+0200\n"
+"PO-Revision-Date: 2015-03-23 21:45+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/manager/es_ES/>\n"
@@ -72,8 +72,8 @@ msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 msgstr ""
-"Si desea denegar varios equipos o redes, use el símbol '&' como separador."
-"<br/><br/>Por ejemplo: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0."
+"Si desea denegar varios equipos o redes, use el símbol '&' como "
+"separador.<br/><br/>Por ejemplo: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
 #: page.manager.php:113
 msgid ""
@@ -125,7 +125,7 @@ msgstr "Lectura"
 
 #: page.manager.php:117
 msgid "Rights"
-msgstr "Permisos:"
+msgstr "Permisos"
 
 #: manager.i18n.php:4
 msgid "Settings"
