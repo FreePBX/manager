@@ -121,62 +121,62 @@ function manager_format_in($p_tab) {
 	if (!isset($res['write'])) {
 		$res['write'] = "";
 	}
-	if (isset($p_tab['rsystem']))
+	if (isset($p_tab['rsystem']) && $p_tab['rsystem'] == 1)
 		$res['read'] .= "system,";
-	if (isset($p_tab['rcall']))
+	if (isset($p_tab['rcall']) && $p_tab['rcall'] == 1)
 		$res['read'] .= "call,";
-	if (isset($p_tab['rlog']))
+	if (isset($p_tab['rlog']) && $p_tab['rlog'] == 1)
 		$res['read'] .= "log,";
-	if (isset($p_tab['rverbose']))
+	if (isset($p_tab['rverbose']) && $p_tab['rverbose'] == 1)
 		$res['read'] .= "verbose,";
-	if (isset($p_tab['rcommand']))
+	if (isset($p_tab['rcommand']) && $p_tab['rcommand'] == 1)
 		$res['read'] .= "command,";
-	if (isset($p_tab['ragent']))
+	if (isset($p_tab['ragent']) && $p_tab['ragent'] == 1)
 		$res['read'] .= "agent,";
-	if (isset($p_tab['ruser']))
+	if (isset($p_tab['ruser']) && $p_tab['ruser'] == 1)
 		$res['read'] .= "user,";
 
   // Added for 1.6+
-	if (isset($p_tab['rconfig']))
+	if (isset($p_tab['rconfig']) && $p_tab['rconfig'] == 1)
 		$res['read'] .= "config,";
-	if (isset($p_tab['rdtmf']))
+	if (isset($p_tab['rdtmf']) && $p_tab['rdtmf'] == 1)
 		$res['read'] .= "dtmf,";
-	if (isset($p_tab['rreporting']))
+	if (isset($p_tab['rreporting']) && $p_tab['rreporting'] == 1)
 		$res['read'] .= "reporting,";
-	if (isset($p_tab['rcdr']))
+	if (isset($p_tab['rcdr']) && $p_tab['rcdr'] == 1)
 		$res['read'] .= "cdr,";
-	if (isset($p_tab['rdialplan']))
+	if (isset($p_tab['rdialplan']) && $p_tab['rdialplan'] == 1)
 		$res['read'] .= "dialplan,";
-	if (isset($p_tab['roriginate']))
+	if (isset($p_tab['roriginate']) && $p_tab['roriginate'] == 1)
 		$res['read'] .= "originate,";
 
-	if (isset($p_tab['wsystem']))
+	if (isset($p_tab['wsystem']) && $p_tab['wsystem'] == 1)
 		$res['write'] .= "system,";
-	if (isset($p_tab['wcall']))
+	if (isset($p_tab['wcall']) && $p_tab['wcall'] == 1)
 		$res['write'] .= "call,";
-	if (isset($p_tab['wlog']))
+	if (isset($p_tab['wlog']) && $p_tab['wlog'] == 1)
 		$res['write'] .= "log,";
-	if (isset($p_tab['wverbose']))
+	if (isset($p_tab['wverbose']) && $p_tab['wverbose'] == 1)
 		$res['write'] .= "verbose,";
-	if (isset($p_tab['wcommand']))
+	if (isset($p_tab['wcommand']) && $p_tab['wcommand'] == 1)
 		$res['write'] .= "command,";
-	if (isset($p_tab['wagent']))
+	if (isset($p_tab['wagent']) && $p_tab['wagent'] == 1)
 		$res['write'] .= "agent,";
-	if (isset($p_tab['wuser']))
+	if (isset($p_tab['wuser']) && $p_tab['wuser'] == 1)
 		$res['write'] .= "user,";
 
   // Added for 1.6+
-	if (isset($p_tab['wconfig']))
+	if (isset($p_tab['wconfig']) && $p_tab['wconfig'] == 1)
 		$res['write'] .= "config,";
-	if (isset($p_tab['wdtmf']))
+	if (isset($p_tab['wdtmf']) && $p_tab['wdtmf'] == 1)
 		$res['write'] .= "dtmf,";
-	if (isset($p_tab['wreporting']))
+	if (isset($p_tab['wreporting']) && $p_tab['wreporting'] == 1)
 		$res['write'] .= "reporting,";
-	if (isset($p_tab['wcdr']))
+	if (isset($p_tab['wcdr']) && $p_tab['wcdr'] == 1)
 		$res['write'] .= "cdr,";
-	if (isset($p_tab['wdialplan']))
+	if (isset($p_tab['wdialplan']) && $p_tab['wdialplan'] == 1)
 		$res['write'] .= "dialplan,";
-	if (isset($p_tab['woriginate']))
+	if (isset($p_tab['woriginate']) && $p_tab['woriginate'] == 1)
 		$res['write'] .= "originate,";
 
   $res['read'] = rtrim($res['read'],',');

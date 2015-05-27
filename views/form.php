@@ -201,7 +201,7 @@ if(isset($wall)){
                     <div class="col-md-9 radioset">
                     <input type="radio" name="rall" id="rallyes" value="1">
                     <label for="rallyes"><?php echo _("Yes")?></label>
-                    <input type="radio" name="rall" id="rallno">
+                    <input type="radio" name="rall" id="rallno" value="off">
                     <label for="rallno"><?php echo _("No")?></label>
                     </div>
                   </td>
@@ -209,7 +209,7 @@ if(isset($wall)){
                     <div class="col-md-9 radioset">
                     <input type="radio" name="wall" id="wallyes" value="1">
                     <label for="wallyes"><?php echo _("Yes")?></label>
-                    <input type="radio" name="wall" id="wallno" >
+                    <input type="radio" name="wall" id="wallno" value="0">
                     <label for="wallno"><?php echo _("No")?></label>
                     </div>
                   </td>

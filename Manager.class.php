@@ -74,7 +74,7 @@ class Manager implements \BMO {
 						'value' => _('Submit')
 					)
 				);
-				if (empty($request['extdisplay'])) {
+				if (empty($request['managerdisplay'])) {
 					unset($buttons['delete']);
 				}
         if(!isset($_REQUEST['view'])){
