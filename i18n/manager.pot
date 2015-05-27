@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:40-0500\n"
+"POT-Creation-Date: 2015-05-27 11:04-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,38 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: page.manager.php:61
-#: page.manager.php:91
-#: page.manager.php:99
+#: views/grid.php:13
+msgid "Actions"
+msgstr ""
+
+#: page.manager.php:38
+#: views/form.php:12
+#: views/grid.php:5
 msgid "Add Manager"
 msgstr ""
 
-#: manager.i18n.php:3
-msgid "Asterisk API"
-msgstr ""
-
-#: manager.i18n.php:5
-msgid "Asterisk Manager Users"
-msgstr ""
-
-#: page.manager.php:196
-msgid "Check All/None."
-msgstr ""
-
-#: page.manager.php:124
-#: page.manager.php:129
-#: page.manager.php:134
-#: page.manager.php:139
-#: page.manager.php:144
-#: page.manager.php:149
-#: page.manager.php:154
-#: page.manager.php:162
-#: page.manager.php:167
-#: page.manager.php:172
-#: page.manager.php:177
-#: page.manager.php:182
-#: page.manager.php:187
-msgid "Check Asterisk documentation."
+#: page.manager.php:25
+msgid "Asterisk Manager"
 msgstr ""
 
 #: functions.inc.php:226
@@ -59,30 +39,32 @@ msgstr ""
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 
-#: page.manager.php:74
-#, php-format
-msgid "Conflicting FreePBX Manager of %s has not been added"
+#: Manager.class.php:64
+msgid "Delete"
 msgstr ""
 
-#: page.manager.php:89
-msgid "Delete Manager"
+#: views/form.php:118
+#: views/grid.php:11
+msgid "Deny"
 msgstr ""
 
-#: page.manager.php:109
-msgid "Deny:"
+#: views/form.php:162
+msgid ""
+"For information on individual permissions please see the Asterisk Manager "
+"Documentation"
 msgstr ""
 
-#: page.manager.php:99
-msgid "Edit Manager"
+#: views/form.php:55
+msgid "General"
 msgstr ""
 
-#: page.manager.php:109
+#: views/form.php:130
 msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 msgstr ""
 
-#: page.manager.php:113
+#: views/form.php:154
 msgid ""
 "If you want to permit many hosts or networks, use & char as separator. Look "
 "at deny example."
@@ -96,71 +78,79 @@ msgstr ""
 msgid "Increasing write field size if needed.."
 msgstr ""
 
-#: page.manager.php:72
+#: page.manager.php:37
+msgid "List Managers"
+msgstr ""
+
+#: views/form.php:5
 msgid "Manager"
 msgstr ""
 
-#: page.manager.php:101
-msgid "Manager name:"
+#: views/form.php:67
+msgid "Manager name"
 msgstr ""
 
-#: page.manager.php:105
-msgid "Manager secret:"
+#: views/form.php:91
+msgid "Manager secret"
 msgstr ""
 
-#: page.manager.php:88
-msgid "Manager:"
+#: views/grid.php:10
+msgid "Name"
 msgstr ""
 
-#: page.manager.php:101
-msgid "Name of the manager without space."
+#: views/form.php:79
+msgid "Name of the manager without spaces."
 msgstr ""
 
-#: page.manager.php:105
+#: views/form.php:184
+#: views/form.php:192
+#: views/form.php:205
+#: views/form.php:213
+msgid "No"
+msgstr ""
+
+#: views/form.php:106
 msgid "Password for the manager."
 msgstr ""
 
-#: page.manager.php:113
-msgid "Permit:"
+#: views/form.php:56
+msgid "Permissions"
 msgstr ""
 
-#: page.manager.php:122
-msgid "Read"
+#: views/form.php:142
+#: views/grid.php:12
+msgid "Permit"
 msgstr ""
 
-#: page.manager.php:117
-msgid "Rights"
+#: Manager.class.php:69
+msgid "Reset"
 msgstr ""
 
-#: manager.i18n.php:4
-msgid "Settings"
+#: Manager.class.php:74
+msgid "Submit"
 msgstr ""
 
-#: page.manager.php:205
-msgid "Submit Changes"
-msgstr ""
-
-#: page.manager.php:308
+#: views/form.php:290
 msgid "The manager deny is not well formatted."
 msgstr ""
 
-#: page.manager.php:306
+#: views/form.php:288
 msgid "The manager name cannot be empty or may not have any space in it."
 msgstr ""
 
-#: page.manager.php:309
+#: views/form.php:291
 msgid "The manager permit is not well formatted."
 msgstr ""
 
-#: page.manager.php:310
+#: views/form.php:292
 msgid "The manager read field is not well formatted."
 msgstr ""
 
-#: page.manager.php:307
+#: views/form.php:289
 msgid "The manager secret cannot be empty."
 msgstr ""
 
-#: page.manager.php:311
+#: views/form.php:293
 msgid "The manager write field is not well formatted."
 msgstr ""
 
@@ -169,12 +159,43 @@ msgstr ""
 msgid "This manager already exists"
 msgstr ""
 
-#: page.manager.php:122
-msgid "Write"
+#: views/form.php:199
+msgid "Toggle All"
 msgstr ""
 
-#: page.manager.php:72
-msgid "deleted"
+#: views/form.php:182
+#: views/form.php:190
+#: views/form.php:203
+#: views/form.php:211
+msgid "Yes"
+msgstr ""
+
+#: views/form.php:27
+msgid "agent"
+msgstr ""
+
+#: views/form.php:23
+msgid "call"
+msgstr ""
+
+#: views/form.php:32
+msgid "cdr"
+msgstr ""
+
+#: views/form.php:26
+msgid "command"
+msgstr ""
+
+#: views/form.php:29
+msgid "config"
+msgstr ""
+
+#: views/form.php:33
+msgid "dialplan"
+msgstr ""
+
+#: views/form.php:30
+msgid "dtmf"
 msgstr ""
 
 #: install.php:27
@@ -182,7 +203,31 @@ msgstr ""
 msgid "error encountered, not altered"
 msgstr ""
 
+#: views/form.php:24
+msgid "log"
+msgstr ""
+
 #: install.php:29
 #: install.php:38
 msgid "ok"
+msgstr ""
+
+#: views/form.php:34
+msgid "originate"
+msgstr ""
+
+#: views/form.php:31
+msgid "reporting"
+msgstr ""
+
+#: views/form.php:22
+msgid "system"
+msgstr ""
+
+#: views/form.php:28
+msgid "user"
+msgstr ""
+
+#: views/form.php:25
+msgid "verbose"
 msgstr ""

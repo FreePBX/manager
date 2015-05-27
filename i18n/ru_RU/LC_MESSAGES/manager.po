@@ -26,42 +26,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:40-0500\n"
+"POT-Creation-Date: 2015-05-27 11:04-0400\n"
 "PO-Revision-Date: 2015-04-25 00:18+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
-"Language-Team: Russian "
-"<http://weblate.freepbx.org/projects/freepbx/manager/ru_RU/>\n"
-"Language: ru_RU\n"
+"Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/manager/"
+"ru_RU/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: page.manager.php:61 page.manager.php:91 page.manager.php:99
+#: views/grid.php:13
+msgid "Actions"
+msgstr ""
+
+#: page.manager.php:38 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "Добавить менеджера"
 
-#: manager.i18n.php:3
-msgid "Asterisk API"
-msgstr "Астериск API"
-
-#: manager.i18n.php:5
-msgid "Asterisk Manager Users"
-msgstr "Управление пользователями Астериск"
-
-#: page.manager.php:196
-msgid "Check All/None."
-msgstr "Проверить всё/ничего."
-
-#: page.manager.php:124 page.manager.php:129 page.manager.php:134
-#: page.manager.php:139 page.manager.php:144 page.manager.php:149
-#: page.manager.php:154 page.manager.php:162 page.manager.php:167
-#: page.manager.php:172 page.manager.php:177 page.manager.php:182
-#: page.manager.php:187
-msgid "Check Asterisk documentation."
-msgstr "Проверить документацию Asterisk."
+#: page.manager.php:25
+msgid "Asterisk Manager"
+msgstr ""
 
 #: functions.inc.php:226
 msgid "Choose Manager:"
@@ -72,24 +60,25 @@ msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "Выбрать имя пользователя, которым PHPAGI будет образаться к Asterisk API."
 
-#: page.manager.php:74
-#, php-format
-msgid "Conflicting FreePBX Manager of %s has not been added"
-msgstr "Пользователь FreePBX конфликтует с %s и не был добавлен"
+#: Manager.class.php:64
+msgid "Delete"
+msgstr ""
 
-#: page.manager.php:89
-msgid "Delete Manager"
-msgstr "Удалить менеджера"
+#: views/form.php:118 views/grid.php:11
+msgid "Deny"
+msgstr ""
 
-#: page.manager.php:109
-msgid "Deny:"
-msgstr "Запрещены:"
+#: views/form.php:162
+msgid ""
+"For information on individual permissions please see the Asterisk Manager "
+"Documentation"
+msgstr ""
 
-#: page.manager.php:99
-msgid "Edit Manager"
-msgstr "Редактировать менеджера"
+#: views/form.php:55
+msgid "General"
+msgstr ""
 
-#: page.manager.php:109
+#: views/form.php:130
 msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
@@ -98,7 +87,7 @@ msgstr ""
 "эту опцию. Используйте & в качестве разделителя.<br/><br/>Например: "
 "192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
-#: page.manager.php:113
+#: views/form.php:154
 msgid ""
 "If you want to permit many hosts or networks, use & char as separator. Look "
 "at deny example."
@@ -115,71 +104,75 @@ msgstr "Увеличить размер поля чтения если необ�
 msgid "Increasing write field size if needed.."
 msgstr "Увеличить размер поля записи если необходимо.."
 
-#: page.manager.php:72
+#: page.manager.php:37
+msgid "List Managers"
+msgstr ""
+
+#: views/form.php:5
 msgid "Manager"
 msgstr "Менеджер"
 
-#: page.manager.php:101
-msgid "Manager name:"
-msgstr "Имя менеджера:"
+#: views/form.php:67
+msgid "Manager name"
+msgstr ""
 
-#: page.manager.php:105
-msgid "Manager secret:"
-msgstr "Пароль менеджера:"
+#: views/form.php:91
+msgid "Manager secret"
+msgstr ""
 
-#: page.manager.php:88
-msgid "Manager:"
-msgstr "Менеджер:"
+#: views/grid.php:10
+msgid "Name"
+msgstr ""
 
-#: page.manager.php:101
-msgid "Name of the manager without space."
-msgstr "Имя менеджера без пробелов."
+#: views/form.php:79
+msgid "Name of the manager without spaces."
+msgstr ""
 
-#: page.manager.php:105
+#: views/form.php:184 views/form.php:192 views/form.php:205 views/form.php:213
+msgid "No"
+msgstr ""
+
+#: views/form.php:106
 msgid "Password for the manager."
 msgstr "Пароль для этого менеджера."
 
-#: page.manager.php:113
-msgid "Permit:"
-msgstr "Разрешены:"
+#: views/form.php:56
+msgid "Permissions"
+msgstr ""
 
-#: page.manager.php:122
-msgid "Read"
-msgstr "Чтение"
+#: views/form.php:142 views/grid.php:12
+msgid "Permit"
+msgstr ""
 
-#: page.manager.php:117
-msgid "Rights"
-msgstr "Права"
+#: Manager.class.php:69
+msgid "Reset"
+msgstr ""
 
-#: manager.i18n.php:4
-msgid "Settings"
-msgstr "Настройки"
+#: Manager.class.php:74
+msgid "Submit"
+msgstr ""
 
-#: page.manager.php:205
-msgid "Submit Changes"
-msgstr "Подтвердить изменения"
-
-#: page.manager.php:308
+#: views/form.php:290
 msgid "The manager deny is not well formatted."
 msgstr "Поле Запрещено неправильно заполнено."
 
-#: page.manager.php:306
+#: views/form.php:288
 msgid "The manager name cannot be empty or may not have any space in it."
 msgstr "Имя менеджера не должно быть пустым и не должно содержать пробелы."
 
-#: page.manager.php:309
+#: views/form.php:291
 msgid "The manager permit is not well formatted."
 msgstr "Поле Разрешено неправильно заполнено."
 
-#: page.manager.php:310
+#: views/form.php:292
 msgid "The manager read field is not well formatted."
 msgstr "Поле Чтение неправильно заполнено."
 
-#: page.manager.php:307
+#: views/form.php:289
 msgid "The manager secret cannot be empty."
 msgstr "Пароль менеджера не может быть пустым."
 
-#: page.manager.php:311
+#: views/form.php:293
 msgid "The manager write field is not well formatted."
 msgstr "Поле Запись неправильно заполнено."
 
@@ -187,21 +180,130 @@ msgstr "Поле Запись неправильно заполнено."
 msgid "This manager already exists"
 msgstr "Такой менеджер уже существует"
 
-#: page.manager.php:122
-msgid "Write"
-msgstr "Запись"
+#: views/form.php:199
+msgid "Toggle All"
+msgstr ""
 
-#: page.manager.php:72
-msgid "deleted"
-msgstr "удалено"
+#: views/form.php:182 views/form.php:190 views/form.php:203 views/form.php:211
+msgid "Yes"
+msgstr ""
+
+#: views/form.php:27
+msgid "agent"
+msgstr ""
+
+#: views/form.php:23
+msgid "call"
+msgstr ""
+
+#: views/form.php:32
+msgid "cdr"
+msgstr ""
+
+#: views/form.php:26
+msgid "command"
+msgstr ""
+
+#: views/form.php:29
+msgid "config"
+msgstr ""
+
+#: views/form.php:33
+msgid "dialplan"
+msgstr ""
+
+#: views/form.php:30
+msgid "dtmf"
+msgstr ""
 
 #: install.php:27 install.php:36
 msgid "error encountered, not altered"
 msgstr "обнаружена ошибка, не изменено"
 
+#: views/form.php:24
+msgid "log"
+msgstr ""
+
 #: install.php:29 install.php:38
 msgid "ok"
 msgstr "ok"
+
+#: views/form.php:34
+msgid "originate"
+msgstr ""
+
+#: views/form.php:31
+msgid "reporting"
+msgstr ""
+
+#: views/form.php:22
+msgid "system"
+msgstr ""
+
+#: views/form.php:28
+msgid "user"
+msgstr ""
+
+#: views/form.php:25
+msgid "verbose"
+msgstr ""
+
+#~ msgid "Asterisk API"
+#~ msgstr "Астериск API"
+
+#~ msgid "Asterisk Manager Users"
+#~ msgstr "Управление пользователями Астериск"
+
+#~ msgid "Check All/None."
+#~ msgstr "Проверить всё/ничего."
+
+#~ msgid "Check Asterisk documentation."
+#~ msgstr "Проверить документацию Asterisk."
+
+#~ msgid "Conflicting FreePBX Manager of %s has not been added"
+#~ msgstr "Пользователь FreePBX конфликтует с %s и не был добавлен"
+
+#~ msgid "Delete Manager"
+#~ msgstr "Удалить менеджера"
+
+#~ msgid "Deny:"
+#~ msgstr "Запрещены:"
+
+#~ msgid "Edit Manager"
+#~ msgstr "Редактировать менеджера"
+
+#~ msgid "Manager name:"
+#~ msgstr "Имя менеджера:"
+
+#~ msgid "Manager secret:"
+#~ msgstr "Пароль менеджера:"
+
+#~ msgid "Manager:"
+#~ msgstr "Менеджер:"
+
+#~ msgid "Name of the manager without space."
+#~ msgstr "Имя менеджера без пробелов."
+
+#~ msgid "Permit:"
+#~ msgstr "Разрешены:"
+
+#~ msgid "Read"
+#~ msgstr "Чтение"
+
+#~ msgid "Rights"
+#~ msgstr "Права"
+
+#~ msgid "Settings"
+#~ msgstr "Настройки"
+
+#~ msgid "Submit Changes"
+#~ msgstr "Подтвердить изменения"
+
+#~ msgid "Write"
+#~ msgstr "Запись"
+
+#~ msgid "deleted"
+#~ msgstr "удалено"
 
 #~ msgid "Error writing the manager additional file."
 #~ msgstr "Ошибка при записи файла manager_additional.conf"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:40-0500\n"
+"POT-Creation-Date: 2015-05-27 11:04-0400\n"
 "PO-Revision-Date: 2014-07-22 10:04+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/manager/bg/"
@@ -22,29 +22,17 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: page.manager.php:61 page.manager.php:91 page.manager.php:99
+#: views/grid.php:13
+msgid "Actions"
+msgstr ""
+
+#: page.manager.php:38 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "Добави Manager"
 
-#: manager.i18n.php:3
-msgid "Asterisk API"
-msgstr "Астериск Manager"
-
-#: manager.i18n.php:5
-msgid "Asterisk Manager Users"
+#: page.manager.php:25
+msgid "Asterisk Manager"
 msgstr ""
-
-#: page.manager.php:196
-msgid "Check All/None."
-msgstr "Маркирайте Всички/Нищо."
-
-#: page.manager.php:124 page.manager.php:129 page.manager.php:134
-#: page.manager.php:139 page.manager.php:144 page.manager.php:149
-#: page.manager.php:154 page.manager.php:162 page.manager.php:167
-#: page.manager.php:172 page.manager.php:177 page.manager.php:182
-#: page.manager.php:187
-msgid "Check Asterisk documentation."
-msgstr "Консултирайте се с Asterisk документация."
 
 #: functions.inc.php:226
 msgid "Choose Manager:"
@@ -55,24 +43,25 @@ msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "Изберете потребител който PHPAGI ще използва за свързване с Asterisk API."
 
-#: page.manager.php:74
-#, php-format
-msgid "Conflicting FreePBX Manager of %s has not been added"
+#: Manager.class.php:64
+msgid "Delete"
 msgstr ""
 
-#: page.manager.php:89
-msgid "Delete Manager"
-msgstr "Изтрий Manager"
+#: views/form.php:118 views/grid.php:11
+msgid "Deny"
+msgstr ""
 
-#: page.manager.php:109
-msgid "Deny:"
-msgstr "Забрани:"
+#: views/form.php:162
+msgid ""
+"For information on individual permissions please see the Asterisk Manager "
+"Documentation"
+msgstr ""
 
-#: page.manager.php:99
-msgid "Edit Manager"
-msgstr "Редактирай Manager"
+#: views/form.php:55
+msgid "General"
+msgstr ""
 
-#: page.manager.php:109
+#: views/form.php:130
 msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
@@ -80,7 +69,7 @@ msgstr ""
 "Ако искате да забраните няколко хоста или мрежи, използвайте символа & за "
 "разделител.<br/><br/>Например: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
-#: page.manager.php:113
+#: views/form.php:154
 msgid ""
 "If you want to permit many hosts or networks, use & char as separator. Look "
 "at deny example."
@@ -96,72 +85,76 @@ msgstr "Увеличаване големината на полето за че�
 msgid "Increasing write field size if needed.."
 msgstr "Увеличаване големината на полето за писане ако е необходимо.."
 
-#: page.manager.php:72
+#: page.manager.php:37
+msgid "List Managers"
+msgstr ""
+
+#: views/form.php:5
 msgid "Manager"
 msgstr "Manager"
 
-#: page.manager.php:101
-msgid "Manager name:"
-msgstr "Manager име:"
+#: views/form.php:67
+msgid "Manager name"
+msgstr ""
 
-#: page.manager.php:105
-msgid "Manager secret:"
-msgstr "Manager парола:"
+#: views/form.php:91
+msgid "Manager secret"
+msgstr ""
 
-#: page.manager.php:88
-msgid "Manager:"
-msgstr "Manager:"
+#: views/grid.php:10
+msgid "Name"
+msgstr ""
 
-#: page.manager.php:101
-msgid "Name of the manager without space."
-msgstr "Име на manager без интервали."
+#: views/form.php:79
+msgid "Name of the manager without spaces."
+msgstr ""
 
-#: page.manager.php:105
+#: views/form.php:184 views/form.php:192 views/form.php:205 views/form.php:213
+msgid "No"
+msgstr ""
+
+#: views/form.php:106
 msgid "Password for the manager."
 msgstr "Парола за този manager."
 
-#: page.manager.php:113
-msgid "Permit:"
-msgstr "Разреши:"
+#: views/form.php:56
+msgid "Permissions"
+msgstr ""
 
-#: page.manager.php:122
-msgid "Read"
-msgstr "Четене"
+#: views/form.php:142 views/grid.php:12
+msgid "Permit"
+msgstr ""
 
-#: page.manager.php:117
-msgid "Rights"
-msgstr "Права"
+#: Manager.class.php:69
+msgid "Reset"
+msgstr ""
 
-#: manager.i18n.php:4
-msgid "Settings"
-msgstr "Настройки"
+#: Manager.class.php:74
+msgid "Submit"
+msgstr ""
 
-#: page.manager.php:205
-msgid "Submit Changes"
-msgstr "Приеми Промените"
-
-#: page.manager.php:308
+#: views/form.php:290
 msgid "The manager deny is not well formatted."
 msgstr "Забраните на manager не са добре форматирани."
 
-#: page.manager.php:306
+#: views/form.php:288
 msgid "The manager name cannot be empty or may not have any space in it."
 msgstr ""
 "Името на manager не може да е празно или не трябва да има интервали в него."
 
-#: page.manager.php:309
+#: views/form.php:291
 msgid "The manager permit is not well formatted."
 msgstr "Правата на manager не са добре форматирани."
 
-#: page.manager.php:310
+#: views/form.php:292
 msgid "The manager read field is not well formatted."
 msgstr "Полетата за четене на manager не са добре форматирани."
 
-#: page.manager.php:307
+#: views/form.php:289
 msgid "The manager secret cannot be empty."
 msgstr "Паролата на manager не може да е празна."
 
-#: page.manager.php:311
+#: views/form.php:293
 msgid "The manager write field is not well formatted."
 msgstr "Полетата за запис на manager не са добре форматирани."
 
@@ -169,21 +162,124 @@ msgstr "Полетата за запис на manager не са добре фо�
 msgid "This manager already exists"
 msgstr "Този manager вече съществува"
 
-#: page.manager.php:122
-msgid "Write"
-msgstr "Запис"
+#: views/form.php:199
+msgid "Toggle All"
+msgstr ""
 
-#: page.manager.php:72
-msgid "deleted"
-msgstr "изтрит"
+#: views/form.php:182 views/form.php:190 views/form.php:203 views/form.php:211
+msgid "Yes"
+msgstr ""
+
+#: views/form.php:27
+msgid "agent"
+msgstr ""
+
+#: views/form.php:23
+msgid "call"
+msgstr ""
+
+#: views/form.php:32
+msgid "cdr"
+msgstr ""
+
+#: views/form.php:26
+msgid "command"
+msgstr ""
+
+#: views/form.php:29
+msgid "config"
+msgstr ""
+
+#: views/form.php:33
+msgid "dialplan"
+msgstr ""
+
+#: views/form.php:30
+msgid "dtmf"
+msgstr ""
 
 #: install.php:27 install.php:36
 msgid "error encountered, not altered"
 msgstr "появи се грешка, спирам изпълнението"
 
+#: views/form.php:24
+msgid "log"
+msgstr ""
+
 #: install.php:29 install.php:38
 msgid "ok"
 msgstr "ok"
+
+#: views/form.php:34
+msgid "originate"
+msgstr ""
+
+#: views/form.php:31
+msgid "reporting"
+msgstr ""
+
+#: views/form.php:22
+msgid "system"
+msgstr ""
+
+#: views/form.php:28
+msgid "user"
+msgstr ""
+
+#: views/form.php:25
+msgid "verbose"
+msgstr ""
+
+#~ msgid "Asterisk API"
+#~ msgstr "Астериск Manager"
+
+#~ msgid "Check All/None."
+#~ msgstr "Маркирайте Всички/Нищо."
+
+#~ msgid "Check Asterisk documentation."
+#~ msgstr "Консултирайте се с Asterisk документация."
+
+#~ msgid "Delete Manager"
+#~ msgstr "Изтрий Manager"
+
+#~ msgid "Deny:"
+#~ msgstr "Забрани:"
+
+#~ msgid "Edit Manager"
+#~ msgstr "Редактирай Manager"
+
+#~ msgid "Manager name:"
+#~ msgstr "Manager име:"
+
+#~ msgid "Manager secret:"
+#~ msgstr "Manager парола:"
+
+#~ msgid "Manager:"
+#~ msgstr "Manager:"
+
+#~ msgid "Name of the manager without space."
+#~ msgstr "Име на manager без интервали."
+
+#~ msgid "Permit:"
+#~ msgstr "Разреши:"
+
+#~ msgid "Read"
+#~ msgstr "Четене"
+
+#~ msgid "Rights"
+#~ msgstr "Права"
+
+#~ msgid "Settings"
+#~ msgstr "Настройки"
+
+#~ msgid "Submit Changes"
+#~ msgstr "Приеми Промените"
+
+#~ msgid "Write"
+#~ msgstr "Запис"
+
+#~ msgid "deleted"
+#~ msgstr "изтрит"
 
 #~ msgid "Error writing the manager additional file."
 #~ msgstr "Грешка при запис на manager_additional файл."
