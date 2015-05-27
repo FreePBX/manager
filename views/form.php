@@ -199,7 +199,7 @@ if(isset($wall)){
                   <td><b> <?php echo _("Toggle All")?> </b></td>
                   <td>
                     <div class="col-md-9 radioset">
-                    <input type="radio" name="rall" id="rallyes" value="1">>
+                    <input type="radio" name="rall" id="rallyes" value="1">
                     <label for="rallyes"><?php echo _("Yes")?></label>
                     <input type="radio" name="rall" id="rallno">
                     <label for="rallno"><?php echo _("No")?></label>
@@ -229,55 +229,55 @@ theForm.name.focus();
 $(document).ready(function(){
   $("input[name='rall']").change(function(){
     if($(this).val() == 1){
-      $("input[name^='r']").each(function(){
-        var name = $(this).attr('name');
+      $("input[name^='r'][type=radio]").each(function(){
+        var name = $(this).prop('name');
         if(name == 'reset'){
           return;
         }
         if(name == 'rall'){
           return;
         }
-        $('#'+name+'yes').attr('checked',true);
-        $('#'+name+'no').attr('checked',false);
+        $('#'+name+'yes').prop('checked',true);
+        $('#'+name+'no').prop('checked',false);
       })
     }else{
-      $("input[name^='r']").each(function(){
-        var name = $(this).attr('name');
+      $("input[name^='r'][type=radio").each(function(){
+        var name = $(this).prop('name');
         if(name == 'reset'){
           return;
         }
         if(name == 'rall'){
           return;
         }
-        $('#'+name+'no').attr('checked',true);
-        $('#'+name+'yes').attr('checked',false);
+        $('#'+name+'no').prop('checked',true);
+        $('#'+name+'yes').prop('checked',false);
       })
     }
   });
   $("input[name='wall']").change(function(){
     if($(this).val() == 1){
       $("input[name^='w']").each(function(){
-        var name = $(this).attr('name');
+        var name = $(this).prop('name');
         if(name == 'reset'){
           return;
         }
         if(name == 'wall'){
           return;
         }
-        $('#'+name+'yes').attr('checked',true);
-        $('#'+name+'no').attr('checked',false);
+        $('#'+name+'yes').prop('checked',true);
+        $('#'+name+'no').prop('checked',false);
       })
     }else{
       $("input[name^='w']").each(function(){
-        var name = $(this).attr('name');
+        var name = $(this).prop('name');
         if(name == 'reset'){
           return;
         }
         if(name == 'wall'){
           return;
         }
-        $('#'+name+'no').attr('checked',true);
-        $('#'+name+'yes').attr('checked',false);
+        $('#'+name+'no').prop('checked',true);
+        $('#'+name+'yes').prop('checked',false);
       })
     }
   });
