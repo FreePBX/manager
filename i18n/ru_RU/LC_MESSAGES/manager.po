@@ -27,17 +27,17 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:40-0500\n"
-"PO-Revision-Date: 2014-02-28 04:51+0200\n"
-"Last-Translator: Andrew <andrew.nagy@the159.com>\n"
-"Language-Team: Russian <http://example.com/projects/freepbx-211/manager/ru/"
-">\n"
+"PO-Revision-Date: 2015-04-25 00:18+0200\n"
+"Last-Translator: Yuriy <alliancesko@gmail.com>\n"
+"Language-Team: Russian "
+"<http://weblate.freepbx.org/projects/freepbx/manager/ru_RU/>\n"
+"Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru_RU\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: page.manager.php:61 page.manager.php:91 page.manager.php:99
 msgid "Add Manager"
@@ -45,11 +45,11 @@ msgstr "Добавить менеджера"
 
 #: manager.i18n.php:3
 msgid "Asterisk API"
-msgstr "Asterisk API"
+msgstr "Астериск API"
 
 #: manager.i18n.php:5
 msgid "Asterisk Manager Users"
-msgstr ""
+msgstr "Управление пользователями Астериск"
 
 #: page.manager.php:196
 msgid "Check All/None."
@@ -75,7 +75,7 @@ msgstr ""
 #: page.manager.php:74
 #, php-format
 msgid "Conflicting FreePBX Manager of %s has not been added"
-msgstr ""
+msgstr "Пользователь FreePBX конфликтует с %s и не был добавлен"
 
 #: page.manager.php:89
 msgid "Delete Manager"
