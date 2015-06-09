@@ -9,7 +9,60 @@ class Manager implements \BMO {
 		$this->FreePBX = $freepbx;
 		$this->db = $freepbx->Database;
 	}
-    public function install() {}
+    public function install() {
+			$dbh = $this->db;
+			$sql = "CREATE TABLE IF NOT EXISTS manager (
+				`manager_id` INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+				`name` VARCHAR( 15 ) NOT NULL ,
+				`secret` VARCHAR( 50 ) ,
+				`deny` VARCHAR( 255 ) ,
+				`permit` VARCHAR( 255 ) ,
+				`read` VARCHAR( 255 ) ,
+				`write` VARCHAR( 255 )
+			)";
+			$stmt = $dbh->prepare($sql);
+			try {
+    		$stmt->execute();
+			} catch (\PDOException $e) {
+				\die_freepbx("Can not create `manager` table" .  $e->getMessage() . "\n");
+			}
+
+			\outn(_("Increasing read field size if needed.."));
+			$sql = "ALTER TABLE `manager` CHANGE `read` `read` VARCHAR( 255 )";
+			$stmt = $dbh->prepare($sql);
+			try {
+				$stmt->execute();
+				\out(_("ok"));
+			} catch (\PDOException $e) {
+				\out(_("error encountered, not altered"));
+			}
+
+			outn(_("Increasing write field size if needed.."));
+			$sql = "ALTER TABLE `manager` CHANGE `write` `write` VARCHAR( 255 )";
+			$stmt = $dbh->prepare($sql);
+			try {
+				$stmt->execute();
+				\out(_("ok"));
+			} catch (\PDOException $e) {
+				\out(_("error encountered, not altered"));
+			}
+			outn(_("Adding write timeout"));
+			$sql = "ALTER TABLE manager ADD writetimeout INT;";
+			$stmt = $dbh->prepare($sql);
+			try {
+				$stmt->execute();
+				\out(_("ok"));
+			} catch (\PDOException $e) {
+				//We are ok with 42S21 because we are trying to add a column and it says that column is present.
+				if($e->getCode() == '42S21'){
+					\out(_("Column present"));
+				}else{
+					//All other exceptions are bad mmmk
+					\out($e->getMessage());
+					throw $e;
+				}
+			}
+		}
     public function uninstall() {}
     public function backup() {}
     public function restore($backup) {}
@@ -22,6 +75,7 @@ class Manager implements \BMO {
       $deny = isset($_REQUEST['deny'])?$_REQUEST['deny']:'0.0.0.0/0.0.0.0';
       $permit = isset($_REQUEST['permit'])?$_REQUEST['permit']:'127.0.0.1/255.255.255.0';
       $engineinfo = engine_getinfo();
+			$writetimeout = isset($_REQUEST['writetimeout'])?$_REQUEST['writetimeout']:'100';
       $astver =  $engineinfo['version'];
       //if submitting form, update database
       global $amp_conf;
@@ -34,7 +88,7 @@ class Manager implements \BMO {
       switch ($action) {
       	case "add":
       		$rights = manager_format_in($_REQUEST);
-      		manager_add($name,$secret,$deny,$permit,$rights['read'],$rights['write']);
+      		manager_add($name,$secret,$deny,$permit,$rights['read'],$rights['write'],$writetimeout);
           $_REQUEST['managerdisplay'] = $name;
       		needreload();
       	break;
@@ -45,7 +99,7 @@ class Manager implements \BMO {
       	case "edit":  //just delete and re-add
       		manager_del($name);
       		$rights = manager_format_in($_REQUEST);
-      		manager_add($name,$secret,$deny,$permit,$rights['read'],$rights['write']);
+      		manager_add($name,$secret,$deny,$permit,$rights['read'],$rights['write'],$writetimeout);
       		needreload();
       	break;
       	case "conflict":

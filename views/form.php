@@ -32,6 +32,7 @@ $permtypes = array(
   'cdr' => _("cdr"),
   'dialplan' => _("dialplan"),
   'originate' => _("originate"),
+
 );
 if(isset($rall)){
   foreach ($permtypes as $key => $value) {
@@ -156,6 +157,33 @@ if(isset($wall)){
               </div>
             </div>
             <!--END Permit-->
+            <!--Write Timeout-->
+            <div class="element-container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="form-group">
+                      <div class="col-md-3">
+                        <label class="control-label" for="writetimeout"><?php echo _("Write Timeout") ?></label>
+                        <i class="fa fa-question-circle fpbx-help-icon" data-for="writetimeout"></i>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="writetimeout" name="writetimeout" value="<?php echo isset($writetimeout)?$writetimeout:'100'?>">
+                          <span class="input-group-addon"><?php echo _("milliseconds") ?></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <span id="writetimeout-help" class="help-block fpbx-help-block"><?php echo _("Sets the timeout used by Asterisk when writing data to the AMI connection for this user")?></span>
+                </div>
+              </div>
+            </div>
+            <!--END Write Timeout-->
         </div>
         <div id="managerperm" class="tab-pane">
           <div class="well well-info">

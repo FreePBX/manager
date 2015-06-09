@@ -18,12 +18,13 @@ class manager_conf {
 	function get_filename() {
 		return "manager_additional.conf";
 	}
-	function addManager($name, $secret, $deny, $permit, $read, $write) {
+	function addManager($name, $secret, $deny, $permit, $read, $write, $writetimeout) {
 		$this->_managers[$name]['secret'] = $secret;
 		$this->_managers[$name]['deny'] = $deny;
 		$this->_managers[$name]['permit'] = $permit;
 		$this->_managers[$name]['read'] = $read;
 		$this->_managers[$name]['write'] = $write;
+		$this->_managers[$name]['writetimeout'] = $writetimeout;
 	}
 	// return the output that goes in the file
 	function generateConf() {
@@ -35,6 +36,10 @@ class manager_conf {
 				case 'secret':
 				case 'read':
 				case 'write':
+					$output .= $key . " = " . $value . "\n";
+					break;
+				case 'writetimeout':
+					$value = !empty($value)?$value:'100';
 					$output .= $key . " = " . $value . "\n";
 					break;
 				case 'permit':
@@ -63,7 +68,7 @@ function manager_get_config($engine) {
 		if (is_array($managers)) {
 			foreach ($managers as $manager) {
 				$m = manager_get($manager['name']);
-				$mc->addManager($m['name'], $m['secret'], $m['deny'], $m['permit'], $m['read'], $m['write']);
+				$mc->addManager($m['name'], $m['secret'], $m['deny'], $m['permit'], $m['read'], $m['write'],$m['writetimeout']);
 			}
 		}
 		break;
@@ -84,7 +89,7 @@ function manager_list() {
 // Get manager infos
 function manager_get($p_name) {
 	global $db;
-	$sql = "SELECT name,secret,deny,permit,`read`,`write` FROM manager WHERE name = '$p_name'";
+	$sql = "SELECT name,secret,deny,permit,`read`,`write`, writetimeout FROM manager WHERE name = '$p_name'";
 	$res = $db->getRow($sql, DB_FETCHMODE_ASSOC);
 	return $res;
 }
@@ -105,7 +110,7 @@ function manager_format_out($p_tab) {
 	foreach($tmp as $item) {
 		$res['w'.$item] = true;
 	}
-
+	$res['writetimeout'] = $p_tab['writetimeout'];
 	return $res;
 }
 
@@ -185,7 +190,7 @@ function manager_format_in($p_tab) {
 }
 
 // Add a manager
-function manager_add($p_name, $p_secret, $p_deny, $p_permit, $p_read, $p_write) {
+function manager_add($p_name, $p_secret, $p_deny, $p_permit, $p_read, $p_write, $p_writetimeout) {
 	global $amp_conf;
 	$managers = manager_list();
 	$ampuser = $amp_conf['AMPMGRUSER'];
@@ -201,7 +206,7 @@ function manager_add($p_name, $p_secret, $p_deny, $p_permit, $p_read, $p_write) 
 			}
 		}
 	}
-	$results = sql("INSERT INTO manager set name='$p_name' , secret='$p_secret' , deny='$p_deny' , permit='$p_permit' , `read`='$p_read' , `write`='$p_write'");
+	$results = sql("INSERT INTO manager set name='$p_name' , secret='$p_secret' , deny='$p_deny' , permit='$p_permit' , `read`='$p_read' , `write`='$p_write' , `writetimeout`='$p_writetimeout'");
 }
 
 
