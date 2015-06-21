@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-22 05:59+1000\n"
+"POT-Creation-Date: 2015-06-22 06:33+1000\n"
 "PO-Revision-Date: 2008-11-06 14:52+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -25,8 +25,8 @@ msgstr ""
 msgid "Add Manager"
 msgstr "Aggiungi Manager"
 
-#: Manager.class.php:49
-msgid "Adding write timeout"
+#: Manager.class.php:44
+msgid "Adding write timeout.."
 msgstr ""
 
 #: manager.i18n.php:4
@@ -50,11 +50,11 @@ msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "Scegliere l'utente che PHPAGI userà per connettersi con le API di Asterisk."
 
-#: Manager.class.php:58
+#: Manager.class.php:53
 msgid "Column present"
 msgstr ""
 
-#: Manager.class.php:118
+#: Manager.class.php:116
 msgid "Delete"
 msgstr ""
 
@@ -89,11 +89,11 @@ msgstr ""
 "Se si vuole permettere l'accesso a più host o reti, utilizzare il carattere "
 "& come separatore. Guarda come esempio Deny."
 
-#: Manager.class.php:30
+#: Manager.class.php:25
 msgid "Increasing read field size if needed.."
 msgstr ""
 
-#: Manager.class.php:40
+#: Manager.class.php:35
 msgid "Increasing write field size if needed.."
 msgstr ""
 
@@ -137,7 +137,7 @@ msgstr ""
 msgid "Permit"
 msgstr ""
 
-#: Manager.class.php:123
+#: Manager.class.php:121
 msgid "Reset"
 msgstr ""
 
@@ -151,7 +151,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: Manager.class.php:128
+#: Manager.class.php:126
 msgid "Submit"
 msgstr ""
 
@@ -223,7 +223,7 @@ msgstr ""
 msgid "dtmf"
 msgstr ""
 
-#: Manager.class.php:37 Manager.class.php:47
+#: Manager.class.php:32 Manager.class.php:42
 msgid "error encountered, not altered"
 msgstr ""
 
@@ -235,7 +235,7 @@ msgstr ""
 msgid "milliseconds"
 msgstr ""
 
-#: Manager.class.php:35 Manager.class.php:45 Manager.class.php:54
+#: Manager.class.php:30 Manager.class.php:40 Manager.class.php:49
 msgid "ok"
 msgstr ""
 

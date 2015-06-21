@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-22 05:59+1000\n"
+"POT-Creation-Date: 2015-06-22 06:33+1000\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -38,8 +38,8 @@ msgstr ""
 msgid "Add Manager"
 msgstr "Lägg till hanterare"
 
-#: Manager.class.php:49
-msgid "Adding write timeout"
+#: Manager.class.php:44
+msgid "Adding write timeout.."
 msgstr ""
 
 #: manager.i18n.php:4
@@ -63,11 +63,11 @@ msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "Välj den användare PHPAGI ska använda när den ansluter till Asterisk API."
 
-#: Manager.class.php:58
+#: Manager.class.php:53
 msgid "Column present"
 msgstr ""
 
-#: Manager.class.php:118
+#: Manager.class.php:116
 msgid "Delete"
 msgstr ""
 
@@ -102,11 +102,11 @@ msgstr ""
 "Om du vill tillåta många datorer eller nätverk, använd & som "
 "separationstecken. Exempel: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
-#: Manager.class.php:30
+#: Manager.class.php:25
 msgid "Increasing read field size if needed.."
 msgstr "Utökar fältet read om detta behövs.."
 
-#: Manager.class.php:40
+#: Manager.class.php:35
 msgid "Increasing write field size if needed.."
 msgstr "Utökar fältet write om detta behövs.."
 
@@ -150,7 +150,7 @@ msgstr ""
 msgid "Permit"
 msgstr ""
 
-#: Manager.class.php:123
+#: Manager.class.php:121
 msgid "Reset"
 msgstr ""
 
@@ -164,7 +164,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: Manager.class.php:128
+#: Manager.class.php:126
 msgid "Submit"
 msgstr ""
 
@@ -236,7 +236,7 @@ msgstr ""
 msgid "dtmf"
 msgstr ""
 
-#: Manager.class.php:37 Manager.class.php:47
+#: Manager.class.php:32 Manager.class.php:42
 msgid "error encountered, not altered"
 msgstr "fel uppstod, ingen ändring utförd"
 
@@ -248,7 +248,7 @@ msgstr ""
 msgid "milliseconds"
 msgstr ""
 
-#: Manager.class.php:35 Manager.class.php:45 Manager.class.php:54
+#: Manager.class.php:30 Manager.class.php:40 Manager.class.php:49
 msgid "ok"
 msgstr "ok"
 
