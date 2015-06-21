@@ -47,7 +47,7 @@ class Manager implements \BMO {
 				\out(_("error encountered, not altered"));
 			}
 			outn(_("Adding write timeout"));
-			$sql = "ALTER TABLE manager ADD writetimeout INT;";
+			$sql = "ALTER TABLE manager ADD writetimeout INT";
 			$stmt = $dbh->prepare($sql);
 			try {
 				$stmt->execute();
