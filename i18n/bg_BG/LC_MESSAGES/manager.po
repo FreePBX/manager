@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-19 18:16-0400\n"
+"POT-Creation-Date: 2015-06-22 05:59+1000\n"
 "PO-Revision-Date: 2014-07-22 10:04+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/manager/bg/"
@@ -34,8 +34,16 @@ msgstr "Добави Manager"
 msgid "Adding write timeout"
 msgstr ""
 
+#: manager.i18n.php:4
+msgid "Asterisk API"
+msgstr "Астериск Manager"
+
 #: page.manager.php:25
 msgid "Asterisk Manager"
+msgstr ""
+
+#: manager.i18n.php:8
+msgid "Asterisk Manager Users"
 msgstr ""
 
 #: functions.inc.php:231
@@ -142,6 +150,10 @@ msgid ""
 "Sets the timeout used by Asterisk when writing data to the AMI connection "
 "for this user"
 msgstr ""
+
+#: manager.i18n.php:6 manager.i18n.php:10
+msgid "Settings"
+msgstr "Настройки"
 
 #: Manager.class.php:128
 msgid "Submit"
@@ -252,9 +264,6 @@ msgstr ""
 msgid "verbose"
 msgstr ""
 
-#~ msgid "Asterisk API"
-#~ msgstr "Астериск Manager"
-
 #~ msgid "Check All/None."
 #~ msgstr "Маркирайте Всички/Нищо."
 
@@ -290,9 +299,6 @@ msgstr ""
 
 #~ msgid "Rights"
 #~ msgstr "Права"
-
-#~ msgid "Settings"
-#~ msgstr "Настройки"
 
 #~ msgid "Submit Changes"
 #~ msgstr "Приеми Промените"

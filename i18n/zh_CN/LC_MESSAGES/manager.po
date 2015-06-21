@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-19 18:16-0400\n"
+"POT-Creation-Date: 2015-06-22 05:59+1000\n"
 "PO-Revision-Date: 2009-02-01 17:40+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -30,8 +30,16 @@ msgstr "添加管理员用户"
 msgid "Adding write timeout"
 msgstr ""
 
+#: manager.i18n.php:4
+msgid "Asterisk API"
+msgstr ""
+
 #: page.manager.php:25
 msgid "Asterisk Manager"
+msgstr ""
+
+#: manager.i18n.php:8
+msgid "Asterisk Manager Users"
 msgstr ""
 
 #: functions.inc.php:231
@@ -136,6 +144,10 @@ msgstr ""
 msgid ""
 "Sets the timeout used by Asterisk when writing data to the AMI connection "
 "for this user"
+msgstr ""
+
+#: manager.i18n.php:6 manager.i18n.php:10
+msgid "Settings"
 msgstr ""
 
 #: Manager.class.php:128
