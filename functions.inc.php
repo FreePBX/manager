@@ -18,7 +18,7 @@ class manager_conf {
 	function get_filename() {
 		return "manager_additional.conf";
 	}
-	function addManager($name, $secret, $deny, $permit, $read, $write, $writetimeout) {
+	function addManager($name, $secret, $deny, $permit, $read, $write, $writetimeout=100) {
 		$this->_managers[$name]['secret'] = $secret;
 		$this->_managers[$name]['deny'] = $deny;
 		$this->_managers[$name]['permit'] = $permit;
