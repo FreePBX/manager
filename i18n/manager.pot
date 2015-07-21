@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-22 06:33+1000\n"
+"POT-Creation-Date: 2015-07-21 16:27-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,16 +31,8 @@ msgstr ""
 msgid "Adding write timeout.."
 msgstr ""
 
-#: manager.i18n.php:4
-msgid "Asterisk API"
-msgstr ""
-
 #: page.manager.php:25
 msgid "Asterisk Manager"
-msgstr ""
-
-#: manager.i18n.php:8
-msgid "Asterisk Manager Users"
 msgstr ""
 
 #: functions.inc.php:231
@@ -146,11 +138,6 @@ msgstr ""
 msgid ""
 "Sets the timeout used by Asterisk when writing data to the AMI connection "
 "for this user"
-msgstr ""
-
-#: manager.i18n.php:6
-#: manager.i18n.php:10
-msgid "Settings"
 msgstr ""
 
 #: Manager.class.php:126

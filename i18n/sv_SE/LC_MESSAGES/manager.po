@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-22 06:33+1000\n"
+"POT-Creation-Date: 2015-07-21 16:27-0400\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -42,16 +42,8 @@ msgstr "Lägg till hanterare"
 msgid "Adding write timeout.."
 msgstr ""
 
-#: manager.i18n.php:4
-msgid "Asterisk API"
-msgstr "Asterisk API"
-
 #: page.manager.php:25
 msgid "Asterisk Manager"
-msgstr ""
-
-#: manager.i18n.php:8
-msgid "Asterisk Manager Users"
 msgstr ""
 
 #: functions.inc.php:231
@@ -158,10 +150,6 @@ msgstr ""
 msgid ""
 "Sets the timeout used by Asterisk when writing data to the AMI connection "
 "for this user"
-msgstr ""
-
-#: manager.i18n.php:6 manager.i18n.php:10
-msgid "Settings"
 msgstr ""
 
 #: Manager.class.php:126
@@ -271,6 +259,9 @@ msgstr ""
 #: views/form.php:25
 msgid "verbose"
 msgstr ""
+
+#~ msgid "Asterisk API"
+#~ msgstr "Asterisk API"
 
 #~ msgid "Check All/None."
 #~ msgstr "Markera alla/inga."

@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-22 06:33+1000\n"
+"POT-Creation-Date: 2015-07-21 16:27-0400\n"
 "PO-Revision-Date: 2015-04-25 00:18+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/manager/"
@@ -51,17 +51,9 @@ msgstr "Добавить менеджера"
 msgid "Adding write timeout.."
 msgstr ""
 
-#: manager.i18n.php:4
-msgid "Asterisk API"
-msgstr "Астериск API"
-
 #: page.manager.php:25
 msgid "Asterisk Manager"
 msgstr ""
-
-#: manager.i18n.php:8
-msgid "Asterisk Manager Users"
-msgstr "Управление пользователями Астериск"
 
 #: functions.inc.php:231
 msgid "Choose Manager:"
@@ -170,10 +162,6 @@ msgid ""
 "for this user"
 msgstr ""
 
-#: manager.i18n.php:6 manager.i18n.php:10
-msgid "Settings"
-msgstr "Настройки"
-
 #: Manager.class.php:126
 msgid "Submit"
 msgstr ""
@@ -281,6 +269,15 @@ msgstr ""
 #: views/form.php:25
 msgid "verbose"
 msgstr ""
+
+#~ msgid "Asterisk API"
+#~ msgstr "Астериск API"
+
+#~ msgid "Asterisk Manager Users"
+#~ msgstr "Управление пользователями Астериск"
+
+#~ msgid "Settings"
+#~ msgstr "Настройки"
 
 #~ msgid "Check All/None."
 #~ msgstr "Проверить всё/ничего."
