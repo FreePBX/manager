@@ -190,7 +190,7 @@ function manager_format_in($p_tab) {
 }
 
 // Add a manager
-function manager_add($p_name, $p_secret, $p_deny, $p_permit, $p_read, $p_write, $p_writetimeout) {
+function manager_add($p_name, $p_secret, $p_deny, $p_permit, $p_read, $p_write, $p_writetimeout=100) {
 	global $amp_conf;
 	$managers = manager_list();
 	$ampuser = $amp_conf['AMPMGRUSER'];
