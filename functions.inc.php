@@ -91,6 +91,9 @@ function manager_get($p_name) {
 	global $db;
 	$sql = "SELECT name,secret,deny,permit,`read`,`write`, writetimeout FROM manager WHERE name = '$p_name'";
 	$res = $db->getRow($sql, DB_FETCHMODE_ASSOC);
+	if(DB::IsError($res)) {
+		return array();
+	}
 	return $res;
 }
 
