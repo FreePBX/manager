@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:40-0500\n"
-"PO-Revision-Date: 2015-07-08 01:51+0200\n"
+"PO-Revision-Date: 2015-09-15 20:41+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian "
 "<http://weblate.freepbx.org/projects/freepbx/manager/bg_BG/>\n"
@@ -32,7 +32,7 @@ msgstr "Астериск Manager"
 
 #: manager.i18n.php:5
 msgid "Asterisk Manager Users"
-msgstr ""
+msgstr "Астериск Мениджър Потребители"
 
 #: page.manager.php:196
 msgid "Check All/None."
@@ -58,7 +58,7 @@ msgstr ""
 #: page.manager.php:74
 #, php-format
 msgid "Conflicting FreePBX Manager of %s has not been added"
-msgstr ""
+msgstr "FreePBX Мениджър който е в конфликт с %s не е добавен"
 
 #: page.manager.php:89
 msgid "Delete Manager"
