@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:40-0500\n"
-"PO-Revision-Date: 2015-09-15 20:41+0200\n"
+"PO-Revision-Date: 2015-09-15 20:46+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian "
 "<http://weblate.freepbx.org/projects/freepbx/manager/bg_BG/>\n"
@@ -24,11 +24,11 @@ msgstr ""
 
 #: page.manager.php:61 page.manager.php:91 page.manager.php:99
 msgid "Add Manager"
-msgstr "Добави Manager"
+msgstr "Добави Мениджър"
 
 #: manager.i18n.php:3
 msgid "Asterisk API"
-msgstr "Астериск Manager"
+msgstr "Астериск Мениджър"
 
 #: manager.i18n.php:5
 msgid "Asterisk Manager Users"
@@ -44,11 +44,11 @@ msgstr "Маркирайте Всички/Нищо."
 #: page.manager.php:172 page.manager.php:177 page.manager.php:182
 #: page.manager.php:187
 msgid "Check Asterisk documentation."
-msgstr "Консултирайте се с Asterisk документация."
+msgstr "Консултирайте се с Астериск документацията."
 
 #: functions.inc.php:226
 msgid "Choose Manager:"
-msgstr "Избери Manager:"
+msgstr "Избери Мениджър:"
 
 #: functions.inc.php:226
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
@@ -62,7 +62,7 @@ msgstr "FreePBX Мениджър който е в конфликт с %s не е
 
 #: page.manager.php:89
 msgid "Delete Manager"
-msgstr "Изтрий Manager"
+msgstr "Изтрий Мениджър"
 
 #: page.manager.php:109
 msgid "Deny:"
@@ -70,7 +70,7 @@ msgstr "Забрани:"
 
 #: page.manager.php:99
 msgid "Edit Manager"
-msgstr "Редактирай Manager"
+msgstr "Редактирай Мениджър"
 
 #: page.manager.php:109
 msgid ""
@@ -102,23 +102,23 @@ msgstr "Мениджър"
 
 #: page.manager.php:101
 msgid "Manager name:"
-msgstr "Manager име:"
+msgstr "Име на Мениджър:"
 
 #: page.manager.php:105
 msgid "Manager secret:"
-msgstr "Manager парола:"
+msgstr "Парола на Мениджър:"
 
 #: page.manager.php:88
 msgid "Manager:"
-msgstr "Manager:"
+msgstr "Мениджър:"
 
 #: page.manager.php:101
 msgid "Name of the manager without space."
-msgstr "Име на manager без интервали."
+msgstr "Име на мениджър без интервали."
 
 #: page.manager.php:105
 msgid "Password for the manager."
-msgstr "Парола за този manager."
+msgstr "Парола за този мениджър."
 
 #: page.manager.php:113
 msgid "Permit:"
@@ -142,32 +142,32 @@ msgstr "Приеми Промените"
 
 #: page.manager.php:308
 msgid "The manager deny is not well formatted."
-msgstr "Забраните на manager не са добре форматирани."
+msgstr "Забраните на мениджър не са добре форматирани."
 
 #: page.manager.php:306
 msgid "The manager name cannot be empty or may not have any space in it."
 msgstr ""
-"Името на manager не може да е празно или не трябва да има интервали в него."
+"Името на мениджър не може да е празно или не трябва да има интервали в него."
 
 #: page.manager.php:309
 msgid "The manager permit is not well formatted."
-msgstr "Правата на manager не са добре форматирани."
+msgstr "Правата на мениджър не са добре форматирани."
 
 #: page.manager.php:310
 msgid "The manager read field is not well formatted."
-msgstr "Полетата за четене на manager не са добре форматирани."
+msgstr "Полетата за четене на мениджър не са добре форматирани."
 
 #: page.manager.php:307
 msgid "The manager secret cannot be empty."
-msgstr "Паролата на manager не може да е празна."
+msgstr "Паролата на мениджър не може да е празна."
 
 #: page.manager.php:311
 msgid "The manager write field is not well formatted."
-msgstr "Полетата за запис на manager не са добре форматирани."
+msgstr "Полетата за запис на мениджър не са добре форматирани."
 
 #: functions.inc.php:193 functions.inc.php:199
 msgid "This manager already exists"
-msgstr "Този manager вече съществува"
+msgstr "Този мениджър вече съществува"
 
 #: page.manager.php:122
 msgid "Write"
