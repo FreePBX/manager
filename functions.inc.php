@@ -144,7 +144,7 @@ function manager_format_in($p_tab) {
 	if (isset($p_tab['ruser']) && $p_tab['ruser'] == 1)
 		$res['read'] .= "user,";
 
-  // Added for 1.6+
+	// Added for 1.6+
 	if (isset($p_tab['rconfig']) && $p_tab['rconfig'] == 1)
 		$res['read'] .= "config,";
 	if (isset($p_tab['rdtmf']) && $p_tab['rdtmf'] == 1)
@@ -173,7 +173,7 @@ function manager_format_in($p_tab) {
 	if (isset($p_tab['wuser']) && $p_tab['wuser'] == 1)
 		$res['write'] .= "user,";
 
-  // Added for 1.6+
+	// Added for 1.6+
 	if (isset($p_tab['wconfig']) && $p_tab['wconfig'] == 1)
 		$res['write'] .= "config,";
 	if (isset($p_tab['wdtmf']) && $p_tab['wdtmf'] == 1)
@@ -187,8 +187,8 @@ function manager_format_in($p_tab) {
 	if (isset($p_tab['woriginate']) && $p_tab['woriginate'] == 1)
 		$res['write'] .= "originate,";
 
-  $res['read'] = rtrim($res['read'],',');
-  $res['write'] = rtrim($res['write'],',');
+	$res['read'] = rtrim($res['read'],',');
+	$res['write'] = rtrim($res['write'],',');
 	return $res;
 }
 
@@ -219,7 +219,7 @@ function manager_add($p_name, $p_secret, $p_deny, $p_permit, $p_read, $p_write, 
 //   $dummy = unused
 // $viewing_itemid, $target_menuid
 function manager_hook_phpagiconf($viewing_itemid, $target_menuid) {
-        global $db;
+	global $db;
 
 	switch($target_menuid) {
 		case 'phpagiconf':
