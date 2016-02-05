@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: MODULE MANAGER\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-13 10:21-0700\n"
-"PO-Revision-Date: 2016-02-02 06:32+0200\n"
+"PO-Revision-Date: 2016-02-04 23:04+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/manager/fr_FR/>\n"
@@ -134,7 +134,7 @@ msgstr "Permettre"
 
 #: Manager.class.php:121
 msgid "Reset"
-msgstr "Remise à 0"
+msgstr "Réinitialiser"
 
 #: views/form.php:182
 msgid ""
