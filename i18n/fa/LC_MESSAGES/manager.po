@@ -10,32 +10,36 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-13 10:21-0700\n"
-"PO-Revision-Date: 2015-08-13 10:21-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2016-02-15 05:41+0200\n"
+"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"Language-Team: Persian "
+"<http://weblate.freepbx.org/projects/freepbx/manager/fa/>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: views/grid.php:13
 msgid "Actions"
-msgstr ""
+msgstr "عملیات"
 
 #: page.manager.php:38 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
-msgstr ""
+msgstr "افزودن مدیریت"
 
 #: Manager.class.php:44
 msgid "Adding write timeout.."
-msgstr ""
+msgstr "افزودن وقفه نوشتن.."
 
 #: page.manager.php:25
 msgid "Asterisk Manager"
-msgstr ""
+msgstr "مدیریت استریسک"
 
 #: functions.inc.php:234
 msgid "Choose Manager:"
-msgstr ""
+msgstr "انتخاب مدیریت ："
 
 #: functions.inc.php:234
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
@@ -47,11 +51,11 @@ msgstr ""
 
 #: Manager.class.php:116
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: views/form.php:119 views/grid.php:11
 msgid "Deny"
-msgstr ""
+msgstr "لغو"
 
 #: views/form.php:190
 msgid ""
@@ -61,7 +65,7 @@ msgstr ""
 
 #: views/form.php:56
 msgid "General"
-msgstr ""
+msgstr "عمومی"
 
 #: views/form.php:131
 msgid ""
@@ -85,47 +89,47 @@ msgstr ""
 
 #: page.manager.php:37
 msgid "List Managers"
-msgstr ""
+msgstr "فهرست مدیریت ها"
 
 #: views/form.php:5
 msgid "Manager"
-msgstr ""
+msgstr "مدیریت"
 
 #: views/form.php:68
 msgid "Manager name"
-msgstr ""
+msgstr "نام مدیریت"
 
 #: views/form.php:92
 msgid "Manager secret"
-msgstr ""
+msgstr "رمز مدیریت"
 
 #: views/grid.php:10
 msgid "Name"
-msgstr ""
+msgstr "نام"
 
 #: views/form.php:80
 msgid "Name of the manager without spaces."
-msgstr ""
+msgstr "نام مدیریت بدون فاصله."
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
 msgid "No"
-msgstr ""
+msgstr "خیر"
 
 #: views/form.php:107
 msgid "Password for the manager."
-msgstr ""
+msgstr "پسورد مدیریت."
 
 #: views/form.php:57
 msgid "Permissions"
-msgstr ""
+msgstr "دسترسی ها"
 
 #: views/form.php:143 views/grid.php:12
 msgid "Permit"
-msgstr ""
+msgstr "اجازه دادن"
 
 #: Manager.class.php:121
 msgid "Reset"
-msgstr ""
+msgstr "بازنشانی"
 
 #: views/form.php:182
 msgid ""
@@ -135,7 +139,7 @@ msgstr ""
 
 #: Manager.class.php:126
 msgid "Submit"
-msgstr ""
+msgstr "ارسال"
 
 #: views/form.php:318
 msgid "The manager deny is not well formatted."
@@ -163,7 +167,7 @@ msgstr ""
 
 #: functions.inc.php:201 functions.inc.php:207
 msgid "This manager already exists"
-msgstr ""
+msgstr "مدیریت موجود است"
 
 #: views/form.php:227
 msgid "Toggle All"
@@ -171,72 +175,72 @@ msgstr ""
 
 #: views/form.php:167
 msgid "Write Timeout"
-msgstr ""
+msgstr "وقفه نوشتن"
 
 #: views/form.php:210 views/form.php:218 views/form.php:231 views/form.php:239
 msgid "Yes"
-msgstr ""
+msgstr "بله"
 
 #: views/form.php:27
 msgid "agent"
-msgstr ""
+msgstr "اپراتور"
 
 #: views/form.php:23
 msgid "call"
-msgstr ""
+msgstr "تماس"
 
 #: views/form.php:32
 msgid "cdr"
-msgstr ""
+msgstr "جزییات تماس"
 
 #: views/form.php:26
 msgid "command"
-msgstr ""
+msgstr "دستور"
 
 #: views/form.php:29
 msgid "config"
-msgstr ""
+msgstr "تنظیم"
 
 #: views/form.php:33
 msgid "dialplan"
-msgstr ""
+msgstr "نقشه تماس"
 
 #: views/form.php:30
 msgid "dtmf"
-msgstr ""
+msgstr "dtmf"
 
 #: Manager.class.php:32 Manager.class.php:42
 msgid "error encountered, not altered"
-msgstr ""
+msgstr "بروز خطا, بدون هشدار"
 
 #: views/form.php:24
 msgid "log"
-msgstr ""
+msgstr "لاگ"
 
 #: views/form.php:173
 msgid "milliseconds"
-msgstr ""
+msgstr "میلی ثانیه"
 
 #: Manager.class.php:30 Manager.class.php:40 Manager.class.php:49
 msgid "ok"
-msgstr ""
+msgstr "تایید"
 
 #: views/form.php:34
 msgid "originate"
-msgstr ""
+msgstr "ایجاد کردن"
 
 #: views/form.php:31
 msgid "reporting"
-msgstr ""
+msgstr "گزارش دادن"
 
 #: views/form.php:22
 msgid "system"
-msgstr ""
+msgstr "سیستم"
 
 #: views/form.php:28
 msgid "user"
-msgstr ""
+msgstr "کاربر"
 
 #: views/form.php:25
 msgid "verbose"
-msgstr ""
+msgstr "تشریح"
