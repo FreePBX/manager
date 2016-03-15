@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-13 10:21-0700\n"
-"PO-Revision-Date: 2016-03-15 09:16+0300\n"
+"PO-Revision-Date: 2016-03-15 18:03+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian "
 "<http://weblate.freepbx.org/projects/freepbx/manager/fa/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/grid.php:13
 msgid "Actions"
@@ -168,7 +168,7 @@ msgstr "فیلد خواندنی مدیریت دارای فرمت مناسبی ن
 
 #: views/form.php:317
 msgid "The manager secret cannot be empty."
-msgstr "راز مدیریت نمیتواند خالی باشد"
+msgstr "راز مدیریت نمیتواند خالی باشد."
 
 #: views/form.php:321
 msgid "The manager write field is not well formatted."
