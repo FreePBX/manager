@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-13 10:21-0700\n"
-"PO-Revision-Date: 2016-02-15 05:41+0200\n"
+"PO-Revision-Date: 2016-03-15 09:16+0300\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian "
 "<http://weblate.freepbx.org/projects/freepbx/manager/fa/>\n"
@@ -43,11 +43,11 @@ msgstr "انتخاب مدیریت ："
 
 #: functions.inc.php:234
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
-msgstr ""
+msgstr "کاربری انتخاب کنید که PHPAGI توسط آن به API استریسک متصل شود."
 
 #: Manager.class.php:53
 msgid "Column present"
-msgstr ""
+msgstr "ستون حال حاضر"
 
 #: Manager.class.php:116
 msgid "Delete"
@@ -62,6 +62,8 @@ msgid ""
 "For information on individual permissions please see the Asterisk Manager "
 "Documentation"
 msgstr ""
+"برای بدست آوردن اطلاعات درباره مجوزهای فردی لطفا به مدارک مدیریت استریسک "
+"مراجعه کنید"
 
 #: views/form.php:56
 msgid "General"
@@ -72,20 +74,25 @@ msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 msgstr ""
+"در صورتی که میخواهید دسترسی تعداد زیادی شبکه و یا هاست را ببندید از & جهت "
+"جداسازی آنها استفاده کنید. <<br/><br/>Example: "
+"192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
 #: views/form.php:155
 msgid ""
 "If you want to permit many hosts or networks, use & char as separator. Look "
 "at deny example."
 msgstr ""
+"در صورتی که میخواهید دسترسی تعداد زیادی شبکه و یا هاست را بازکنید از & جهت "
+"جداسازی آنها استفاده کنید."
 
 #: Manager.class.php:25
 msgid "Increasing read field size if needed.."
-msgstr ""
+msgstr "افزایش اندازه فیلد خواندنی در صورت نیاز.."
 
 #: Manager.class.php:35
 msgid "Increasing write field size if needed.."
-msgstr ""
+msgstr "افزایش اندازه فیلد نوشتاری در صورت نیاز.."
 
 #: page.manager.php:37
 msgid "List Managers"
@@ -136,6 +143,8 @@ msgid ""
 "Sets the timeout used by Asterisk when writing data to the AMI connection "
 "for this user"
 msgstr ""
+"تنظیم وقفه استفاده شده در استریسک در هنگام نوشتن دیتا در AMI connection برای "
+"این کاربر"
 
 #: Manager.class.php:126
 msgid "Submit"
@@ -143,27 +152,27 @@ msgstr "ارسال"
 
 #: views/form.php:318
 msgid "The manager deny is not well formatted."
-msgstr ""
+msgstr "انکار مدیریت دارای فیلد مناسبی نیست."
 
 #: views/form.php:316
 msgid "The manager name cannot be empty or may not have any space in it."
-msgstr ""
+msgstr "نام مدیریت نمیتواند خالی بوده و یا شامل فضای خالی یا فاصله باشد."
 
 #: views/form.php:319
 msgid "The manager permit is not well formatted."
-msgstr ""
+msgstr "مجوز مدیریت دارای فرمت مناسبی نیست."
 
 #: views/form.php:320
 msgid "The manager read field is not well formatted."
-msgstr ""
+msgstr "فیلد خواندنی مدیریت دارای فرمت مناسبی نیست."
 
 #: views/form.php:317
 msgid "The manager secret cannot be empty."
-msgstr ""
+msgstr "راز مدیریت نمیتواند خالی باشد"
 
 #: views/form.php:321
 msgid "The manager write field is not well formatted."
-msgstr ""
+msgstr "فیلد نوشتاری مدیریت دارای فرمت مناسبی نیست."
 
 #: functions.inc.php:201 functions.inc.php:207
 msgid "This manager already exists"
@@ -171,7 +180,7 @@ msgstr "مدیریت موجود است"
 
 #: views/form.php:227
 msgid "Toggle All"
-msgstr ""
+msgstr "تعویض همه"
 
 #: views/form.php:167
 msgid "Write Timeout"
