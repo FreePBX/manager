@@ -10,234 +10,246 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-13 10:21-0700\n"
-"PO-Revision-Date: 2015-08-13 10:21-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2016-12-13 21:48+0200\n"
+"Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
+"Language-Team: Portuguese (Brazil) "
+"<http://weblate.freepbx.org/projects/freepbx/manager/pt_BR/>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/grid.php:13
 msgid "Actions"
-msgstr ""
+msgstr "Ações"
 
 #: page.manager.php:38 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
-msgstr ""
+msgstr "Adicionar Gerenciador"
 
 #: Manager.class.php:44
 msgid "Adding write timeout.."
-msgstr ""
+msgstr "Adicionando tempo limite de gravação..."
 
 #: page.manager.php:25
 msgid "Asterisk Manager"
-msgstr ""
+msgstr "Gerenciador Asterisk"
 
 #: functions.inc.php:234
 msgid "Choose Manager:"
-msgstr ""
+msgstr "Selecione o Gerenciador:"
 
 #: functions.inc.php:234
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
-msgstr ""
+msgstr "Escolha o usuário que o PHPAGI usará para conectar à API do Asterisk."
 
 #: Manager.class.php:53
 msgid "Column present"
-msgstr ""
+msgstr "Coluna presente"
 
 #: Manager.class.php:116
 msgid "Delete"
-msgstr ""
+msgstr "Apagar"
 
 #: views/form.php:119 views/grid.php:11
 msgid "Deny"
-msgstr ""
+msgstr "Negar"
 
 #: views/form.php:190
 msgid ""
 "For information on individual permissions please see the Asterisk Manager "
 "Documentation"
 msgstr ""
+"Para obter informações sobre permissões individuais, consulte a documentação "
+"do Gerenciador Asterisk"
 
 #: views/form.php:56
 msgid "General"
-msgstr ""
+msgstr "Geral"
 
 #: views/form.php:131
 msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 msgstr ""
+"Se você quiser negar muitos hosts ou redes, use o símbolo \"&\" como "
+"separador. <br/><br/>Exemplo: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
 #: views/form.php:155
 msgid ""
 "If you want to permit many hosts or networks, use & char as separator. Look "
 "at deny example."
 msgstr ""
+"Se você quiser permitir muitos hosts ou redes, use o símbolo \"&\" como "
+"separador. Verifique o exemplo do campo 'Negar'."
 
 #: Manager.class.php:25
 msgid "Increasing read field size if needed.."
-msgstr ""
+msgstr "Aumentando tamanho de leitura do campo, se necessário ..."
 
 #: Manager.class.php:35
 msgid "Increasing write field size if needed.."
-msgstr ""
+msgstr "Aumentando o tamanho do campo de gravação, se necessário..."
 
 #: page.manager.php:37
 msgid "List Managers"
-msgstr ""
+msgstr "Gerenciadores de Listas"
 
 #: views/form.php:5
 msgid "Manager"
-msgstr ""
+msgstr "Gerenciador"
 
 #: views/form.php:68
 msgid "Manager name"
-msgstr ""
+msgstr "Nome do Gerenciador"
 
 #: views/form.php:92
 msgid "Manager secret"
-msgstr ""
+msgstr "Segredo do Gerenciador"
 
 #: views/grid.php:10
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #: views/form.php:80
 msgid "Name of the manager without spaces."
-msgstr ""
+msgstr "Nome do gerenciador, sem espaços."
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
 msgid "No"
-msgstr ""
+msgstr "Não"
 
 #: views/form.php:107
 msgid "Password for the manager."
-msgstr ""
+msgstr "Senha para o gerenciador."
 
 #: views/form.php:57
 msgid "Permissions"
-msgstr ""
+msgstr "Permissões"
 
 #: views/form.php:143 views/grid.php:12
 msgid "Permit"
-msgstr ""
+msgstr "Permitir"
 
 #: Manager.class.php:121
 msgid "Reset"
-msgstr ""
+msgstr "Reiniciar"
 
 #: views/form.php:182
 msgid ""
 "Sets the timeout used by Asterisk when writing data to the AMI connection "
 "for this user"
 msgstr ""
+"Define o tempo limite usado pelo Asterisk ao escrever dados para a conexão "
+"AMI para este usuário"
 
 #: Manager.class.php:126
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: views/form.php:318
 msgid "The manager deny is not well formatted."
-msgstr ""
+msgstr "O campo \"Negar\" não está no formato correto."
 
 #: views/form.php:316
 msgid "The manager name cannot be empty or may not have any space in it."
 msgstr ""
+"O nome do gerenciador não pode ser vazio ou não pode ter qualquer espaço."
 
 #: views/form.php:319
 msgid "The manager permit is not well formatted."
-msgstr ""
+msgstr "A permissão do gerenciador não está no formato correto."
 
 #: views/form.php:320
 msgid "The manager read field is not well formatted."
-msgstr ""
+msgstr "O campo \"Leitura\" não esta no formato correto."
 
 #: views/form.php:317
 msgid "The manager secret cannot be empty."
-msgstr ""
+msgstr "O segredo do gerenciador não pode estar vazio."
 
 #: views/form.php:321
 msgid "The manager write field is not well formatted."
-msgstr ""
+msgstr "O campo \"Escrita\" não está no formato correto."
 
 #: functions.inc.php:201 functions.inc.php:207
 msgid "This manager already exists"
-msgstr ""
+msgstr "Este gerenciador já existe"
 
 #: views/form.php:227
 msgid "Toggle All"
-msgstr ""
+msgstr "Alternar Tudo"
 
 #: views/form.php:167
 msgid "Write Timeout"
-msgstr ""
+msgstr "Tempo Limite de Escrita"
 
 #: views/form.php:210 views/form.php:218 views/form.php:231 views/form.php:239
 msgid "Yes"
-msgstr ""
+msgstr "Sim"
 
 #: views/form.php:27
 msgid "agent"
-msgstr ""
+msgstr "agente"
 
 #: views/form.php:23
 msgid "call"
-msgstr ""
+msgstr "chamada"
 
 #: views/form.php:32
 msgid "cdr"
-msgstr ""
+msgstr "cdr"
 
 #: views/form.php:26
 msgid "command"
-msgstr ""
+msgstr "comando"
 
 #: views/form.php:29
 msgid "config"
-msgstr ""
+msgstr "config"
 
 #: views/form.php:33
 msgid "dialplan"
-msgstr ""
+msgstr "plano de discagem"
 
 #: views/form.php:30
 msgid "dtmf"
-msgstr ""
+msgstr "dtmf"
 
 #: Manager.class.php:32 Manager.class.php:42
 msgid "error encountered, not altered"
-msgstr ""
+msgstr "erro encontrado, não alterado"
 
 #: views/form.php:24
 msgid "log"
-msgstr ""
+msgstr "registro"
 
 #: views/form.php:173
 msgid "milliseconds"
-msgstr ""
+msgstr "milissegundos"
 
 #: Manager.class.php:30 Manager.class.php:40 Manager.class.php:49
 msgid "ok"
-msgstr ""
+msgstr "ok"
 
 #: views/form.php:34
 msgid "originate"
-msgstr ""
+msgstr "originar"
 
 #: views/form.php:31
 msgid "reporting"
-msgstr ""
+msgstr "relatando"
 
 #: views/form.php:22
 msgid "system"
-msgstr ""
+msgstr "sistema"
 
 #: views/form.php:28
 msgid "user"
-msgstr ""
+msgstr "usuário"
 
 #: views/form.php:25
 msgid "verbose"
-msgstr ""
+msgstr "verboso"
