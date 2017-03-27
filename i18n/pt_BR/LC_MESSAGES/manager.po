@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-13 10:21-0700\n"
-"PO-Revision-Date: 2016-12-13 21:48+0200\n"
-"Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
+"PO-Revision-Date: 2017-03-27 14:18+0200\n"
+"Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/manager/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -95,7 +95,7 @@ msgstr "Aumentando o tamanho do campo de gravação, se necessário..."
 
 #: page.manager.php:37
 msgid "List Managers"
-msgstr "Gerenciadores de Listas"
+msgstr "Listar Gerenciadores"
 
 #: views/form.php:5
 msgid "Manager"
