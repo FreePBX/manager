@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-13 10:21-0700\n"
-"PO-Revision-Date: 2017-07-10 19:27+0200\n"
+"PO-Revision-Date: 2017-07-10 19:50+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/manager/vi/>\n"
@@ -27,7 +27,7 @@ msgstr "Các thao tác"
 
 #: page.manager.php:38 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
-msgstr "Thêm bộ quản lý"
+msgstr "Thêm trình quản lý"
 
 #: Manager.class.php:44
 msgid "Adding write timeout.."
@@ -35,11 +35,11 @@ msgstr "Đang thêm ghi thời gian chờ.."
 
 #: page.manager.php:25
 msgid "Asterisk Manager"
-msgstr "Bộ quản lý Asterisk"
+msgstr "Trình quản lý Asterisk"
 
 #: functions.inc.php:234
 msgid "Choose Manager:"
-msgstr "Chọn bộ quản lý:"
+msgstr "Chọn trình quản lý:"
 
 #: functions.inc.php:234
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
@@ -63,7 +63,7 @@ msgid ""
 "Documentation"
 msgstr ""
 "Để biết thêm thông tin về các quyền cá nhân vui lòng tham khảo tài liệu "
-"Asterisk Manager - bộ quản lý Asterisk"
+"Asterisk Manager - trình quản lý Asterisk"
 
 #: views/form.php:56
 msgid "General"
@@ -74,7 +74,7 @@ msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 msgstr ""
-"Nếu bạn muốn từ chối nhiều host haymạng, sử dụng ký tự & để ngăn "
+"Nếu bạn muốn từ chối nhiều host hay mạng, sử dụng ký tự & để ngăn "
 "cách.<br/><br/>Ví dụ: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
 #: views/form.php:155
@@ -95,19 +95,19 @@ msgstr "Đang tăng kích cỡ trường ghi ( write) nếu cần thiết.."
 
 #: page.manager.php:37
 msgid "List Managers"
-msgstr "Danh sách bộ quản lý"
+msgstr "Danh sách trình quản lý"
 
 #: views/form.php:5
 msgid "Manager"
-msgstr "Bộ quản lý"
+msgstr "Trình quản lý"
 
 #: views/form.php:68
 msgid "Manager name"
-msgstr "Tên của bộ quản lý"
+msgstr "Tên của trình quản lý"
 
 #: views/form.php:92
 msgid "Manager secret"
-msgstr "Bảo mật của bộ quản lý"
+msgstr "Bảo mật của trình quản lý"
 
 #: views/grid.php:10
 msgid "Name"
@@ -115,7 +115,7 @@ msgstr "tên"
 
 #: views/form.php:80
 msgid "Name of the manager without spaces."
-msgstr "Tên của bộ quản lý sẽ không chứa dấu cách."
+msgstr "Tên của trình quản lý sẽ không chứa dấu cách."
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
 msgid "No"
@@ -123,7 +123,7 @@ msgstr "Không"
 
 #: views/form.php:107
 msgid "Password for the manager."
-msgstr "Mật khẩu cho Bộ quản lý."
+msgstr "Mật khẩu cho trình quản lý."
 
 #: views/form.php:57
 msgid "Permissions"
@@ -151,31 +151,32 @@ msgstr "Gửi đi"
 
 #: views/form.php:318
 msgid "The manager deny is not well formatted."
-msgstr "Tính năng từ chối của Bộ quản lý không được định dạng tốt."
+msgstr "Tính năng từ chối của trình quản lý không được định dạng tốt."
 
 #: views/form.php:316
 msgid "The manager name cannot be empty or may not have any space in it."
-msgstr "Tên của bộ quản lý không được để trống hoặc không được chứa dấu cách."
+msgstr ""
+"Tên của trình quản lý không được để trống hoặc không được chứa dấu cách."
 
 #: views/form.php:319
 msgid "The manager permit is not well formatted."
-msgstr "Tính năng chó phép của bộ qunr lý không được định dạng tốt."
+msgstr "Cho phép của trình quản lý không được định dạng tốt."
 
 #: views/form.php:320
 msgid "The manager read field is not well formatted."
-msgstr "Trường đọc của bộ quản lý không được định dạng tốt."
+msgstr "Trường đọc của trình quản lý không được định dạng tốt."
 
 #: views/form.php:317
 msgid "The manager secret cannot be empty."
-msgstr "Bộ phận bảo mật của bộ quản lý không thể để trống."
+msgstr "Bảo mật của trình quản lý không thể để trống."
 
 #: views/form.php:321
 msgid "The manager write field is not well formatted."
-msgstr "Trường ghi bộ quản lý không được định dạng tốt."
+msgstr "Trường ghi trình quản lý không được định dạng tốt."
 
 #: functions.inc.php:201 functions.inc.php:207
 msgid "This manager already exists"
-msgstr "Bộ quản lý này đã tồn tại"
+msgstr "Trình quản lý này đã tồn tại"
 
 #: views/form.php:227
 msgid "Toggle All"
@@ -199,7 +200,7 @@ msgstr "cuộc gọi"
 
 #: views/form.php:32
 msgid "cdr"
-msgstr "cdr"
+msgstr "tập tin cdr"
 
 #: views/form.php:26
 msgid "command"
@@ -215,7 +216,7 @@ msgstr "kế hoạch quay số"
 
 #: views/form.php:30
 msgid "dtmf"
-msgstr "d"
+msgstr "dtmf - ( Dual Tone Multi Frequency- Âm kép đa tần)"
 
 #: Manager.class.php:32 Manager.class.php:42
 msgid "error encountered, not altered"
