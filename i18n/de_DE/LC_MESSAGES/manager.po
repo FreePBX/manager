@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-13 10:21-0700\n"
-"PO-Revision-Date: 2018-02-16 18:06+0200\n"
+"PO-Revision-Date: 2018-02-16 20:03+0200\n"
 "Last-Translator: Nils <Nils@heckenkamp.info>\n"
 "Language-Team: German "
 "<http://weblate.freepbx.org/projects/freepbx/manager/de_DE/>\n"
@@ -112,27 +112,27 @@ msgstr ""
 
 #: views/grid.php:10
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: views/form.php:80
 msgid "Name of the manager without spaces."
-msgstr ""
+msgstr "Name des Managers ohne Leerzeichen."
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
 msgid "No"
-msgstr ""
+msgstr "Nein"
 
 #: views/form.php:107
 msgid "Password for the manager."
-msgstr ""
+msgstr "Passwort für den Manager."
 
 #: views/form.php:57
 msgid "Permissions"
-msgstr ""
+msgstr "Berechtigungen"
 
 #: views/form.php:143 views/grid.php:12
 msgid "Permit"
-msgstr ""
+msgstr "Zulassen"
 
 #: Manager.class.php:121
 msgid "Reset"
@@ -143,10 +143,12 @@ msgid ""
 "Sets the timeout used by Asterisk when writing data to the AMI connection "
 "for this user"
 msgstr ""
+"Legt das Zeitlimit fest, das von Asterisk beim Schreiben von Daten in die "
+"AMI-Verbindung für diesen Benutzer verwendet wird"
 
 #: Manager.class.php:126
 msgid "Submit"
-msgstr ""
+msgstr "Absenden"
 
 #: views/form.php:318
 msgid "The manager deny is not well formatted."
@@ -155,14 +157,15 @@ msgstr ""
 #: views/form.php:316
 msgid "The manager name cannot be empty or may not have any space in it."
 msgstr ""
+"Der Manager-Name darf nicht leer sein oder darf kein Leerzeichen enthalten."
 
 #: views/form.php:319
 msgid "The manager permit is not well formatted."
-msgstr ""
+msgstr "Die Manager-Erlaubnis ist nicht gut formatiert."
 
 #: views/form.php:320
 msgid "The manager read field is not well formatted."
-msgstr ""
+msgstr "Das Manager-Lesefeld ist nicht gut formatiert."
 
 #: views/form.php:317
 msgid "The manager secret cannot be empty."
