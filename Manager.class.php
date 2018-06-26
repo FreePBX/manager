@@ -1,69 +1,13 @@
 <?php
 namespace FreePBX\modules;
+use BMO;
+use PDO;
+class Manager implements BMO {
 
-class Manager implements \BMO {
-	public function __construct($freepbx = null) {
-		if ($freepbx == null) {
-			throw new Exception("Not given a FreePBX Object");
-		}
-		$this->FreePBX = $freepbx;
-		$this->db = $freepbx->Database;
-	}
-	public function install() {
-		$dbh = $this->db;
-		$sql = "CREATE TABLE IF NOT EXISTS manager (
-			`manager_id` INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
-			`name` VARCHAR( 15 ) NOT NULL ,
-			`secret` VARCHAR( 50 ) ,
-			`deny` VARCHAR( 255 ) ,
-			`permit` VARCHAR( 255 ) ,
-			`read` VARCHAR( 255 ) ,
-			`write` VARCHAR( 255 )
-		)";
-		$stmt = $dbh->prepare($sql);
-		$stmt->execute();
-		\outn(_("Increasing read field size if needed.."));
-		$sql = "ALTER TABLE `manager` CHANGE `read` `read` VARCHAR( 255 )";
-		$stmt = $dbh->prepare($sql);
-		try {
-			$stmt->execute();
-			\out(_("ok"));
-		} catch (\PDOException $e) {
-			\out(_("error encountered, not altered"));
-		}
-
-		outn(_("Increasing write field size if needed.."));
-		$sql = "ALTER TABLE `manager` CHANGE `write` `write` VARCHAR( 255 )";
-		$stmt = $dbh->prepare($sql);
-		try {
-			$stmt->execute();
-			\out(_("ok"));
-		} catch (\PDOException $e) {
-			\out(_("error encountered, not altered"));
-		}
-		outn(_("Adding write timeout.."));
-		$sql = "ALTER TABLE manager ADD writetimeout INT";
-		$stmt = $dbh->prepare($sql);
-		try {
-			$stmt->execute();
-			\out(_("ok"));
-		} catch (\PDOException $e) {
-			//We are ok with 42S21 because we are trying to add a column and it says that column is present.
-			if($e->getCode() == '42S21'){
-				\out(_("Column present"));
-			}else{
-				//All other exceptions are bad mmmk
-				\out($e->getMessage());
-				throw $e;
-			}
-		}
-	}
+	public function install() {}
 	public function uninstall() {
 	}
-	public function backup() {
-	}
-	public function restore($backup) {
-	}
+
 	public function doConfigPageInit($page) {
 		$action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
 		//the extension we are currently displaying
@@ -87,7 +31,6 @@ class Manager implements \BMO {
 		case "add":
 			$rights = manager_format_in($_REQUEST);
 			manager_add($name,$secret,$deny,$permit,$rights['read'],$rights['write'],$writetimeout);
-			$_REQUEST['managerdisplay'] = $name;
 			needreload();
 			break;
 		case "delete":
@@ -165,13 +108,26 @@ class Manager implements \BMO {
 				break;
 		}
 	}
-	public function listManagers(){
-		$dbh = $this->db;
-		$sql = "SELECT manager_id, name, deny, permit FROM manager ORDER BY name";
-		$stmt = $dbh->prepare($sql);
-		$stmt->execute();
-		$ret = $stmt->fetchAll(\PDO::FETCH_ASSOC);
-		$res = is_array($ret)?$ret:array();
-		return $res;
-	}
+	public function listManagers($all = false){
+        $sql = "SELECT manager_id, name, deny, permit FROM manager ORDER BY name";
+        if ($all) {
+            $sql = 'SELECT manager_id, name, deny, permit FROM manager ORDER BY name';
+        }
+        return $this->FreePBX->Database->query($sql,PDO::FETCH_ASSOC);
+    }
+    public function upsert($id, $p_name, $p_secret, $p_deny, $p_permit, $p_read, $p_write, $p_writetimeout = 100){
+        $sql = 'REPLACE INTO manager (manager_id, name, secret, deny, permit, read, write, writetimeout) VALUES (:manager_id, :name, :secret, :deny, :permit, :read, :write, :writetimeout)';
+        $this->FreePBX->Database->prepare($sql)
+         ->execute([
+            ':manager_id' => $id, 
+            ':name' => $p_name, 
+            ':secret' => $p_secret, 
+            ':deny' => $p_deny, 
+            ':permit' => $p_permit, 
+            ':read' => $p_read, 
+            ':write' => $p_write, 
+            ':writetimeout' => $p_write,
+        ]);
+        return $this;
+    }
 }
