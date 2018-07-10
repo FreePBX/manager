@@ -2,7 +2,9 @@
 namespace FreePBX\modules;
 use BMO;
 use PDO;
-class Manager implements BMO {
+use FreePBX_Helpers;
+
+class Manager extends FreePBX_Helpers implements BMO {
 
 	public function install() {}
 	public function uninstall() {
