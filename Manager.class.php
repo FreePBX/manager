@@ -81,15 +81,11 @@ class Manager extends FreePBX_Helpers implements BMO {
 		}
 		return $buttons;
 	}
-	public function ajaxRequest($req, &$setting) {
-		switch ($req) {
-		case 'getJSON':
-			return true;
-			break;
-		default:
-			return false;
-			break;
-		}
+	public function ajaxRequest($command, &$setting) {
+        if($command === true){
+            return true;
+        }
+        return false;
 	}
 	public function ajaxHandler(){
 		switch ($_REQUEST['command']) {
@@ -115,10 +111,10 @@ class Manager extends FreePBX_Helpers implements BMO {
         if ($all) {
             $sql = 'SELECT manager_id, name, deny, permit FROM manager ORDER BY name';
         }
-        return $this->FreePBX->Database->query($sql,PDO::FETCH_ASSOC);
+        return $this->FreePBX->Database->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     }
     public function upsert($id, $p_name, $p_secret, $p_deny, $p_permit, $p_read, $p_write, $p_writetimeout = 100){
-        $sql = 'REPLACE INTO manager (manager_id, name, secret, deny, permit, read, write, writetimeout) VALUES (:manager_id, :name, :secret, :deny, :permit, :read, :write, :writetimeout)';
+        $sql = 'REPLACE INTO manager (`manager_id`, `name`, `secret`, `deny`, `permit`, `read`, `write`, `writetimeout`) VALUES (:manager_id, :name, :secret, :deny, :permit, :read, :write, :writetimeout)';
         $this->FreePBX->Database->prepare($sql)
          ->execute([
             ':manager_id' => $id, 
