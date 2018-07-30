@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-13 10:21-0700\n"
-"PO-Revision-Date: 2018-07-27 13:00+0000\n"
+"PO-Revision-Date: 2018-07-31 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/manager/de/>\n"
 "Language: de_DE\n"
@@ -26,7 +26,7 @@ msgstr "Aktionen"
 
 #: page.manager.php:38 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
-msgstr ""
+msgstr "Manager hinzufügen"
 
 #: Manager.class.php:44
 msgid "Adding write timeout.."
@@ -34,11 +34,11 @@ msgstr ""
 
 #: page.manager.php:25
 msgid "Asterisk Manager"
-msgstr ""
+msgstr "Asterisk-Manager"
 
 #: functions.inc.php:234
 msgid "Choose Manager:"
-msgstr ""
+msgstr "Manager auswählen:"
 
 #: functions.inc.php:234
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
@@ -46,7 +46,7 @@ msgstr ""
 
 #: Manager.class.php:53
 msgid "Column present"
-msgstr ""
+msgstr "Spalte vorhanden"
 
 #: Manager.class.php:116
 msgid "Delete"
