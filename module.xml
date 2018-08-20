@@ -2,7 +2,7 @@
 	<rawname>manager</rawname>
 	<repo>standard</repo>
 	<name>Asterisk API</name>
-	<version>15.0.1</version>
+	<version>15.0.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv2+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-2.0.txt</licenselink>
@@ -23,9 +23,10 @@
         </table>
     </database>
 	<changelog>
+		*15.0.2* Packaging of ver 15.0.2
 		*15.0.1* Backup 15
 	</changelog>
 	<supported>
-		<version>15</version>
+		<version>15.0</version>
 	</supported>
 </module>

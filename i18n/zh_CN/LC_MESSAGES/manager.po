@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-13 10:21-0700\n"
+"POT-Creation-Date: 2018-08-20 14:59-0400\n"
 "PO-Revision-Date: 2009-02-01 17:40+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,12 +27,16 @@ msgstr ""
 msgid "Add Manager"
 msgstr "添加管理员用户"
 
-#: Manager.class.php:44
-msgid "Adding write timeout.."
+#: manager.i18n.php:4
+msgid "Asterisk API"
 msgstr ""
 
 #: page.manager.php:25
 msgid "Asterisk Manager"
+msgstr ""
+
+#: manager.i18n.php:8
+msgid "Asterisk Manager Users"
 msgstr ""
 
 #: functions.inc.php:234
@@ -42,11 +47,7 @@ msgstr "选择管理员"
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr "选择PHPAGI用来连接到Asterisk API的用户名"
 
-#: Manager.class.php:53
-msgid "Column present"
-msgstr ""
-
-#: Manager.class.php:116
+#: Manager.class.php:61
 msgid "Delete"
 msgstr ""
 
@@ -79,14 +80,6 @@ msgid ""
 msgstr ""
 "如果你希望拒绝多个主机或者网络，使用&字符作为分隔符。请查看拒绝主机或者网络的"
 "例子。"
-
-#: Manager.class.php:25
-msgid "Increasing read field size if needed.."
-msgstr ""
-
-#: Manager.class.php:35
-msgid "Increasing write field size if needed.."
-msgstr ""
 
 #: page.manager.php:37
 msgid "List Managers"
@@ -128,7 +121,7 @@ msgstr ""
 msgid "Permit"
 msgstr ""
 
-#: Manager.class.php:121
+#: Manager.class.php:66
 msgid "Reset"
 msgstr ""
 
@@ -138,7 +131,11 @@ msgid ""
 "for this user"
 msgstr ""
 
-#: Manager.class.php:126
+#: manager.i18n.php:6
+msgid "Settings"
+msgstr ""
+
+#: Manager.class.php:71
 msgid "Submit"
 msgstr ""
 
@@ -210,20 +207,12 @@ msgstr ""
 msgid "dtmf"
 msgstr ""
 
-#: Manager.class.php:32 Manager.class.php:42
-msgid "error encountered, not altered"
-msgstr ""
-
 #: views/form.php:24
 msgid "log"
 msgstr ""
 
 #: views/form.php:173
 msgid "milliseconds"
-msgstr ""
-
-#: Manager.class.php:30 Manager.class.php:40 Manager.class.php:49
-msgid "ok"
 msgstr ""
 
 #: views/form.php:34
