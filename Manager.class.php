@@ -82,28 +82,29 @@ class Manager extends FreePBX_Helpers implements BMO {
 		return $buttons;
 	}
 	public function ajaxRequest($command, &$setting) {
-        if($command === true){
-            return true;
-        }
-        return false;
+		switch($command) {
+			case "getJSON":
+				return true;
+			break;
+		}
+		return false;
 	}
 	public function ajaxHandler(){
 		switch ($_REQUEST['command']) {
-		case 'getJSON':
+			case 'getJSON':
 			switch ($_REQUEST['jdata']) {
-			case 'grid':
+				case 'grid':
 				return $this->listManagers();
 				break;
 
-			default:
+				default:
 				return false;
 				break;
 			}
 			break;
-
 			default:
-				return false;
-				break;
+			return false;
+			break;
 		}
 	}
 	public function listManagers($all = false){
@@ -117,13 +118,13 @@ class Manager extends FreePBX_Helpers implements BMO {
         $sql = 'REPLACE INTO manager (`manager_id`, `name`, `secret`, `deny`, `permit`, `read`, `write`, `writetimeout`) VALUES (:manager_id, :name, :secret, :deny, :permit, :read, :write, :writetimeout)';
         $this->Database->prepare($sql)
          ->execute([
-            ':manager_id' => $id, 
-            ':name' => $p_name, 
-            ':secret' => $p_secret, 
-            ':deny' => $p_deny, 
-            ':permit' => $p_permit, 
-            ':read' => $p_read, 
-            ':write' => $p_write, 
+            ':manager_id' => $id,
+            ':name' => $p_name,
+            ':secret' => $p_secret,
+            ':deny' => $p_deny,
+            ':permit' => $p_permit,
+            ':read' => $p_read,
+            ':write' => $p_write,
             ':writetimeout' => $p_write,
         ]);
         return $this;
@@ -132,7 +133,7 @@ class Manager extends FreePBX_Helpers implements BMO {
 	$this->Database = $pdo;
 	return $this;
 	}
-	
+
 	public function resetDatabase(){
 	$this->Database = $this->FreePBX->Database;
 	return $this;
