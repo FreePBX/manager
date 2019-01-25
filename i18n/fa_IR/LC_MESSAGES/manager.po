@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-13 10:21-0700\n"
-"PO-Revision-Date: 2019-01-25 09:46+0000\n"
+"PO-Revision-Date: 2019-01-26 10:00+0000\n"
 "Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://*/projects/freepbx/manager/fa/>\n"
 "Language: fa_IR\n"
@@ -215,7 +215,7 @@ msgstr "نقشه تماس"
 
 #: views/form.php:30
 msgid "dtmf"
-msgstr "dtmf"
+msgstr "DTMF"
 
 #: Manager.class.php:32 Manager.class.php:42
 msgid "error encountered, not altered"
