@@ -1,81 +1,80 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for manager
+# Copyright (C) 2008-2015 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 2.5\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-13 10:21-0700\n"
-"PO-Revision-Date: 2018-05-29 13:50+0000\n"
-"Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
-"Language-Team: Italian <http://*/projects/freepbx/manager/it/>\n"
-"Language: it_IT\n"
+"PO-Revision-Date: 2019-01-26 10:00+0000\n"
+"Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
+"Language-Team: Persian <http://*/projects/freepbx/manager/fa/>\n"
+"Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.19.1\n"
-"X-Poedit-Language: Italian\n"
-"X-Poedit-Country: ITALY\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: views/grid.php:13
 msgid "Actions"
-msgstr "Azioni"
+msgstr "عملیات"
 
 #: page.manager.php:38 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
-msgstr "Aggiungi Manager"
+msgstr "افزودن مدیریت"
 
 #: Manager.class.php:44
 msgid "Adding write timeout.."
-msgstr "Aggiunta del timeout di scrittura .."
+msgstr "افزودن وقفه نوشتن.."
 
 #: page.manager.php:25
 msgid "Asterisk Manager"
-msgstr "Asterisk manager"
+msgstr "مدیریت استریسک"
 
 #: functions.inc.php:234
 msgid "Choose Manager:"
-msgstr "Scegliere il Manager:"
+msgstr "انتخاب مدیریت ："
 
 #: functions.inc.php:234
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
-msgstr ""
-"Scegliere l'utente che PHPAGI userà per connettersi con le API di Asterisk."
+msgstr "کاربری انتخاب کنید که PHPAGI توسط آن به API استریسک متصل شود."
 
 #: Manager.class.php:53
 msgid "Column present"
-msgstr "Colonna presente"
+msgstr "ستون حال حاضر"
 
 #: Manager.class.php:116
 msgid "Delete"
-msgstr "Elimina"
+msgstr "حذف"
 
 #: views/form.php:119 views/grid.php:11
 msgid "Deny"
-msgstr "Negare"
+msgstr "لغو"
 
 #: views/form.php:190
 msgid ""
 "For information on individual permissions please see the Asterisk Manager "
 "Documentation"
 msgstr ""
-"Per informazioni sulle autorizzazioni individuali, consultare la "
-"documentazione di Asterisk Manager"
+"برای بدست آوردن اطلاعات درباره مجوزهای فردی لطفا به مدارک مدیریت استریسک "
+"مراجعه کنید"
 
 #: views/form.php:56
 msgid "General"
-msgstr "Generale"
+msgstr "عمومی"
 
 #: views/form.php:131
 msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 msgstr ""
-"Se si vuole negare l'accesso a più host o reti, utilizzare il carattere & "
-"come separatore.<br/><br/>Esempio: "
+"در صورتی که میخواهید دسترسی تعداد زیادی شبکه و یا هاست را ببندید از & جهت "
+"جداسازی آنها استفاده کنید. <<br/><br/>Example: "
 "192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
 #: views/form.php:155
@@ -83,221 +82,173 @@ msgid ""
 "If you want to permit many hosts or networks, use & char as separator. Look "
 "at deny example."
 msgstr ""
-"Se si vuole permettere l'accesso a più host o reti, utilizzare il carattere "
-"& come separatore. Guarda come esempio Deny."
+"در صورتی که میخواهید دسترسی تعداد زیادی شبکه و یا هاست را بازکنید از & جهت "
+"جداسازی آنها استفاده کنید."
 
 #: Manager.class.php:25
 msgid "Increasing read field size if needed.."
-msgstr "Aumentare le dimensioni del campo di lettura, se necessario."
+msgstr "افزایش اندازه فیلد خواندنی در صورت نیاز.."
 
 #: Manager.class.php:35
 msgid "Increasing write field size if needed.."
-msgstr "Aumentare le dimensioni del campo di scrittura, se necessario."
+msgstr "افزایش اندازه فیلد نوشتاری در صورت نیاز.."
 
 #: page.manager.php:37
 msgid "List Managers"
-msgstr "Lista dei manager"
+msgstr "فهرست مدیریت ها"
 
 #: views/form.php:5
 msgid "Manager"
-msgstr "Manager"
+msgstr "مدیریت"
 
 #: views/form.php:68
 msgid "Manager name"
-msgstr "Nome manager"
+msgstr "نام مدیریت"
 
 #: views/form.php:92
 msgid "Manager secret"
-msgstr "Manager segreto"
+msgstr "رمز مدیریت"
 
 #: views/grid.php:10
 msgid "Name"
-msgstr "Nome"
+msgstr "نام"
 
 #: views/form.php:80
 msgid "Name of the manager without spaces."
-msgstr "Nome del manager senza spazi."
+msgstr "نام مدیریت بدون فاصله."
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
 msgid "No"
-msgstr "No"
+msgstr "خیر"
 
 #: views/form.php:107
 msgid "Password for the manager."
-msgstr "La password per il manager (secret)."
+msgstr "پسورد مدیریت."
 
 #: views/form.php:57
 msgid "Permissions"
-msgstr "Permessi"
+msgstr "دسترسی ها"
 
 #: views/form.php:143 views/grid.php:12
 msgid "Permit"
-msgstr "Permesso"
+msgstr "اجازه دادن"
 
 #: Manager.class.php:121
 msgid "Reset"
-msgstr "Azzera"
+msgstr "بازنشانی"
 
 #: views/form.php:182
 msgid ""
 "Sets the timeout used by Asterisk when writing data to the AMI connection "
 "for this user"
 msgstr ""
-"Imposta il timeout utilizzato da Asterisk durante la scrittura dei dati "
-"sulla connessione AMI per questo utente"
+"تنظیم وقفه استفاده شده در استریسک در هنگام نوشتن دیتا در AMI connection برای "
+"این کاربر"
 
 #: Manager.class.php:126
 msgid "Submit"
-msgstr "Sottoscrivi"
+msgstr "ارسال"
 
 #: views/form.php:318
 msgid "The manager deny is not well formatted."
-msgstr "Il gestore nega non è ben formattato."
+msgstr "انکار مدیریت دارای فیلد مناسبی نیست."
 
 #: views/form.php:316
 msgid "The manager name cannot be empty or may not have any space in it."
-msgstr "Il nome del gestore non può essere vuoto o non può contenere spazio."
+msgstr "نام مدیریت نمیتواند خالی بوده و یا شامل فضای خالی یا فاصله باشد."
 
 #: views/form.php:319
 msgid "The manager permit is not well formatted."
-msgstr "Il permesso del manager non è ben formattato."
+msgstr "مجوز مدیریت دارای فرمت مناسبی نیست."
 
 #: views/form.php:320
 msgid "The manager read field is not well formatted."
-msgstr "Il permesso del manager non è ben formattato."
+msgstr "فیلد خواندنی مدیریت دارای فرمت مناسبی نیست."
 
 #: views/form.php:317
 msgid "The manager secret cannot be empty."
-msgstr "Il segreto del gestore non può essere vuoto."
+msgstr "راز مدیریت نمیتواند خالی باشد."
 
 #: views/form.php:321
 msgid "The manager write field is not well formatted."
-msgstr "Il campo di scrittura del manager non è ben formattato."
+msgstr "فیلد نوشتاری مدیریت دارای فرمت مناسبی نیست."
 
 #: functions.inc.php:201 functions.inc.php:207
 msgid "This manager already exists"
-msgstr "Questo manager già esiste"
+msgstr "مدیریت موجود است"
 
 #: views/form.php:227
 msgid "Toggle All"
-msgstr "Attiva tutto"
+msgstr "تعویض همه"
 
 #: views/form.php:167
 msgid "Write Timeout"
-msgstr "Scrivi Timeout"
+msgstr "وقفه نوشتن"
 
 #: views/form.php:210 views/form.php:218 views/form.php:231 views/form.php:239
 msgid "Yes"
-msgstr "Si"
+msgstr "بله"
 
 #: views/form.php:27
 msgid "agent"
-msgstr "agente"
+msgstr "اپراتور"
 
 #: views/form.php:23
 msgid "call"
-msgstr "Chiamata"
+msgstr "تماس"
 
 #: views/form.php:32
 msgid "cdr"
-msgstr "Cdr"
+msgstr "جزییات تماس"
 
 #: views/form.php:26
 msgid "command"
-msgstr "Comando"
+msgstr "دستور"
 
 #: views/form.php:29
 msgid "config"
-msgstr "Configurazione"
+msgstr "تنظیم"
 
 #: views/form.php:33
 msgid "dialplan"
-msgstr "piano di chiamata"
+msgstr "نقشه تماس"
 
 #: views/form.php:30
 msgid "dtmf"
-msgstr "Dtmf"
+msgstr "DTMF"
 
 #: Manager.class.php:32 Manager.class.php:42
 msgid "error encountered, not altered"
-msgstr "errore riscontrato, non alterato"
+msgstr "بروز خطا, بدون هشدار"
 
 #: views/form.php:24
 msgid "log"
-msgstr "accessi"
+msgstr "لاگ"
 
 #: views/form.php:173
 msgid "milliseconds"
-msgstr "millisecondi"
+msgstr "میلی ثانیه"
 
 #: Manager.class.php:30 Manager.class.php:40 Manager.class.php:49
 msgid "ok"
-msgstr "ok"
+msgstr "تایید"
 
 #: views/form.php:34
 msgid "originate"
-msgstr "originato"
+msgstr "ایجاد کردن"
 
 #: views/form.php:31
 msgid "reporting"
-msgstr "segnalazione"
+msgstr "گزارش دادن"
 
 #: views/form.php:22
 msgid "system"
-msgstr "sistema"
+msgstr "سیستم"
 
 #: views/form.php:28
 msgid "user"
-msgstr "utente"
+msgstr "کاربر"
 
 #: views/form.php:25
 msgid "verbose"
-msgstr "verboso"
-
-#~ msgid "Check All/None."
-#~ msgstr "Attiva Tutto/Niente"
-
-#~ msgid "Check Asterisk documentation."
-#~ msgstr "Controllare la documentazione di Asterisk"
-
-#~ msgid "Delete Manager"
-#~ msgstr "Elimina Manager"
-
-#~ msgid "Deny:"
-#~ msgstr "Nega (deny):"
-
-#~ msgid "Edit Manager"
-#~ msgstr "Modifica Manager"
-
-#~ msgid "Manager name:"
-#~ msgstr "Nome Manager:"
-
-#~ msgid "Manager secret:"
-#~ msgstr "Password Manager:"
-
-#~ msgid "Manager:"
-#~ msgstr "Manager:"
-
-#~ msgid "Name of the manager without space."
-#~ msgstr "Il nome del manager senza spazi."
-
-#~ msgid "Permit:"
-#~ msgstr "Permetti (permit):"
-
-#~ msgid "Read"
-#~ msgstr "Lettura (read)"
-
-#~ msgid "Rights"
-#~ msgstr "Permessi (rights)"
-
-#~ msgid "Submit Changes"
-#~ msgstr "Conferma Cambiamenti"
-
-#~ msgid "Write"
-#~ msgstr "Scrittura (write)"
-
-#~ msgid "deleted"
-#~ msgstr "eliminato"
-
-#~ msgid "Error writing the manager additional file."
-#~ msgstr "Errore durante la scrittura del file addizionale di manager."
+msgstr "تشریح"
