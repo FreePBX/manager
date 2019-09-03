@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_REQUEST['managerdisplay'])){
-  $managerdisplay = $_REQUEST['managerdisplay'];
+  $managerdisplay = htmlentities($_REQUEST['managerdisplay'], ENT_QUOTES);
   $subhead = '<h2>'._("Manager").' '.$managerdisplay.'</h2>';
   $delURL = '?display=manager&amp;managerdisplay='.$managerdisplay.'&amp;action=delete';
   //get details for this manager
