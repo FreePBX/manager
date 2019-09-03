@@ -67,7 +67,7 @@ class Manager implements \BMO {
 	public function doConfigPageInit($page) {
 		$action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
 		//the extension we are currently displaying
-		$managerdisplay = isset($_REQUEST['managerdisplay'])?$_REQUEST['managerdisplay']:'';
+		$managerdisplay = isset($_REQUEST['managerdisplay'])?htmlentities($_REQUEST['managerdisplay'], ENT_QUOTES):'';
 		$name = isset($_REQUEST['name'])?$_REQUEST['name']:'';
 		$secret = isset($_REQUEST['secret'])?$_REQUEST['secret']:'';
 		$deny = isset($_REQUEST['deny'])?$_REQUEST['deny']:'0.0.0.0/0.0.0.0';
