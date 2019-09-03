@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-13 10:21-0700\n"
+"POT-Creation-Date: 2019-09-03 21:49+0530\n"
 "PO-Revision-Date: 2019-01-26 10:00+0000\n"
 "Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://*/projects/freepbx/manager/fa/>\n"
@@ -32,9 +32,17 @@ msgstr "افزودن مدیریت"
 msgid "Adding write timeout.."
 msgstr "افزودن وقفه نوشتن.."
 
+#: manager.i18n.php:4
+msgid "Asterisk API"
+msgstr ""
+
 #: page.manager.php:25
 msgid "Asterisk Manager"
 msgstr "مدیریت استریسک"
+
+#: manager.i18n.php:8
+msgid "Asterisk Manager Users"
+msgstr ""
 
 #: functions.inc.php:234
 msgid "Choose Manager:"
@@ -144,6 +152,10 @@ msgid ""
 msgstr ""
 "تنظیم وقفه استفاده شده در استریسک در هنگام نوشتن دیتا در AMI connection برای "
 "این کاربر"
+
+#: manager.i18n.php:6
+msgid "Settings"
+msgstr ""
 
 #: Manager.class.php:126
 msgid "Submit"

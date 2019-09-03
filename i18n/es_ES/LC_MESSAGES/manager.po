@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo manager module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-13 10:21-0700\n"
+"POT-Creation-Date: 2019-09-03 21:49+0530\n"
 "PO-Revision-Date: 2018-07-18 19:19+0000\n"
 "Last-Translator: Elvita Crespo <ecrespo@sangoma.com>\n"
 "Language-Team: Spanish <http://*/projects/freepbx/manager/es/>\n"
@@ -28,9 +28,17 @@ msgstr "Añadir gestor"
 msgid "Adding write timeout.."
 msgstr "Agregando tiempo de espera de escritura.."
 
+#: manager.i18n.php:4
+msgid "Asterisk API"
+msgstr "API Asterisk"
+
 #: page.manager.php:25
 msgid "Asterisk Manager"
 msgstr "Gestor Asterisk"
+
+#: manager.i18n.php:8
+msgid "Asterisk Manager Users"
+msgstr "Usuarios gestor Asterisk"
 
 #: functions.inc.php:234
 msgid "Choose Manager:"
@@ -141,6 +149,10 @@ msgstr ""
 "Establece el tiempo de espera utilizado por Asterisk al escribir datos en la "
 "conexión AMI para este usuario"
 
+#: manager.i18n.php:6
+msgid "Settings"
+msgstr "Configuracion"
+
 #: Manager.class.php:126
 msgid "Submit"
 msgstr "Enviar"
@@ -248,15 +260,6 @@ msgstr "usuario"
 #: views/form.php:25
 msgid "verbose"
 msgstr "verbose"
-
-#~ msgid "Asterisk API"
-#~ msgstr "API Asterisk"
-
-#~ msgid "Asterisk Manager Users"
-#~ msgstr "Usuarios gestor Asterisk"
-
-#~ msgid "Settings"
-#~ msgstr "Configuracion"
 
 #~ msgid "Check All/None."
 #~ msgstr "Marcar todos/ninguno."
