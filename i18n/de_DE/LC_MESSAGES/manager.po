@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-03 21:49+0530\n"
-"PO-Revision-Date: 2019-04-11 09:00+0000\n"
-"Last-Translator: florian alberts <alberts@ar-systems.de>\n"
+"PO-Revision-Date: 2019-11-25 16:29+0000\n"
+"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/manager/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgstr "Füge Schreib-Zeitüberschreitung hinzu.."
 
 #: manager.i18n.php:4
 msgid "Asterisk API"
-msgstr ""
+msgstr "Asterisk-API"
 
 #: page.manager.php:25
 msgid "Asterisk Manager"
@@ -42,7 +42,7 @@ msgstr "Asterisk-Manager"
 
 #: manager.i18n.php:8
 msgid "Asterisk Manager Users"
-msgstr ""
+msgstr "Asterisk-Manager-Benutzer"
 
 #: functions.inc.php:234
 msgid "Choose Manager:"
@@ -157,7 +157,7 @@ msgstr ""
 
 #: manager.i18n.php:6
 msgid "Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #: Manager.class.php:126
 msgid "Submit"
