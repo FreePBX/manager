@@ -110,7 +110,7 @@ class Manager extends FreePBX_Helpers implements BMO {
 	public function listManagers($all = false){
 		$sql = "SELECT manager_id, name, deny, permit FROM manager ORDER BY name";
 		if ($all) {
-			$sql = 'SELECT manager_id, name, deny, permit FROM manager ORDER BY name';
+			$sql = 'SELECT * FROM manager ORDER BY name';
 		}
 		return $this->Database->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 	}
@@ -125,7 +125,7 @@ class Manager extends FreePBX_Helpers implements BMO {
 			':permit' => $p_permit,
 			':read' => $p_read,
 			':write' => $p_write,
-			':writetimeout' => $p_write,
+			':writetimeout' => $p_writetimeout,
 		]);
 		return $this;
 	}
