@@ -10,6 +10,8 @@
 	<menuitems>
 		<manager>Asterisk Manager Users</manager>
 	</menuitems>
+  	<description>This module is used to add AMI Users</description>
+  	<more-info>https://wiki.freepbx.org/display/FPG/Asterisk+Managers+Interface</more-info>
 	<changelog>
 		*13.0.2.7* FREEI-922 Fix XSS Bootstrap Datatable Issues 
 		*13.0.2.6* FREEPBX-20436 XSS vulnerability in manager module 
