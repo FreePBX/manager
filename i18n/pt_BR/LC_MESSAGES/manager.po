@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 14:59-0400\n"
+"POT-Creation-Date: 2020-08-20 03:54+0000\n"
 "PO-Revision-Date: 2017-03-27 14:18+0200\n"
 "Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -37,7 +37,7 @@ msgstr ""
 msgid "Asterisk Manager"
 msgstr "Gerenciador Asterisk"
 
-#: manager.i18n.php:8
+#: manager.i18n.php:10
 msgid "Asterisk Manager Users"
 msgstr ""
 
@@ -173,6 +173,10 @@ msgstr "O campo \"Escrita\" não está no formato correto."
 #: functions.inc.php:201 functions.inc.php:207
 msgid "This manager already exists"
 msgstr "Este gerenciador já existe"
+
+#: manager.i18n.php:8
+msgid "This module is used to add AMI Users"
+msgstr ""
 
 #: views/form.php:227
 msgid "Toggle All"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 14:59-0400\n"
+"POT-Creation-Date: 2020-08-20 03:54+0000\n"
 "PO-Revision-Date: 2017-07-10 19:50+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -37,7 +37,7 @@ msgstr ""
 msgid "Asterisk Manager"
 msgstr "Trình quản lý Asterisk"
 
-#: manager.i18n.php:8
+#: manager.i18n.php:10
 msgid "Asterisk Manager Users"
 msgstr ""
 
@@ -173,6 +173,10 @@ msgstr "Trường ghi trình quản lý không được định dạng tốt."
 #: functions.inc.php:201 functions.inc.php:207
 msgid "This manager already exists"
 msgstr "Trình quản lý này đã tồn tại"
+
+#: manager.i18n.php:8
+msgid "This module is used to add AMI Users"
+msgstr ""
 
 #: views/form.php:227
 msgid "Toggle All"
