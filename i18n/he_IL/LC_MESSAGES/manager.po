@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 14:59-0400\n"
+"POT-Creation-Date: 2020-08-20 03:55+0000\n"
 "PO-Revision-Date: 2006-09-28 17:30+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,7 @@ msgstr ""
 msgid "Asterisk Manager"
 msgstr ""
 
-#: manager.i18n.php:8
+#: manager.i18n.php:10
 msgid "Asterisk Manager Users"
 msgstr ""
 
@@ -162,6 +162,10 @@ msgstr ""
 #: functions.inc.php:201 functions.inc.php:207
 msgid "This manager already exists"
 msgstr "המנהל כבר קיים"
+
+#: manager.i18n.php:8
+msgid "This module is used to add AMI Users"
+msgstr ""
 
 #: views/form.php:227
 msgid "Toggle All"
