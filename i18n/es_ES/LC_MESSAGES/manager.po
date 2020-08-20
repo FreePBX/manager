@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo manager module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-03 21:49+0530\n"
+"POT-Creation-Date: 2020-08-20 03:52+0000\n"
 "PO-Revision-Date: 2018-07-18 19:19+0000\n"
 "Last-Translator: Elvita Crespo <ecrespo@sangoma.com>\n"
 "Language-Team: Spanish <http://*/projects/freepbx/manager/es/>\n"
@@ -36,7 +36,7 @@ msgstr "API Asterisk"
 msgid "Asterisk Manager"
 msgstr "Gestor Asterisk"
 
-#: manager.i18n.php:8
+#: manager.i18n.php:10
 msgid "Asterisk Manager Users"
 msgstr "Usuarios gestor Asterisk"
 
@@ -184,6 +184,10 @@ msgstr "El campo 'Escritura' no tiene el formato correcto."
 #: functions.inc.php:201 functions.inc.php:207
 msgid "This manager already exists"
 msgstr "Este gestor ya existe"
+
+#: manager.i18n.php:8
+msgid "This module is used to add AMI Users"
+msgstr ""
 
 #: views/form.php:227
 msgid "Toggle All"
