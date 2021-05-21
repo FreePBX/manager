@@ -11,6 +11,7 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //but WITHOUT ANY WARRANTY; without even the implied warranty of
 //MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //GNU General Public License for more details.
+global $amp_conf;
 $view = isset($_REQUEST['view'])?$_REQUEST['view']:'';
 switch($view){
 	case 'form':
@@ -22,7 +23,15 @@ switch($view){
 }
 ?>
 <div class="container-fluid">
-	<h1><?php echo _('Asterisk Manager')?></h1>
+	<div class="col-sm-9">
+		<h1><?php echo _('Asterisk Manager')?></h1>
+		<div class="alert alert-info">
+			<?php
+				$fileData = @parse_ini_file($amp_conf['ASTETCDIR'].'/manager.conf', false);
+				echo _('AMI current settings for Bind Address : ' . $fileData['bindaddr'] .' and bind port : ' . $fileData['port'] .'.');
+			 ?>
+		</div>
+	</div>
 	<div class = "display full-border">
 		<div class="row">
 			<div class="col-sm-9">
