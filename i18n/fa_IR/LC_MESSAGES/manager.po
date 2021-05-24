@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-20 03:55+0000\n"
+"POT-Creation-Date: 2021-05-24 02:47+0000\n"
 "PO-Revision-Date: 2016-04-11 12:19+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/manager/"
@@ -21,11 +21,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
+#: page.manager.php:31
+msgid "AMI current settings for Bind Address : "
+msgstr ""
+
 #: views/grid.php:13
 msgid "Actions"
 msgstr "عملیات"
 
-#: page.manager.php:38 views/form.php:12 views/grid.php:5
+#: page.manager.php:47 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "افزودن مدیریت"
 
@@ -33,7 +37,7 @@ msgstr "افزودن مدیریت"
 msgid "Asterisk API"
 msgstr ""
 
-#: page.manager.php:25
+#: page.manager.php:27
 msgid "Asterisk Manager"
 msgstr "مدیریت استریسک"
 
@@ -86,7 +90,7 @@ msgstr ""
 "در صورتی که میخواهید دسترسی تعداد زیادی شبکه و یا هاست را بازکنید از & جهت "
 "جداسازی آنها استفاده کنید."
 
-#: page.manager.php:37
+#: page.manager.php:46
 msgid "List Managers"
 msgstr "فهرست مدیریت ها"
 

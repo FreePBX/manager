@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-20 03:55+0000\n"
+"POT-Creation-Date: 2021-05-24 02:47+0000\n"
 "PO-Revision-Date: 2017-07-10 19:50+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,11 +21,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
+#: page.manager.php:31
+msgid "AMI current settings for Bind Address : "
+msgstr ""
+
 #: views/grid.php:13
 msgid "Actions"
 msgstr "Các thao tác"
 
-#: page.manager.php:38 views/form.php:12 views/grid.php:5
+#: page.manager.php:47 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "Thêm trình quản lý"
 
@@ -33,7 +37,7 @@ msgstr "Thêm trình quản lý"
 msgid "Asterisk API"
 msgstr ""
 
-#: page.manager.php:25
+#: page.manager.php:27
 msgid "Asterisk Manager"
 msgstr "Trình quản lý Asterisk"
 
@@ -85,7 +89,7 @@ msgstr ""
 "Nếu bạn muốn cho phép nhiều máy chủ và mạng sử dụng ký tự & để ngăn cách. "
 "Xem ví dụ giống như từ chối."
 
-#: page.manager.php:37
+#: page.manager.php:46
 msgid "List Managers"
 msgstr "Danh sách trình quản lý"
 

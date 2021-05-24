@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-20 03:55+0000\n"
+"POT-Creation-Date: 2021-05-24 02:47+0000\n"
 "PO-Revision-Date: 2018-07-31 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/manager/de/>\n"
@@ -20,11 +20,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
 
+#: page.manager.php:31
+msgid "AMI current settings for Bind Address : "
+msgstr ""
+
 #: views/grid.php:13
 msgid "Actions"
 msgstr "Aktionen"
 
-#: page.manager.php:38 views/form.php:12 views/grid.php:5
+#: page.manager.php:47 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "Manager hinzufügen"
 
@@ -32,7 +36,7 @@ msgstr "Manager hinzufügen"
 msgid "Asterisk API"
 msgstr ""
 
-#: page.manager.php:25
+#: page.manager.php:27
 msgid "Asterisk Manager"
 msgstr "Asterisk-Manager"
 
@@ -85,7 +89,7 @@ msgstr ""
 "Wenn Sie viele Hosts oder Netzwerke zulassen möchten, verwenden Sie & char "
 "als Trennzeichen. Schau dir das Beispiel an."
 
-#: page.manager.php:37
+#: page.manager.php:46
 msgid "List Managers"
 msgstr ""
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo manager module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-20 03:55+0000\n"
+"POT-Creation-Date: 2021-05-24 02:47+0000\n"
 "PO-Revision-Date: 2018-07-18 19:19+0000\n"
 "Last-Translator: Elvita Crespo <ecrespo@sangoma.com>\n"
 "Language-Team: Spanish <http://*/projects/freepbx/manager/es/>\n"
@@ -16,11 +16,15 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
+#: page.manager.php:31
+msgid "AMI current settings for Bind Address : "
+msgstr ""
+
 #: views/grid.php:13
 msgid "Actions"
 msgstr "Acciones"
 
-#: page.manager.php:38 views/form.php:12 views/grid.php:5
+#: page.manager.php:47 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "Añadir gestor"
 
@@ -28,7 +32,7 @@ msgstr "Añadir gestor"
 msgid "Asterisk API"
 msgstr "API Asterisk"
 
-#: page.manager.php:25
+#: page.manager.php:27
 msgid "Asterisk Manager"
 msgstr "Gestor Asterisk"
 
@@ -81,7 +85,7 @@ msgstr ""
 "Si desea permitir varios equipos o redes, use el símbolo '&' como separador. "
 "Revise el ejemplo del campo 'Denegar'."
 
-#: page.manager.php:37
+#: page.manager.php:46
 msgid "List Managers"
 msgstr "Administradores de Listas"
 

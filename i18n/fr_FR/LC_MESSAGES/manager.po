@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MODULE MANAGER\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-20 03:55+0000\n"
+"POT-Creation-Date: 2021-05-24 02:47+0000\n"
 "PO-Revision-Date: 2016-02-04 23:04+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/manager/"
@@ -21,11 +21,15 @@ msgstr ""
 "X-Poedit-Language: French\n"
 "X-Poedit-Country: FRANCE\n"
 
+#: page.manager.php:31
+msgid "AMI current settings for Bind Address : "
+msgstr ""
+
 #: views/grid.php:13
 msgid "Actions"
 msgstr "Actions"
 
-#: page.manager.php:38 views/form.php:12 views/grid.php:5
+#: page.manager.php:47 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "Ajouter un administrateur"
 
@@ -33,7 +37,7 @@ msgstr "Ajouter un administrateur"
 msgid "Asterisk API"
 msgstr ""
 
-#: page.manager.php:25
+#: page.manager.php:27
 msgid "Asterisk Manager"
 msgstr ""
 
@@ -84,7 +88,7 @@ msgstr ""
 "Si vous souhaitez autoriser plusieurs hôtes ou réseaux, utilisez le "
 "caractère & comme séparateur."
 
-#: page.manager.php:37
+#: page.manager.php:46
 msgid "List Managers"
 msgstr ""
 
