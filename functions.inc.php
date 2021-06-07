@@ -195,6 +195,7 @@ function manager_format_in($p_tab) {
 // Add a manager
 function manager_add($p_name, $p_secret, $p_deny, $p_permit, $p_read, $p_write, $p_writetimeout=100) {
 	global $amp_conf;
+	global $db;
 	$managers = manager_list();
 	$ampuser = $amp_conf['AMPMGRUSER'];
 	if($p_name == $ampuser) {
@@ -209,7 +210,14 @@ function manager_add($p_name, $p_secret, $p_deny, $p_permit, $p_read, $p_write, 
 			}
 		}
 	}
-	$results = sql("INSERT INTO manager set name='$p_name' , secret='$p_secret' , deny='$p_deny' , permit='$p_permit' , `read`='$p_read' , `write`='$p_write' , `writetimeout`='$p_writetimeout'");
+	$query = "INSERT into `manager` (`name`, `secret`, `deny`, `permit`, `read`, `write`, `writetimeout`) VALUES (:name, :secret, :deny, :permit, '$p_read', '$p_write', :writetimeout)";
+	$stmt = $db->prepare($query);
+	$stmt->bindParam(':name', $p_name);
+	$stmt->bindParam(':secret', $p_secret);
+	$stmt->bindParam(':deny', $p_deny);
+	$stmt->bindParam(':permit', $p_permit);
+	$stmt->bindParam(':writetimeout', $p_writetimeout);
+	$stmt->execute();
 }
 
 

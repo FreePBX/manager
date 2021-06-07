@@ -13,7 +13,7 @@ class Manager extends FreePBX_Helpers implements BMO {
 	public function doConfigPageInit($page) {
 		$action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
 		//the extension we are currently displaying
-		$managerdisplay = isset($_REQUEST['managerdisplay'])?htmlentities($_REQUEST['managerdisplay'], ENT_QUOTES):'';
+		$managerdisplay = isset($_REQUEST['managerdisplay'])?$_REQUEST['managerdisplay']:'';
 		$name = isset($_REQUEST['name'])?$_REQUEST['name']:'';
 		$secret = isset($_REQUEST['secret'])?$_REQUEST['secret']:'';
 		$deny = isset($_REQUEST['deny'])?$_REQUEST['deny']:'0.0.0.0/0.0.0.0';
@@ -33,6 +33,7 @@ class Manager extends FreePBX_Helpers implements BMO {
 		case "add":
 			$rights = manager_format_in($_REQUEST);
 			manager_add($name,$secret,$deny,$permit,$rights['read'],$rights['write'],$writetimeout);
+			unset($_REQUEST['view']);
 			needreload();
 			break;
 		case "delete":
@@ -40,9 +41,11 @@ class Manager extends FreePBX_Helpers implements BMO {
 			needreload();
 			break;
 		case "edit":  //just delete and re-add
-			manager_del($name);
+			manager_del($managerdisplay);
 			$rights = manager_format_in($_REQUEST);
 			manager_add($name,$secret,$deny,$permit,$rights['read'],$rights['write'],$writetimeout);
+			unset($_REQUEST['view']);
+			unset($_REQUEST['action']);
 			needreload();
 			break;
 		case "conflict":
