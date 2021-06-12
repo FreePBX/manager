@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for manager
-# Copyright (C) 2008-2020 Sangoma Technologies, Inc.
+# Copyright (C) 2008-2021 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-20 03:54+0000\n"
+"POT-Creation-Date: 2021-06-12 04:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,11 +40,11 @@ msgstr ""
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:234
+#: functions.inc.php:258
 msgid "Choose Manager:"
 msgstr ""
 
-#: functions.inc.php:234
+#: functions.inc.php:258
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 
@@ -165,8 +165,8 @@ msgstr ""
 msgid "The manager write field is not well formatted."
 msgstr ""
 
-#: functions.inc.php:201
-#: functions.inc.php:207
+#: functions.inc.php:225
+#: functions.inc.php:231
 msgid "This manager already exists"
 msgstr ""
 

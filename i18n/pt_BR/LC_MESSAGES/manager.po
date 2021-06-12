@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-20 03:54+0000\n"
+"POT-Creation-Date: 2021-06-12 04:24+0000\n"
 "PO-Revision-Date: 2017-03-27 14:18+0200\n"
 "Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -41,11 +41,11 @@ msgstr "Gerenciador Asterisk"
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:234
+#: functions.inc.php:258
 msgid "Choose Manager:"
 msgstr "Selecione o Gerenciador:"
 
-#: functions.inc.php:234
+#: functions.inc.php:258
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr "Escolha o usuário que o PHPAGI usará para conectar à API do Asterisk."
 
@@ -170,7 +170,7 @@ msgstr "O segredo do gerenciador não pode estar vazio."
 msgid "The manager write field is not well formatted."
 msgstr "O campo \"Escrita\" não está no formato correto."
 
-#: functions.inc.php:201 functions.inc.php:207
+#: functions.inc.php:225 functions.inc.php:231
 msgid "This manager already exists"
 msgstr "Este gerenciador já existe"
 

@@ -2,7 +2,7 @@
 	<rawname>manager</rawname>
 	<repo>standard</repo>
 	<name>Asterisk API</name>
-	<version>15.0.10</version>
+	<version>15.0.11</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv2+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-2.0.txt</licenselink>
@@ -25,6 +25,7 @@
         </table>
     </database>
 	<changelog>
+		*15.0.11* FREEI-3453: add sangomartapi_conference entry as an asterisk manager 
 		*15.0.10* Packaging of ver 15.0.10
 		*15.0.9* FREEPBX-21319 Warm spare backup does not restore astersik manager passwords and permissions 
 		*15.0.8* FREEI-922 Fix XSS Bootstrap Datatable Issues 
