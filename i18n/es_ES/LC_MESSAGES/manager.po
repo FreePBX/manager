@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo manager module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-12 04:24+0000\n"
+"POT-Creation-Date: 2021-06-22 08:43+0000\n"
 "PO-Revision-Date: 2018-07-18 19:19+0000\n"
 "Last-Translator: Elvita Crespo <ecrespo@sangoma.com>\n"
 "Language-Team: Spanish <http://*/projects/freepbx/manager/es/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: page.manager.php:31
+#: page.manager.php:36
 msgid "AMI current settings for Bind Address : "
 msgstr ""
 
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Actions"
 msgstr "Acciones"
 
-#: page.manager.php:47 views/form.php:12 views/grid.php:5
+#: page.manager.php:52 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "Añadir gestor"
 
@@ -85,7 +85,7 @@ msgstr ""
 "Si desea permitir varios equipos o redes, use el símbolo '&' como separador. "
 "Revise el ejemplo del campo 'Denegar'."
 
-#: page.manager.php:46
+#: page.manager.php:51
 msgid "List Managers"
 msgstr "Administradores de Listas"
 

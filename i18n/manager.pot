@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-12 04:24+0000\n"
+"POT-Creation-Date: 2021-06-22 08:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: page.manager.php:31
+#: page.manager.php:36
 msgid "AMI current settings for Bind Address : "
 msgstr ""
 
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: page.manager.php:47
+#: page.manager.php:52
 #: views/form.php:12
 #: views/grid.php:5
 msgid "Add Manager"
@@ -83,7 +83,7 @@ msgid ""
 "at deny example."
 msgstr ""
 
-#: page.manager.php:46
+#: page.manager.php:51
 msgid "List Managers"
 msgstr ""
 

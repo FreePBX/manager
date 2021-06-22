@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-12 04:24+0000\n"
+"POT-Creation-Date: 2021-06-22 08:43+0000\n"
 "PO-Revision-Date: 2014-02-19 22:17+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/manager/ja/>\n"
@@ -48,7 +48,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: page.manager.php:31
+#: page.manager.php:36
 msgid "AMI current settings for Bind Address : "
 msgstr ""
 
@@ -56,7 +56,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: page.manager.php:47 views/form.php:12 views/grid.php:5
+#: page.manager.php:52 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "マネージャーを追加"
 
@@ -115,7 +115,7 @@ msgstr ""
 "もし複数のホストやネットワークを許可する場合は & で列挙します。<br/><br/>拒否"
 "の例を参照ください。"
 
-#: page.manager.php:46
+#: page.manager.php:51
 msgid "List Managers"
 msgstr ""
 

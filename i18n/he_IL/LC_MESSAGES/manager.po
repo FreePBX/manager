@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-12 04:24+0000\n"
+"POT-Creation-Date: 2021-06-22 08:43+0000\n"
 "PO-Revision-Date: 2006-09-28 17:30+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: page.manager.php:31
+#: page.manager.php:36
 msgid "AMI current settings for Bind Address : "
 msgstr ""
 
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: page.manager.php:47 views/form.php:12 views/grid.php:5
+#: page.manager.php:52 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "הוסף מנהל"
 
@@ -81,7 +81,7 @@ msgstr ""
 "אם אתה רוצה להרשות הרבה מחשבים או רשתות, השתמש ב & בתור מפריד. הסתכל בדוגמת "
 "החסימה."
 
-#: page.manager.php:46
+#: page.manager.php:51
 msgid "List Managers"
 msgstr ""
 

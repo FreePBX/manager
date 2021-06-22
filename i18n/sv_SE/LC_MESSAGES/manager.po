@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-12 04:24+0000\n"
+"POT-Creation-Date: 2021-06-22 08:43+0000\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -31,7 +31,7 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: page.manager.php:31
+#: page.manager.php:36
 msgid "AMI current settings for Bind Address : "
 msgstr ""
 
@@ -39,7 +39,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: page.manager.php:47 views/form.php:12 views/grid.php:5
+#: page.manager.php:52 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "Lägg till hanterare"
 
@@ -99,7 +99,7 @@ msgstr ""
 "Om du vill tillåta många datorer eller nätverk, använd & som "
 "separationstecken. Exempel: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
-#: page.manager.php:46
+#: page.manager.php:51
 msgid "List Managers"
 msgstr ""
 

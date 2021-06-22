@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-12 04:24+0000\n"
+"POT-Creation-Date: 2021-06-22 08:43+0000\n"
 "PO-Revision-Date: 2015-04-25 00:18+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/manager/"
@@ -39,7 +39,7 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: page.manager.php:31
+#: page.manager.php:36
 msgid "AMI current settings for Bind Address : "
 msgstr ""
 
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: page.manager.php:47 views/form.php:12 views/grid.php:5
+#: page.manager.php:52 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "Добавить менеджера"
 
@@ -108,7 +108,7 @@ msgstr ""
 "эту опцию. Используйте & в качестве разделителя. Посмотрите на правило "
 "Запретить в качестве примера."
 
-#: page.manager.php:46
+#: page.manager.php:51
 msgid "List Managers"
 msgstr ""
 

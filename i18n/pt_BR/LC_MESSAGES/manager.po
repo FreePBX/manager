@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-12 04:24+0000\n"
+"POT-Creation-Date: 2021-06-22 08:43+0000\n"
 "PO-Revision-Date: 2017-03-27 14:18+0200\n"
 "Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: page.manager.php:31
+#: page.manager.php:36
 msgid "AMI current settings for Bind Address : "
 msgstr ""
 
@@ -29,7 +29,7 @@ msgstr ""
 msgid "Actions"
 msgstr "Ações"
 
-#: page.manager.php:47 views/form.php:12 views/grid.php:5
+#: page.manager.php:52 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "Adicionar Gerenciador"
 
@@ -89,7 +89,7 @@ msgstr ""
 "Se você quiser permitir muitos hosts ou redes, use o símbolo \"&\" como "
 "separador. Verifique o exemplo do campo 'Negar'."
 
-#: page.manager.php:46
+#: page.manager.php:51
 msgid "List Managers"
 msgstr "Listar Gerenciadores"
 

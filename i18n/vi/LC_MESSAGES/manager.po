@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-12 04:24+0000\n"
+"POT-Creation-Date: 2021-06-22 08:43+0000\n"
 "PO-Revision-Date: 2017-07-10 19:50+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: page.manager.php:31
+#: page.manager.php:36
 msgid "AMI current settings for Bind Address : "
 msgstr ""
 
@@ -29,7 +29,7 @@ msgstr ""
 msgid "Actions"
 msgstr "Các thao tác"
 
-#: page.manager.php:47 views/form.php:12 views/grid.php:5
+#: page.manager.php:52 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "Thêm trình quản lý"
 
@@ -89,7 +89,7 @@ msgstr ""
 "Nếu bạn muốn cho phép nhiều máy chủ và mạng sử dụng ký tự & để ngăn cách. "
 "Xem ví dụ giống như từ chối."
 
-#: page.manager.php:46
+#: page.manager.php:51
 msgid "List Managers"
 msgstr "Danh sách trình quản lý"
 
