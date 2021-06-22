@@ -28,6 +28,11 @@ switch($view){
 		<div class="alert alert-info">
 			<?php
 				$fileData = @parse_ini_file($amp_conf['ASTETCDIR'].'/manager.conf', false);
+				$helpwiki = 'https://wiki.sangoma.com/display/FPG/AMI+Default+Configuration+in+16';
+				$helptxt  = "The default Asterisk Manager Interface (AMI) configuration has changed starting in version 16.".
+				$helptxt .= "Please refer to  <a href='" . $helpwiki . "'> <b>wiki</b> </a> for more information. <br>";
+	
+				echo $helptxt;
 				echo _('AMI current settings for Bind Address : ' . $fileData['bindaddr'] .' and bind port : ' . $fileData['port'] .'.');
 			 ?>
 		</div>
