@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-20 03:52+0000\n"
-"PO-Revision-Date: 2018-07-18 19:11+0000\n"
+"PO-Revision-Date: 2021-07-04 04:51+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
-"Language-Team: Bulgarian <http://*/projects/freepbx/manager/bg/>\n"
+"Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/"
+"manager/bg/>\n"
 "Language: bg_BG\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.19.1\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Poedit-Language: Bulgarian\n"
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -35,7 +36,7 @@ msgstr "Добавяне на време на изчакване за запис
 
 #: manager.i18n.php:4
 msgid "Asterisk API"
-msgstr "Астериск Manager"
+msgstr "Астериск API"
 
 #: page.manager.php:25
 msgid "Asterisk Manager"
@@ -43,7 +44,7 @@ msgstr "Астериск Мениджър"
 
 #: manager.i18n.php:10
 msgid "Asterisk Manager Users"
-msgstr ""
+msgstr "Потребители на Астериск Мениджър"
 
 #: functions.inc.php:234
 msgid "Choose Manager:"
@@ -52,7 +53,7 @@ msgstr "Избери Мениджър:"
 #: functions.inc.php:234
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
-"Изберете потребител който PHPAGI ще използва за свързване с Asterisk API."
+"Изберете потребител който PHPAGI ще използва за свързване с Астериск API."
 
 #: Manager.class.php:53
 msgid "Column present"
@@ -193,7 +194,7 @@ msgstr "Този мениджър вече съществува"
 
 #: manager.i18n.php:8
 msgid "This module is used to add AMI Users"
-msgstr ""
+msgstr "Този модул се използва за добавяне на AMI Потребители"
 
 #: views/form.php:227
 msgid "Toggle All"
@@ -233,7 +234,7 @@ msgstr "(dialplan)"
 
 #: views/form.php:30
 msgid "dtmf"
-msgstr "(dtmf)"
+msgstr "(DTMF)"
 
 #: Manager.class.php:32 Manager.class.php:42
 msgid "error encountered, not altered"
