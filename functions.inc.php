@@ -5,6 +5,13 @@ class manager_conf {
 
 	private static $obj;
 
+	public function __construct($freepbx = null) {
+		if ($freepbx == null) {
+			$freepbx = \FreePBX::Create();
+		}
+		$this->freepbx = $freepbx;
+	}
+
 	var $_managers = array();
 
 	// FreePBX magic ::create() call
@@ -53,7 +60,24 @@ class manager_conf {
 					break;
 				}
 			}
+			$output .= "\n";
 		}
+
+		// These entries are required by sangomartapi and won't need
+		// to be modified by the admin, so they will not be included
+		// in the database table
+		if ($this->freepbx->Modules->checkStatus('sangomartapi')) {
+			$output .= "[sangomartapi_conference]\n";
+			$output .= "secret=conference\n";
+			$output .= "deny=0.0.0.0/0.0.0.0\n";
+			$output .= "permit=127.0.0.1/255.255.255.0\n";
+			$output .= "read=system,call\n";
+			$output .= "write=all\n";
+			$output .= "writetimeout=1000\n";
+			$output .= "eventfilter=Confbridge\n";
+			$output .= "eventfilter=Event: FullyBooted\n";
+		}
+
 		$output .= "\n";
 		return $output;
 	}
