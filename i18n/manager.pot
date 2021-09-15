@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 02:42+0000\n"
+"POT-Creation-Date: 2021-09-15 06:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,11 +44,11 @@ msgstr ""
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose Manager:"
 msgstr ""
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 
@@ -56,7 +56,7 @@ msgstr ""
 msgid "Column present"
 msgstr ""
 
-#: Manager.class.php:116
+#: Manager.class.php:119
 msgid "Delete"
 msgstr ""
 
@@ -116,7 +116,9 @@ msgid "Name"
 msgstr ""
 
 #: views/form.php:80
-msgid "Name of the manager without spaces."
+msgid ""
+"Name of the manager without spaces and special characters except _ and -. "
+"Limit upto 15 characters only."
 msgstr ""
 
 #: views/form.php:212
@@ -139,7 +141,7 @@ msgstr ""
 msgid "Permit"
 msgstr ""
 
-#: Manager.class.php:121
+#: Manager.class.php:124
 msgid "Reset"
 msgstr ""
 
@@ -153,11 +155,11 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: Manager.class.php:126
+#: Manager.class.php:129
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:318
+#: views/form.php:319
 msgid "The manager deny is not well formatted."
 msgstr ""
 
@@ -165,24 +167,28 @@ msgstr ""
 msgid "The manager name cannot be empty or may not have any space in it."
 msgstr ""
 
-#: views/form.php:319
-msgid "The manager permit is not well formatted."
+#: views/form.php:317
+msgid "The manager name will not accept any special characters except _ and -."
 msgstr ""
 
 #: views/form.php:320
-msgid "The manager read field is not well formatted."
-msgstr ""
-
-#: views/form.php:317
-msgid "The manager secret cannot be empty."
+msgid "The manager permit is not well formatted."
 msgstr ""
 
 #: views/form.php:321
+msgid "The manager read field is not well formatted."
+msgstr ""
+
+#: views/form.php:318
+msgid "The manager secret cannot be empty."
+msgstr ""
+
+#: views/form.php:322
 msgid "The manager write field is not well formatted."
 msgstr ""
 
-#: functions.inc.php:225
-#: functions.inc.php:231
+#: functions.inc.php:226
+#: functions.inc.php:232
 msgid "This manager already exists"
 msgstr ""
 

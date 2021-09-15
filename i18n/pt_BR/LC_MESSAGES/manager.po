@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 02:42+0000\n"
+"POT-Creation-Date: 2021-09-15 06:10+0000\n"
 "PO-Revision-Date: 2017-03-27 14:18+0200\n"
 "Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -45,11 +45,11 @@ msgstr "Gerenciador Asterisk"
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose Manager:"
 msgstr "Selecione o Gerenciador:"
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr "Escolha o usuário que o PHPAGI usará para conectar à API do Asterisk."
 
@@ -57,7 +57,7 @@ msgstr "Escolha o usuário que o PHPAGI usará para conectar à API do Asterisk.
 msgid "Column present"
 msgstr "Coluna presente"
 
-#: Manager.class.php:116
+#: Manager.class.php:119
 msgid "Delete"
 msgstr "Apagar"
 
@@ -122,8 +122,10 @@ msgid "Name"
 msgstr "Nome"
 
 #: views/form.php:80
-msgid "Name of the manager without spaces."
-msgstr "Nome do gerenciador, sem espaços."
+msgid ""
+"Name of the manager without spaces and special characters except _ and -. "
+"Limit upto 15 characters only."
+msgstr ""
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
 msgid "No"
@@ -141,7 +143,7 @@ msgstr "Permissões"
 msgid "Permit"
 msgstr "Permitir"
 
-#: Manager.class.php:121
+#: Manager.class.php:124
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -157,11 +159,11 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: Manager.class.php:126
+#: Manager.class.php:129
 msgid "Submit"
 msgstr "Enviar"
 
-#: views/form.php:318
+#: views/form.php:319
 msgid "The manager deny is not well formatted."
 msgstr "O campo \"Negar\" não está no formato correto."
 
@@ -170,23 +172,27 @@ msgid "The manager name cannot be empty or may not have any space in it."
 msgstr ""
 "O nome do gerenciador não pode ser vazio ou não pode ter qualquer espaço."
 
-#: views/form.php:319
+#: views/form.php:317
+msgid "The manager name will not accept any special characters except _ and -."
+msgstr ""
+
+#: views/form.php:320
 msgid "The manager permit is not well formatted."
 msgstr "A permissão do gerenciador não está no formato correto."
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager read field is not well formatted."
 msgstr "O campo \"Leitura\" não esta no formato correto."
 
-#: views/form.php:317
+#: views/form.php:318
 msgid "The manager secret cannot be empty."
 msgstr "O segredo do gerenciador não pode estar vazio."
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager write field is not well formatted."
 msgstr "O campo \"Escrita\" não está no formato correto."
 
-#: functions.inc.php:225 functions.inc.php:231
+#: functions.inc.php:226 functions.inc.php:232
 msgid "This manager already exists"
 msgstr "Este gerenciador já existe"
 
@@ -269,3 +275,6 @@ msgstr "usuário"
 #: views/form.php:25
 msgid "verbose"
 msgstr "verboso"
+
+#~ msgid "Name of the manager without spaces."
+#~ msgstr "Nome do gerenciador, sem espaços."

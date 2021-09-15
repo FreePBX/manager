@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 02:42+0000\n"
+"POT-Creation-Date: 2021-09-15 06:10+0000\n"
 "PO-Revision-Date: 2019-01-26 10:00+0000\n"
 "Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://*/projects/freepbx/manager/fa/>\n"
@@ -44,11 +44,11 @@ msgstr "مدیریت استریسک"
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose Manager:"
 msgstr "انتخاب مدیریت ："
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr "کاربری انتخاب کنید که PHPAGI توسط آن به API استریسک متصل شود."
 
@@ -56,7 +56,7 @@ msgstr "کاربری انتخاب کنید که PHPAGI توسط آن به API ا
 msgid "Column present"
 msgstr "ستون حال حاضر"
 
-#: Manager.class.php:116
+#: Manager.class.php:119
 msgid "Delete"
 msgstr "حذف"
 
@@ -122,8 +122,10 @@ msgid "Name"
 msgstr "نام"
 
 #: views/form.php:80
-msgid "Name of the manager without spaces."
-msgstr "نام مدیریت بدون فاصله."
+msgid ""
+"Name of the manager without spaces and special characters except _ and -. "
+"Limit upto 15 characters only."
+msgstr ""
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
 msgid "No"
@@ -141,7 +143,7 @@ msgstr "دسترسی ها"
 msgid "Permit"
 msgstr "اجازه دادن"
 
-#: Manager.class.php:121
+#: Manager.class.php:124
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -157,11 +159,11 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: Manager.class.php:126
+#: Manager.class.php:129
 msgid "Submit"
 msgstr "ارسال"
 
-#: views/form.php:318
+#: views/form.php:319
 msgid "The manager deny is not well formatted."
 msgstr "انکار مدیریت دارای فیلد مناسبی نیست."
 
@@ -169,23 +171,27 @@ msgstr "انکار مدیریت دارای فیلد مناسبی نیست."
 msgid "The manager name cannot be empty or may not have any space in it."
 msgstr "نام مدیریت نمیتواند خالی بوده و یا شامل فضای خالی یا فاصله باشد."
 
-#: views/form.php:319
+#: views/form.php:317
+msgid "The manager name will not accept any special characters except _ and -."
+msgstr ""
+
+#: views/form.php:320
 msgid "The manager permit is not well formatted."
 msgstr "مجوز مدیریت دارای فرمت مناسبی نیست."
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager read field is not well formatted."
 msgstr "فیلد خواندنی مدیریت دارای فرمت مناسبی نیست."
 
-#: views/form.php:317
+#: views/form.php:318
 msgid "The manager secret cannot be empty."
 msgstr "راز مدیریت نمیتواند خالی باشد."
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager write field is not well formatted."
 msgstr "فیلد نوشتاری مدیریت دارای فرمت مناسبی نیست."
 
-#: functions.inc.php:225 functions.inc.php:231
+#: functions.inc.php:226 functions.inc.php:232
 msgid "This manager already exists"
 msgstr "مدیریت موجود است"
 
@@ -268,3 +274,6 @@ msgstr "کاربر"
 #: views/form.php:25
 msgid "verbose"
 msgstr "تشریح"
+
+#~ msgid "Name of the manager without spaces."
+#~ msgstr "نام مدیریت بدون فاصله."

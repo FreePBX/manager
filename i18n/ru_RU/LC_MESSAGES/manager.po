@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 02:42+0000\n"
+"POT-Creation-Date: 2021-09-15 06:10+0000\n"
 "PO-Revision-Date: 2015-04-25 00:18+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/manager/"
@@ -63,11 +63,11 @@ msgstr ""
 msgid "Asterisk Manager Users"
 msgstr "Управление пользователями Астериск"
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose Manager:"
 msgstr "Выбрать менеджера:"
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "Выбрать имя пользователя, которым PHPAGI будет образаться к Asterisk API."
@@ -76,7 +76,7 @@ msgstr ""
 msgid "Column present"
 msgstr ""
 
-#: Manager.class.php:116
+#: Manager.class.php:119
 msgid "Delete"
 msgstr ""
 
@@ -141,7 +141,9 @@ msgid "Name"
 msgstr ""
 
 #: views/form.php:80
-msgid "Name of the manager without spaces."
+msgid ""
+"Name of the manager without spaces and special characters except _ and -. "
+"Limit upto 15 characters only."
 msgstr ""
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
@@ -160,7 +162,7 @@ msgstr ""
 msgid "Permit"
 msgstr ""
 
-#: Manager.class.php:121
+#: Manager.class.php:124
 msgid "Reset"
 msgstr ""
 
@@ -174,11 +176,11 @@ msgstr ""
 msgid "Settings"
 msgstr "Настройки"
 
-#: Manager.class.php:126
+#: Manager.class.php:129
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:318
+#: views/form.php:319
 msgid "The manager deny is not well formatted."
 msgstr "Поле Запрещено неправильно заполнено."
 
@@ -186,23 +188,27 @@ msgstr "Поле Запрещено неправильно заполнено."
 msgid "The manager name cannot be empty or may not have any space in it."
 msgstr "Имя менеджера не должно быть пустым и не должно содержать пробелы."
 
-#: views/form.php:319
+#: views/form.php:317
+msgid "The manager name will not accept any special characters except _ and -."
+msgstr ""
+
+#: views/form.php:320
 msgid "The manager permit is not well formatted."
 msgstr "Поле Разрешено неправильно заполнено."
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager read field is not well formatted."
 msgstr "Поле Чтение неправильно заполнено."
 
-#: views/form.php:317
+#: views/form.php:318
 msgid "The manager secret cannot be empty."
 msgstr "Пароль менеджера не может быть пустым."
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager write field is not well formatted."
 msgstr "Поле Запись неправильно заполнено."
 
-#: functions.inc.php:225 functions.inc.php:231
+#: functions.inc.php:226 functions.inc.php:232
 msgid "This manager already exists"
 msgstr "Такой менеджер уже существует"
 

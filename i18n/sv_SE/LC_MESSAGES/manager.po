@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 02:42+0000\n"
+"POT-Creation-Date: 2021-09-15 06:10+0000\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -55,11 +55,11 @@ msgstr ""
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose Manager:"
 msgstr "Välj hanterare:"
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "Välj den användare PHPAGI ska använda när den ansluter till Asterisk API."
@@ -68,7 +68,7 @@ msgstr ""
 msgid "Column present"
 msgstr ""
 
-#: Manager.class.php:116
+#: Manager.class.php:119
 msgid "Delete"
 msgstr ""
 
@@ -132,7 +132,9 @@ msgid "Name"
 msgstr ""
 
 #: views/form.php:80
-msgid "Name of the manager without spaces."
+msgid ""
+"Name of the manager without spaces and special characters except _ and -. "
+"Limit upto 15 characters only."
 msgstr ""
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
@@ -151,7 +153,7 @@ msgstr ""
 msgid "Permit"
 msgstr ""
 
-#: Manager.class.php:121
+#: Manager.class.php:124
 msgid "Reset"
 msgstr ""
 
@@ -165,11 +167,11 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: Manager.class.php:126
+#: Manager.class.php:129
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:318
+#: views/form.php:319
 msgid "The manager deny is not well formatted."
 msgstr "Formateringen för förbjud (deny) är inte korrekt formaterat."
 
@@ -177,23 +179,27 @@ msgstr "Formateringen för förbjud (deny) är inte korrekt formaterat."
 msgid "The manager name cannot be empty or may not have any space in it."
 msgstr "Namnet på hanteraren kan inte vara tomt eller ha mellanslag."
 
-#: views/form.php:319
+#: views/form.php:317
+msgid "The manager name will not accept any special characters except _ and -."
+msgstr ""
+
+#: views/form.php:320
 msgid "The manager permit is not well formatted."
 msgstr "Formateringen för tillåt (permit) är inte korrekt formaterat."
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager read field is not well formatted."
 msgstr "Hanterarens läsfält är inte korrekt formaterat."
 
-#: views/form.php:317
+#: views/form.php:318
 msgid "The manager secret cannot be empty."
 msgstr "Lösenordet för hanteraren kan inte vara tomt."
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager write field is not well formatted."
 msgstr "Hanterarens skrivfält är inte korrekt formaterat."
 
-#: functions.inc.php:225 functions.inc.php:231
+#: functions.inc.php:226 functions.inc.php:232
 msgid "This manager already exists"
 msgstr "Denna hanterare finns redan"
 
