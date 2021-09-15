@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_REQUEST['managerdisplay'])){
-  $managerdisplay = htmlentities($_REQUEST['managerdisplay'], ENT_QUOTES);
+  $managerdisplay = $_REQUEST['managerdisplay'];
   $subhead = '<h2>'._("Manager").' '.$managerdisplay.'</h2>';
   $delURL = '?display=manager&amp;managerdisplay='.$managerdisplay.'&amp;action=delete';
   //get details for this manager
@@ -69,7 +69,7 @@ if(isset($wall)){
                         <i class="fa fa-question-circle fpbx-help-icon" data-for="name"></i>
                       </div>
                       <div class="col-md-9">
-                        <input type="text" class="form-control" id="name" name="name" value="<?php echo isset($name)?$name:''?>">
+                        <input type="text" class="form-control" id="name" name="name"  maxlength=15 value="<?php echo isset($name)?$name:''?>">
                       </div>
                     </div>
                   </div>
@@ -77,7 +77,7 @@ if(isset($wall)){
               </div>
               <div class="row">
                 <div class="col-md-12">
-                  <span id="name-help" class="help-block fpbx-help-block"><?php echo _("Name of the manager without spaces.")?></span>
+                  <span id="name-help" class="help-block fpbx-help-block"><?php echo _("Name of the manager without spaces and special characters except _ and -. Limit upto 15 characters only.")?></span>
                 </div>
               </div>
             </div>
@@ -314,6 +314,7 @@ $(document).ready(function(){
 function checkConf()
 {
 	var errName = "<?php echo _('The manager name cannot be empty or may not have any space in it.'); ?>";
+	var errInvalidName = "<?php echo _('The manager name will not accept any special characters except _ and -.'); ?>";
 	var errSecret = "<?php echo _('The manager secret cannot be empty.'); ?>";
 	var errDeny = "<?php echo _('The manager deny is not well formatted.'); ?>";
 	var errPermit = "<?php echo _('The manager permit is not well formatted.'); ?>";
@@ -321,6 +322,10 @@ function checkConf()
 	var errWrite = "<?php echo _('The manager write field is not well formatted.'); ?>";
 
 	defaultEmptyOK = false;
+	var regex = /^([a-zA-Z0-9 _-]+)$/;
+	if(!theForm.name.value.match(regex)){
+		 return warnInvalid(theForm.name, errInvalidName);
+	}
 	if ((theForm.name.value.search(/\s/) >= 0) || (theForm.name.value.length == 0))
 		return warnInvalid(theForm.name, errName);
 	if (theForm.secret.value.length == 0)
