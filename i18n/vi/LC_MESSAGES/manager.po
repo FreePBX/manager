@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-22 08:43+0000\n"
+"POT-Creation-Date: 2021-09-15 06:07+0000\n"
 "PO-Revision-Date: 2017-07-10 19:50+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -45,15 +45,15 @@ msgstr "Trình quản lý Asterisk"
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose Manager:"
 msgstr "Chọn trình quản lý:"
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr "Chon người dùng mà PHPAGI sẽ sử dụng để kết nối tới Asterisk API."
 
-#: Manager.class.php:61
+#: Manager.class.php:64
 msgid "Delete"
 msgstr "Xóa"
 
@@ -110,8 +110,10 @@ msgid "Name"
 msgstr "tên"
 
 #: views/form.php:80
-msgid "Name of the manager without spaces."
-msgstr "Tên của trình quản lý sẽ không chứa dấu cách."
+msgid ""
+"Name of the manager without spaces and special characters except _ and -. "
+"Limit upto 15 characters only."
+msgstr ""
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
 msgid "No"
@@ -129,7 +131,7 @@ msgstr "Các quyền"
 msgid "Permit"
 msgstr "Cho phép"
 
-#: Manager.class.php:66
+#: Manager.class.php:69
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -145,11 +147,11 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: Manager.class.php:71
+#: Manager.class.php:74
 msgid "Submit"
 msgstr "Gửi đi"
 
-#: views/form.php:318
+#: views/form.php:319
 msgid "The manager deny is not well formatted."
 msgstr "Tính năng từ chối của trình quản lý không được định dạng tốt."
 
@@ -158,23 +160,27 @@ msgid "The manager name cannot be empty or may not have any space in it."
 msgstr ""
 "Tên của trình quản lý không được để trống hoặc không được chứa dấu cách."
 
-#: views/form.php:319
+#: views/form.php:317
+msgid "The manager name will not accept any special characters except _ and -."
+msgstr ""
+
+#: views/form.php:320
 msgid "The manager permit is not well formatted."
 msgstr "Cho phép của trình quản lý không được định dạng tốt."
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager read field is not well formatted."
 msgstr "Trường đọc của trình quản lý không được định dạng tốt."
 
-#: views/form.php:317
+#: views/form.php:318
 msgid "The manager secret cannot be empty."
 msgstr "Bảo mật của trình quản lý không thể để trống."
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager write field is not well formatted."
 msgstr "Trường ghi trình quản lý không được định dạng tốt."
 
-#: functions.inc.php:225 functions.inc.php:231
+#: functions.inc.php:226 functions.inc.php:232
 msgid "This manager already exists"
 msgstr "Trình quản lý này đã tồn tại"
 
@@ -249,6 +255,9 @@ msgstr "người dùng"
 #: views/form.php:25
 msgid "verbose"
 msgstr "rườm rà"
+
+#~ msgid "Name of the manager without spaces."
+#~ msgstr "Tên của trình quản lý sẽ không chứa dấu cách."
 
 #~ msgid "Adding write timeout.."
 #~ msgstr "Đang thêm ghi thời gian chờ.."

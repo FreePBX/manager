@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-22 08:43+0000\n"
+"POT-Creation-Date: 2021-09-15 06:07+0000\n"
 "PO-Revision-Date: 2014-02-19 22:17+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/manager/ja/>\n"
@@ -72,16 +72,16 @@ msgstr ""
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose Manager:"
 msgstr "マネージャーを選択："
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "PHP AGIがAsterisk APIへ接続するために使用するユーザーを選択してください。"
 
-#: Manager.class.php:61
+#: Manager.class.php:64
 msgid "Delete"
 msgstr ""
 
@@ -136,7 +136,9 @@ msgid "Name"
 msgstr ""
 
 #: views/form.php:80
-msgid "Name of the manager without spaces."
+msgid ""
+"Name of the manager without spaces and special characters except _ and -. "
+"Limit upto 15 characters only."
 msgstr ""
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
@@ -155,7 +157,7 @@ msgstr ""
 msgid "Permit"
 msgstr ""
 
-#: Manager.class.php:66
+#: Manager.class.php:69
 msgid "Reset"
 msgstr ""
 
@@ -169,11 +171,11 @@ msgstr ""
 msgid "Settings"
 msgstr "設定"
 
-#: Manager.class.php:71
+#: Manager.class.php:74
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:318
+#: views/form.php:319
 msgid "The manager deny is not well formatted."
 msgstr "マネージャー　拒否　のフォーマットが正しくありません。"
 
@@ -182,23 +184,27 @@ msgid "The manager name cannot be empty or may not have any space in it."
 msgstr ""
 "マネージャー名を空にすることはできません、スペースを入れることもできません。"
 
-#: views/form.php:319
+#: views/form.php:317
+msgid "The manager name will not accept any special characters except _ and -."
+msgstr ""
+
+#: views/form.php:320
 msgid "The manager permit is not well formatted."
 msgstr "マネージャー　許可　のフォーマットが正しくありません。"
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager read field is not well formatted."
 msgstr "マネージャーの読取フィールドのフォーマットが正しくありません。"
 
-#: views/form.php:317
+#: views/form.php:318
 msgid "The manager secret cannot be empty."
 msgstr "パスワードを空にすることはできません。"
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager write field is not well formatted."
 msgstr "マネージャーの書込フィールドのフォーマットが正しくありません。"
 
-#: functions.inc.php:225 functions.inc.php:231
+#: functions.inc.php:226 functions.inc.php:232
 msgid "This manager already exists"
 msgstr "このマネージャーは既に存在しています"
 
