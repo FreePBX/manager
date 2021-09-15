@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-12 04:24+0000\n"
+"POT-Creation-Date: 2021-09-15 06:06+0000\n"
 "PO-Revision-Date: 2018-07-18 19:11+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/manager/bg/>\n"
@@ -41,16 +41,16 @@ msgstr "Астериск Мениджър"
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose Manager:"
 msgstr "Избери Мениджър:"
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "Изберете потребител който PHPAGI ще използва за свързване с Asterisk API."
 
-#: Manager.class.php:61
+#: Manager.class.php:64
 msgid "Delete"
 msgstr "Изтрий"
 
@@ -107,8 +107,10 @@ msgid "Name"
 msgstr "Име"
 
 #: views/form.php:80
-msgid "Name of the manager without spaces."
-msgstr "Име на мениджъра без интервали."
+msgid ""
+"Name of the manager without spaces and special characters except _ and -. "
+"Limit upto 15 characters only."
+msgstr ""
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
 msgid "No"
@@ -126,7 +128,7 @@ msgstr "Права"
 msgid "Permit"
 msgstr "Разреши"
 
-#: Manager.class.php:66
+#: Manager.class.php:69
 msgid "Reset"
 msgstr "Изчисти"
 
@@ -142,11 +144,11 @@ msgstr ""
 msgid "Settings"
 msgstr "Настройки"
 
-#: Manager.class.php:71
+#: Manager.class.php:74
 msgid "Submit"
 msgstr "Приеми"
 
-#: views/form.php:318
+#: views/form.php:319
 msgid "The manager deny is not well formatted."
 msgstr "Забраните на мениджър не са добре форматирани."
 
@@ -155,23 +157,27 @@ msgid "The manager name cannot be empty or may not have any space in it."
 msgstr ""
 "Името на мениджър не може да е празно или не трябва да има интервали в него."
 
-#: views/form.php:319
+#: views/form.php:317
+msgid "The manager name will not accept any special characters except _ and -."
+msgstr ""
+
+#: views/form.php:320
 msgid "The manager permit is not well formatted."
 msgstr "Правата на мениджър не са добре форматирани."
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager read field is not well formatted."
 msgstr "Полетата за четене на мениджър не са добре форматирани."
 
-#: views/form.php:317
+#: views/form.php:318
 msgid "The manager secret cannot be empty."
 msgstr "Паролата на мениджър не може да е празна."
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager write field is not well formatted."
 msgstr "Полетата за запис на мениджър не са добре форматирани."
 
-#: functions.inc.php:225 functions.inc.php:231
+#: functions.inc.php:226 functions.inc.php:232
 msgid "This manager already exists"
 msgstr "Този мениджър вече съществува"
 
@@ -246,6 +252,9 @@ msgstr "(user)"
 #: views/form.php:25
 msgid "verbose"
 msgstr "(verbose)"
+
+#~ msgid "Name of the manager without spaces."
+#~ msgstr "Име на мениджъра без интервали."
 
 #~ msgid "Adding write timeout.."
 #~ msgstr "Добавяне на време на изчакване за запис.."

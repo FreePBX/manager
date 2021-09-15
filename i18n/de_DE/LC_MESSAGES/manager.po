@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-12 04:24+0000\n"
+"POT-Creation-Date: 2021-09-15 06:06+0000\n"
 "PO-Revision-Date: 2018-07-31 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/manager/de/>\n"
@@ -40,15 +40,15 @@ msgstr "Asterisk-Manager"
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose Manager:"
 msgstr "Manager auswählen:"
 
-#: functions.inc.php:258
+#: functions.inc.php:266
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 
-#: Manager.class.php:61
+#: Manager.class.php:64
 msgid "Delete"
 msgstr "Löschen"
 
@@ -106,8 +106,10 @@ msgid "Name"
 msgstr "Name"
 
 #: views/form.php:80
-msgid "Name of the manager without spaces."
-msgstr "Name des Managers ohne Leerzeichen."
+msgid ""
+"Name of the manager without spaces and special characters except _ and -. "
+"Limit upto 15 characters only."
+msgstr ""
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
 msgid "No"
@@ -125,7 +127,7 @@ msgstr "Berechtigungen"
 msgid "Permit"
 msgstr "Zulassen"
 
-#: Manager.class.php:66
+#: Manager.class.php:69
 msgid "Reset"
 msgstr "Zurücksetzen"
 
@@ -141,11 +143,11 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: Manager.class.php:71
+#: Manager.class.php:74
 msgid "Submit"
 msgstr "Absenden"
 
-#: views/form.php:318
+#: views/form.php:319
 msgid "The manager deny is not well formatted."
 msgstr ""
 
@@ -154,23 +156,27 @@ msgid "The manager name cannot be empty or may not have any space in it."
 msgstr ""
 "Der Manager-Name darf nicht leer sein oder darf kein Leerzeichen enthalten."
 
-#: views/form.php:319
+#: views/form.php:317
+msgid "The manager name will not accept any special characters except _ and -."
+msgstr ""
+
+#: views/form.php:320
 msgid "The manager permit is not well formatted."
 msgstr "Die Manager-Erlaubnis ist nicht gut formatiert."
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager read field is not well formatted."
 msgstr "Das Manager-Lesefeld ist nicht gut formatiert."
 
-#: views/form.php:317
+#: views/form.php:318
 msgid "The manager secret cannot be empty."
 msgstr ""
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager write field is not well formatted."
 msgstr ""
 
-#: functions.inc.php:225 functions.inc.php:231
+#: functions.inc.php:226 functions.inc.php:232
 msgid "This manager already exists"
 msgstr ""
 
@@ -245,6 +251,9 @@ msgstr ""
 #: views/form.php:25
 msgid "verbose"
 msgstr ""
+
+#~ msgid "Name of the manager without spaces."
+#~ msgstr "Name des Managers ohne Leerzeichen."
 
 #~ msgid "Column present"
 #~ msgstr "Spalte vorhanden"
