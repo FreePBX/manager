@@ -329,7 +329,11 @@ function checkConf()
 	if ((theForm.name.value.search(/\s/) >= 0) || (theForm.name.value.length == 0))
 		return warnInvalid(theForm.name, errName);
 	if (theForm.secret.value.length == 0)
-		return warnInvalid(theForm.name, errSecret);
+          return warnInvalid(theForm.secret, errSecret);
+        var regex = new RegExp("^[a-zA-Z0-9]*$");
+        if (!regex.test(theForm.secret.value)) {
+          return warnInvalid(theForm.secret, errSecretFormat);
+        } 
 	// Only IP/MASK format are checked
 	if (theForm.deny.value.search(/\b(?:\d{1,3}\.){3}\d{1,3}\b\/\b(?:\d{1,3}\.){3}\d{1,3}\b(&\b(?:\d{1,3}\.){3}\d{1,3}\b\/\b(?:\d{1,3}\.){3}\d{1,3}\b)*$/))
 		return warnInvalid(theForm.deny, errDeny);
