@@ -10,9 +10,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-15 06:10+0000\n"
-"PO-Revision-Date: 2019-11-25 16:29+0000\n"
-"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
-"Language-Team: German <http://*/projects/freepbx/manager/de/>\n"
+"PO-Revision-Date: 2021-12-02 13:33+0000\n"
+"Last-Translator: florian alberts <alberts@ar-systems.de>\n"
+"Language-Team: German <http://weblate.freepbx.org/projects/freepbx/manager/"
+"de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -128,6 +129,8 @@ msgid ""
 "Name of the manager without spaces and special characters except _ and -. "
 "Limit upto 15 characters only."
 msgstr ""
+"Name des Managers ohne Leerzeichen und Sonderzeichen außer _ und -. "
+"Beschränken Sie sich nur auf bis zu 15 Zeichen."
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
 msgid "No"
@@ -176,7 +179,7 @@ msgstr ""
 
 #: views/form.php:317
 msgid "The manager name will not accept any special characters except _ and -."
-msgstr ""
+msgstr "Der Managername akzeptiert keine Sonderzeichen außer _ und -."
 
 #: views/form.php:320
 msgid "The manager permit is not well formatted."
@@ -200,7 +203,7 @@ msgstr "Dieser Manager existiert bereits"
 
 #: manager.i18n.php:8
 msgid "This module is used to add AMI Users"
-msgstr ""
+msgstr "Dieses Modul wird verwendet, um AMI-Benutzer hinzuzufügen"
 
 #: views/form.php:227
 msgid "Toggle All"
