@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-15 06:10+0000\n"
-"PO-Revision-Date: 2021-11-24 11:00+0000\n"
+"PO-Revision-Date: 2021-12-08 06:03+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/manager/"
 "ru/>\n"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: views/grid.php:13
 msgid "Actions"
-msgstr ""
+msgstr "Действия"
 
 #: page.manager.php:38 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
@@ -164,7 +164,7 @@ msgstr ""
 
 #: Manager.class.php:124
 msgid "Reset"
-msgstr ""
+msgstr "Сброс"
 
 #: views/form.php:182
 msgid ""
