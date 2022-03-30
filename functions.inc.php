@@ -81,12 +81,13 @@ class manager_conf {
 			$output .= "secret=browserphone\n";
 			$output .= "deny=0.0.0.0/0.0.0.0\n";
 			$output .= "permit=127.0.0.1/255.255.255.0\n";
-			$output .= "read=system,call\n";
+			$output .= "read=system,call,cdr\n";
 			$output .= "write=all\n";
 			$output .= "eventfilter=FullyBooted\n";
 			$output .= "eventfilter=PeerStatus\n";
 			$output .= "eventfilter=Newchannel\n";
 			$output .= "eventfilter=ContactStatus\n";
+			$output .= "eventfilter=Cdr\n";
 			$output .= "eventfilter=Event: Hangup\n";
 			$output .= "eventfilter=!Event: Hangup[A-Z]\n";
 			$output .= "writetimeout=1000\n";
