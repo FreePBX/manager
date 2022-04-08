@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 08:39+0000\n"
+"POT-Creation-Date: 2022-04-08 03:07+0000\n"
 "PO-Revision-Date: 2018-05-29 13:50+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/manager/it/>\n"
@@ -102,6 +102,10 @@ msgstr "Manager"
 msgid "Manager name"
 msgstr "Nome manager"
 
+#: views/form.php:319
+msgid "Manager password must match regex rules like this: [a-zA-Z0-9*?+-.,!_]"
+msgstr ""
+
 #: views/form.php:92
 msgid "Manager secret"
 msgstr "Manager segreto"
@@ -152,7 +156,7 @@ msgstr ""
 msgid "Submit"
 msgstr "Sottoscrivi"
 
-#: views/form.php:319
+#: views/form.php:320
 msgid "The manager deny is not well formatted."
 msgstr "Il gestore nega non è ben formattato."
 
@@ -164,11 +168,11 @@ msgstr "Il nome del gestore non può essere vuoto o non può contenere spazio."
 msgid "The manager name will not accept any special characters except _ and -."
 msgstr ""
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager permit is not well formatted."
 msgstr "Il permesso del manager non è ben formattato."
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager read field is not well formatted."
 msgstr "Il permesso del manager non è ben formattato."
 
@@ -176,7 +180,7 @@ msgstr "Il permesso del manager non è ben formattato."
 msgid "The manager secret cannot be empty."
 msgstr "Il segreto del gestore non può essere vuoto."
 
-#: views/form.php:322
+#: views/form.php:323
 msgid "The manager write field is not well formatted."
 msgstr "Il campo di scrittura del manager non è ben formattato."
 

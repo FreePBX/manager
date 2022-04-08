@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 08:39+0000\n"
+"POT-Creation-Date: 2022-04-08 03:07+0000\n"
 "PO-Revision-Date: 2017-03-27 14:18+0200\n"
 "Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -101,6 +101,10 @@ msgstr "Gerenciador"
 msgid "Manager name"
 msgstr "Nome do Gerenciador"
 
+#: views/form.php:319
+msgid "Manager password must match regex rules like this: [a-zA-Z0-9*?+-.,!_]"
+msgstr ""
+
 #: views/form.php:92
 msgid "Manager secret"
 msgstr "Segredo do Gerenciador"
@@ -151,7 +155,7 @@ msgstr ""
 msgid "Submit"
 msgstr "Enviar"
 
-#: views/form.php:319
+#: views/form.php:320
 msgid "The manager deny is not well formatted."
 msgstr "O campo \"Negar\" não está no formato correto."
 
@@ -164,11 +168,11 @@ msgstr ""
 msgid "The manager name will not accept any special characters except _ and -."
 msgstr ""
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager permit is not well formatted."
 msgstr "A permissão do gerenciador não está no formato correto."
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager read field is not well formatted."
 msgstr "O campo \"Leitura\" não esta no formato correto."
 
@@ -176,7 +180,7 @@ msgstr "O campo \"Leitura\" não esta no formato correto."
 msgid "The manager secret cannot be empty."
 msgstr "O segredo do gerenciador não pode estar vazio."
 
-#: views/form.php:322
+#: views/form.php:323
 msgid "The manager write field is not well formatted."
 msgstr "O campo \"Escrita\" não está no formato correto."
 

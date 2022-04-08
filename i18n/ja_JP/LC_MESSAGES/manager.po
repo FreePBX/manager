@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 08:39+0000\n"
+"POT-Creation-Date: 2022-04-08 03:07+0000\n"
 "PO-Revision-Date: 2014-02-19 22:17+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/manager/ja/>\n"
@@ -127,6 +127,10 @@ msgstr "マネージャー"
 msgid "Manager name"
 msgstr ""
 
+#: views/form.php:319
+msgid "Manager password must match regex rules like this: [a-zA-Z0-9*?+-.,!_]"
+msgstr ""
+
 #: views/form.php:92
 msgid "Manager secret"
 msgstr ""
@@ -175,7 +179,7 @@ msgstr "設定"
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:319
+#: views/form.php:320
 msgid "The manager deny is not well formatted."
 msgstr "マネージャー　拒否　のフォーマットが正しくありません。"
 
@@ -188,11 +192,11 @@ msgstr ""
 msgid "The manager name will not accept any special characters except _ and -."
 msgstr ""
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager permit is not well formatted."
 msgstr "マネージャー　許可　のフォーマットが正しくありません。"
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager read field is not well formatted."
 msgstr "マネージャーの読取フィールドのフォーマットが正しくありません。"
 
@@ -200,7 +204,7 @@ msgstr "マネージャーの読取フィールドのフォーマットが正し
 msgid "The manager secret cannot be empty."
 msgstr "パスワードを空にすることはできません。"
 
-#: views/form.php:322
+#: views/form.php:323
 msgid "The manager write field is not well formatted."
 msgstr "マネージャーの書込フィールドのフォーマットが正しくありません。"
 
