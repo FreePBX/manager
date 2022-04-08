@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 08:39+0000\n"
+"POT-Creation-Date: 2022-04-08 03:07+0000\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -107,6 +107,10 @@ msgstr "Hanterare"
 msgid "Manager name"
 msgstr ""
 
+#: views/form.php:319
+msgid "Manager password must match regex rules like this: [a-zA-Z0-9*?+-.,!_]"
+msgstr ""
+
 #: views/form.php:92
 msgid "Manager secret"
 msgstr ""
@@ -155,7 +159,7 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:319
+#: views/form.php:320
 msgid "The manager deny is not well formatted."
 msgstr "Formateringen för förbjud (deny) är inte korrekt formaterat."
 
@@ -167,11 +171,11 @@ msgstr "Namnet på hanteraren kan inte vara tomt eller ha mellanslag."
 msgid "The manager name will not accept any special characters except _ and -."
 msgstr ""
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager permit is not well formatted."
 msgstr "Formateringen för tillåt (permit) är inte korrekt formaterat."
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager read field is not well formatted."
 msgstr "Hanterarens läsfält är inte korrekt formaterat."
 
@@ -179,7 +183,7 @@ msgstr "Hanterarens läsfält är inte korrekt formaterat."
 msgid "The manager secret cannot be empty."
 msgstr "Lösenordet för hanteraren kan inte vara tomt."
 
-#: views/form.php:322
+#: views/form.php:323
 msgid "The manager write field is not well formatted."
 msgstr "Hanterarens skrivfält är inte korrekt formaterat."
 

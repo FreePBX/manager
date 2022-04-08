@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 08:39+0000\n"
+"POT-Creation-Date: 2022-04-08 03:07+0000\n"
 "PO-Revision-Date: 2009-02-01 17:40+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -93,6 +93,10 @@ msgstr "管理员"
 msgid "Manager name"
 msgstr ""
 
+#: views/form.php:319
+msgid "Manager password must match regex rules like this: [a-zA-Z0-9*?+-.,!_]"
+msgstr ""
+
 #: views/form.php:92
 msgid "Manager secret"
 msgstr ""
@@ -141,7 +145,7 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:319
+#: views/form.php:320
 msgid "The manager deny is not well formatted."
 msgstr "“拒绝”字段的值的格式不正确。"
 
@@ -153,11 +157,11 @@ msgstr "管理员用户名不能为空，并且不能包含空格。"
 msgid "The manager name will not accept any special characters except _ and -."
 msgstr ""
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager permit is not well formatted."
 msgstr "“允许”字段的值的格式不正确"
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager read field is not well formatted."
 msgstr "“读”字段的值的格式不正确。"
 
@@ -165,7 +169,7 @@ msgstr "“读”字段的值的格式不正确。"
 msgid "The manager secret cannot be empty."
 msgstr "管理员密码不能为空。"
 
-#: views/form.php:322
+#: views/form.php:323
 msgid "The manager write field is not well formatted."
 msgstr "“写”字段的值的格式不正确。"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo manager module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 08:39+0000\n"
+"POT-Creation-Date: 2022-04-08 03:07+0000\n"
 "PO-Revision-Date: 2018-07-18 19:19+0000\n"
 "Last-Translator: Elvita Crespo <ecrespo@sangoma.com>\n"
 "Language-Team: Spanish <http://*/projects/freepbx/manager/es/>\n"
@@ -93,6 +93,10 @@ msgstr "Gestor"
 msgid "Manager name"
 msgstr "Nombre Admistrador"
 
+#: views/form.php:319
+msgid "Manager password must match regex rules like this: [a-zA-Z0-9*?+-.,!_]"
+msgstr ""
+
 #: views/form.php:92
 msgid "Manager secret"
 msgstr "Secreto Administrador"
@@ -143,7 +147,7 @@ msgstr "Configuracion"
 msgid "Submit"
 msgstr "Enviar"
 
-#: views/form.php:319
+#: views/form.php:320
 msgid "The manager deny is not well formatted."
 msgstr "El campo 'Denegar' no tiene el formato correcto."
 
@@ -155,11 +159,11 @@ msgstr "El nombre del gestor no puede estar vacío ni contener espacios."
 msgid "The manager name will not accept any special characters except _ and -."
 msgstr ""
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager permit is not well formatted."
 msgstr "El campo 'Permitir' no tiene el formato correcto."
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager read field is not well formatted."
 msgstr "El campo 'Lectura' no tiene el formato correcto."
 
@@ -167,7 +171,7 @@ msgstr "El campo 'Lectura' no tiene el formato correcto."
 msgid "The manager secret cannot be empty."
 msgstr "La contraseña del gestor no puede estar vacía."
 
-#: views/form.php:322
+#: views/form.php:323
 msgid "The manager write field is not well formatted."
 msgstr "El campo 'Escritura' no tiene el formato correcto."
 

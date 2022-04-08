@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 08:39+0000\n"
+"POT-Creation-Date: 2022-04-08 03:07+0000\n"
 "PO-Revision-Date: 2017-07-10 19:50+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -97,6 +97,10 @@ msgstr "Trình quản lý"
 msgid "Manager name"
 msgstr "Tên của trình quản lý"
 
+#: views/form.php:319
+msgid "Manager password must match regex rules like this: [a-zA-Z0-9*?+-.,!_]"
+msgstr ""
+
 #: views/form.php:92
 msgid "Manager secret"
 msgstr "Bảo mật của trình quản lý"
@@ -147,7 +151,7 @@ msgstr ""
 msgid "Submit"
 msgstr "Gửi đi"
 
-#: views/form.php:319
+#: views/form.php:320
 msgid "The manager deny is not well formatted."
 msgstr "Tính năng từ chối của trình quản lý không được định dạng tốt."
 
@@ -160,11 +164,11 @@ msgstr ""
 msgid "The manager name will not accept any special characters except _ and -."
 msgstr ""
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager permit is not well formatted."
 msgstr "Cho phép của trình quản lý không được định dạng tốt."
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager read field is not well formatted."
 msgstr "Trường đọc của trình quản lý không được định dạng tốt."
 
@@ -172,7 +176,7 @@ msgstr "Trường đọc của trình quản lý không được định dạng 
 msgid "The manager secret cannot be empty."
 msgstr "Bảo mật của trình quản lý không thể để trống."
 
-#: views/form.php:322
+#: views/form.php:323
 msgid "The manager write field is not well formatted."
 msgstr "Trường ghi trình quản lý không được định dạng tốt."
 

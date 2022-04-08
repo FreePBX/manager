@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 08:39+0000\n"
+"POT-Creation-Date: 2022-04-08 03:07+0000\n"
 "PO-Revision-Date: 2018-07-18 19:11+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/manager/bg/>\n"
@@ -98,6 +98,10 @@ msgstr "Мениджър"
 msgid "Manager name"
 msgstr "Име на Мениджър"
 
+#: views/form.php:319
+msgid "Manager password must match regex rules like this: [a-zA-Z0-9*?+-.,!_]"
+msgstr ""
+
 #: views/form.php:92
 msgid "Manager secret"
 msgstr "Парола на Мениджър"
@@ -148,7 +152,7 @@ msgstr "Настройки"
 msgid "Submit"
 msgstr "Приеми"
 
-#: views/form.php:319
+#: views/form.php:320
 msgid "The manager deny is not well formatted."
 msgstr "Забраните на мениджър не са добре форматирани."
 
@@ -161,11 +165,11 @@ msgstr ""
 msgid "The manager name will not accept any special characters except _ and -."
 msgstr ""
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager permit is not well formatted."
 msgstr "Правата на мениджър не са добре форматирани."
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager read field is not well formatted."
 msgstr "Полетата за четене на мениджър не са добре форматирани."
 
@@ -173,7 +177,7 @@ msgstr "Полетата за четене на мениджър не са до�
 msgid "The manager secret cannot be empty."
 msgstr "Паролата на мениджър не може да е празна."
 
-#: views/form.php:322
+#: views/form.php:323
 msgid "The manager write field is not well formatted."
 msgstr "Полетата за запис на мениджър не са добре форматирани."
 
