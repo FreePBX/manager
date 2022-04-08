@@ -316,6 +316,7 @@ function checkConf()
 	var errName = "<?php echo _('The manager name cannot be empty or may not have any space in it.'); ?>";
 	var errInvalidName = "<?php echo _('The manager name will not accept any special characters except _ and -.'); ?>";
 	var errSecret = "<?php echo _('The manager secret cannot be empty.'); ?>";
+  var errSecretFormat = "<?php echo _('Manager password must match regex rules like this: [a-zA-Z0-9*?+-.,!_]'); ?>";
 	var errDeny = "<?php echo _('The manager deny is not well formatted.'); ?>";
 	var errPermit = "<?php echo _('The manager permit is not well formatted.'); ?>";
 	var errRead = "<?php echo _('The manager read field is not well formatted.'); ?>";
@@ -326,19 +327,29 @@ function checkConf()
 	if(!theForm.name.value.match(regex)){
 		 return warnInvalid(theForm.name, errInvalidName);
 	}
-	if ((theForm.name.value.search(/\s/) >= 0) || (theForm.name.value.length == 0))
-		return warnInvalid(theForm.name, errName);
-	if (theForm.secret.value.length == 0)
-          return warnInvalid(theForm.secret, errSecret);
-        var regex = new RegExp("^[a-zA-Z0-9]*$");
-        if (!regex.test(theForm.secret.value)) {
-          return warnInvalid(theForm.secret, errSecretFormat);
-        } 
+
+	if ((theForm.name.value.search(/\s/) >= 0) || (theForm.name.value.length == 0)){
+    return warnInvalid(theForm.name, errName);
+  }
+		
+	if (theForm.secret.value.length == 0){
+    return warnInvalid(theForm.secret, errSecret);
+  }
+  
+  var regex = new RegExp("^[a-zA-Z0-9*?+-.,!_]*$");
+  if (!regex.test(theForm.secret.value)){
+    return warnInvalid(theForm.secret, errSecretFormat);
+  } 
+
 	// Only IP/MASK format are checked
-	if (theForm.deny.value.search(/\b(?:\d{1,3}\.){3}\d{1,3}\b\/\b(?:\d{1,3}\.){3}\d{1,3}\b(&\b(?:\d{1,3}\.){3}\d{1,3}\b\/\b(?:\d{1,3}\.){3}\d{1,3}\b)*$/))
-		return warnInvalid(theForm.deny, errDeny);
-	if (theForm.permit.value.search(/\b(?:\d{1,3}\.){3}\d{1,3}\b\/\b(?:\d{1,3}\.){3}\d{1,3}\b(&\b(?:\d{1,3}\.){3}\d{1,3}\b\/\b(?:\d{1,3}\.){3}\d{1,3}\b)*$/))
-		return warnInvalid(theForm.permit, errPermit);
+	if (theForm.deny.value.search(/\b(?:\d{1,3}\.){3}\d{1,3}\b\/\b(?:\d{1,3}\.){3}\d{1,3}\b(&\b(?:\d{1,3}\.){3}\d{1,3}\b\/\b(?:\d{1,3}\.){3}\d{1,3}\b)*$/)) {
+    return warnInvalid(theForm.deny, errDeny);
+  }
+		
+	if (theForm.permit.value.search(/\b(?:\d{1,3}\.){3}\d{1,3}\b\/\b(?:\d{1,3}\.){3}\d{1,3}\b(&\b(?:\d{1,3}\.){3}\d{1,3}\b\/\b(?:\d{1,3}\.){3}\d{1,3}\b)*$/)) {
+    return warnInvalid(theForm.permit, errPermit);
+  }
+		
 	return true;
 }
 
