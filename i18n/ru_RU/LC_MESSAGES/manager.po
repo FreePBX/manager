@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-15 06:10+0000\n"
-"PO-Revision-Date: 2021-12-08 06:03+0000\n"
+"PO-Revision-Date: 2022-04-19 06:51+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/manager/"
 "ru/>\n"
@@ -49,7 +49,7 @@ msgstr "Добавить менеджера"
 
 #: Manager.class.php:44
 msgid "Adding write timeout.."
-msgstr ""
+msgstr "Добавление тайм-аута записи.."
 
 #: manager.i18n.php:4
 msgid "Asterisk API"
@@ -57,7 +57,7 @@ msgstr "Астериск API"
 
 #: page.manager.php:25
 msgid "Asterisk Manager"
-msgstr ""
+msgstr "Менеджер Asterisk (AMI)"
 
 #: manager.i18n.php:10
 msgid "Asterisk Manager Users"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: Manager.class.php:53
 msgid "Column present"
-msgstr ""
+msgstr "Колонка присутствует"
 
 #: Manager.class.php:119
 msgid "Delete"
@@ -82,17 +82,19 @@ msgstr "Удалить"
 
 #: views/form.php:119 views/grid.php:11
 msgid "Deny"
-msgstr ""
+msgstr "Отказано"
 
 #: views/form.php:190
 msgid ""
 "For information on individual permissions please see the Asterisk Manager "
 "Documentation"
 msgstr ""
+"Для получения информации об отдельных разрешениях, пожалуйста, обратитесь к "
+"документации Asterisk Manager"
 
 #: views/form.php:56
 msgid "General"
-msgstr ""
+msgstr "Общие"
 
 #: views/form.php:131
 msgid ""
@@ -122,7 +124,7 @@ msgstr "Увеличить размер поля записи если необ�
 
 #: page.manager.php:37
 msgid "List Managers"
-msgstr ""
+msgstr "Список менеджеров"
 
 #: views/form.php:5
 msgid "Manager"
@@ -130,25 +132,27 @@ msgstr "Менеджер"
 
 #: views/form.php:68
 msgid "Manager name"
-msgstr ""
+msgstr "Имя менеджера"
 
 #: views/form.php:92
 msgid "Manager secret"
-msgstr ""
+msgstr "Пароль менеджера"
 
 #: views/grid.php:10
 msgid "Name"
-msgstr ""
+msgstr "Имя"
 
 #: views/form.php:80
 msgid ""
 "Name of the manager without spaces and special characters except _ and -. "
 "Limit upto 15 characters only."
 msgstr ""
+"Имя менеджера без пробелов и специальных символов, кроме _ и -. Ограничение "
+"только до 15 символов."
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
 msgid "No"
-msgstr ""
+msgstr "Нет"
 
 #: views/form.php:107
 msgid "Password for the manager."
@@ -156,11 +160,11 @@ msgstr "Пароль для этого менеджера."
 
 #: views/form.php:57
 msgid "Permissions"
-msgstr ""
+msgstr "Разрешения"
 
 #: views/form.php:143 views/grid.php:12
 msgid "Permit"
-msgstr ""
+msgstr "Разрешить"
 
 #: Manager.class.php:124
 msgid "Reset"
@@ -171,6 +175,8 @@ msgid ""
 "Sets the timeout used by Asterisk when writing data to the AMI connection "
 "for this user"
 msgstr ""
+"Задает время ожидания, используемое Asterisk при записи данных в соединение "
+"AMI для этого пользователя"
 
 #: manager.i18n.php:6
 msgid "Settings"
@@ -191,6 +197,7 @@ msgstr "Имя менеджера не должно быть пустым и н�
 #: views/form.php:317
 msgid "The manager name will not accept any special characters except _ and -."
 msgstr ""
+"Имя менеджера не будет принимать никаких специальных символов, кроме _ и -."
 
 #: views/form.php:320
 msgid "The manager permit is not well formatted."
@@ -214,47 +221,47 @@ msgstr "Такой менеджер уже существует"
 
 #: manager.i18n.php:8
 msgid "This module is used to add AMI Users"
-msgstr ""
+msgstr "Этот модуль используется для добавления пользователей AMI"
 
 #: views/form.php:227
 msgid "Toggle All"
-msgstr ""
+msgstr "Переключить всё"
 
 #: views/form.php:167
 msgid "Write Timeout"
-msgstr ""
+msgstr "Таймаут записи"
 
 #: views/form.php:210 views/form.php:218 views/form.php:231 views/form.php:239
 msgid "Yes"
-msgstr ""
+msgstr "Да"
 
 #: views/form.php:27
 msgid "agent"
-msgstr ""
+msgstr "агент"
 
 #: views/form.php:23
 msgid "call"
-msgstr ""
+msgstr "вызов"
 
 #: views/form.php:32
 msgid "cdr"
-msgstr ""
+msgstr "cdr"
 
 #: views/form.php:26
 msgid "command"
-msgstr ""
+msgstr "команды"
 
 #: views/form.php:29
 msgid "config"
-msgstr ""
+msgstr "конфигурация"
 
 #: views/form.php:33
 msgid "dialplan"
-msgstr ""
+msgstr "диалплан"
 
 #: views/form.php:30
 msgid "dtmf"
-msgstr ""
+msgstr "DTMF"
 
 #: Manager.class.php:32 Manager.class.php:42
 msgid "error encountered, not altered"
@@ -262,11 +269,11 @@ msgstr "обнаружена ошибка, не изменено"
 
 #: views/form.php:24
 msgid "log"
-msgstr ""
+msgstr "лог"
 
 #: views/form.php:173
 msgid "milliseconds"
-msgstr ""
+msgstr "миллисекунды"
 
 #: Manager.class.php:30 Manager.class.php:40 Manager.class.php:49
 msgid "ok"
@@ -274,23 +281,23 @@ msgstr "ok"
 
 #: views/form.php:34
 msgid "originate"
-msgstr ""
+msgstr "инициирование"
 
 #: views/form.php:31
 msgid "reporting"
-msgstr ""
+msgstr "отчет"
 
 #: views/form.php:22
 msgid "system"
-msgstr ""
+msgstr "система"
 
 #: views/form.php:28
 msgid "user"
-msgstr ""
+msgstr "пользователь"
 
 #: views/form.php:25
 msgid "verbose"
-msgstr ""
+msgstr "детальность"
 
 #~ msgid "Check All/None."
 #~ msgstr "Проверить всё/ничего."
