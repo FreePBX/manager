@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-15 06:10+0000\n"
-"PO-Revision-Date: 2022-04-19 06:51+0000\n"
+"PO-Revision-Date: 2022-04-19 15:27+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/manager/"
 "ru/>\n"
@@ -245,7 +245,7 @@ msgstr "вызов"
 
 #: views/form.php:32
 msgid "cdr"
-msgstr "cdr"
+msgstr "CDR"
 
 #: views/form.php:26
 msgid "command"
