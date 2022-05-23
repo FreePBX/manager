@@ -2,7 +2,7 @@
 	<rawname>manager</rawname>
 	<repo>standard</repo>
 	<name>Asterisk API</name>
-	<version>16.0.12</version>
+	<version>17.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv2+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-2.0.txt</licenselink>
@@ -25,20 +25,9 @@
         </table>
     </database>
 	<changelog>
-		*16.0.12* FREEI-4793 
-		*16.0.11* FREEPBX-23396 Cannot Update Manager-Configuration 
-		*16.0.10* SCD-107 added cdr event filter to receive cdr events in sangomartapi 
-		*16.0.9* SCD-32 add more rtapi entries to manager_additional.conf 
-		*16.0.8* FREEI-3953 Added validation for password field 
-		*16.0.7* FREEI-3375 SQL Injection in Asterisk Manager 
-		*16.0.6* FREEI-3453: add sangomartapi conference app's entry to manager_additional.conf 
-		*16.0.5* FREEI-3488 
-		*16.0.4* FREEI-3453: add sangomartapi_conference entry as an asterisk manager 
-		*16.0.3* FREEPBX-22019 Change default AMI address binding to localhost 
-		*16.0.2* Packaging of ver 16.0.2
-		*16.0.1alpha* 16.0.1 alpha release
+		*17.0.1alpha* 17.0.1 alpha release
 	</changelog>
 	<supported>
-		<version>16.0</version>
+		<version>17.0</version>
 	</supported>
 </module>
