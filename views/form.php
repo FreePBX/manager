@@ -52,9 +52,9 @@ if(isset($wall)){
   <input type="hidden" name="display" value="manager">
 	<input type="hidden" name="action" value="<?php echo (isset($managerdisplay) ? 'edit' : 'add') ?>">
   <input type="hidden" name="view" value="form">
-    <ul class="nav nav-tabs pb-0" role="tablist">
-        <li data-name="managerset" class="change-tab"><a href="#managerset" aria-controls="managerset" role="tab" data-toggle="tab" class="active nav-link"><?php echo _("General")?></a></li>
-        <li data-name="managerperm" class="change-tab"><a href="#managerperm" aria-controls="managerperm" role="tab" data-toggle="tab" class="nav-link"><?php echo _("Permissions")?></a></li>
+    <ul class="nav nav-tabs" role="tablist">
+        <li data-name="managerset" class="change-tab active"><a href="#managerset" aria-controls="managerset" role="tab" data-toggle="tab"><?php echo _("General")?></a></li>
+        <li data-name="managerperm" class="change-tab"><a href="#managerperm" aria-controls="managerperm" role="tab" data-toggle="tab"><?php echo _("Permissions")?></a></li>
     </ul>
     <div class="tab-content display">
         <div id="managerset" class="tab-pane active">
@@ -62,8 +62,8 @@ if(isset($wall)){
             <div class="element-container">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="">
-                    <div class="row form-group">
+                  <div class="row">
+                    <div class="form-group">
                       <div class="col-md-3">
                         <label class="control-label" for="name"><?php echo _("Manager name") ?></label>
                         <i class="fa fa-question-circle fpbx-help-icon" data-for="name"></i>
@@ -86,8 +86,8 @@ if(isset($wall)){
             <div class="element-container">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="">
-                    <div class="row form-group">
+                  <div class="row">
+                    <div class="form-group">
                       <div class="col-md-3">
                         <label class="control-label" for="secret"><?php echo _("Manager secret") ?></label>
                         <i class="fa fa-question-circle fpbx-help-icon" data-for="secret"></i>
@@ -113,8 +113,8 @@ if(isset($wall)){
             <div class="element-container">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="">
-                    <div class="row form-group">
+                  <div class="row">
+                    <div class="form-group">
                       <div class="col-md-3">
                         <label class="control-label" for="deny"><?php echo _("Deny") ?></label>
                         <i class="fa fa-question-circle fpbx-help-icon" data-for="deny"></i>
@@ -137,8 +137,8 @@ if(isset($wall)){
             <div class="element-container">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="">
-                    <div class="row form-group">
+                  <div class="row">
+                    <div class="form-group">
                       <div class="col-md-3">
                         <label class="control-label" for="permit"><?php echo _("Permit") ?></label>
                         <i class="fa fa-question-circle fpbx-help-icon" data-for="permit"></i>
@@ -161,8 +161,8 @@ if(isset($wall)){
             <div class="element-container">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="">
-                    <div class="row form-group">
+                  <div class="row">
+                    <div class="form-group">
                       <div class="col-md-3">
                         <label class="control-label" for="writetimeout"><?php echo _("Write Timeout") ?></label>
                         <i class="fa fa-question-circle fpbx-help-icon" data-for="writetimeout"></i>
