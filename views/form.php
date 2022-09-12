@@ -120,7 +120,7 @@ if(isset($wall)){
                         <i class="fa fa-question-circle fpbx-help-icon" data-for="deny"></i>
                       </div>
                       <div class="col-md-9">
-                        <input type="text" class="form-control" id="deny" name="deny" value="<?php echo isset($deny)?$deny:''?>">
+                        <input type="text" class="form-control" id="deny" name="deny" maxlength="1024" value="<?php echo isset($deny)?$deny:''?>">
                       </div>
                     </div>
                   </div>
@@ -144,7 +144,7 @@ if(isset($wall)){
                         <i class="fa fa-question-circle fpbx-help-icon" data-for="permit"></i>
                       </div>
                       <div class="col-md-9">
-                        <input type="text" class="form-control" id="permit" name="permit" value="<?php echo isset($permit)?$permit:''?>">
+                        <input type="text" class="form-control" id="permit" name="permit" maxlength="1024" value="<?php echo isset($permit)?$permit:''?>">
                       </div>
                     </div>
                   </div>
