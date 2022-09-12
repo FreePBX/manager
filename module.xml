@@ -17,8 +17,8 @@
             <field name="manager_id" type="integer" primarykey="true" autoincrement="true"/>
             <field name="name" type="string" length="15"/>
             <field name="secret" type="string" length="50" notnull="false"/>
-            <field name="deny" type="string" length="255" notnull="false"/>
-            <field name="permit" type="string" length="255" notnull="false"/>
+            <field name="deny" type="string" length="1024" notnull="false"/>
+            <field name="permit" type="string" length="1024" notnull="false"/>
             <field name="read" type="string" length="255" notnull="false"/>
             <field name="write" type="string" length="255" notnull="false"/>
             <field name="writetimeout" type="integer" notnull="false"/>
