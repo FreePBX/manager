@@ -96,7 +96,7 @@ class manager_conf {
 			$output .= "secret = aststate\n";
 			$output .= "deny=0.0.0.0/0.0.0.0\n";
 			$output .= "permit=127.0.0.1/255.255.255.0\n";
-			$output .= "read=system,call,dialplan\n";
+			$output .= "read=system,call,dialplan,user\n";
 			$output .= "write=all\n";
 			$output .= "writetimeout=1000\n";
 			$output .= "eventfilter=FullyBooted\n";
@@ -124,6 +124,7 @@ class manager_conf {
 			$output .= "eventfilter=StatusComplete\n";
 			$output .= "eventfilter=Unhold\n";
 			$output .= "eventfilter=UnParkedCall\n";
+			$output .= "eventfilter = Event: UserEvent\n";
 			$output .= "; variable names for VarSet.\n";
 			$output .= "eventfilter=INCOMING_DID\n";
 			$output .= "eventfilter=DISPLAY_URL\n";
