@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-08 03:07+0000\n"
+"POT-Creation-Date: 2022-11-28 04:04+0000\n"
 "PO-Revision-Date: 2009-02-01 17:40+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -43,11 +43,11 @@ msgstr ""
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:346
+#: functions.inc.php:347
 msgid "Choose Manager:"
 msgstr "选择管理员"
 
-#: functions.inc.php:346
+#: functions.inc.php:347
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr "选择PHPAGI用来连接到Asterisk API的用户名"
 
@@ -177,7 +177,7 @@ msgstr "管理员密码不能为空。"
 msgid "The manager write field is not well formatted."
 msgstr "“写”字段的值的格式不正确。"
 
-#: functions.inc.php:306 functions.inc.php:312
+#: functions.inc.php:307 functions.inc.php:313
 msgid "This manager already exists"
 msgstr "此管理器已存在"
 
