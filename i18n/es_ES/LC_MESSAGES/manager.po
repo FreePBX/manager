@@ -3,15 +3,16 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo manager module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-15 06:10+0000\n"
-"PO-Revision-Date: 2018-07-18 19:19+0000\n"
-"Last-Translator: Elvita Crespo <ecrespo@sangoma.com>\n"
-"Language-Team: Spanish <http://*/projects/freepbx/manager/es/>\n"
+"PO-Revision-Date: 2023-01-10 11:52+0000\n"
+"Last-Translator: Santiago Pioli <spioli@sangoma.com>\n"
+"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/manager/"
+"es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.19.1\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -122,6 +123,8 @@ msgid ""
 "Name of the manager without spaces and special characters except _ and -. "
 "Limit upto 15 characters only."
 msgstr ""
+"Nombre del Administrador sin espacios ni caracteres especiales excepto _ y - "
+". Límite de solo 15 caracteres."
 
 #: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
 msgid "No"
@@ -170,6 +173,8 @@ msgstr "El nombre del gestor no puede estar vacío ni contener espacios."
 #: views/form.php:317
 msgid "The manager name will not accept any special characters except _ and -."
 msgstr ""
+"El nombre del Administrador no aceptará ningún caracteres especial a "
+"excepción de _ y -."
 
 #: views/form.php:320
 msgid "The manager permit is not well formatted."
@@ -193,7 +198,7 @@ msgstr "Este gestor ya existe"
 
 #: manager.i18n.php:8
 msgid "This module is used to add AMI Users"
-msgstr ""
+msgstr "Este módulo es usado para agregar usuarios AMI"
 
 #: views/form.php:227
 msgid "Toggle All"
