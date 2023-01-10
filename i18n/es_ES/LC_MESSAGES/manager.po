@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo manager module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-15 06:10+0000\n"
-"PO-Revision-Date: 2023-01-10 11:52+0000\n"
+"PO-Revision-Date: 2023-01-11 12:01+0000\n"
 "Last-Translator: Santiago Pioli <spioli@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/manager/"
 "es/>\n"
@@ -230,15 +230,15 @@ msgstr "comando"
 
 #: views/form.php:29
 msgid "config"
-msgstr "config"
+msgstr "configuración"
 
 #: views/form.php:33
 msgid "dialplan"
-msgstr "dialplan"
+msgstr "plan de discado"
 
 #: views/form.php:30
 msgid "dtmf"
-msgstr "dtmf"
+msgstr "DTMF"
 
 #: Manager.class.php:32 Manager.class.php:42
 msgid "error encountered, not altered"
@@ -274,7 +274,7 @@ msgstr "usuario"
 
 #: views/form.php:25
 msgid "verbose"
-msgstr "verbose"
+msgstr "verboso"
 
 #~ msgid "Name of the manager without spaces."
 #~ msgstr "Nombre de administrador sin espacios."
