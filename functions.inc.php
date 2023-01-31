@@ -4,6 +4,7 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 class manager_conf {
 
 	private static $obj;
+	private $freepbx;
 
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
@@ -68,7 +69,7 @@ class manager_conf {
 		// in the database table
 		if ($this->freepbx->Modules->checkStatus('sangomartapi')) {
 			$output .= "[sangomartapi_conference]\n";
-			$output .= "secret=conference\n";
+			$output .= "secret = " . $this->freepbx->Manager->getConfig('sangomartapi_conference', 'secret') . "\n";
 			$output .= "deny=0.0.0.0/0.0.0.0\n";
 			$output .= "permit=127.0.0.1/255.255.255.0\n";
 			$output .= "read=system,call\n";
@@ -78,7 +79,7 @@ class manager_conf {
 			$output .= "eventfilter=Event: FullyBooted\n";
 			$output .= "\n";
 			$output .= "[srtapi_browserphone]\n";
-			$output .= "secret=browserphone\n";
+			$output .= "secret = " . $this->freepbx->Manager->getConfig('srtapi_browserphone', 'secret') . "\n";
 			$output .= "deny=0.0.0.0/0.0.0.0\n";
 			$output .= "permit=127.0.0.1/255.255.255.0\n";
 			$output .= "read=system,call,cdr\n";
@@ -93,7 +94,7 @@ class manager_conf {
 			$output .= "writetimeout=1000\n";
 			$output .= "\n";
 			$output .= "[srtapi_aststate]\n";
-			$output .= "secret = aststate\n";
+			$output .= "secret = " . $this->freepbx->Manager->getConfig('srtapi_aststate', 'secret') . "\n";
 			$output .= "deny=0.0.0.0/0.0.0.0\n";
 			$output .= "permit=127.0.0.1/255.255.255.0\n";
 			$output .= "read=system,call,dialplan,user\n";
@@ -138,7 +139,7 @@ class manager_conf {
 			$output .= "eventfilter=!Event: PeerStatus\n";
 			$output .= "\n";
 			$output .= "[srtapi_realtime]\n";
-			$output .= "secret = realtime\n";
+			$output .= "secret = " . $this->freepbx->Manager->getConfig('srtapi_realtime', 'secret') . "\n";
 			$output .= "deny=0.0.0.0/0.0.0.0\n";
 			$output .= "permit=127.0.0.1/255.255.255.0\n";
 			$output .= "read = system,user,call\n";
@@ -150,8 +151,29 @@ class manager_conf {
 			$output .= "eventfilter = Event: FullyBooted\n";
 			$output .= "writetimeout=1000\n";
 			$output .= "\n";
+			$output .= "[srtapi_queue_events]\n";
+			$output .= "secret = " . $this->freepbx->Manager->getConfig('srtapi_queue_events', 'secret') . "\n";
+			$output .= "deny=0.0.0.0/0.0.0.0\n";
+			$output .= "permit=127.0.0.1/255.255.255.0\n";
+			$output .= "read = system,user,call,agent\n";
+			$output .= "write = all\n";
+			$output .= "eventfilter = QueueCallerAbandon\n";
+			$output .= "eventfilter = QueueCallerJoin\n";
+			$output .= "eventfilter = QueueCallerLeave\n";
+			$output .= "eventfilter = QueueEntry\n";
+			$output .= "eventfilter = QueueMemberAdded\n";
+			$output .= "eventfilter = QueueMemberPause\n";
+			$output .= "eventfilter = QueueMemberPenalty\n";
+			$output .= "eventfilter = QueueMemberRemoved\n";
+			$output .= "eventfilter = QueueMemberRinginuse\n";
+			$output .= "eventfilter = QueueMemberStatus\n";
+			$output .= "eventfilter = QueueParams\n";
+			$output .= "eventfilter = QueueMember\n";
+			$output .= "eventfilter = Event: UserEvent\n";
+			$output .= "writetimeout=1000\n";
+			$output .= "\n";
 			$output .= "[srtapi_amidefault]\n";
-			$output .= "secret = amidefault\n";
+			$output .= "secret = " . $this->freepbx->Manager->getConfig('srtapi_amidefault', 'secret') . "\n";
 			$output .= "deny=0.0.0.0/0.0.0.0\n";
 			$output .= "permit=127.0.0.1/255.255.255.0\n";
 			$output .= "read =  all\n";
