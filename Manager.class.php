@@ -6,7 +6,21 @@ use FreePBX_Helpers;
 
 class Manager extends FreePBX_Helpers implements BMO {
 
-	public function install() {}
+	public function install() {
+		$managerUserNames = [
+			'sangomartapi_conference',
+			'srtapi_browserphone',
+			'srtapi_aststate',
+			'srtapi_realtime',
+			'srtapi_queue_events',
+			'srtapi_amidefault'
+		];
+		foreach ($managerUserNames as $userName) {
+			if (!$this->getConfig($userName, 'secret')) {
+				$this->setConfig($userName, md5(uniqid()), 'secret');
+			}
+		}
+	}
 	public function uninstall() {
 	}
 
