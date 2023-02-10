@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-28 04:04+0000\n"
+"POT-Creation-Date: 2023-02-10 10:21+0000\n"
 "PO-Revision-Date: 2018-07-18 19:11+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/manager/bg/>\n"
@@ -45,16 +45,16 @@ msgstr "Астериск Мениджър"
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:347
+#: functions.inc.php:369
 msgid "Choose Manager:"
 msgstr "Избери Мениджър:"
 
-#: functions.inc.php:347
+#: functions.inc.php:369
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "Изберете потребител който PHPAGI ще използва за свързване с Asterisk API."
 
-#: Manager.class.php:64
+#: Manager.class.php:78
 msgid "Delete"
 msgstr "Изтрий"
 
@@ -136,7 +136,7 @@ msgstr "Права"
 msgid "Permit"
 msgstr "Разреши"
 
-#: Manager.class.php:69
+#: Manager.class.php:83
 msgid "Reset"
 msgstr "Изчисти"
 
@@ -152,7 +152,7 @@ msgstr ""
 msgid "Settings"
 msgstr "Настройки"
 
-#: Manager.class.php:74
+#: Manager.class.php:88
 msgid "Submit"
 msgstr "Приеми"
 
@@ -185,7 +185,7 @@ msgstr "Паролата на мениджър не може да е празн�
 msgid "The manager write field is not well formatted."
 msgstr "Полетата за запис на мениджър не са добре форматирани."
 
-#: functions.inc.php:307 functions.inc.php:313
+#: functions.inc.php:329 functions.inc.php:335
 msgid "This manager already exists"
 msgstr "Този мениджър вече съществува"
 
