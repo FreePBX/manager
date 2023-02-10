@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-28 04:03+0000\n"
+"POT-Creation-Date: 2023-02-10 10:20+0000\n"
 "PO-Revision-Date: 2017-07-10 19:50+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -41,15 +41,15 @@ msgstr "Trình quản lý Asterisk"
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:347
+#: functions.inc.php:369
 msgid "Choose Manager:"
 msgstr "Chọn trình quản lý:"
 
-#: functions.inc.php:347
+#: functions.inc.php:369
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr "Chon người dùng mà PHPAGI sẽ sử dụng để kết nối tới Asterisk API."
 
-#: Manager.class.php:64
+#: Manager.class.php:78
 msgid "Delete"
 msgstr "Xóa"
 
@@ -131,7 +131,7 @@ msgstr "Các quyền"
 msgid "Permit"
 msgstr "Cho phép"
 
-#: Manager.class.php:69
+#: Manager.class.php:83
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -147,7 +147,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: Manager.class.php:74
+#: Manager.class.php:88
 msgid "Submit"
 msgstr "Gửi đi"
 
@@ -180,7 +180,7 @@ msgstr "Bảo mật của trình quản lý không thể để trống."
 msgid "The manager write field is not well formatted."
 msgstr "Trường ghi trình quản lý không được định dạng tốt."
 
-#: functions.inc.php:307 functions.inc.php:313
+#: functions.inc.php:329 functions.inc.php:335
 msgid "This manager already exists"
 msgstr "Trình quản lý này đã tồn tại"
 

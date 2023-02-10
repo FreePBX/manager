@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-28 04:03+0000\n"
+"POT-Creation-Date: 2023-02-10 10:20+0000\n"
 "PO-Revision-Date: 2016-04-11 12:19+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/manager/"
@@ -41,15 +41,15 @@ msgstr "مدیریت استریسک"
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:347
+#: functions.inc.php:369
 msgid "Choose Manager:"
 msgstr "انتخاب مدیریت ："
 
-#: functions.inc.php:347
+#: functions.inc.php:369
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr "کاربری انتخاب کنید که PHPAGI توسط آن به API استریسک متصل شود."
 
-#: Manager.class.php:64
+#: Manager.class.php:78
 msgid "Delete"
 msgstr "حذف"
 
@@ -132,7 +132,7 @@ msgstr "دسترسی ها"
 msgid "Permit"
 msgstr "اجازه دادن"
 
-#: Manager.class.php:69
+#: Manager.class.php:83
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -148,7 +148,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: Manager.class.php:74
+#: Manager.class.php:88
 msgid "Submit"
 msgstr "ارسال"
 
@@ -180,7 +180,7 @@ msgstr "راز مدیریت نمیتواند خالی باشد."
 msgid "The manager write field is not well formatted."
 msgstr "فیلد نوشتاری مدیریت دارای فرمت مناسبی نیست."
 
-#: functions.inc.php:307 functions.inc.php:313
+#: functions.inc.php:329 functions.inc.php:335
 msgid "This manager already exists"
 msgstr "مدیریت موجود است"
 
