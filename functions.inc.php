@@ -167,6 +167,7 @@ class manager_conf {
 			$output .= "eventfilter = QueueMemberRemoved\n";
 			$output .= "eventfilter = QueueMemberRinginuse\n";
 			$output .= "eventfilter = QueueMemberStatus\n";
+			$output .= "eventfilter = AttendedTransfer\n";
 			$output .= "eventfilter = QueueParams\n";
 			$output .= "eventfilter = QueueMember\n";
 			$output .= "eventfilter = Event: UserEvent\n";
