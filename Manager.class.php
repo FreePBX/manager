@@ -362,7 +362,7 @@ class Manager extends FreePBX_Helpers implements BMO
 		}
 		if ($this->isConflictUser($p_name, true))
 		{
-			throw new \Exception(_("Can't delete, we are conflicting with FreePBX Asterisk Admin User!"), self::ERR_USER_CONFLICT);
+			throw new \Exception(_("Can't create, we are conflicting with FreePBX Asterisk Admin User!"), self::ERR_USER_CONFLICT);
 		}
 
 		$sql = sprintf("INSERT into `%s` (`name`, `secret`, `deny`, `permit`, `read`, `write`, `writetimeout`) VALUES (?, ?, ?, ?, ?, ?, ?)", $this->tables['manager']);

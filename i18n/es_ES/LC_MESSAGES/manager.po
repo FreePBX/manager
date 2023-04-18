@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo manager module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-16 22:36+0200\n"
-"PO-Revision-Date: 2023-04-16 22:44+0200\n"
+"POT-Creation-Date: 2023-04-18 18:07+0200\n"
+"PO-Revision-Date: 2023-04-18 18:11+0200\n"
 "Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://*/projects/freepbx/manager/es/>\n"
 "Language: es_ES\n"
@@ -28,7 +28,7 @@ msgstr "Log"
 
 #: Manager.class.php:46
 msgid "Verbose"
-msgstr ""
+msgstr "Verbose"
 
 #: Manager.class.php:47
 msgid "Command"
@@ -52,7 +52,7 @@ msgstr "DTMF"
 
 #: Manager.class.php:53
 msgid "Reporting"
-msgstr ""
+msgstr "Informes"
 
 #: Manager.class.php:54
 msgid "CDR"
@@ -64,157 +64,157 @@ msgstr "Dialplan"
 
 #: Manager.class.php:56
 msgid "Originate"
-msgstr ""
+msgstr "Originar"
 
-#: Manager.class.php:254
+#: Manager.class.php:214
 msgid "No data received!"
 msgstr "No se han recibido datos!"
 
-#: Manager.class.php:272
+#: Manager.class.php:232
 msgid "Create Successfully"
 msgstr "Creado Correctamente"
 
-#: Manager.class.php:287
+#: Manager.class.php:247
 msgid "Update Successfully"
 msgstr "Actualizado Correctamente"
 
-#: Manager.class.php:291
+#: Manager.class.php:251
 msgid "Update is Failed!"
 msgstr "¡Actualización fallida!"
 
-#: Manager.class.php:300
+#: Manager.class.php:260
 msgid "Type not found!"
 msgstr "Tipo no encontrado!"
 
-#: Manager.class.php:312
+#: Manager.class.php:272
 msgid "Removed Successfully"
 msgstr "Eliminado Correctamente"
 
-#: Manager.class.php:316
+#: Manager.class.php:276
 msgid "Removed Failed!"
 msgstr "¡Eliminación fallida!"
 
-#: Manager.class.php:326
+#: Manager.class.php:286
 msgid "Command not found!"
 msgstr "¡Comando no encontrado!"
 
-#: Manager.class.php:364
+#: Manager.class.php:320
 #, php-format
 msgid "Page Not Found (%s)!!!!"
 msgstr "¡¡¡¡Página no encontrada (%s)!!!!"
 
-#: Manager.class.php:432
+#: Manager.class.php:357
 msgid "No name specified!"
 msgstr "No se ha especificado ningún nombre!"
 
-#: Manager.class.php:436
+#: Manager.class.php:361
 msgid "This manager already exists!"
 msgstr "Este gestor ya existe!"
 
-#: Manager.class.php:440 Manager.class.php:502
-msgid "Can't delete, we are conflicting with FreePBX Asterisk Admin User!"
+#: Manager.class.php:365
+msgid "Can't create, we are conflicting with FreePBX Asterisk Admin User!"
 msgstr ""
+"¡No se puede crear, entramos en conflicto con el usuario administrador de "
+"Asterisk para FreePBX!"
 
-#: Manager.class.php:457
+#: Manager.class.php:381
 msgid "No manager has been selected!"
 msgstr ""
 
-#: Manager.class.php:466
+#: Manager.class.php:390
 msgid "The manager does not exist!"
 msgstr "El gestor no existe!"
 
-#: Manager.class.php:494
+#: Manager.class.php:418
 msgid "No manager has been selected to be removed!"
 msgstr ""
 
-#: Manager.class.php:498
+#: Manager.class.php:422
 msgid "Cannot be deleted as it does not exist!"
-msgstr ""
+msgstr "No se puede eliminar porque no existe!"
 
-#: assets/js/manager.js:17
+#: Manager.class.php:426
+msgid "Can't delete, we are conflicting with FreePBX Asterisk Admin User!"
+msgstr ""
+"¡No se puede eliminar, entramos en conflicto con el usuario administrador de "
+"Asterisk para FreePBX!"
+
+#: assets/js/manager.js:16
 msgid "ID not detected!"
 msgstr "¡ID no detectado!"
 
-#: assets/js/manager.js:22
+#: assets/js/manager.js:21
 #, javascript-format
 msgid "Are you sure you want to delete (%s)?"
 msgstr "¿Estás seguro de que quieres borrar (%s)?"
 
-#: assets/js/manager.js:23 views/view.grid.form.php:175
+#: assets/js/manager.js:22 views/view.grid.form.php:175
 #: views/view.grid.form.php:183 views/view.grid.form.php:200
 #: views/view.grid.form.php:208
 msgid "Yes"
 msgstr "Si"
 
-#: assets/js/manager.js:23 views/view.grid.form.php:177
+#: assets/js/manager.js:22 views/view.grid.form.php:177
 #: views/view.grid.form.php:185 views/view.grid.form.php:202
 #: views/view.grid.form.php:210
 msgid "No"
 msgstr "No"
 
-#: assets/js/manager.js:96
+#: assets/js/manager.js:88
 msgid "New Manager"
 msgstr ""
 
-#: assets/js/manager.js:97 assets/js/manager.js:308
+#: assets/js/manager.js:89 assets/js/manager.js:296
 msgid "Create New"
 msgstr "Crear Nuevo"
 
-#: assets/js/manager.js:103
+#: assets/js/manager.js:95
 #, javascript-format
 msgid "Edit Manager (%s)"
 msgstr ""
 
-#: assets/js/manager.js:104 assets/js/manager.js:308
+#: assets/js/manager.js:96 assets/js/manager.js:296
 #: views/view.grid.form.php:226
 msgid "Save Changes"
 msgstr "Guardar Cambios"
 
-#: assets/js/manager.js:134
+#: assets/js/manager.js:126
 #, javascript-format
 msgid "Error: %s"
 msgstr "Error: %s"
 
-#: assets/js/manager.js:229
+#: assets/js/manager.js:220
 msgid "The manager name cannot be empty or may not have any space in it."
 msgstr "El nombre del gestor no puede estar vacío ni contener espacios."
 
-#: assets/js/manager.js:230
+#: assets/js/manager.js:221
 msgid "The manager name will not accept any special characters except _ and -."
 msgstr ""
 "El nombre del gestor no aceptará ningún carácter especial excepto _ y -."
 
-#: assets/js/manager.js:231
+#: assets/js/manager.js:222
 msgid "The manager secret cannot be empty."
 msgstr "La contraseña del gestor no puede estar vacía."
 
-#: assets/js/manager.js:232
+#: assets/js/manager.js:223
 msgid "Manager password must match regex rules like this: [a-zA-Z0-9*?+-.,!_]"
 msgstr ""
 "La contraseña del gestor debe coincidir con reglas regex como estas [a-zA-"
 "Z0-9*?+-.,!_]"
 
-#: assets/js/manager.js:233
+#: assets/js/manager.js:224
 msgid "The manager deny is not well formatted."
 msgstr "El campo 'Denegar' no tiene el formato correcto."
 
-#: assets/js/manager.js:234
+#: assets/js/manager.js:225
 msgid "The manager permit is not well formatted."
 msgstr "El campo 'Permitir' no tiene el formato correcto."
 
-#: assets/js/manager.js:235
-msgid "The manager read field is not well formatted."
-msgstr "El campo 'Lectura' no tiene el formato correcto."
-
-#: assets/js/manager.js:236
-msgid "The manager write field is not well formatted."
-msgstr "El campo 'Escritura' no tiene el formato correcto."
-
-#: assets/js/manager.js:270
+#: assets/js/manager.js:259
 msgid "Updating..."
 msgstr "Actualizando..."
 
-#: assets/js/manager.js:270
+#: assets/js/manager.js:259
 msgid "Adding..."
 msgstr "Añadiendo..."
 
@@ -345,6 +345,12 @@ msgstr "Añadir gestor"
 #: views/view.grid.php:31
 msgid "Actions"
 msgstr "Acciones"
+
+#~ msgid "The manager read field is not well formatted."
+#~ msgstr "El campo 'Lectura' no tiene el formato correcto."
+
+#~ msgid "The manager write field is not well formatted."
+#~ msgstr "El campo 'Escritura' no tiene el formato correcto."
 
 #~ msgid "call"
 #~ msgstr "llama"
