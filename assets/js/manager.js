@@ -6,8 +6,10 @@ function linkFormatter(value, row, idx)
     return html;
 }
 
-$(document).on('click', '[id="del"]', function ()
+$(document).on('click', '[id="del"]', function (e)
 {
+    e.preventDefault();
+
 	var id   = $(this).data('id');
     var name = $(this).data('name');
 
@@ -56,6 +58,13 @@ function getTableGrid()
 {
     return $('#managersgrid');
 }
+
+$('#managerForm').on('hidden.bs.modal', function ()
+{
+    $("#idManager").val("");
+    $("#nameManager").val("");
+    $("#secretManager").val("");    
+});
 
 $('#managerForm').on('shown.bs.modal', function ()
 {
@@ -276,16 +285,16 @@ $('#submitForm').on('click', function () {
 	$.post(window.FreePBX.ajaxurl, post_data)
   	.done(function(data)
 	{
- 		if (data.status)
+ 		if (data.status == true)
 		{
-			fpbxToast(data.message, '', 'success');
             getTableGrid().bootstrapTable('refresh', { silent: true });
  			$("#managerForm").modal('hide');
  		}
-		else
-		{
-			fpbxToast(data.message, '', 'error');
- 		}
+        fpbxToast(data.message, '', data.status == true ? 'success' : 'error');
+        if (data.needreload)
+        {
+            showButtonReloadFreePBX();
+        }
   	})
   	.fail(function(jqXHR, textStatus, errorThrown)
 	{
