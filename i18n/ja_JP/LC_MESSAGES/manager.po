@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-28 03:18+0000\n"
+"POT-Creation-Date: 2023-04-25 01:44+0000\n"
 "PO-Revision-Date: 2014-02-19 22:17+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/manager/ja/>\n"
@@ -48,23 +48,39 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: page.manager.php:36
-msgid "AMI current settings for Bind Address : "
+#: assets/js/manager.js:232
+msgid ""
+");\n"
+"    var errDeny         = _("
 msgstr ""
 
-#: views/grid.php:13
+#: views/page.main.php:10
+#, php-format
+msgid "AMI current settings for Bind Address : %s and bind port : %s."
+msgstr ""
+
+#: views/view.grid.php:31
 msgid "Actions"
 msgstr ""
 
-#: page.manager.php:52 views/form.php:12 views/grid.php:5
+#: views/view.grid.php:4
 msgid "Add Manager"
 msgstr "マネージャーを追加"
+
+#: Manager.class.php:48
+msgid "Agent"
+msgstr ""
+
+#: assets/js/manager.js:23
+#, perl-format
+msgid "Are you sure you want to delete (%s)?"
+msgstr ""
 
 #: manager.i18n.php:4
 msgid "Asterisk API"
 msgstr "Asterisk API"
 
-#: page.manager.php:27
+#: views/page.main.php:5
 msgid "Asterisk Manager"
 msgstr ""
 
@@ -72,34 +88,82 @@ msgstr ""
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:370
+#: Manager.class.php:54
+msgid "CDR"
+msgstr ""
+
+#: Manager.class.php:44
+msgid "Call"
+msgstr ""
+
+#: Manager.class.php:365
+msgid "Can't create, we are conflicting with FreePBX Asterisk Admin User!"
+msgstr ""
+
+#: Manager.class.php:426
+msgid "Can't delete, we are conflicting with FreePBX Asterisk Admin User!"
+msgstr ""
+
+#: Manager.class.php:422
+msgid "Cannot be deleted as it does not exist!"
+msgstr ""
+
+#: functions.inc.php:24
 msgid "Choose Manager:"
 msgstr "マネージャーを選択："
 
-#: functions.inc.php:370
+#: functions.inc.php:24
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "PHP AGIがAsterisk APIへ接続するために使用するユーザーを選択してください。"
 
-#: Manager.class.php:78
-msgid "Delete"
+#: views/view.grid.form.php:225
+msgid "Close"
 msgstr ""
 
-#: views/form.php:119 views/grid.php:11
+#: Manager.class.php:47
+msgid "Command"
+msgstr ""
+
+#: Manager.class.php:286
+msgid "Command not found!"
+msgstr ""
+
+#: Manager.class.php:51
+msgid "Config"
+msgstr ""
+
+#: Manager.class.php:232
+msgid "Create Successfully"
+msgstr ""
+
+#: Manager.class.php:52
+msgid "DTMF"
+msgstr ""
+
+#: views/view.grid.form.php:78 views/view.grid.php:25
 msgid "Deny"
 msgstr ""
 
-#: views/form.php:190
+#: Manager.class.php:55
+msgid "Dialplan"
+msgstr ""
+
+#: views/view.grid.form.php:143
 msgid ""
 "For information on individual permissions please see the Asterisk Manager "
 "Documentation"
 msgstr ""
 
-#: views/form.php:56
+#: views/view.grid.form.php:21
 msgid "General"
 msgstr ""
 
-#: views/form.php:131
+#: assets/js/manager.js:18
+msgid "ID not detected!"
+msgstr ""
+
+#: views/view.grid.form.php:88
 msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
@@ -107,7 +171,7 @@ msgstr ""
 "もし複数のホストやネットワークを拒否する場合は & で列挙します。<br/><br/>"
 "例： 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
-#: views/form.php:155
+#: views/view.grid.form.php:108
 msgid ""
 "If you want to permit many hosts or networks, use & char as separator. Look "
 "at deny example."
@@ -115,57 +179,93 @@ msgstr ""
 "もし複数のホストやネットワークを許可する場合は & で列挙します。<br/><br/>拒否"
 "の例を参照ください。"
 
-#: page.manager.php:51
-msgid "List Managers"
+#: views/view.grid.form.php:13
+msgid "Loading..."
 msgstr ""
 
-#: views/form.php:5
-msgid "Manager"
-msgstr "マネージャー"
-
-#: views/form.php:68
-msgid "Manager name"
+#: Manager.class.php:45
+msgid "Log"
 msgstr ""
 
-#: views/form.php:319
-msgid "Manager password must match regex rules like this: [a-zA-Z0-9*?+-.,!_]"
-msgstr ""
-
-#: views/form.php:92
-msgid "Manager secret"
-msgstr ""
-
-#: views/grid.php:10
+#: views/view.grid.form.php:35 views/view.grid.php:22
 msgid "Name"
 msgstr ""
 
-#: views/form.php:80
+#: views/view.grid.form.php:45
 msgid ""
 "Name of the manager without spaces and special characters except _ and -. "
 "Limit upto 15 characters only."
 msgstr ""
 
-#: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
+#: views/view.grid.form.php:177 views/view.grid.form.php:185
+#: views/view.grid.form.php:202 views/view.grid.form.php:210
+#: assets/js/manager.js:24
 msgid "No"
 msgstr ""
 
-#: views/form.php:107
+#: Manager.class.php:214
+msgid "No data received!"
+msgstr ""
+
+#: Manager.class.php:418
+msgid "No manager has been selected to be removed!"
+msgstr ""
+
+#: Manager.class.php:381
+msgid "No manager has been selected!"
+msgstr ""
+
+#: Manager.class.php:357
+msgid "No name specified!"
+msgstr ""
+
+#: Manager.class.php:56
+msgid "Originate"
+msgstr ""
+
+#: Manager.class.php:320
+#, php-format
+msgid "Page Not Found (%s)!!!!"
+msgstr ""
+
+#: views/view.grid.form.php:68
 msgid "Password for the manager."
 msgstr "マネージャーのパスワード"
 
-#: views/form.php:57
+#: views/view.grid.form.php:24
 msgid "Permissions"
 msgstr ""
 
-#: views/form.php:143 views/grid.php:12
+#: views/view.grid.form.php:98 views/view.grid.php:28
 msgid "Permit"
 msgstr ""
 
-#: Manager.class.php:83
-msgid "Reset"
+#: views/page.main.php:9
+#, php-format
+msgid "Please refer to  <a href=\"%s\"> <b>wiki</b> </a> for more information."
 msgstr ""
 
-#: views/form.php:182
+#: Manager.class.php:276
+msgid "Removed Failed!"
+msgstr ""
+
+#: Manager.class.php:272
+msgid "Removed Successfully"
+msgstr ""
+
+#: Manager.class.php:53
+msgid "Reporting"
+msgstr ""
+
+#: views/view.grid.form.php:226
+msgid "Save Changes"
+msgstr ""
+
+#: views/view.grid.form.php:55
+msgid "Secret"
+msgstr ""
+
+#: views/view.grid.form.php:131
 msgid ""
 "Sets the timeout used by Asterisk when writing data to the AMI connection "
 "for this user"
@@ -175,114 +275,91 @@ msgstr ""
 msgid "Settings"
 msgstr "設定"
 
-#: Manager.class.php:88
-msgid "Submit"
+#: Manager.class.php:43
+msgid "System"
 msgstr ""
 
-#: views/form.php:320
-msgid "The manager deny is not well formatted."
-msgstr "マネージャー　拒否　のフォーマットが正しくありません。"
-
-#: views/form.php:316
-msgid "The manager name cannot be empty or may not have any space in it."
-msgstr ""
-"マネージャー名を空にすることはできません、スペースを入れることもできません。"
-
-#: views/form.php:317
-msgid "The manager name will not accept any special characters except _ and -."
+#: views/page.main.php:8
+msgid ""
+"The default Asterisk Manager Interface (AMI) configuration has changed "
+"starting in version 16. "
 msgstr ""
 
-#: views/form.php:321
-msgid "The manager permit is not well formatted."
-msgstr "マネージャー　許可　のフォーマットが正しくありません。"
+#: Manager.class.php:390
+msgid "The manager does not exist!"
+msgstr ""
 
-#: views/form.php:322
-msgid "The manager read field is not well formatted."
-msgstr "マネージャーの読取フィールドのフォーマットが正しくありません。"
-
-#: views/form.php:318
-msgid "The manager secret cannot be empty."
-msgstr "パスワードを空にすることはできません。"
-
-#: views/form.php:323
-msgid "The manager write field is not well formatted."
-msgstr "マネージャーの書込フィールドのフォーマットが正しくありません。"
-
-#: functions.inc.php:330 functions.inc.php:336
-msgid "This manager already exists"
-msgstr "このマネージャーは既に存在しています"
+#: Manager.class.php:361
+msgid "This manager already exists!"
+msgstr ""
 
 #: manager.i18n.php:8
 msgid "This module is used to add AMI Users"
 msgstr ""
 
-#: views/form.php:227
+#: views/view.grid.form.php:195
 msgid "Toggle All"
 msgstr ""
 
-#: views/form.php:167
+#: Manager.class.php:260
+msgid "Type not found!"
+msgstr ""
+
+#: Manager.class.php:247
+msgid "Update Successfully"
+msgstr ""
+
+#: Manager.class.php:251
+msgid "Update is Failed!"
+msgstr ""
+
+#: Manager.class.php:49
+msgid "User"
+msgstr ""
+
+#: Manager.class.php:46
+msgid "Verbose"
+msgstr ""
+
+#: views/view.grid.form.php:118
 msgid "Write Timeout"
 msgstr ""
 
-#: views/form.php:210 views/form.php:218 views/form.php:231 views/form.php:239
+#: views/view.grid.form.php:175 views/view.grid.form.php:183
+#: views/view.grid.form.php:200 views/view.grid.form.php:208
+#: assets/js/manager.js:24
 msgid "Yes"
 msgstr ""
 
-#: views/form.php:27
-msgid "agent"
-msgstr ""
-
-#: views/form.php:23
-msgid "call"
-msgstr ""
-
-#: views/form.php:32
-msgid "cdr"
-msgstr ""
-
-#: views/form.php:26
-msgid "command"
-msgstr ""
-
-#: views/form.php:29
-msgid "config"
-msgstr ""
-
-#: views/form.php:33
-msgid "dialplan"
-msgstr ""
-
-#: views/form.php:30
-msgid "dtmf"
-msgstr ""
-
-#: views/form.php:24
-msgid "log"
-msgstr ""
-
-#: views/form.php:173
+#: views/view.grid.form.php:124
 msgid "milliseconds"
 msgstr ""
 
-#: views/form.php:34
-msgid "originate"
-msgstr ""
+#~ msgid "Manager"
+#~ msgstr "マネージャー"
 
-#: views/form.php:31
-msgid "reporting"
-msgstr ""
+#~ msgid "The manager deny is not well formatted."
+#~ msgstr "マネージャー　拒否　のフォーマットが正しくありません。"
 
-#: views/form.php:22
-msgid "system"
-msgstr ""
+#~ msgid "The manager name cannot be empty or may not have any space in it."
+#~ msgstr ""
+#~ "マネージャー名を空にすることはできません、スペースを入れることもできませ"
+#~ "ん。"
 
-#: views/form.php:28
-msgid "user"
-msgstr ""
+#~ msgid "The manager permit is not well formatted."
+#~ msgstr "マネージャー　許可　のフォーマットが正しくありません。"
 
-#: views/form.php:25
-msgid "verbose"
-msgstr ""
+#~ msgid "The manager read field is not well formatted."
+#~ msgstr "マネージャーの読取フィールドのフォーマットが正しくありません。"
+
+#~ msgid "The manager secret cannot be empty."
+#~ msgstr "パスワードを空にすることはできません。"
+
+#~ msgid "The manager write field is not well formatted."
+#~ msgstr "マネージャーの書込フィールドのフォーマットが正しくありません。"
+
+#~ msgid "This manager already exists"
+#~ msgstr "このマネージャーは既に存在しています"
 
 #~ msgid "Increasing read field size if needed.."
 #~ msgstr "必要に応じてreadフィールドのサイズを増やします.."
