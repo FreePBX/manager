@@ -5,256 +5,331 @@
 # FreePBX language template for manager
 # Copyright (C) 2008-2023 Sangoma Technologies, Inc.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-28 03:18+0000\n"
+"POT-Creation-Date: 2023-04-18 18:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+"X-Poedit-SearchPathExcluded-1: i18n\n"
 
-#: page.manager.php:36
-msgid "AMI current settings for Bind Address : "
+#: Manager.class.php:43
+msgid "System"
 msgstr ""
 
-#: views/grid.php:13
-msgid "Actions"
+#: Manager.class.php:44
+msgid "Call"
 msgstr ""
 
-#: page.manager.php:52
-#: views/form.php:12
-#: views/grid.php:5
-msgid "Add Manager"
+#: Manager.class.php:45
+msgid "Log"
 msgstr ""
 
-#: manager.i18n.php:4
-msgid "Asterisk API"
+#: Manager.class.php:46
+msgid "Verbose"
 msgstr ""
 
-#: page.manager.php:27
-msgid "Asterisk Manager"
+#: Manager.class.php:47
+msgid "Command"
 msgstr ""
 
-#: manager.i18n.php:10
-msgid "Asterisk Manager Users"
+#: Manager.class.php:48
+msgid "Agent"
 msgstr ""
 
-#: functions.inc.php:370
-msgid "Choose Manager:"
+#: Manager.class.php:49
+msgid "User"
 msgstr ""
 
-#: functions.inc.php:370
-msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
+#: Manager.class.php:51
+msgid "Config"
 msgstr ""
 
-#: Manager.class.php:78
-msgid "Delete"
+#: Manager.class.php:52
+msgid "DTMF"
 msgstr ""
 
-#: views/form.php:119
-#: views/grid.php:11
-msgid "Deny"
+#: Manager.class.php:53
+msgid "Reporting"
 msgstr ""
 
-#: views/form.php:190
-msgid ""
-"For information on individual permissions please see the Asterisk Manager "
-"Documentation"
+#: Manager.class.php:54
+msgid "CDR"
 msgstr ""
 
-#: views/form.php:56
-msgid "General"
+#: Manager.class.php:55
+msgid "Dialplan"
 msgstr ""
 
-#: views/form.php:131
-msgid ""
-"If you want to deny many hosts or networks, use & char as separator.<br/><br/"
-">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
+#: Manager.class.php:56
+msgid "Originate"
 msgstr ""
 
-#: views/form.php:155
-msgid ""
-"If you want to permit many hosts or networks, use & char as separator. Look "
-"at deny example."
+#: Manager.class.php:214
+msgid "No data received!"
 msgstr ""
 
-#: page.manager.php:51
-msgid "List Managers"
+#: Manager.class.php:232
+msgid "Create Successfully"
 msgstr ""
 
-#: views/form.php:5
-msgid "Manager"
+#: Manager.class.php:247
+msgid "Update Successfully"
 msgstr ""
 
-#: views/form.php:68
-msgid "Manager name"
+#: Manager.class.php:251
+msgid "Update is Failed!"
 msgstr ""
 
-#: views/form.php:319
+#: Manager.class.php:260
+msgid "Type not found!"
+msgstr ""
+
+#: Manager.class.php:272
+msgid "Removed Successfully"
+msgstr ""
+
+#: Manager.class.php:276
+msgid "Removed Failed!"
+msgstr ""
+
+#: Manager.class.php:286
+msgid "Command not found!"
+msgstr ""
+
+#: Manager.class.php:320
+#, php-format
+msgid "Page Not Found (%s)!!!!"
+msgstr ""
+
+#: Manager.class.php:357
+msgid "No name specified!"
+msgstr ""
+
+#: Manager.class.php:361
+msgid "This manager already exists!"
+msgstr ""
+
+#: Manager.class.php:365
+msgid "Can't create, we are conflicting with FreePBX Asterisk Admin User!"
+msgstr ""
+
+#: Manager.class.php:381
+msgid "No manager has been selected!"
+msgstr ""
+
+#: Manager.class.php:390
+msgid "The manager does not exist!"
+msgstr ""
+
+#: Manager.class.php:418
+msgid "No manager has been selected to be removed!"
+msgstr ""
+
+#: Manager.class.php:422
+msgid "Cannot be deleted as it does not exist!"
+msgstr ""
+
+#: Manager.class.php:426
+msgid "Can't delete, we are conflicting with FreePBX Asterisk Admin User!"
+msgstr ""
+
+#: assets/js/manager.js:16
+msgid "ID not detected!"
+msgstr ""
+
+#: assets/js/manager.js:21
+#, javascript-format
+msgid "Are you sure you want to delete (%s)?"
+msgstr ""
+
+#: assets/js/manager.js:22 views/view.grid.form.php:175
+#: views/view.grid.form.php:183 views/view.grid.form.php:200
+#: views/view.grid.form.php:208
+msgid "Yes"
+msgstr ""
+
+#: assets/js/manager.js:22 views/view.grid.form.php:177
+#: views/view.grid.form.php:185 views/view.grid.form.php:202
+#: views/view.grid.form.php:210
+msgid "No"
+msgstr ""
+
+#: assets/js/manager.js:88
+msgid "New Manager"
+msgstr ""
+
+#: assets/js/manager.js:89 assets/js/manager.js:296
+msgid "Create New"
+msgstr ""
+
+#: assets/js/manager.js:95
+#, javascript-format
+msgid "Edit Manager (%s)"
+msgstr ""
+
+#: assets/js/manager.js:96 assets/js/manager.js:296
+#: views/view.grid.form.php:226
+msgid "Save Changes"
+msgstr ""
+
+#: assets/js/manager.js:126
+#, javascript-format
+msgid "Error: %s"
+msgstr ""
+
+#: assets/js/manager.js:220
+msgid "The manager name cannot be empty or may not have any space in it."
+msgstr ""
+
+#: assets/js/manager.js:221
+msgid "The manager name will not accept any special characters except _ and -."
+msgstr ""
+
+#: assets/js/manager.js:222
+msgid "The manager secret cannot be empty."
+msgstr ""
+
+#: assets/js/manager.js:223
 msgid "Manager password must match regex rules like this: [a-zA-Z0-9*?+-.,!_]"
 msgstr ""
 
-#: views/form.php:92
-msgid "Manager secret"
+#: assets/js/manager.js:224
+msgid "The manager deny is not well formatted."
 msgstr ""
 
-#: views/grid.php:10
+#: assets/js/manager.js:225
+msgid "The manager permit is not well formatted."
+msgstr ""
+
+#: assets/js/manager.js:259
+msgid "Updating..."
+msgstr ""
+
+#: assets/js/manager.js:259
+msgid "Adding..."
+msgstr ""
+
+#: functions.inc.php:24
+msgid "Choose Manager:"
+msgstr ""
+
+#: functions.inc.php:24
+msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
+msgstr ""
+
+#: views/page.main.php:5
+msgid "Asterisk Manager"
+msgstr ""
+
+#: views/page.main.php:8
+msgid ""
+"The default Asterisk Manager Interface (AMI) configuration has changed "
+"starting in version 16. "
+msgstr ""
+
+#: views/page.main.php:9
+#, php-format
+msgid "Please refer to  <a href=\"%s\"> <b>wiki</b> </a> for more information."
+msgstr ""
+
+#: views/page.main.php:10
+#, php-format
+msgid "AMI current settings for Bind Address : %s and bind port : %s."
+msgstr ""
+
+#: views/view.grid.form.php:13
+msgid "Loading..."
+msgstr ""
+
+#: views/view.grid.form.php:21
+msgid "General"
+msgstr ""
+
+#: views/view.grid.form.php:24
+msgid "Permissions"
+msgstr ""
+
+#: views/view.grid.form.php:35 views/view.grid.php:22
 msgid "Name"
 msgstr ""
 
-#: views/form.php:80
+#: views/view.grid.form.php:45
 msgid ""
 "Name of the manager without spaces and special characters except _ and -. "
 "Limit upto 15 characters only."
 msgstr ""
 
-#: views/form.php:212
-#: views/form.php:220
-#: views/form.php:233
-#: views/form.php:241
-msgid "No"
+#: views/view.grid.form.php:55
+msgid "Secret"
 msgstr ""
 
-#: views/form.php:107
+#: views/view.grid.form.php:68
 msgid "Password for the manager."
 msgstr ""
 
-#: views/form.php:57
-msgid "Permissions"
+#: views/view.grid.form.php:78 views/view.grid.php:25
+msgid "Deny"
 msgstr ""
 
-#: views/form.php:143
-#: views/grid.php:12
+#: views/view.grid.form.php:88
+msgid ""
+"If you want to deny many hosts or networks, use & char as separator.<br/><br/"
+">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
+msgstr ""
+
+#: views/view.grid.form.php:98 views/view.grid.php:28
 msgid "Permit"
 msgstr ""
 
-#: Manager.class.php:83
-msgid "Reset"
+#: views/view.grid.form.php:108
+msgid ""
+"If you want to permit many hosts or networks, use & char as separator. Look "
+"at deny example."
 msgstr ""
 
-#: views/form.php:182
+#: views/view.grid.form.php:118
+msgid "Write Timeout"
+msgstr ""
+
+#: views/view.grid.form.php:124
+msgid "milliseconds"
+msgstr ""
+
+#: views/view.grid.form.php:131
 msgid ""
 "Sets the timeout used by Asterisk when writing data to the AMI connection "
 "for this user"
 msgstr ""
 
-#: manager.i18n.php:6
-msgid "Settings"
+#: views/view.grid.form.php:143
+msgid ""
+"For information on individual permissions please see the Asterisk Manager "
+"Documentation"
 msgstr ""
 
-#: Manager.class.php:88
-msgid "Submit"
-msgstr ""
-
-#: views/form.php:320
-msgid "The manager deny is not well formatted."
-msgstr ""
-
-#: views/form.php:316
-msgid "The manager name cannot be empty or may not have any space in it."
-msgstr ""
-
-#: views/form.php:317
-msgid "The manager name will not accept any special characters except _ and -."
-msgstr ""
-
-#: views/form.php:321
-msgid "The manager permit is not well formatted."
-msgstr ""
-
-#: views/form.php:322
-msgid "The manager read field is not well formatted."
-msgstr ""
-
-#: views/form.php:318
-msgid "The manager secret cannot be empty."
-msgstr ""
-
-#: views/form.php:323
-msgid "The manager write field is not well formatted."
-msgstr ""
-
-#: functions.inc.php:330
-#: functions.inc.php:336
-msgid "This manager already exists"
-msgstr ""
-
-#: manager.i18n.php:8
-msgid "This module is used to add AMI Users"
-msgstr ""
-
-#: views/form.php:227
+#: views/view.grid.form.php:195
 msgid "Toggle All"
 msgstr ""
 
-#: views/form.php:167
-msgid "Write Timeout"
+#: views/view.grid.form.php:225
+msgid "Close"
 msgstr ""
 
-#: views/form.php:210
-#: views/form.php:218
-#: views/form.php:231
-#: views/form.php:239
-msgid "Yes"
+#: views/view.grid.php:4
+msgid "Add Manager"
 msgstr ""
 
-#: views/form.php:27
-msgid "agent"
-msgstr ""
-
-#: views/form.php:23
-msgid "call"
-msgstr ""
-
-#: views/form.php:32
-msgid "cdr"
-msgstr ""
-
-#: views/form.php:26
-msgid "command"
-msgstr ""
-
-#: views/form.php:29
-msgid "config"
-msgstr ""
-
-#: views/form.php:33
-msgid "dialplan"
-msgstr ""
-
-#: views/form.php:30
-msgid "dtmf"
-msgstr ""
-
-#: views/form.php:24
-msgid "log"
-msgstr ""
-
-#: views/form.php:173
-msgid "milliseconds"
-msgstr ""
-
-#: views/form.php:34
-msgid "originate"
-msgstr ""
-
-#: views/form.php:31
-msgid "reporting"
-msgstr ""
-
-#: views/form.php:22
-msgid "system"
-msgstr ""
-
-#: views/form.php:28
-msgid "user"
-msgstr ""
-
-#: views/form.php:25
-msgid "verbose"
+#: views/view.grid.php:31
+msgid "Actions"
 msgstr ""
