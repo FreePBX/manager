@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-25 01:44+0000\n"
+"POT-Creation-Date: 2023-07-20 09:04+0000\n"
 "PO-Revision-Date: 2018-07-18 19:11+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/manager/bg/>\n"
@@ -217,7 +217,9 @@ msgstr "Разреши"
 
 #: views/page.main.php:9
 #, php-format
-msgid "Please refer to  <a href=\"%s\"> <b>wiki</b> </a> for more information."
+msgid ""
+"Please refer to  <a href=\"%s\" target=\"_blank\"> <b>wiki</b> </a> for more "
+"information."
 msgstr ""
 
 #: Manager.class.php:276
