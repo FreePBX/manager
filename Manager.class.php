@@ -541,6 +541,10 @@ class Manager extends FreePBX_Helpers implements BMO
 					break;
 				}
 			}
+			$adsettings = $this->getConfig('additional_settings', $manager['name']);
+			if(!empty($adsettings)) {
+				$section[] = $adsettings;
+			}
 			$config[$manager['name']] = $section;
 		}
 
