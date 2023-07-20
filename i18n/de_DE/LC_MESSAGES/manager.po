@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-28 03:18+0000\n"
+"POT-Creation-Date: 2023-07-20 07:17+0000\n"
 "PO-Revision-Date: 2018-07-31 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/manager/de/>\n"
@@ -40,11 +40,11 @@ msgstr "Asterisk-Manager"
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:370
+#: functions.inc.php:375
 msgid "Choose Manager:"
 msgstr "Manager auswählen:"
 
-#: functions.inc.php:370
+#: functions.inc.php:375
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 
@@ -180,7 +180,7 @@ msgstr ""
 msgid "The manager write field is not well formatted."
 msgstr ""
 
-#: functions.inc.php:330 functions.inc.php:336
+#: functions.inc.php:335 functions.inc.php:341
 msgid "This manager already exists"
 msgstr ""
 
