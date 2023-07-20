@@ -61,6 +61,11 @@ class manager_conf {
 					break;
 				}
 			}
+			//Read the additonal settings from kvstore of each managers and write it
+			$adsettings = $this->freepbx->Manager->getConfig('additional_settings', $name);
+			if(!empty($adsettings)) {
+				$output .=$adsettings;
+			}
 			$output .= "\n";
 		}
 
