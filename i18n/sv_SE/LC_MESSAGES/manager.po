@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 07:17+0000\n"
+"POT-Creation-Date: 2023-11-07 09:45+0000\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -51,11 +51,11 @@ msgstr ""
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:375
+#: functions.inc.php:367
 msgid "Choose Manager:"
 msgstr "Välj hanterare:"
 
-#: functions.inc.php:375
+#: functions.inc.php:367
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "Välj den användare PHPAGI ska använda när den ansluter till Asterisk API."
@@ -187,7 +187,7 @@ msgstr "Lösenordet för hanteraren kan inte vara tomt."
 msgid "The manager write field is not well formatted."
 msgstr "Hanterarens skrivfält är inte korrekt formaterat."
 
-#: functions.inc.php:335 functions.inc.php:341
+#: functions.inc.php:327 functions.inc.php:333
 msgid "This manager already exists"
 msgstr "Denna hanterare finns redan"
 

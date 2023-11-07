@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 07:17+0000\n"
+"POT-Creation-Date: 2023-11-07 09:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,11 +40,11 @@ msgstr ""
 msgid "Asterisk Manager Users"
 msgstr ""
 
-#: functions.inc.php:375
+#: functions.inc.php:367
 msgid "Choose Manager:"
 msgstr ""
 
-#: functions.inc.php:375
+#: functions.inc.php:367
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 
@@ -175,8 +175,8 @@ msgstr ""
 msgid "The manager write field is not well formatted."
 msgstr ""
 
-#: functions.inc.php:335
-#: functions.inc.php:341
+#: functions.inc.php:327
+#: functions.inc.php:333
 msgid "This manager already exists"
 msgstr ""
 
