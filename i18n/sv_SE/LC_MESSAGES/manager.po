@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-25 01:44+0000\n"
+"POT-Creation-Date: 2023-07-20 09:04+0000\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -226,7 +226,9 @@ msgstr ""
 
 #: views/page.main.php:9
 #, php-format
-msgid "Please refer to  <a href=\"%s\"> <b>wiki</b> </a> for more information."
+msgid ""
+"Please refer to  <a href=\"%s\" target=\"_blank\"> <b>wiki</b> </a> for more "
+"information."
 msgstr ""
 
 #: Manager.class.php:276

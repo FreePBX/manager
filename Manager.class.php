@@ -541,6 +541,10 @@ class Manager extends FreePBX_Helpers implements BMO
 					break;
 				}
 			}
+			$adsettings = $this->getConfig('additional_settings', $manager['name']);
+			if(!empty($adsettings)) {
+				$section[] = $adsettings;
+			}
 			$config[$manager['name']] = $section;
 		}
 
@@ -553,7 +557,6 @@ class Manager extends FreePBX_Helpers implements BMO
 				"sangomartapi_conference" => array(
 					"read=system,call",
 					"eventfilter=Confbridge",
-					"eventfilter=Event: FullyBooted",
 				),
 				"srtapi_browserphone" => array(
 					"read=system,call,cdr",
@@ -615,19 +618,12 @@ class Manager extends FreePBX_Helpers implements BMO
 				),
 				"srtapi_queue_events" => array(
 					"read = system,user,call,agent",
-					"eventfilter = QueueCallerAbandon",
-					"eventfilter = QueueCallerJoin",
-					"eventfilter = QueueCallerLeave",
-					"eventfilter = QueueEntry",
-					"eventfilter = QueueMemberAdded",
-					"eventfilter = QueueMemberPause",
-					"eventfilter = QueueMemberPenalty",
-					"eventfilter = QueueMemberRemoved",
-					"eventfilter = QueueMemberRinginuse",
-					"eventfilter = QueueMemberStatus",
-					"eventfilter = AttendedTransfer",
-					"eventfilter = QueueParams",
-					"eventfilter = QueueMember",
+					"eventfilter = Event: QueueCallerJoin",
+					"eventfilter = Event: QueueCallerLeave",
+					"eventfilter = Event: QueueMemberAdded",
+					"eventfilter = Event: QueueMemberPause",
+					"eventfilter = Event: QueueMemberRemoved",
+					"eventfilter = Event: AttendedTransfer",
 					"eventfilter = Event: UserEvent",
 				),
 				"srtapi_amidefault" => array(

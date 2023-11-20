@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-25 01:44+0000\n"
+"POT-Creation-Date: 2023-07-20 09:04+0000\n"
 "PO-Revision-Date: 2017-03-27 14:18+0200\n"
 "Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -216,7 +216,9 @@ msgstr "Permitir"
 
 #: views/page.main.php:9
 #, php-format
-msgid "Please refer to  <a href=\"%s\"> <b>wiki</b> </a> for more information."
+msgid ""
+"Please refer to  <a href=\"%s\" target=\"_blank\"> <b>wiki</b> </a> for more "
+"information."
 msgstr ""
 
 #: Manager.class.php:276

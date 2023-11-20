@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo manager module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-25 01:44+0000\n"
+"POT-Creation-Date: 2023-07-20 09:04+0000\n"
 "PO-Revision-Date: 2023-04-18 18:11+0200\n"
 "Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://*/projects/freepbx/manager/es/>\n"
@@ -216,9 +216,10 @@ msgstr "Permiso"
 
 #: views/page.main.php:9
 #, php-format
-msgid "Please refer to  <a href=\"%s\"> <b>wiki</b> </a> for more information."
+msgid ""
+"Please refer to  <a href=\"%s\" target=\"_blank\"> <b>wiki</b> </a> for more "
+"information."
 msgstr ""
-"Consulte la  <a href=\"%s\"> <b>wiki</b> </a> para obtener más información."
 
 #: Manager.class.php:276
 msgid "Removed Failed!"
@@ -313,6 +314,12 @@ msgstr "Si"
 #: views/view.grid.form.php:124
 msgid "milliseconds"
 msgstr "milisegundos"
+
+#~ msgid ""
+#~ "Please refer to  <a href=\"%s\"> <b>wiki</b> </a> for more information."
+#~ msgstr ""
+#~ "Consulte la  <a href=\"%s\"> <b>wiki</b> </a> para obtener más "
+#~ "información."
 
 #~ msgid "Create New"
 #~ msgstr "Crear Nuevo"
