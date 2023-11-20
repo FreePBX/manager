@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 09:04+0000\n"
+"POT-Creation-Date: 2023-11-20 09:53+0000\n"
 "PO-Revision-Date: 2014-02-19 22:17+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/manager/ja/>\n"
@@ -76,16 +76,8 @@ msgstr ""
 msgid "Are you sure you want to delete (%s)?"
 msgstr ""
 
-#: manager.i18n.php:4
-msgid "Asterisk API"
-msgstr "Asterisk API"
-
 #: views/page.main.php:5
 msgid "Asterisk Manager"
-msgstr ""
-
-#: manager.i18n.php:10
-msgid "Asterisk Manager Users"
 msgstr ""
 
 #: Manager.class.php:54
@@ -273,10 +265,6 @@ msgid ""
 "for this user"
 msgstr ""
 
-#: manager.i18n.php:6
-msgid "Settings"
-msgstr "設定"
-
 #: Manager.class.php:43
 msgid "System"
 msgstr ""
@@ -293,10 +281,6 @@ msgstr ""
 
 #: Manager.class.php:361
 msgid "This manager already exists!"
-msgstr ""
-
-#: manager.i18n.php:8
-msgid "This module is used to add AMI Users"
 msgstr ""
 
 #: views/view.grid.form.php:195
@@ -336,6 +320,12 @@ msgstr ""
 #: views/view.grid.form.php:124
 msgid "milliseconds"
 msgstr ""
+
+#~ msgid "Asterisk API"
+#~ msgstr "Asterisk API"
+
+#~ msgid "Settings"
+#~ msgstr "設定"
 
 #~ msgid "Manager"
 #~ msgstr "マネージャー"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo manager module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 09:04+0000\n"
+"POT-Creation-Date: 2023-11-20 09:53+0000\n"
 "PO-Revision-Date: 2023-04-18 18:11+0200\n"
 "Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://*/projects/freepbx/manager/es/>\n"
@@ -42,17 +42,9 @@ msgstr "Agente"
 msgid "Are you sure you want to delete (%s)?"
 msgstr "¿Estás seguro de que quieres borrar (%s)?"
 
-#: manager.i18n.php:4
-msgid "Asterisk API"
-msgstr "API Asterisk"
-
 #: views/page.main.php:5
 msgid "Asterisk Manager"
 msgstr "Gestor Asterisk"
-
-#: manager.i18n.php:10
-msgid "Asterisk Manager Users"
-msgstr "Usuarios gestor Asterisk"
 
 #: Manager.class.php:54
 msgid "CDR"
@@ -249,10 +241,6 @@ msgstr ""
 "Establece el tiempo de espera utilizado por Asterisk al escribir datos en la "
 "conexión AMI para este usuario"
 
-#: manager.i18n.php:6
-msgid "Settings"
-msgstr "Configuracion"
-
 #: Manager.class.php:43
 msgid "System"
 msgstr "Sistema"
@@ -272,10 +260,6 @@ msgstr "El gestor no existe!"
 #: Manager.class.php:361
 msgid "This manager already exists!"
 msgstr "Este gestor ya existe!"
-
-#: manager.i18n.php:8
-msgid "This module is used to add AMI Users"
-msgstr ""
 
 #: views/view.grid.form.php:195
 msgid "Toggle All"
@@ -314,6 +298,15 @@ msgstr "Si"
 #: views/view.grid.form.php:124
 msgid "milliseconds"
 msgstr "milisegundos"
+
+#~ msgid "Asterisk API"
+#~ msgstr "API Asterisk"
+
+#~ msgid "Asterisk Manager Users"
+#~ msgstr "Usuarios gestor Asterisk"
+
+#~ msgid "Settings"
+#~ msgstr "Configuracion"
 
 #~ msgid ""
 #~ "Please refer to  <a href=\"%s\"> <b>wiki</b> </a> for more information."

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 09:04+0000\n"
+"POT-Creation-Date: 2023-11-20 09:53+0000\n"
 "PO-Revision-Date: 2017-07-10 19:50+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -49,17 +49,9 @@ msgstr ""
 msgid "Are you sure you want to delete (%s)?"
 msgstr ""
 
-#: manager.i18n.php:4
-msgid "Asterisk API"
-msgstr ""
-
 #: views/page.main.php:5
 msgid "Asterisk Manager"
 msgstr "Trình quản lý Asterisk"
-
-#: manager.i18n.php:10
-msgid "Asterisk Manager Users"
-msgstr ""
 
 #: Manager.class.php:54
 msgid "CDR"
@@ -249,10 +241,6 @@ msgstr ""
 "Cài đặt thời gian chờ sử dụng bởi Asterisk khi ghi dữ liệu đến kết nối AMI "
 "cho người dùng này"
 
-#: manager.i18n.php:6
-msgid "Settings"
-msgstr ""
-
 #: Manager.class.php:43
 msgid "System"
 msgstr ""
@@ -269,10 +257,6 @@ msgstr ""
 
 #: Manager.class.php:361
 msgid "This manager already exists!"
-msgstr ""
-
-#: manager.i18n.php:8
-msgid "This module is used to add AMI Users"
 msgstr ""
 
 #: views/view.grid.form.php:195
