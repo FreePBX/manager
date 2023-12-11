@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-15 06:10+0000\n"
-"PO-Revision-Date: 2023-11-18 14:00+0000\n"
+"PO-Revision-Date: 2023-12-11 17:02+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/manager/"
 "pl/>\n"
@@ -30,254 +30,268 @@ msgstr "Działania"
 #: views/form.php:12
 #: views/grid.php:5
 msgid "Add Manager"
-msgstr ""
+msgstr "Dodaj menedżera"
 
 #: Manager.class.php:44
 msgid "Adding write timeout.."
-msgstr ""
+msgstr "Dodawanie limitu czasu zapisu.."
 
 #: manager.i18n.php:4
 msgid "Asterisk API"
-msgstr ""
+msgstr "API Asterisk"
 
 #: page.manager.php:25
 msgid "Asterisk Manager"
-msgstr ""
+msgstr "Menedżer Asterisk"
 
 #: manager.i18n.php:10
 msgid "Asterisk Manager Users"
-msgstr ""
+msgstr "Użytkownicy Menedżera Asterisk"
 
 #: functions.inc.php:266
 msgid "Choose Manager:"
-msgstr ""
+msgstr "Wybierz menedżera:"
 
 #: functions.inc.php:266
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
+"Wybierz użytkownika, którego PHPAGI będzie używać do łączenia się z API "
+"Asterisk."
 
 #: Manager.class.php:53
 msgid "Column present"
-msgstr ""
+msgstr "Kolumna obecna"
 
 #: Manager.class.php:119
 msgid "Delete"
-msgstr ""
+msgstr "Usuń"
 
 #: views/form.php:119
 #: views/grid.php:11
 msgid "Deny"
-msgstr ""
+msgstr "Odmów"
 
 #: views/form.php:190
 msgid ""
 "For information on individual permissions please see the Asterisk Manager "
 "Documentation"
 msgstr ""
+"Informacje na temat poszczególnych uprawnień można znaleźć w dokumentacji "
+"Asterisk Manager"
 
 #: views/form.php:56
 msgid "General"
-msgstr ""
+msgstr "Główne"
 
 #: views/form.php:131
 msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 msgstr ""
+"Jeśli chcesz odmówić wielu hostom lub sieciom, użyj znaku & jako separatora.<"
+"br/><br/>Przykład: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
 #: views/form.php:155
 msgid ""
 "If you want to permit many hosts or networks, use & char as separator. Look "
 "at deny example."
 msgstr ""
+"Jeśli chcesz zezwolić na wiele hostów lub sieci, użyj znaku & jako "
+"separatora. Spójrz na przykład odmowy."
 
 #: Manager.class.php:25
 msgid "Increasing read field size if needed.."
-msgstr ""
+msgstr "Konieczne jest zwiększenie rozmiaru pola odczytu.."
 
 #: Manager.class.php:35
 msgid "Increasing write field size if needed.."
-msgstr ""
+msgstr "Konieczne jest zwiększenie rozmiaru pola zapisu.."
 
 #: page.manager.php:37
 msgid "List Managers"
-msgstr ""
+msgstr "Lista menedżerów"
 
 #: views/form.php:5
 msgid "Manager"
-msgstr ""
+msgstr "Menedżer"
 
 #: views/form.php:68
 msgid "Manager name"
-msgstr ""
+msgstr "Nazwa menedżera"
 
 #: views/form.php:92
 msgid "Manager secret"
-msgstr ""
+msgstr "Hasło menadżera"
 
 #: views/grid.php:10
 msgid "Name"
-msgstr ""
+msgstr "Nazwa"
 
 #: views/form.php:80
 msgid ""
 "Name of the manager without spaces and special characters except _ and -. "
 "Limit upto 15 characters only."
 msgstr ""
+"Imię menadżera bez spacji i znaków specjalnych z wyjątkiem _ i -. Ogranicz "
+"tylko do 15 znaków."
 
 #: views/form.php:212
 #: views/form.php:220
 #: views/form.php:233
 #: views/form.php:241
 msgid "No"
-msgstr ""
+msgstr "Nie"
 
 #: views/form.php:107
 msgid "Password for the manager."
-msgstr ""
+msgstr "Hasło menadżera."
 
 #: views/form.php:57
 msgid "Permissions"
-msgstr ""
+msgstr "Uprawnienia"
 
 #: views/form.php:143
 #: views/grid.php:12
 msgid "Permit"
-msgstr ""
+msgstr "Pozwól"
 
 #: Manager.class.php:124
 msgid "Reset"
-msgstr ""
+msgstr "Reset"
 
 #: views/form.php:182
 msgid ""
 "Sets the timeout used by Asterisk when writing data to the AMI connection "
 "for this user"
 msgstr ""
+"Ustawia limit czasu używany przez Asterisk podczas zapisywania danych do "
+"połączenia AMI dla tego użytkownika"
 
 #: manager.i18n.php:6
 msgid "Settings"
-msgstr ""
+msgstr "Ustawienia"
 
 #: Manager.class.php:129
 msgid "Submit"
-msgstr ""
+msgstr "Wyślij"
 
 #: views/form.php:319
 msgid "The manager deny is not well formatted."
-msgstr ""
+msgstr "Odmowa menedżera nie jest dobrze sformatowana."
 
 #: views/form.php:316
 msgid "The manager name cannot be empty or may not have any space in it."
-msgstr ""
+msgstr "Nazwa menedżera nie może być pusta lub nie może zawierać spacji."
 
 #: views/form.php:317
 msgid "The manager name will not accept any special characters except _ and -."
 msgstr ""
+"Nazwa menedżera nie może zawierać żadnych znaków specjalnych z wyjątkiem _ i "
+"-."
 
 #: views/form.php:320
 msgid "The manager permit is not well formatted."
-msgstr ""
+msgstr "Zezwolenie menedżera nie jest dobrze sformatowane."
 
 #: views/form.php:321
 msgid "The manager read field is not well formatted."
-msgstr ""
+msgstr "Pole odczytu menedżera nie jest dobrze sformatowane."
 
 #: views/form.php:318
 msgid "The manager secret cannot be empty."
-msgstr ""
+msgstr "Hasło menedżera nie może być puste."
 
 #: views/form.php:322
 msgid "The manager write field is not well formatted."
-msgstr ""
+msgstr "Pole zapisu menedżera nie jest dobrze sformatowane."
 
 #: functions.inc.php:226
 #: functions.inc.php:232
 msgid "This manager already exists"
-msgstr ""
+msgstr "Ten menedżer już istnieje"
 
 #: manager.i18n.php:8
 msgid "This module is used to add AMI Users"
-msgstr ""
+msgstr "Ten moduł służy do dodawania użytkowników AMI"
 
 #: views/form.php:227
 msgid "Toggle All"
-msgstr ""
+msgstr "Przełącz wszystko"
 
 #: views/form.php:167
 msgid "Write Timeout"
-msgstr ""
+msgstr "Zapisz limit czasu"
 
 #: views/form.php:210
 #: views/form.php:218
 #: views/form.php:231
 #: views/form.php:239
 msgid "Yes"
-msgstr ""
+msgstr "Tak"
 
 #: views/form.php:27
 msgid "agent"
-msgstr ""
+msgstr "agent"
 
 #: views/form.php:23
 msgid "call"
-msgstr ""
+msgstr "zadzwoń"
 
 #: views/form.php:32
 msgid "cdr"
-msgstr ""
+msgstr "cdr"
 
 #: views/form.php:26
 msgid "command"
-msgstr ""
+msgstr "komenda"
 
 #: views/form.php:29
 msgid "config"
-msgstr ""
+msgstr "konfiguracja"
 
 #: views/form.php:33
 msgid "dialplan"
-msgstr ""
+msgstr "plan wybierania"
 
 #: views/form.php:30
 msgid "dtmf"
-msgstr ""
+msgstr "dtmf"
 
 #: Manager.class.php:32
 #: Manager.class.php:42
 msgid "error encountered, not altered"
-msgstr ""
+msgstr "Wystąpił błąd, nie zmieniono"
 
 #: views/form.php:24
 msgid "log"
-msgstr ""
+msgstr "dziennik"
 
 #: views/form.php:173
 msgid "milliseconds"
-msgstr ""
+msgstr "milisekundy"
 
 #: Manager.class.php:30
 #: Manager.class.php:40
 #: Manager.class.php:49
 msgid "ok"
-msgstr ""
+msgstr "ok"
 
 #: views/form.php:34
 msgid "originate"
-msgstr ""
+msgstr "pochodzi"
 
 #: views/form.php:31
 msgid "reporting"
-msgstr ""
+msgstr "raportowanie"
 
 #: views/form.php:22
 msgid "system"
-msgstr ""
+msgstr "system"
 
 #: views/form.php:28
 msgid "user"
-msgstr ""
+msgstr "użytkownik"
 
 #: views/form.php:25
 msgid "verbose"
-msgstr ""
+msgstr "verbose"
