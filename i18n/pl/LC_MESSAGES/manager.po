@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-15 06:10+0000\n"
-"PO-Revision-Date: 2023-12-11 17:02+0000\n"
+"PO-Revision-Date: 2023-12-14 08:22+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/manager/"
 "pl/>\n"
@@ -173,7 +173,7 @@ msgstr "Ustawienia"
 
 #: Manager.class.php:129
 msgid "Submit"
-msgstr "Wyślij"
+msgstr "Zatwierdź"
 
 #: views/form.php:319
 msgid "The manager deny is not well formatted."
