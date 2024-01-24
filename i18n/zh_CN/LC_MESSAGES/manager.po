@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-20 09:53+0000\n"
+"POT-Creation-Date: 2024-01-24 02:04-0500\n"
 "PO-Revision-Date: 2009-02-01 17:40+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -47,8 +47,16 @@ msgstr ""
 msgid "Are you sure you want to delete (%s)?"
 msgstr ""
 
+#: manager.i18n.php:4
+msgid "Asterisk API"
+msgstr ""
+
 #: views/page.main.php:5
 msgid "Asterisk Manager"
+msgstr ""
+
+#: manager.i18n.php:10
+msgid "Asterisk Manager Users"
 msgstr ""
 
 #: Manager.class.php:54
@@ -235,6 +243,10 @@ msgid ""
 "for this user"
 msgstr ""
 
+#: manager.i18n.php:6
+msgid "Settings"
+msgstr ""
+
 #: Manager.class.php:43
 msgid "System"
 msgstr ""
@@ -251,6 +263,10 @@ msgstr ""
 
 #: Manager.class.php:361
 msgid "This manager already exists!"
+msgstr ""
+
+#: manager.i18n.php:8
+msgid "This module is used to add AMI Users"
 msgstr ""
 
 #: views/view.grid.form.php:195

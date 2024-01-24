@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-20 09:53+0000\n"
+"POT-Creation-Date: 2024-01-24 02:04-0500\n"
 "PO-Revision-Date: 2018-07-18 19:11+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/manager/bg/>\n"
@@ -49,9 +49,17 @@ msgstr ""
 msgid "Are you sure you want to delete (%s)?"
 msgstr ""
 
+#: manager.i18n.php:4
+msgid "Asterisk API"
+msgstr "Астериск Manager"
+
 #: views/page.main.php:5
 msgid "Asterisk Manager"
 msgstr "Астериск Мениджър"
+
+#: manager.i18n.php:10
+msgid "Asterisk Manager Users"
+msgstr ""
 
 #: Manager.class.php:54
 msgid "CDR"
@@ -242,6 +250,10 @@ msgstr ""
 "Задава време на изчакване, използвано от Астериск, когато записвате данни "
 "към AMI връзката за този потребител"
 
+#: manager.i18n.php:6
+msgid "Settings"
+msgstr "Настройки"
+
 #: Manager.class.php:43
 msgid "System"
 msgstr ""
@@ -258,6 +270,10 @@ msgstr ""
 
 #: Manager.class.php:361
 msgid "This manager already exists!"
+msgstr ""
+
+#: manager.i18n.php:8
+msgid "This module is used to add AMI Users"
 msgstr ""
 
 #: views/view.grid.form.php:195
@@ -297,12 +313,6 @@ msgstr "Да"
 #: views/view.grid.form.php:124
 msgid "milliseconds"
 msgstr "милисекунди"
-
-#~ msgid "Asterisk API"
-#~ msgstr "Астериск Manager"
-
-#~ msgid "Settings"
-#~ msgstr "Настройки"
 
 #~ msgid "Delete"
 #~ msgstr "Изтрий"
