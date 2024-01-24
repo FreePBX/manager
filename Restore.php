@@ -6,7 +6,9 @@ class Restore Extends Base\RestoreBase
 	public function runRestore ()
 	{
 		$configs = $this->getConfigs();
-		$this->importTables($configs['tables']);
+		if(isset($configs['tables'])) {
+			$this->importTables($configs['tables']);
+		}
 	}
 
 	public function processLegacy($pdo, $data, $tables, $unknownTables)
