@@ -557,6 +557,7 @@ class Manager extends FreePBX_Helpers implements BMO
 				"sangomartapi_conference" => array(
 					"read=system,call",
 					"eventfilter=Confbridge",
+					"eventfilter = Event: FullyBooted"
 				),
 				"srtapi_browserphone" => array(
 					"read=system,call,cdr",
@@ -625,6 +626,7 @@ class Manager extends FreePBX_Helpers implements BMO
 					"eventfilter = Event: QueueMemberRemoved",
 					"eventfilter = Event: AttendedTransfer",
 					"eventfilter = Event: UserEvent",
+					"eventfilter = Event: FullyBooted",
 				),
 				"srtapi_amidefault" => array(
 					"read = all",
