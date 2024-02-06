@@ -81,6 +81,7 @@ class manager_conf {
 			$output .= "write=all\n";
 			$output .= "writetimeout=1000\n";
 			$output .= "eventfilter=Confbridge\n";
+			$output .= "eventfilter = Event: FullyBooted\n";
 			$output .= "\n";
 			$output .= "[srtapi_browserphone]\n";
 			$output .= "secret = " . $this->freepbx->Manager->getConfig('srtapi_browserphone', 'secret') . "\n";
@@ -168,6 +169,7 @@ class manager_conf {
 			$output .= "eventfilter = Event: QueueMemberRemoved\n";
 			$output .= "eventfilter = Event: AttendedTransfer\n";
 			$output .= "eventfilter = Event: UserEvent\n";
+			$output .= "eventfilter = Event: FullyBooted\n";
 			$output .= "writetimeout=1000\n";
 			$output .= "\n";
 			$output .= "[srtapi_amidefault]\n";
