@@ -9,38 +9,52 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-15 06:10+0000\n"
+"POT-Creation-Date: 2024-02-06 06:28+0000\n"
 "PO-Revision-Date: 2023-12-14 08:22+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/manager/"
 "pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.0.1\n"
 
-#: views/grid.php:13
+#: assets/js/manager.js:232
+msgid ""
+");\n"
+"    var errDeny         = _("
+msgstr ""
+
+#: views/page.main.php:10
+#, php-format
+msgid "AMI current settings for Bind Address : %s and bind port : %s."
+msgstr ""
+
+#: views/view.grid.php:31
 msgid "Actions"
 msgstr "Działania"
 
-#: page.manager.php:38
-#: views/form.php:12
-#: views/grid.php:5
+#: views/view.grid.php:4
 msgid "Add Manager"
 msgstr "Dodaj menedżera"
 
-#: Manager.class.php:44
-msgid "Adding write timeout.."
-msgstr "Dodawanie limitu czasu zapisu.."
+#: Manager.class.php:48
+msgid "Agent"
+msgstr ""
+
+#: assets/js/manager.js:23
+#, perl-format
+msgid "Are you sure you want to delete (%s)?"
+msgstr ""
 
 #: manager.i18n.php:4
 msgid "Asterisk API"
 msgstr "API Asterisk"
 
-#: page.manager.php:25
+#: views/page.main.php:5
 msgid "Asterisk Manager"
 msgstr "Menedżer Asterisk"
 
@@ -48,30 +62,69 @@ msgstr "Menedżer Asterisk"
 msgid "Asterisk Manager Users"
 msgstr "Użytkownicy Menedżera Asterisk"
 
-#: functions.inc.php:266
+#: Manager.class.php:54
+msgid "CDR"
+msgstr ""
+
+#: Manager.class.php:44
+msgid "Call"
+msgstr ""
+
+#: Manager.class.php:365
+msgid "Can't create, we are conflicting with FreePBX Asterisk Admin User!"
+msgstr ""
+
+#: Manager.class.php:426
+msgid "Can't delete, we are conflicting with FreePBX Asterisk Admin User!"
+msgstr ""
+
+#: Manager.class.php:422
+msgid "Cannot be deleted as it does not exist!"
+msgstr ""
+
+#: functions.inc.php:24
 msgid "Choose Manager:"
 msgstr "Wybierz menedżera:"
 
-#: functions.inc.php:266
+#: functions.inc.php:24
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "Wybierz użytkownika, którego PHPAGI będzie używać do łączenia się z API "
 "Asterisk."
 
-#: Manager.class.php:53
-msgid "Column present"
-msgstr "Kolumna obecna"
+#: views/view.grid.form.php:225
+msgid "Close"
+msgstr ""
 
-#: Manager.class.php:119
-msgid "Delete"
-msgstr "Usuń"
+#: Manager.class.php:47
+msgid "Command"
+msgstr ""
 
-#: views/form.php:119
-#: views/grid.php:11
+#: Manager.class.php:286
+msgid "Command not found!"
+msgstr ""
+
+#: Manager.class.php:51
+msgid "Config"
+msgstr ""
+
+#: Manager.class.php:232
+msgid "Create Successfully"
+msgstr ""
+
+#: Manager.class.php:52
+msgid "DTMF"
+msgstr ""
+
+#: views/view.grid.form.php:78 views/view.grid.php:25
 msgid "Deny"
 msgstr "Odmów"
 
-#: views/form.php:190
+#: Manager.class.php:55
+msgid "Dialplan"
+msgstr ""
+
+#: views/view.grid.form.php:143
 msgid ""
 "For information on individual permissions please see the Asterisk Manager "
 "Documentation"
@@ -79,19 +132,23 @@ msgstr ""
 "Informacje na temat poszczególnych uprawnień można znaleźć w dokumentacji "
 "Asterisk Manager"
 
-#: views/form.php:56
+#: views/view.grid.form.php:21
 msgid "General"
 msgstr "Główne"
 
-#: views/form.php:131
+#: assets/js/manager.js:18
+msgid "ID not detected!"
+msgstr ""
+
+#: views/view.grid.form.php:88
 msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 msgstr ""
-"Jeśli chcesz odmówić wielu hostom lub sieciom, użyj znaku & jako separatora.<"
-"br/><br/>Przykład: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
+"Jeśli chcesz odmówić wielu hostom lub sieciom, użyj znaku & jako separatora."
+"<br/><br/>Przykład: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
-#: views/form.php:155
+#: views/view.grid.form.php:108
 msgid ""
 "If you want to permit many hosts or networks, use & char as separator. Look "
 "at deny example."
@@ -99,35 +156,19 @@ msgstr ""
 "Jeśli chcesz zezwolić na wiele hostów lub sieci, użyj znaku & jako "
 "separatora. Spójrz na przykład odmowy."
 
-#: Manager.class.php:25
-msgid "Increasing read field size if needed.."
-msgstr "Konieczne jest zwiększenie rozmiaru pola odczytu.."
+#: views/view.grid.form.php:13
+msgid "Loading..."
+msgstr ""
 
-#: Manager.class.php:35
-msgid "Increasing write field size if needed.."
-msgstr "Konieczne jest zwiększenie rozmiaru pola zapisu.."
+#: Manager.class.php:45
+msgid "Log"
+msgstr ""
 
-#: page.manager.php:37
-msgid "List Managers"
-msgstr "Lista menedżerów"
-
-#: views/form.php:5
-msgid "Manager"
-msgstr "Menedżer"
-
-#: views/form.php:68
-msgid "Manager name"
-msgstr "Nazwa menedżera"
-
-#: views/form.php:92
-msgid "Manager secret"
-msgstr "Hasło menadżera"
-
-#: views/grid.php:10
+#: views/view.grid.form.php:35 views/view.grid.php:22
 msgid "Name"
 msgstr "Nazwa"
 
-#: views/form.php:80
+#: views/view.grid.form.php:45
 msgid ""
 "Name of the manager without spaces and special characters except _ and -. "
 "Limit upto 15 characters only."
@@ -135,31 +176,77 @@ msgstr ""
 "Imię menadżera bez spacji i znaków specjalnych z wyjątkiem _ i -. Ogranicz "
 "tylko do 15 znaków."
 
-#: views/form.php:212
-#: views/form.php:220
-#: views/form.php:233
-#: views/form.php:241
+#: views/view.grid.form.php:177 views/view.grid.form.php:185
+#: views/view.grid.form.php:202 views/view.grid.form.php:210
+#: assets/js/manager.js:24
 msgid "No"
 msgstr "Nie"
 
-#: views/form.php:107
+#: Manager.class.php:214
+msgid "No data received!"
+msgstr ""
+
+#: Manager.class.php:418
+msgid "No manager has been selected to be removed!"
+msgstr ""
+
+#: Manager.class.php:381
+msgid "No manager has been selected!"
+msgstr ""
+
+#: Manager.class.php:357
+msgid "No name specified!"
+msgstr ""
+
+#: Manager.class.php:56
+msgid "Originate"
+msgstr ""
+
+#: Manager.class.php:320
+#, php-format
+msgid "Page Not Found (%s)!!!!"
+msgstr ""
+
+#: views/view.grid.form.php:68
 msgid "Password for the manager."
 msgstr "Hasło menadżera."
 
-#: views/form.php:57
+#: views/view.grid.form.php:24
 msgid "Permissions"
 msgstr "Uprawnienia"
 
-#: views/form.php:143
-#: views/grid.php:12
+#: views/view.grid.form.php:98 views/view.grid.php:28
 msgid "Permit"
 msgstr "Pozwól"
 
-#: Manager.class.php:124
-msgid "Reset"
-msgstr "Reset"
+#: views/page.main.php:9
+#, php-format
+msgid ""
+"Please refer to  <a href=\"%s\" target=\"_blank\"> <b>wiki</b> </a> for more "
+"information."
+msgstr ""
 
-#: views/form.php:182
+#: Manager.class.php:276
+msgid "Removed Failed!"
+msgstr ""
+
+#: Manager.class.php:272
+msgid "Removed Successfully"
+msgstr ""
+
+#: Manager.class.php:53
+msgid "Reporting"
+msgstr ""
+
+#: views/view.grid.form.php:226
+msgid "Save Changes"
+msgstr ""
+
+#: views/view.grid.form.php:55
+msgid "Secret"
+msgstr ""
+
+#: views/view.grid.form.php:131
 msgid ""
 "Sets the timeout used by Asterisk when writing data to the AMI connection "
 "for this user"
@@ -171,127 +258,167 @@ msgstr ""
 msgid "Settings"
 msgstr "Ustawienia"
 
-#: Manager.class.php:129
-msgid "Submit"
-msgstr "Zatwierdź"
-
-#: views/form.php:319
-msgid "The manager deny is not well formatted."
-msgstr "Odmowa menedżera nie jest dobrze sformatowana."
-
-#: views/form.php:316
-msgid "The manager name cannot be empty or may not have any space in it."
-msgstr "Nazwa menedżera nie może być pusta lub nie może zawierać spacji."
-
-#: views/form.php:317
-msgid "The manager name will not accept any special characters except _ and -."
+#: Manager.class.php:43
+msgid "System"
 msgstr ""
-"Nazwa menedżera nie może zawierać żadnych znaków specjalnych z wyjątkiem _ i "
-"-."
 
-#: views/form.php:320
-msgid "The manager permit is not well formatted."
-msgstr "Zezwolenie menedżera nie jest dobrze sformatowane."
+#: views/page.main.php:8
+msgid ""
+"The default Asterisk Manager Interface (AMI) configuration has changed "
+"starting in version 16. "
+msgstr ""
 
-#: views/form.php:321
-msgid "The manager read field is not well formatted."
-msgstr "Pole odczytu menedżera nie jest dobrze sformatowane."
+#: Manager.class.php:390
+msgid "The manager does not exist!"
+msgstr ""
 
-#: views/form.php:318
-msgid "The manager secret cannot be empty."
-msgstr "Hasło menedżera nie może być puste."
-
-#: views/form.php:322
-msgid "The manager write field is not well formatted."
-msgstr "Pole zapisu menedżera nie jest dobrze sformatowane."
-
-#: functions.inc.php:226
-#: functions.inc.php:232
-msgid "This manager already exists"
-msgstr "Ten menedżer już istnieje"
+#: Manager.class.php:361
+msgid "This manager already exists!"
+msgstr ""
 
 #: manager.i18n.php:8
 msgid "This module is used to add AMI Users"
 msgstr "Ten moduł służy do dodawania użytkowników AMI"
 
-#: views/form.php:227
+#: views/view.grid.form.php:195
 msgid "Toggle All"
 msgstr "Przełącz wszystko"
 
-#: views/form.php:167
+#: Manager.class.php:260
+msgid "Type not found!"
+msgstr ""
+
+#: Manager.class.php:247
+msgid "Update Successfully"
+msgstr ""
+
+#: Manager.class.php:251
+msgid "Update is Failed!"
+msgstr ""
+
+#: Manager.class.php:49
+msgid "User"
+msgstr ""
+
+#: Manager.class.php:46
+msgid "Verbose"
+msgstr ""
+
+#: views/view.grid.form.php:118
 msgid "Write Timeout"
 msgstr "Zapisz limit czasu"
 
-#: views/form.php:210
-#: views/form.php:218
-#: views/form.php:231
-#: views/form.php:239
+#: views/view.grid.form.php:175 views/view.grid.form.php:183
+#: views/view.grid.form.php:200 views/view.grid.form.php:208
+#: assets/js/manager.js:24
 msgid "Yes"
 msgstr "Tak"
 
-#: views/form.php:27
-msgid "agent"
-msgstr "agent"
-
-#: views/form.php:23
-msgid "call"
-msgstr "zadzwoń"
-
-#: views/form.php:32
-msgid "cdr"
-msgstr "cdr"
-
-#: views/form.php:26
-msgid "command"
-msgstr "komenda"
-
-#: views/form.php:29
-msgid "config"
-msgstr "konfiguracja"
-
-#: views/form.php:33
-msgid "dialplan"
-msgstr "plan wybierania"
-
-#: views/form.php:30
-msgid "dtmf"
-msgstr "dtmf"
-
-#: Manager.class.php:32
-#: Manager.class.php:42
-msgid "error encountered, not altered"
-msgstr "Wystąpił błąd, nie zmieniono"
-
-#: views/form.php:24
-msgid "log"
-msgstr "dziennik"
-
-#: views/form.php:173
+#: views/view.grid.form.php:124
 msgid "milliseconds"
 msgstr "milisekundy"
 
-#: Manager.class.php:30
-#: Manager.class.php:40
-#: Manager.class.php:49
-msgid "ok"
-msgstr "ok"
+#~ msgid "Adding write timeout.."
+#~ msgstr "Dodawanie limitu czasu zapisu.."
 
-#: views/form.php:34
-msgid "originate"
-msgstr "pochodzi"
+#~ msgid "Column present"
+#~ msgstr "Kolumna obecna"
 
-#: views/form.php:31
-msgid "reporting"
-msgstr "raportowanie"
+#~ msgid "Delete"
+#~ msgstr "Usuń"
 
-#: views/form.php:22
-msgid "system"
-msgstr "system"
+#~ msgid "Increasing read field size if needed.."
+#~ msgstr "Konieczne jest zwiększenie rozmiaru pola odczytu.."
 
-#: views/form.php:28
-msgid "user"
-msgstr "użytkownik"
+#~ msgid "Increasing write field size if needed.."
+#~ msgstr "Konieczne jest zwiększenie rozmiaru pola zapisu.."
 
-#: views/form.php:25
-msgid "verbose"
-msgstr "verbose"
+#~ msgid "List Managers"
+#~ msgstr "Lista menedżerów"
+
+#~ msgid "Manager"
+#~ msgstr "Menedżer"
+
+#~ msgid "Manager name"
+#~ msgstr "Nazwa menedżera"
+
+#~ msgid "Manager secret"
+#~ msgstr "Hasło menadżera"
+
+#~ msgid "Reset"
+#~ msgstr "Reset"
+
+#~ msgid "Submit"
+#~ msgstr "Zatwierdź"
+
+#~ msgid "The manager deny is not well formatted."
+#~ msgstr "Odmowa menedżera nie jest dobrze sformatowana."
+
+#~ msgid "The manager name cannot be empty or may not have any space in it."
+#~ msgstr "Nazwa menedżera nie może być pusta lub nie może zawierać spacji."
+
+#~ msgid ""
+#~ "The manager name will not accept any special characters except _ and -."
+#~ msgstr ""
+#~ "Nazwa menedżera nie może zawierać żadnych znaków specjalnych z wyjątkiem "
+#~ "_ i -."
+
+#~ msgid "The manager permit is not well formatted."
+#~ msgstr "Zezwolenie menedżera nie jest dobrze sformatowane."
+
+#~ msgid "The manager read field is not well formatted."
+#~ msgstr "Pole odczytu menedżera nie jest dobrze sformatowane."
+
+#~ msgid "The manager secret cannot be empty."
+#~ msgstr "Hasło menedżera nie może być puste."
+
+#~ msgid "The manager write field is not well formatted."
+#~ msgstr "Pole zapisu menedżera nie jest dobrze sformatowane."
+
+#~ msgid "This manager already exists"
+#~ msgstr "Ten menedżer już istnieje"
+
+#~ msgid "agent"
+#~ msgstr "agent"
+
+#~ msgid "call"
+#~ msgstr "zadzwoń"
+
+#~ msgid "cdr"
+#~ msgstr "cdr"
+
+#~ msgid "command"
+#~ msgstr "komenda"
+
+#~ msgid "config"
+#~ msgstr "konfiguracja"
+
+#~ msgid "dialplan"
+#~ msgstr "plan wybierania"
+
+#~ msgid "dtmf"
+#~ msgstr "dtmf"
+
+#~ msgid "error encountered, not altered"
+#~ msgstr "Wystąpił błąd, nie zmieniono"
+
+#~ msgid "log"
+#~ msgstr "dziennik"
+
+#~ msgid "ok"
+#~ msgstr "ok"
+
+#~ msgid "originate"
+#~ msgstr "pochodzi"
+
+#~ msgid "reporting"
+#~ msgstr "raportowanie"
+
+#~ msgid "system"
+#~ msgstr "system"
+
+#~ msgid "user"
+#~ msgstr "użytkownik"
+
+#~ msgid "verbose"
+#~ msgstr "verbose"

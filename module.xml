@@ -2,7 +2,7 @@
 	<rawname>manager</rawname>
 	<repo>standard</repo>
 	<name>Asterisk API</name>
-	<version>16.0.20</version>
+	<version>16.0.21</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv2+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-2.0.txt</licenselink>
@@ -25,6 +25,7 @@
         </table>
     </database>
 	<changelog>
+		*16.0.21* Packaging of ver 16.0.21
 		*16.0.20* Packaging of ver 16.0.20
 		*16.0.19* Packaging of ver 16.0.19
 		*16.0.18* FREEPBX-24142 
