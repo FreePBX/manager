@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo manager module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-07 09:45+0000\n"
+"POT-Creation-Date: 2024-02-06 06:28+0000\n"
 "PO-Revision-Date: 2018-07-18 19:19+0000\n"
 "Last-Translator: Elvita Crespo <ecrespo@sangoma.com>\n"
 "Language-Team: Spanish <http://*/projects/freepbx/manager/es/>\n"
@@ -36,11 +36,11 @@ msgstr "Gestor Asterisk"
 msgid "Asterisk Manager Users"
 msgstr "Usuarios gestor Asterisk"
 
-#: functions.inc.php:367
+#: functions.inc.php:369
 msgid "Choose Manager:"
 msgstr "Seleccione gestor:"
 
-#: functions.inc.php:367
+#: functions.inc.php:369
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "Seleccione el usuario que PHPAGI usará para conectarse a la API de Asterisk."
@@ -175,7 +175,7 @@ msgstr "La contraseña del gestor no puede estar vacía."
 msgid "The manager write field is not well formatted."
 msgstr "El campo 'Escritura' no tiene el formato correcto."
 
-#: functions.inc.php:327 functions.inc.php:333
+#: functions.inc.php:329 functions.inc.php:335
 msgid "This manager already exists"
 msgstr "Este gestor ya existe"
 

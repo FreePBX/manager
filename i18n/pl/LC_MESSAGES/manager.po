@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-15 06:10+0000\n"
+"POT-Creation-Date: 2024-02-06 06:28+0000\n"
 "PO-Revision-Date: 2023-12-14 08:22+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/manager/"
 "pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
@@ -26,15 +26,9 @@ msgstr ""
 msgid "Actions"
 msgstr "Działania"
 
-#: page.manager.php:38
-#: views/form.php:12
-#: views/grid.php:5
+#: page.manager.php:38 views/form.php:12 views/grid.php:5
 msgid "Add Manager"
 msgstr "Dodaj menedżera"
-
-#: Manager.class.php:44
-msgid "Adding write timeout.."
-msgstr "Dodawanie limitu czasu zapisu.."
 
 #: manager.i18n.php:4
 msgid "Asterisk API"
@@ -48,26 +42,21 @@ msgstr "Menedżer Asterisk"
 msgid "Asterisk Manager Users"
 msgstr "Użytkownicy Menedżera Asterisk"
 
-#: functions.inc.php:266
+#: functions.inc.php:369
 msgid "Choose Manager:"
 msgstr "Wybierz menedżera:"
 
-#: functions.inc.php:266
+#: functions.inc.php:369
 msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
 msgstr ""
 "Wybierz użytkownika, którego PHPAGI będzie używać do łączenia się z API "
 "Asterisk."
 
-#: Manager.class.php:53
-msgid "Column present"
-msgstr "Kolumna obecna"
-
-#: Manager.class.php:119
+#: Manager.class.php:78
 msgid "Delete"
 msgstr "Usuń"
 
-#: views/form.php:119
-#: views/grid.php:11
+#: views/form.php:119 views/grid.php:11
 msgid "Deny"
 msgstr "Odmów"
 
@@ -88,8 +77,8 @@ msgid ""
 "If you want to deny many hosts or networks, use & char as separator.<br/><br/"
 ">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 msgstr ""
-"Jeśli chcesz odmówić wielu hostom lub sieciom, użyj znaku & jako separatora.<"
-"br/><br/>Przykład: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
+"Jeśli chcesz odmówić wielu hostom lub sieciom, użyj znaku & jako separatora."
+"<br/><br/>Przykład: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
 
 #: views/form.php:155
 msgid ""
@@ -98,14 +87,6 @@ msgid ""
 msgstr ""
 "Jeśli chcesz zezwolić na wiele hostów lub sieci, użyj znaku & jako "
 "separatora. Spójrz na przykład odmowy."
-
-#: Manager.class.php:25
-msgid "Increasing read field size if needed.."
-msgstr "Konieczne jest zwiększenie rozmiaru pola odczytu.."
-
-#: Manager.class.php:35
-msgid "Increasing write field size if needed.."
-msgstr "Konieczne jest zwiększenie rozmiaru pola zapisu.."
 
 #: page.manager.php:37
 msgid "List Managers"
@@ -118,6 +99,10 @@ msgstr "Menedżer"
 #: views/form.php:68
 msgid "Manager name"
 msgstr "Nazwa menedżera"
+
+#: views/form.php:319
+msgid "Manager password must match regex rules like this: [a-zA-Z0-9*?+-.,!_]"
+msgstr ""
 
 #: views/form.php:92
 msgid "Manager secret"
@@ -135,10 +120,7 @@ msgstr ""
 "Imię menadżera bez spacji i znaków specjalnych z wyjątkiem _ i -. Ogranicz "
 "tylko do 15 znaków."
 
-#: views/form.php:212
-#: views/form.php:220
-#: views/form.php:233
-#: views/form.php:241
+#: views/form.php:212 views/form.php:220 views/form.php:233 views/form.php:241
 msgid "No"
 msgstr "Nie"
 
@@ -150,12 +132,11 @@ msgstr "Hasło menadżera."
 msgid "Permissions"
 msgstr "Uprawnienia"
 
-#: views/form.php:143
-#: views/grid.php:12
+#: views/form.php:143 views/grid.php:12
 msgid "Permit"
 msgstr "Pozwól"
 
-#: Manager.class.php:124
+#: Manager.class.php:83
 msgid "Reset"
 msgstr "Reset"
 
@@ -171,11 +152,11 @@ msgstr ""
 msgid "Settings"
 msgstr "Ustawienia"
 
-#: Manager.class.php:129
+#: Manager.class.php:88
 msgid "Submit"
 msgstr "Zatwierdź"
 
-#: views/form.php:319
+#: views/form.php:320
 msgid "The manager deny is not well formatted."
 msgstr "Odmowa menedżera nie jest dobrze sformatowana."
 
@@ -189,11 +170,11 @@ msgstr ""
 "Nazwa menedżera nie może zawierać żadnych znaków specjalnych z wyjątkiem _ i "
 "-."
 
-#: views/form.php:320
+#: views/form.php:321
 msgid "The manager permit is not well formatted."
 msgstr "Zezwolenie menedżera nie jest dobrze sformatowane."
 
-#: views/form.php:321
+#: views/form.php:322
 msgid "The manager read field is not well formatted."
 msgstr "Pole odczytu menedżera nie jest dobrze sformatowane."
 
@@ -201,12 +182,11 @@ msgstr "Pole odczytu menedżera nie jest dobrze sformatowane."
 msgid "The manager secret cannot be empty."
 msgstr "Hasło menedżera nie może być puste."
 
-#: views/form.php:322
+#: views/form.php:323
 msgid "The manager write field is not well formatted."
 msgstr "Pole zapisu menedżera nie jest dobrze sformatowane."
 
-#: functions.inc.php:226
-#: functions.inc.php:232
+#: functions.inc.php:329 functions.inc.php:335
 msgid "This manager already exists"
 msgstr "Ten menedżer już istnieje"
 
@@ -222,10 +202,7 @@ msgstr "Przełącz wszystko"
 msgid "Write Timeout"
 msgstr "Zapisz limit czasu"
 
-#: views/form.php:210
-#: views/form.php:218
-#: views/form.php:231
-#: views/form.php:239
+#: views/form.php:210 views/form.php:218 views/form.php:231 views/form.php:239
 msgid "Yes"
 msgstr "Tak"
 
@@ -257,11 +234,6 @@ msgstr "plan wybierania"
 msgid "dtmf"
 msgstr "dtmf"
 
-#: Manager.class.php:32
-#: Manager.class.php:42
-msgid "error encountered, not altered"
-msgstr "Wystąpił błąd, nie zmieniono"
-
 #: views/form.php:24
 msgid "log"
 msgstr "dziennik"
@@ -269,12 +241,6 @@ msgstr "dziennik"
 #: views/form.php:173
 msgid "milliseconds"
 msgstr "milisekundy"
-
-#: Manager.class.php:30
-#: Manager.class.php:40
-#: Manager.class.php:49
-msgid "ok"
-msgstr "ok"
 
 #: views/form.php:34
 msgid "originate"
@@ -295,3 +261,21 @@ msgstr "użytkownik"
 #: views/form.php:25
 msgid "verbose"
 msgstr "verbose"
+
+#~ msgid "Adding write timeout.."
+#~ msgstr "Dodawanie limitu czasu zapisu.."
+
+#~ msgid "Column present"
+#~ msgstr "Kolumna obecna"
+
+#~ msgid "Increasing read field size if needed.."
+#~ msgstr "Konieczne jest zwiększenie rozmiaru pola odczytu.."
+
+#~ msgid "Increasing write field size if needed.."
+#~ msgstr "Konieczne jest zwiększenie rozmiaru pola zapisu.."
+
+#~ msgid "error encountered, not altered"
+#~ msgstr "Wystąpił błąd, nie zmieniono"
+
+#~ msgid "ok"
+#~ msgstr "ok"
