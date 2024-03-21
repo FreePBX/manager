@@ -2,7 +2,7 @@
 	<rawname>manager</rawname>
 	<repo>standard</repo>
 	<name>Asterisk API</name>
-	<version>17.0.2</version>
+	<version>17.0.3</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv2+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-2.0.txt</licenselink>
