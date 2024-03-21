@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 06:28+0000\n"
+"POT-Creation-Date: 2024-03-21 10:56+0000\n"
 "PO-Revision-Date: 2023-12-14 08:22+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/manager/"
@@ -50,17 +50,9 @@ msgstr ""
 msgid "Are you sure you want to delete (%s)?"
 msgstr ""
 
-#: manager.i18n.php:4
-msgid "Asterisk API"
-msgstr "API Asterisk"
-
 #: views/page.main.php:5
 msgid "Asterisk Manager"
 msgstr "Menedżer Asterisk"
-
-#: manager.i18n.php:10
-msgid "Asterisk Manager Users"
-msgstr "Użytkownicy Menedżera Asterisk"
 
 #: Manager.class.php:54
 msgid "CDR"
@@ -254,10 +246,6 @@ msgstr ""
 "Ustawia limit czasu używany przez Asterisk podczas zapisywania danych do "
 "połączenia AMI dla tego użytkownika"
 
-#: manager.i18n.php:6
-msgid "Settings"
-msgstr "Ustawienia"
-
 #: Manager.class.php:43
 msgid "System"
 msgstr ""
@@ -275,10 +263,6 @@ msgstr ""
 #: Manager.class.php:361
 msgid "This manager already exists!"
 msgstr ""
-
-#: manager.i18n.php:8
-msgid "This module is used to add AMI Users"
-msgstr "Ten moduł służy do dodawania użytkowników AMI"
 
 #: views/view.grid.form.php:195
 msgid "Toggle All"
@@ -317,6 +301,18 @@ msgstr "Tak"
 #: views/view.grid.form.php:124
 msgid "milliseconds"
 msgstr "milisekundy"
+
+#~ msgid "Asterisk API"
+#~ msgstr "API Asterisk"
+
+#~ msgid "Asterisk Manager Users"
+#~ msgstr "Użytkownicy Menedżera Asterisk"
+
+#~ msgid "Settings"
+#~ msgstr "Ustawienia"
+
+#~ msgid "This module is used to add AMI Users"
+#~ msgstr "Ten moduł służy do dodawania użytkowników AMI"
 
 #~ msgid "Adding write timeout.."
 #~ msgstr "Dodawanie limitu czasu zapisu.."

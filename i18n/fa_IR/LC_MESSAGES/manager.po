@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 09:04+0000\n"
+"POT-Creation-Date: 2024-03-21 10:56+0000\n"
 "PO-Revision-Date: 2016-04-11 12:19+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/manager/"
@@ -49,17 +49,9 @@ msgstr ""
 msgid "Are you sure you want to delete (%s)?"
 msgstr ""
 
-#: manager.i18n.php:4
-msgid "Asterisk API"
-msgstr ""
-
 #: views/page.main.php:5
 msgid "Asterisk Manager"
 msgstr "مدیریت استریسک"
-
-#: manager.i18n.php:10
-msgid "Asterisk Manager Users"
-msgstr ""
 
 #: Manager.class.php:54
 msgid "CDR"
@@ -250,10 +242,6 @@ msgstr ""
 "تنظیم وقفه استفاده شده در استریسک در هنگام نوشتن دیتا در AMI connection برای "
 "این کاربر"
 
-#: manager.i18n.php:6
-msgid "Settings"
-msgstr ""
-
 #: Manager.class.php:43
 msgid "System"
 msgstr ""
@@ -270,10 +258,6 @@ msgstr ""
 
 #: Manager.class.php:361
 msgid "This manager already exists!"
-msgstr ""
-
-#: manager.i18n.php:8
-msgid "This module is used to add AMI Users"
 msgstr ""
 
 #: views/view.grid.form.php:195
