@@ -80,24 +80,7 @@ class Manager extends FreePBX_Helpers implements BMO
 		return sha1($password);
 	}
 
-	public function install()
-	{
-		$managerUserNames = [
-			'sangomartapi_conference',
-			'srtapi_browserphone',
-			'srtapi_aststate',
-			'srtapi_realtime',
-			'srtapi_queue_events',
-			'srtapi_amidefault'
-		];
-		foreach ($managerUserNames as $userName)
-		{
-			if (!$this->getConfig($userName, 'secret'))
-			{
-				$this->setConfig($userName, $this->genPassword(), 'secret');
-			}
-		}
-	}
+	public function install() {}
 
 	public function uninstall() {}
 
@@ -546,106 +529,6 @@ class Manager extends FreePBX_Helpers implements BMO
 				$section[] = $adsettings;
 			}
 			$config[$manager['name']] = $section;
-		}
-
-		// These entries are required by sangomartapi and won't need
-		// to be modified by the admin, so they will not be included
-		// in the database table
-		if ($this->FreePBX->Modules->checkStatus('sangomartapi'))
-		{
-			$config_sangomartapi = array(
-				"sangomartapi_conference" => array(
-					"read=system,call",
-					"eventfilter=Confbridge",
-					"eventfilter = Event: FullyBooted"
-				),
-				"srtapi_browserphone" => array(
-					"read=system,call,cdr",
-					"eventfilter=FullyBooted",
-					"eventfilter=PeerStatus",
-					"eventfilter=Newchannel",
-					"eventfilter=ContactStatus",
-					"eventfilter=Cdr",
-					"eventfilter=Event: Hangup",
-					"eventfilter=!Event: Hangup[A-Z]",
-				),
-				"srtapi_aststate" => array(
-					"read=system,call,dialplan,user",
-					"eventfilter=FullyBooted",
-					"eventfilter=BridgeCreate",
-					"eventfilter=BridgeDestroy",
-					"eventfilter=BridgeEnter",
-					"eventfilter=BridgeInfoComplete",
-					"eventfilter=BridgeLeave",
-					"eventfilter=BridgeListComplete",
-					"eventfilter=ConfbridgeStart",
-					"eventfilter=DialBegin",
-					"eventfilter=DialEnd",
-					"eventfilter=Hangup",
-					"eventfilter=Hold",
-					"eventfilter=LocalBridge",
-					"eventfilter=MessageWaiting",
-					"eventfilter=Newchannel",
-					"eventfilter=NewConnectedLine",
-					"eventfilter=NewCallerid",
-					"eventfilter=Newstate",
-					"eventfilter=ParkedCall",
-					"eventfilter=ParkedCallGiveup",
-					"eventfilter=ParkedCallSwap",
-					"eventfilter=ParkedCallTimeout",
-					"eventfilter=StatusComplete",
-					"eventfilter=Unhold",
-					"eventfilter=UnParkedCall",
-					"eventfilter = Event: UserEvent",
-					"; variable names for VarSet.",
-					"eventfilter=INCOMING_DID",
-					"eventfilter=DISPLAY_URL",
-					"eventfilter=RTAPI_DIAL_DATA",
-					"eventfilter=SB_HOLDER_ACCOUNT",
-					"eventfilter=AGENTCALL",
-					"; blacklist",
-					"eventfilter=!Event: SoftHangupRequest",
-					"eventfilter=!Event: HangupRequest",
-					"eventfilter=!Event: NewExten",
-					"eventfilter=!Event: PeerStatus",
-				),
-				"srtapi_realtime" => array(
-					"read = system,user,call",
-					"eventfilter = Event: PresenceStateChange",
-					";eventfilter = Event: DeviceStateChange",
-					"eventfilter = Event: ExtensionStatus",
-					"eventfilter = Event: UserEvent",
-					"eventfilter = Event: FullyBooted",
-					"eventfilter = Event: MixMonitorStart",
-					"eventfilter = Event: BridgeEnter",
-				),
-				"srtapi_queue_events" => array(
-					"read = system,user,call,agent",
-					"eventfilter = Event: QueueCallerJoin",
-					"eventfilter = Event: QueueCallerLeave",
-					"eventfilter = Event: QueueMemberAdded",
-					"eventfilter = Event: QueueMemberPause",
-					"eventfilter = Event: QueueMemberRemoved",
-					"eventfilter = Event: AttendedTransfer",
-					"eventfilter = Event: UserEvent",
-					"eventfilter = Event: FullyBooted",
-				),
-				"srtapi_amidefault" => array(
-					"read = all",
-				),
-			);
-
-			// Set Configuration Comun
-			foreach ($config_sangomartapi as $api => &$apiconfig)
-			{
-				$apiconfig['secret'] 		= $this->getConfig($api, 'secret');
-				$apiconfig['deny'] 			= $this->getDefault('deny');
-				$apiconfig['permit'] 		= $this->getDefault('permit');
-				$apiconfig['write'] 		= "all";
-				$apiconfig['writetimeout'] 	= "1000";
-			}
-
-			$config = array_merge($config, $config_sangomartapi);	
 		}
 
 		$config[self::CONF_FILE_NAME_EXTRA] = $config;

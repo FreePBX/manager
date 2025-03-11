@@ -15,7 +15,7 @@
     <database>
         <table name="manager">
             <field name="manager_id" type="integer" primarykey="true" autoincrement="true"/>
-            <field name="name" type="string" length="15"/>
+            <field name="name" type="string" length="50"/>
             <field name="secret" type="string" length="50" notnull="false"/>
             <field name="deny" type="string" length="1024" notnull="false"/>
             <field name="permit" type="string" length="1024" notnull="false"/>
