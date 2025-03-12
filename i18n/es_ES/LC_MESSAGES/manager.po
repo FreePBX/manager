@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo manager module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-21 10:56+0000\n"
+"POT-Creation-Date: 2025-03-12 06:04+0000\n"
 "PO-Revision-Date: 2023-04-18 18:11+0200\n"
 "Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://*/projects/freepbx/manager/es/>\n"
@@ -42,9 +42,17 @@ msgstr "Agente"
 msgid "Are you sure you want to delete (%s)?"
 msgstr "¿Estás seguro de que quieres borrar (%s)?"
 
+#: manager.i18n.php:4
+msgid "Asterisk API"
+msgstr "API Asterisk"
+
 #: views/page.main.php:5
 msgid "Asterisk Manager"
 msgstr "Gestor Asterisk"
+
+#: manager.i18n.php:10
+msgid "Asterisk Manager Users"
+msgstr "Usuarios gestor Asterisk"
 
 #: Manager.class.php:54
 msgid "CDR"
@@ -54,19 +62,19 @@ msgstr "CDR"
 msgid "Call"
 msgstr "Llamar"
 
-#: Manager.class.php:365
+#: Manager.class.php:348
 msgid "Can't create, we are conflicting with FreePBX Asterisk Admin User!"
 msgstr ""
 "¡No se puede crear, entramos en conflicto con el usuario administrador de "
 "Asterisk para FreePBX!"
 
-#: Manager.class.php:426
+#: Manager.class.php:409
 msgid "Can't delete, we are conflicting with FreePBX Asterisk Admin User!"
 msgstr ""
 "¡No se puede eliminar, entramos en conflicto con el usuario administrador de "
 "Asterisk para FreePBX!"
 
-#: Manager.class.php:422
+#: Manager.class.php:405
 msgid "Cannot be deleted as it does not exist!"
 msgstr "No se puede eliminar porque no existe!"
 
@@ -87,7 +95,7 @@ msgstr "Cerrar"
 msgid "Command"
 msgstr "Comando"
 
-#: Manager.class.php:286
+#: Manager.class.php:269
 msgid "Command not found!"
 msgstr "¡Comando no encontrado!"
 
@@ -95,7 +103,7 @@ msgstr "¡Comando no encontrado!"
 msgid "Config"
 msgstr "Configuracion"
 
-#: Manager.class.php:232
+#: Manager.class.php:215
 msgid "Create Successfully"
 msgstr "Creado Correctamente"
 
@@ -169,19 +177,19 @@ msgstr ""
 msgid "No"
 msgstr "No"
 
-#: Manager.class.php:214
+#: Manager.class.php:197
 msgid "No data received!"
 msgstr "No se han recibido datos!"
 
-#: Manager.class.php:418
+#: Manager.class.php:401
 msgid "No manager has been selected to be removed!"
 msgstr ""
 
-#: Manager.class.php:381
+#: Manager.class.php:364
 msgid "No manager has been selected!"
 msgstr ""
 
-#: Manager.class.php:357
+#: Manager.class.php:340
 msgid "No name specified!"
 msgstr "No se ha especificado ningún nombre!"
 
@@ -189,7 +197,7 @@ msgstr "No se ha especificado ningún nombre!"
 msgid "Originate"
 msgstr "Originar"
 
-#: Manager.class.php:320
+#: Manager.class.php:303
 #, php-format
 msgid "Page Not Found (%s)!!!!"
 msgstr "¡¡¡¡Página no encontrada (%s)!!!!"
@@ -213,11 +221,11 @@ msgid ""
 "information."
 msgstr ""
 
-#: Manager.class.php:276
+#: Manager.class.php:259
 msgid "Removed Failed!"
 msgstr "¡Eliminación fallida!"
 
-#: Manager.class.php:272
+#: Manager.class.php:255
 msgid "Removed Successfully"
 msgstr "Eliminado Correctamente"
 
@@ -241,6 +249,10 @@ msgstr ""
 "Establece el tiempo de espera utilizado por Asterisk al escribir datos en la "
 "conexión AMI para este usuario"
 
+#: manager.i18n.php:6
+msgid "Settings"
+msgstr "Configuracion"
+
 #: Manager.class.php:43
 msgid "System"
 msgstr "Sistema"
@@ -253,27 +265,31 @@ msgstr ""
 "La configuración por defecto del Asterisk Manager Interface (AMI) ha "
 "cambiado a partir de la versión 16. "
 
-#: Manager.class.php:390
+#: Manager.class.php:373
 msgid "The manager does not exist!"
 msgstr "El gestor no existe!"
 
-#: Manager.class.php:361
+#: Manager.class.php:344
 msgid "This manager already exists!"
 msgstr "Este gestor ya existe!"
+
+#: manager.i18n.php:8
+msgid "This module is used to add AMI Users"
+msgstr ""
 
 #: views/view.grid.form.php:195
 msgid "Toggle All"
 msgstr "Alternar Todo"
 
-#: Manager.class.php:260
+#: Manager.class.php:243
 msgid "Type not found!"
 msgstr "Tipo no encontrado!"
 
-#: Manager.class.php:247
+#: Manager.class.php:230
 msgid "Update Successfully"
 msgstr "Actualizado Correctamente"
 
-#: Manager.class.php:251
+#: Manager.class.php:234
 msgid "Update is Failed!"
 msgstr "¡Actualización fallida!"
 
@@ -298,15 +314,6 @@ msgstr "Si"
 #: views/view.grid.form.php:124
 msgid "milliseconds"
 msgstr "milisegundos"
-
-#~ msgid "Asterisk API"
-#~ msgstr "API Asterisk"
-
-#~ msgid "Asterisk Manager Users"
-#~ msgstr "Usuarios gestor Asterisk"
-
-#~ msgid "Settings"
-#~ msgstr "Configuracion"
 
 #~ msgid ""
 #~ "Please refer to  <a href=\"%s\"> <b>wiki</b> </a> for more information."

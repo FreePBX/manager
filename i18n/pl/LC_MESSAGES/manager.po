@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-21 10:56+0000\n"
+"POT-Creation-Date: 2025-03-12 06:04+0000\n"
 "PO-Revision-Date: 2023-12-14 08:22+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/manager/"
@@ -50,9 +50,17 @@ msgstr ""
 msgid "Are you sure you want to delete (%s)?"
 msgstr ""
 
+#: manager.i18n.php:4
+msgid "Asterisk API"
+msgstr "API Asterisk"
+
 #: views/page.main.php:5
 msgid "Asterisk Manager"
 msgstr "Menedżer Asterisk"
+
+#: manager.i18n.php:10
+msgid "Asterisk Manager Users"
+msgstr "Użytkownicy Menedżera Asterisk"
 
 #: Manager.class.php:54
 msgid "CDR"
@@ -62,15 +70,15 @@ msgstr ""
 msgid "Call"
 msgstr ""
 
-#: Manager.class.php:365
+#: Manager.class.php:348
 msgid "Can't create, we are conflicting with FreePBX Asterisk Admin User!"
 msgstr ""
 
-#: Manager.class.php:426
+#: Manager.class.php:409
 msgid "Can't delete, we are conflicting with FreePBX Asterisk Admin User!"
 msgstr ""
 
-#: Manager.class.php:422
+#: Manager.class.php:405
 msgid "Cannot be deleted as it does not exist!"
 msgstr ""
 
@@ -92,7 +100,7 @@ msgstr ""
 msgid "Command"
 msgstr ""
 
-#: Manager.class.php:286
+#: Manager.class.php:269
 msgid "Command not found!"
 msgstr ""
 
@@ -100,7 +108,7 @@ msgstr ""
 msgid "Config"
 msgstr ""
 
-#: Manager.class.php:232
+#: Manager.class.php:215
 msgid "Create Successfully"
 msgstr ""
 
@@ -174,19 +182,19 @@ msgstr ""
 msgid "No"
 msgstr "Nie"
 
-#: Manager.class.php:214
+#: Manager.class.php:197
 msgid "No data received!"
 msgstr ""
 
-#: Manager.class.php:418
+#: Manager.class.php:401
 msgid "No manager has been selected to be removed!"
 msgstr ""
 
-#: Manager.class.php:381
+#: Manager.class.php:364
 msgid "No manager has been selected!"
 msgstr ""
 
-#: Manager.class.php:357
+#: Manager.class.php:340
 msgid "No name specified!"
 msgstr ""
 
@@ -194,7 +202,7 @@ msgstr ""
 msgid "Originate"
 msgstr ""
 
-#: Manager.class.php:320
+#: Manager.class.php:303
 #, php-format
 msgid "Page Not Found (%s)!!!!"
 msgstr ""
@@ -218,11 +226,11 @@ msgid ""
 "information."
 msgstr ""
 
-#: Manager.class.php:276
+#: Manager.class.php:259
 msgid "Removed Failed!"
 msgstr ""
 
-#: Manager.class.php:272
+#: Manager.class.php:255
 msgid "Removed Successfully"
 msgstr ""
 
@@ -246,6 +254,10 @@ msgstr ""
 "Ustawia limit czasu używany przez Asterisk podczas zapisywania danych do "
 "połączenia AMI dla tego użytkownika"
 
+#: manager.i18n.php:6
+msgid "Settings"
+msgstr "Ustawienia"
+
 #: Manager.class.php:43
 msgid "System"
 msgstr ""
@@ -256,27 +268,31 @@ msgid ""
 "starting in version 16. "
 msgstr ""
 
-#: Manager.class.php:390
+#: Manager.class.php:373
 msgid "The manager does not exist!"
 msgstr ""
 
-#: Manager.class.php:361
+#: Manager.class.php:344
 msgid "This manager already exists!"
 msgstr ""
+
+#: manager.i18n.php:8
+msgid "This module is used to add AMI Users"
+msgstr "Ten moduł służy do dodawania użytkowników AMI"
 
 #: views/view.grid.form.php:195
 msgid "Toggle All"
 msgstr "Przełącz wszystko"
 
-#: Manager.class.php:260
+#: Manager.class.php:243
 msgid "Type not found!"
 msgstr ""
 
-#: Manager.class.php:247
+#: Manager.class.php:230
 msgid "Update Successfully"
 msgstr ""
 
-#: Manager.class.php:251
+#: Manager.class.php:234
 msgid "Update is Failed!"
 msgstr ""
 
@@ -301,18 +317,6 @@ msgstr "Tak"
 #: views/view.grid.form.php:124
 msgid "milliseconds"
 msgstr "milisekundy"
-
-#~ msgid "Asterisk API"
-#~ msgstr "API Asterisk"
-
-#~ msgid "Asterisk Manager Users"
-#~ msgstr "Użytkownicy Menedżera Asterisk"
-
-#~ msgid "Settings"
-#~ msgstr "Ustawienia"
-
-#~ msgid "This module is used to add AMI Users"
-#~ msgstr "Ten moduł służy do dodawania użytkowników AMI"
 
 #~ msgid "Adding write timeout.."
 #~ msgstr "Dodawanie limitu czasu zapisu.."
