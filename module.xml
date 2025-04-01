@@ -11,7 +11,7 @@
 		<manager>Asterisk Manager Users</manager>
 	</menuitems>
   	<description>This module is used to add AMI Users</description>
-  	<more-info>https://wiki.freepbx.org/display/FPG/Asterisk+Managers+Interface</more-info>
+  	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/26738813/PBX+GUI+-+Asterisk+Managers+Interface</more-info>
     <database>
         <table name="manager">
             <field name="manager_id" type="integer" primarykey="true" autoincrement="true"/>
