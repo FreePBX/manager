@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-12 02:03-0400\n"
+"POT-Creation-Date: 2025-05-30 02:39-0400\n"
 "PO-Revision-Date: 2018-05-29 13:50+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/manager/it/>\n"
@@ -68,15 +68,15 @@ msgstr ""
 msgid "Call"
 msgstr ""
 
-#: Manager.class.php:348
+#: Manager.class.php:373
 msgid "Can't create, we are conflicting with FreePBX Asterisk Admin User!"
 msgstr ""
 
-#: Manager.class.php:409
+#: Manager.class.php:434
 msgid "Can't delete, we are conflicting with FreePBX Asterisk Admin User!"
 msgstr ""
 
-#: Manager.class.php:405
+#: Manager.class.php:430
 msgid "Cannot be deleted as it does not exist!"
 msgstr ""
 
@@ -97,7 +97,7 @@ msgstr ""
 msgid "Command"
 msgstr ""
 
-#: Manager.class.php:269
+#: Manager.class.php:294
 msgid "Command not found!"
 msgstr ""
 
@@ -105,7 +105,7 @@ msgstr ""
 msgid "Config"
 msgstr ""
 
-#: Manager.class.php:215
+#: Manager.class.php:240
 msgid "Create Successfully"
 msgstr ""
 
@@ -178,19 +178,19 @@ msgstr ""
 msgid "No"
 msgstr "No"
 
-#: Manager.class.php:197
+#: Manager.class.php:222
 msgid "No data received!"
 msgstr ""
 
-#: Manager.class.php:401
+#: Manager.class.php:426
 msgid "No manager has been selected to be removed!"
 msgstr ""
 
-#: Manager.class.php:364
+#: Manager.class.php:389
 msgid "No manager has been selected!"
 msgstr ""
 
-#: Manager.class.php:340
+#: Manager.class.php:365
 msgid "No name specified!"
 msgstr ""
 
@@ -198,7 +198,7 @@ msgstr ""
 msgid "Originate"
 msgstr ""
 
-#: Manager.class.php:303
+#: Manager.class.php:328
 #, php-format
 msgid "Page Not Found (%s)!!!!"
 msgstr ""
@@ -222,11 +222,11 @@ msgid ""
 "information."
 msgstr ""
 
-#: Manager.class.php:259
+#: Manager.class.php:284
 msgid "Removed Failed!"
 msgstr ""
 
-#: Manager.class.php:255
+#: Manager.class.php:280
 msgid "Removed Successfully"
 msgstr ""
 
@@ -264,11 +264,11 @@ msgid ""
 "starting in version 16. "
 msgstr ""
 
-#: Manager.class.php:373
+#: Manager.class.php:398
 msgid "The manager does not exist!"
 msgstr ""
 
-#: Manager.class.php:344
+#: Manager.class.php:369
 msgid "This manager already exists!"
 msgstr ""
 
@@ -280,15 +280,15 @@ msgstr ""
 msgid "Toggle All"
 msgstr "Attiva tutto"
 
-#: Manager.class.php:243
+#: Manager.class.php:268
 msgid "Type not found!"
 msgstr ""
 
-#: Manager.class.php:230
+#: Manager.class.php:255
 msgid "Update Successfully"
 msgstr ""
 
-#: Manager.class.php:234
+#: Manager.class.php:259
 msgid "Update is Failed!"
 msgstr ""
 
