@@ -9,7 +9,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <button type="button" class="close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="<?php echo _("Close") ?>">&times;</button>
                 <h4 class="modal-title"><?php echo _("Loading...") ?></h4>
             </div>
             <div class="modal-body">
@@ -18,10 +18,10 @@
 
                     <ul class="nav nav-pills" role="tablist">
                         <li data-name="managerset" class="change-tab active">
-                            <a href="#managerset" aria-controls="managerset" role="tab" data-toggle="tab"><i class="fa fa-cog fa-lg" aria-hidden="true"></i> <?php echo _("General")?></a>
+                            <a href="#managerset" aria-controls="managerset" role="tab" data-toggle="tab" data-bs-toggle="tab"><i class="fa fa-cog fa-lg" aria-hidden="true"></i> <?php echo _("General")?></a>
                         </li>
                         <li data-name="managerperm" class="change-tab">
-                            <a href="#managerperm" aria-controls="managerperm" role="tab" data-toggle="tab"><i class="fa fa-lock fa-lg" aria-hidden="true"></i> <?php echo _("Permissions")?></a>
+                            <a href="#managerperm" aria-controls="managerperm" role="tab" data-toggle="tab" data-bs-toggle="tab"><i class="fa fa-lock fa-lg" aria-hidden="true"></i> <?php echo _("Permissions")?></a>
                         </li>
                     </ul>
                     <div class="tab-content display no-border">
@@ -58,7 +58,7 @@
                                         <div class="col-md-9">
                                             <div class="input-group">
                                                 <input type="password" class="form-control password-meter" id="secretManager" name="secretManager" value="">
-                                                <span class="input-group-addon toggle-password" id="pwtoggle" data-id="secretManager"><i class="fa fa-eye"></i></a></span>
+                                                <span class="input-group-addon toggle-password" id="pwtoggle" data-id="secretManager"><i class="fa fa-eye"></i></span>
                                             </div>
                                         </div>
                                     </div>
@@ -149,15 +149,17 @@
                                 data-toggle="table"
                                 class="table table-striped">
                                 <thead>
-                                    <th data-field="name" class="col-md-8">
-                                        <?php echo ("Permission")?>
-                                    </th>
-                                    <th data-field="read" class="col-md-2 text-center">
-                                        <?php echo ("Read")?>
-                                    </th>
-                                    <th data-field="write" class="col-md-2 text-center">
-                                        <?php echo ("Write")?>
-                                    </th>
+                                    <tr>
+                                        <th data-field="name" class="col-md-8">
+                                            <?php echo ("Permission")?>
+                                        </th>
+                                        <th data-field="read" class="col-md-2 text-center">
+                                            <?php echo ("Read")?>
+                                        </th>
+                                        <th data-field="write" class="col-md-2 text-center">
+                                            <?php echo ("Write")?>
+                                        </th>
+                                    </tr>
                                 </thead>
                                 <tbody>
                                     <?php
@@ -222,7 +224,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo _("Close") ?></button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" data-bs-dismiss="modal"><?php echo _("Close") ?></button>
                 <button type="button" class="btn btn-success" id="submitForm"><?php echo _("Save Changes") ?></button>
             </div>
         </div>
