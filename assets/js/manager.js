@@ -1,12 +1,12 @@
 function linkFormatter(value, row, idx)
 {
-    var html = sprintf('<a href="#" data-toggle="modal" data-target="#managerForm" data-id="%s"><i class="fa fa-pencil"></i></a>', row['manager_id']);
+    var html = sprintf('<a href="#" data-toggle="modal" data-bs-toggle="modal" data-target="#managerForm" data-bs-target="#managerForm" data-id="%s"><i class="fa fa-pencil"></i></a>', row['manager_id']);
     html += '&nbsp;';
-    html += sprintf('<a href="#" data-id="%s" data-name="%s" id="del" data-idx="%s"><i class="fa fa-trash"></i></a>', row['manager_id'], row['name'], idx);
+    html += sprintf('<a href="#" data-id="%s" data-name="%s" class="delete-manager" data-idx="%s"><i class="fa fa-trash"></i></a>', row['manager_id'], row['name'], idx);
     return html;
 }
 
-$(document).on('click', '[id="del"]', function (e)
+$(document).on('click', '.delete-manager', function (e)
 {
     e.preventDefault();
 
@@ -59,11 +59,40 @@ function getTableGrid()
     return $('#managersgrid');
 }
 
+function showManagerGeneralTab()
+{
+    var tabMain = document.querySelector('a[href="#managerset"]');
+    if (!tabMain)
+    {
+        return;
+    }
+    if (window.bootstrap && window.bootstrap.Tab)
+    {
+        window.bootstrap.Tab.getOrCreateInstance(tabMain).show();
+    }
+    else if (typeof $(tabMain).tab === 'function')
+    {
+        $(tabMain).tab('show');
+    }
+}
+
+function hideManagerModal()
+{
+    var modal = document.getElementById('managerForm');
+    if (window.bootstrap && window.bootstrap.Modal)
+    {
+        window.bootstrap.Modal.getOrCreateInstance(modal).hide();
+    }
+    else if (typeof $(modal).modal === 'function')
+    {
+        $(modal).modal('hide');
+    }
+}
+
 $('#managerForm').on('hidden.bs.modal', function ()
 {
+    document.editManager.reset();
     $("#idManager").val("");
-    $("#nameManager").val("");
-    $("#secretManager").val("");    
 });
 
 $('#managerForm').on('shown.bs.modal', function ()
@@ -142,8 +171,7 @@ $('#managerForm').on('show.bs.modal', function (e)
 		$this = this;
 
         // Active tab main
-        var tabMain = document.querySelector('a[href="#managerset"]');
-        $(tabMain).tab('show');
+        showManagerGeneralTab();
 
         // Config Buttons
 		$("#submitForm").text(btn_send);
@@ -288,7 +316,7 @@ $('#submitForm').on('click', function () {
  		if (data.status == true)
 		{
             getTableGrid().bootstrapTable('refresh', { silent: true });
- 			$("#managerForm").modal('hide');
+ 			hideManagerModal();
  		}
         fpbxToast(data.message, '', data.status == true ? 'success' : 'error');
         if (data.needreload)
@@ -329,7 +357,7 @@ $(document).ready(function(){
         }
         else
         {
-            $("input[name^='r'][type=radio").each(function()
+            $("input[name^='r'][type=radio]").each(function()
             {
                 var name = $(this).prop('name');
                 if(name == 'reset')

@@ -6,6 +6,9 @@ use FreePBX_Helpers;
 
 class Manager extends FreePBX_Helpers implements BMO
 {
+	protected \FreePBX $FreePBX;
+	protected \FreePBX\Database $Database;
+
 	const CONF_FILE_NAME_MAIN  = 'manager.conf';
 	const CONF_FILE_NAME_EXTRA = 'manager_additional.conf';
 
@@ -17,6 +20,12 @@ class Manager extends FreePBX_Helpers implements BMO
 	protected $tables = array(
 		'manager' => 'manager',
 	);
+
+	public function __construct($freepbx = null)
+	{
+		parent::__construct($freepbx);
+		$this->Database = $this->FreePBX->Database;
+	}
 
 	public function getDefault($option = "")
 	{
@@ -65,6 +74,7 @@ class Manager extends FreePBX_Helpers implements BMO
 
 	public function genPassword($openssl = true, $bytes = null)
 	{
+		$password = '';
 		if ($openssl)
 		{
 			if (! is_numeric($bytes) || $bytes < 1)
@@ -145,9 +155,10 @@ class Manager extends FreePBX_Helpers implements BMO
 				foreach ($data_return as &$item)
 				{
     				unset($item['secret']);
-					$item['read']  = explode(",", $item['read']);
-					$item['write'] = explode(",", $item['write']);
+					$item['read']  = explode(",", (string)($item['read'] ?? ''));
+					$item['write'] = explode(",", (string)($item['write'] ?? ''));
 				}
+				unset($item);
 				break;
 
 			case 'get':
@@ -165,8 +176,10 @@ class Manager extends FreePBX_Helpers implements BMO
 				{
 					$permissions = $this->getPermissions();
 
-					$data['read']  = $data['read'] == 'all'  ? array_keys($permissions) : explode(",", $data['read']);
-					$data['write'] = $data['write'] == 'all' ? array_keys($permissions) : explode(",", $data['write']);
+					$read = (string)($data['read'] ?? '');
+					$write = (string)($data['write'] ?? '');
+					$data['read']  = $read === 'all'  ? array_keys($permissions) : explode(",", $read);
+					$data['write'] = $write === 'all' ? array_keys($permissions) : explode(",", $write);
 
 					if ($qType == 'new')
 					{
@@ -223,11 +236,11 @@ class Manager extends FreePBX_Helpers implements BMO
 				}
 				else
 				{
-					$name 		  = $form['nameManager'];
-					$secret 	  = $form['secretManager'];
-					$deny 		  = str_replace("&amp;","&",$form['denyManager']);
-					$permit		  = str_replace("&amp;","&",$form['permitManager']);
-					$writetimeout = $form['writetimeoutManager'];
+					$name 		  = $form['nameManager'] ?? '';
+					$secret 	  = $form['secretManager'] ?? '';
+					$deny 		  = str_replace("&amp;","&", (string)($form['denyManager'] ?? ''));
+					$permit		  = str_replace("&amp;","&", (string)($form['permitManager'] ?? ''));
+					$writetimeout = $form['writetimeoutManager'] ?? 100;
 					$rights 	  = $this->format_in($form);
 
 					switch ($utype)
@@ -467,17 +480,17 @@ class Manager extends FreePBX_Helpers implements BMO
 	public function format_out($tab)
 	{
 		$res = array(
-			'name'			=> $tab['name'],
-			'secret'		=> $tab['secret'],
-			'deny'			=> $tab['deny'],
-			'permit'		=> $tab['permit'],
-			'writetimeout' 	=> $tab['writetimeout'],
+			'name'			=> $tab['name'] ?? '',
+			'secret'		=> $tab['secret'] ?? '',
+			'deny'			=> $tab['deny'] ?? '',
+			'permit'		=> $tab['permit'] ?? '',
+			'writetimeout' 	=> $tab['writetimeout'] ?? 100,
 		);
-		foreach(explode(',', $tab['read']) as $item)
+		foreach(explode(',', (string)($tab['read'] ?? '')) as $item)
 		{
 			$res['r'.$item] = true;
 		}
-		foreach(explode(',', $tab['write']) as $item)
+		foreach(explode(',', (string)($tab['write'] ?? '')) as $item)
 		{
 			$res['w'.$item] = true;
 		}
@@ -541,7 +554,7 @@ class Manager extends FreePBX_Helpers implements BMO
 
 					case 'permit':
 					case 'deny':
-						foreach (explode("&", $value) as $addr)
+						foreach (explode("&", (string)($value ?? '')) as $addr)
 						{
 							if (empty($addr)) { continue; }
 							$section[] = sprintf("%s=%s", $key , $addr);

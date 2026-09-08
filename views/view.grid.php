@@ -1,7 +1,7 @@
 <?php if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); } ?>
 
 <div id="toolbar-all">
-    <a href="#" class="btn btn-default" data-toggle="modal" data-target="#managerForm"><i class="fa fa-plus"></i>&nbsp;&nbsp;<?php echo _("Add Manager") ?></a>
+    <a href="#" class="btn btn-default" data-toggle="modal" data-bs-toggle="modal" data-target="#managerForm" data-bs-target="#managerForm"><i class="fa fa-plus"></i>&nbsp;&nbsp;<?php echo _("Add Manager") ?></a>
 </div>
 <table
     id="managersgrid"
